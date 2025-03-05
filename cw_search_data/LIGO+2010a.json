@@ -1,0 +1,35 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, B. P.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "others"
+    ],
+    "doi": "10.1088/0004-637X/713/1/671",
+    "journal": "Astrophysical Journal",
+    "key": "LIGO+2010a",
+    "key-suffix": "a",
+    "pages": "671",
+    "title": "Searches for Gravitational Waves from Known Pulsars with Science Run 5 LIGO Data",
+    "volume": "713",
+    "year": 2010
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "Bayesian",
+      "algorithm-incoherent": "none",
+      "breadth": 116,
+      "category": "pulsar targeted",
+      "depth": 932.1,
+      "max-coherence-time": 60134400.0,
+      "obs-run": "S5",
+      "param-space": {
+        "num-pulsars": 116
+      },
+      "time-span": 60134400.0
+    }
+  ]
+}

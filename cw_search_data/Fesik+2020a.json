@@ -1,0 +1,47 @@
+{
+  "reference": {
+    "author": [
+      "Fesik, L.",
+      "Papa, M. A."
+    ],
+    "doi": "10.3847/1538-4357/ab8193",
+    "journal": "Astrophysical Journal",
+    "key": "Fesik+2020a",
+    "key-suffix": "a",
+    "pages": "11",
+    "title": "First Search for r-mode Gravitational Waves from PSR J0537-6910",
+    "volume": "895",
+    "year": 2020
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "none",
+      "astro-target": "PSR J0537-6910",
+      "breadth": 5.639043202019683e+16,
+      "category": "pulsar narrowband",
+      "depth": 75.0,
+      "max-coherence-time": 61603200.0,
+      "obs-run": "O2",
+      "param-space": {
+        "ranges": [
+          {
+            "fddot": [
+              4.82e-21,
+              3.34e-20
+            ],
+            "fdot": [
+              -6.63e-10,
+              -2.79e-10
+            ],
+            "freq": [
+              85.8929,
+              97.078
+            ]
+          }
+        ]
+      },
+      "time-span": 61603200.0
+    }
+  ]
+}

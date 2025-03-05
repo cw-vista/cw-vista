@@ -1,0 +1,47 @@
+{
+  "reference": {
+    "author": [
+      "Aasi, J.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration"
+    ],
+    "doi": "10.1103/PhysRevD.87.042001",
+    "journal": "Physical Review D",
+    "key": "LIGOVirgo2013a",
+    "key-suffix": "a",
+    "pages": "042001",
+    "title": "Einstein@Home all-sky search for periodic gravitational waves in LIGO S5 data",
+    "volume": "87",
+    "year": 2013
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "SkyHough",
+      "breadth": 2.2452479338983565e+30,
+      "category": "allsky isolated",
+      "depth": 30.0,
+      "max-coherence-time": 90000,
+      "obs-run": "S5",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -2e-09,
+              1.1e-10
+            ],
+            "freq": [
+              50,
+              1190
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 60134400.0
+    }
+  ]
+}

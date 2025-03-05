@@ -1,0 +1,53 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, B. P.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration",
+      "others"
+    ],
+    "doi": "10.1103/PhysRevD.95.122003",
+    "journal": "Physical Review D",
+    "key": "LIGOVirgo+2017c",
+    "key-suffix": "c",
+    "pages": "122003",
+    "title": "Search for gravitational waves from Scorpius X-1 in the first Advanced LIGO observing run with a hidden Markov model",
+    "volume": "95",
+    "year": 2017
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "Sco X-1",
+      "breadth": 2.7633531970808414e+19,
+      "category": "lmxb",
+      "depth": 7.6,
+      "max-coherence-time": 864000,
+      "obs-run": "O1",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "bin-a-sin-i": [
+              0.361,
+              3.249
+            ],
+            "bin-period": [
+              68023.66176,
+              68023.74816
+            ],
+            "freq": [
+              60,
+              650
+            ]
+          }
+        ]
+      },
+      "time-span": 11145600.0
+    }
+  ]
+}

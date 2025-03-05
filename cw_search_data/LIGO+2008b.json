@@ -1,0 +1,57 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, B.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "others"
+    ],
+    "doi": "10.1086/591526",
+    "journal": "Astrophysical Journal Letters",
+    "key": "LIGO+2008b",
+    "key-suffix": "b",
+    "pages": "L45",
+    "title": "Beating the Spin-Down Limit on Gravitational Wave Emission from the Crab Pulsar",
+    "volume": "683",
+    "year": 2008
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "Bayesian",
+      "algorithm-incoherent": "none",
+      "astro-target": "Crab",
+      "breadth": 1,
+      "category": "pulsar targeted",
+      "depth": 774.1,
+      "max-coherence-time": 23668200.0,
+      "obs-run": "S5",
+      "param-space": {
+        "num-pulsars": 1
+      },
+      "time-span": 23668200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "none",
+      "astro-target": "Crab",
+      "breadth": 515152.3933508393,
+      "category": "pulsar narrowband",
+      "depth": 223.1,
+      "max-coherence-time": 23668200.0,
+      "obs-run": "S5",
+      "param-space": {
+        "ranges": [
+          {
+            "freq": [
+              59.554,
+              59.566
+            ]
+          }
+        ]
+      },
+      "time-span": 23668200.0
+    }
+  ]
+}

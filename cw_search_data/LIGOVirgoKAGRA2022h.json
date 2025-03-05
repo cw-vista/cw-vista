@@ -1,0 +1,56 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, R.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration",
+      "KAGRA Collaboration"
+    ],
+    "doi": "10.3847/2041-8213/aca1b0",
+    "journal": "Astrophysical Journal Letters",
+    "key": "LIGOVirgoKAGRA2022h",
+    "key-suffix": "h",
+    "pages": "L30",
+    "title": "Model-based Cross-correlation Search for Gravitational Waves from the Low-mass X-Ray Binary Scorpius X-1 in LIGO O3 Data",
+    "volume": "941",
+    "year": 2022
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "CrossCorr",
+      "astro-target": "Sco X-1",
+      "breadth": 7.728548932245771e+18,
+      "category": "lmxb",
+      "depth": 38.91,
+      "max-coherence-time": 18720,
+      "obs-run": "O3",
+      "param-space": {
+        "ranges": [
+          {
+            "bin-a-sin-i": [
+              1.44,
+              3.25
+            ],
+            "bin-period": [
+              68023.8237,
+              68023.89630000001
+            ],
+            "bin-time-asc": [
+              1255014494,
+              1255015604
+            ],
+            "freq": [
+              25,
+              1600
+            ]
+          }
+        ]
+      },
+      "time-span": 31190400.0
+    }
+  ]
+}

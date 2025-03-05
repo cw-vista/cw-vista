@@ -1,0 +1,62 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, B. P.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration",
+      "others"
+    ],
+    "doi": "10.3847/1538-4357/aa677f",
+    "journal": "Astrophysical Journal",
+    "key": "LIGOVirgo+2017b",
+    "key-suffix": "b",
+    "pages": "12",
+    "title": "First Search for Gravitational Waves from Known Pulsars with Advanced LIGO",
+    "volume": "839",
+    "year": 2017
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "Bayesian",
+      "algorithm-incoherent": "none",
+      "breadth": 200,
+      "category": "pulsar targeted",
+      "depth": 355.8,
+      "max-coherence-time": 11145600.0,
+      "obs-run": "O1",
+      "param-space": {
+        "num-pulsars": 200
+      },
+      "time-span": 11145600.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "none",
+      "breadth": 11,
+      "category": "pulsar targeted",
+      "depth": 315.78,
+      "max-coherence-time": 11145600.0,
+      "obs-run": "O1",
+      "param-space": {
+        "num-pulsars": 11
+      },
+      "time-span": 11145600.0
+    },
+    {
+      "algorithm-coherent": "5-vectors",
+      "algorithm-incoherent": "none",
+      "breadth": 10,
+      "category": "pulsar targeted",
+      "depth": 323.9,
+      "max-coherence-time": 11145600.0,
+      "obs-run": "O1",
+      "param-space": {
+        "num-pulsars": 10
+      },
+      "time-span": 11145600.0
+    }
+  ]
+}

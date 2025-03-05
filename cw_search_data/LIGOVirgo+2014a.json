@@ -1,0 +1,62 @@
+{
+  "reference": {
+    "author": [
+      "Aasi, J.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration",
+      "others"
+    ],
+    "doi": "10.1088/0004-637X/785/2/119",
+    "journal": "Astrophysical Journal",
+    "key": "LIGOVirgo+2014a",
+    "key-suffix": "a",
+    "pages": "119",
+    "title": "Gravitational Waves from Known Pulsars: Results from the Initial Detector Era",
+    "volume": "785",
+    "year": 2014
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "Bayesian",
+      "algorithm-incoherent": "none",
+      "breadth": 179,
+      "category": "pulsar targeted",
+      "depth": 514.7,
+      "max-coherence-time": 68256000.0,
+      "obs-run": "S6",
+      "param-space": {
+        "num-pulsars": 179
+      },
+      "time-span": 68256000.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "none",
+      "breadth": 7,
+      "category": "pulsar targeted",
+      "depth": 983.3,
+      "max-coherence-time": 68256000.0,
+      "obs-run": "S6",
+      "param-space": {
+        "num-pulsars": 7
+      },
+      "time-span": 68256000.0
+    },
+    {
+      "algorithm-coherent": "5-vectors",
+      "algorithm-incoherent": "none",
+      "breadth": 7,
+      "category": "pulsar targeted",
+      "depth": 532.17,
+      "max-coherence-time": 68256000.0,
+      "obs-run": "S6",
+      "param-space": {
+        "num-pulsars": 7
+      },
+      "time-span": 68256000.0
+    }
+  ]
+}

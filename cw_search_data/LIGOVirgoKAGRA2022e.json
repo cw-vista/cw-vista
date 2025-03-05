@@ -1,0 +1,124 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, R.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration",
+      "KAGRA Collaboration"
+    ],
+    "doi": "10.1103/PhysRevD.106.102008",
+    "journal": "Physical Review D",
+    "key": "LIGOVirgoKAGRA2022e",
+    "key-suffix": "e",
+    "pages": "102008",
+    "title": "All-sky search for continuous gravitational waves from isolated neutron stars using Advanced LIGO and Advanced Virgo O3 data",
+    "volume": "106",
+    "year": 2022
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "FrequencyHough",
+      "breadth": 8.355014835156987e+30,
+      "category": "allsky isolated",
+      "depth": 55.61,
+      "max-coherence-time": 8192,
+      "obs-run": "O3",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -1e-08,
+              1e-09
+            ],
+            "freq": [
+              10,
+              2048
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 31190400.0
+    },
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "SkyHough",
+      "breadth": 3.7856827635688725e+27,
+      "category": "allsky isolated",
+      "depth": 53.49,
+      "max-coherence-time": 7200,
+      "obs-run": "O3",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -1e-09,
+              5e-12
+            ],
+            "freq": [
+              65,
+              350
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 31190400.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "coincidence",
+      "breadth": 3.85598028458159e+28,
+      "category": "allsky isolated",
+      "depth": 48.95,
+      "max-coherence-time": 518400,
+      "obs-run": "O3",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -1.0337e-09,
+              0.0
+            ],
+            "freq": [
+              20,
+              750
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 31190400.0
+    },
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "Hidden Markov Model (SOAP)",
+      "breadth": 1.3708350322431947e+35,
+      "category": "allsky isolated",
+      "depth": 18.19,
+      "max-coherence-time": 1800,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -1.11837e-08,
+              0.0
+            ],
+            "freq": [
+              40,
+              2000
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 31190400.0
+    }
+  ]
+}

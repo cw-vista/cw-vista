@@ -1,0 +1,47 @@
+{
+  "reference": {
+    "author": [
+      "Aasi, J.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration"
+    ],
+    "doi": "10.1088/0264-9381/31/16/165014",
+    "journal": "Classical and Quantum Gravity",
+    "key": "LIGOVirgo2014c",
+    "key-suffix": "c",
+    "pages": "165014",
+    "title": "Implementation of an $\\mathcalF$-statistic all-sky search for continuous gravitational waves in Virgo VSR1 data",
+    "volume": "31",
+    "year": 2014
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "coincidence",
+      "breadth": 9.03483947492159e+27,
+      "category": "allsky isolated",
+      "depth": 22.6,
+      "max-coherence-time": 172800,
+      "obs-run": "VSR1",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -8.8e-09,
+              0.0
+            ],
+            "freq": [
+              100,
+              1000
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 11750400.0
+    }
+  ]
+}

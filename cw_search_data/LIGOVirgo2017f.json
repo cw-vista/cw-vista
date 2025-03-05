@@ -1,0 +1,122 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, B. P.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration"
+    ],
+    "doi": "10.1103/PhysRevD.96.062002",
+    "journal": "Physical Review D",
+    "key": "LIGOVirgo2017f",
+    "key-suffix": "f",
+    "pages": "062002",
+    "title": "All-sky search for periodic gravitational waves in the O1 LIGO data",
+    "volume": "96",
+    "year": 2017
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "PowerFlux (classic)",
+      "breadth": 9.035164836579281e+26,
+      "category": "allsky isolated",
+      "depth": 23.68,
+      "max-coherence-time": 7200,
+      "obs-run": "O1",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -1e-08,
+              1e-09
+            ],
+            "freq": [
+              20,
+              475
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 11145600.0
+    },
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "FrequencyHough",
+      "breadth": 9.035164836579281e+26,
+      "category": "allsky isolated",
+      "depth": 21.4,
+      "max-coherence-time": 8192,
+      "obs-run": "O1",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -1e-08,
+              1e-09
+            ],
+            "freq": [
+              20,
+              475
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 11145600.0
+    },
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "SkyHough",
+      "breadth": 9.035164836579281e+26,
+      "category": "allsky isolated",
+      "depth": 22.4,
+      "max-coherence-time": 1800,
+      "obs-run": "O1",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -1e-08,
+              1e-09
+            ],
+            "freq": [
+              20,
+              475
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 11145600.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "coincidence",
+      "breadth": 9.035164836579281e+26,
+      "category": "allsky isolated",
+      "depth": 23.7,
+      "max-coherence-time": 518400,
+      "obs-run": "O1",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -1e-08,
+              1e-09
+            ],
+            "freq": [
+              20,
+              475
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 11145600.0
+    }
+  ]
+}

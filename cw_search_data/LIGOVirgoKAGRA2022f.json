@@ -1,0 +1,57 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, R.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration",
+      "KAGRA Collaboration"
+    ],
+    "doi": "10.1103/PhysRevD.106.062002",
+    "journal": "Physical Review D",
+    "key": "LIGOVirgoKAGRA2022f",
+    "key-suffix": "f",
+    "pages": "062002",
+    "title": "Search for gravitational waves from Scorpius X-1 with a hidden Markov model in O3 LIGO data",
+    "volume": "106",
+    "year": 2022
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "Sco X-1",
+      "breadth": 3.6379920705939354e+17,
+      "category": "lmxb",
+      "depth": 50.14,
+      "max-coherence-time": 864000,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "bin-a-sin-i": [
+              2.0500000000000003,
+              2.65
+            ],
+            "bin-period": [
+              68023.81728,
+              68023.90368
+            ],
+            "bin-time-asc": [
+              1238149277.03488,
+              1238149677.03488
+            ],
+            "freq": [
+              60,
+              500
+            ]
+          }
+        ]
+      },
+      "time-span": 31190400.0
+    }
+  ]
+}

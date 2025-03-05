@@ -1,0 +1,48 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, R.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration",
+      "KAGRA Collaboration"
+    ],
+    "doi": "10.1103/PhysRevD.106.042003",
+    "journal": "Physical Review D",
+    "key": "LIGOVirgoKAGRA2022g",
+    "key-suffix": "g",
+    "pages": "042003",
+    "title": "Search for continuous gravitational wave emission from the Milky Way center in O3 LIGO-Virgo data",
+    "volume": "106",
+    "year": 2022
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "FrequencyHough",
+      "astro-target": "Galactic centre",
+      "breadth": 3.629440354727631e+17,
+      "category": "skypatch",
+      "depth": 77.56,
+      "max-coherence-time": 64208,
+      "obs-run": "O3",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -1.41521e-08,
+              0.0
+            ],
+            "freq": [
+              10,
+              2000
+            ]
+          }
+        ]
+      },
+      "time-span": 31190400.0
+    }
+  ]
+}

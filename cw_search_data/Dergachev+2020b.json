@@ -1,0 +1,47 @@
+{
+  "reference": {
+    "author": [
+      "Dergachev, V.",
+      "Papa, M. A."
+    ],
+    "doi": "10.1103/PhysRevLett.125.171101",
+    "journal": "Physical Review Letters",
+    "key": "Dergachev+2020b",
+    "key-suffix": "b",
+    "pages": "171101",
+    "title": "Results from the First All-Sky Search for Continuous Gravitational Waves from Small-Ellipticity Sources",
+    "volume": "125",
+    "year": 2020
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "PowerFlux (loosely coherent)",
+      "breadth": 1.0935783109382869e+28,
+      "category": "allsky isolated",
+      "depth": 61.5,
+      "max-coherence-time": 43200,
+      "obs-run": "O2",
+      "param-space": {
+        "ranges": [
+          {
+            "fddot": [
+              -2.83333e-20,
+              2.83333e-20
+            ],
+            "fdot": [
+              -2.70833e-12,
+              2.70833e-12
+            ],
+            "freq": [
+              500,
+              1700
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 23155200.0
+    }
+  ]
+}

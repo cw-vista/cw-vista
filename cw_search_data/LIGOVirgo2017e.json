@@ -1,0 +1,47 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, B. P.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration"
+    ],
+    "doi": "10.1103/PhysRevD.96.122004",
+    "journal": "Physical Review D",
+    "key": "LIGOVirgo2017e",
+    "key-suffix": "e",
+    "pages": "122004",
+    "title": "First low-frequency Einstein@Home all-sky search for continuous gravitational waves in Advanced LIGO data",
+    "volume": "96",
+    "year": 2017
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Global Correlation Transform",
+      "breadth": 2.215624737951503e+24,
+      "category": "allsky isolated",
+      "depth": 48.7,
+      "max-coherence-time": 756000,
+      "obs-run": "O1",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -2.65e-09,
+              2.64e-10
+            ],
+            "freq": [
+              20,
+              100
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 11145600.0
+    }
+  ]
+}

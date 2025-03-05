@@ -1,0 +1,38 @@
+{
+  "reference": {
+    "author": [
+      "Ashok, A.",
+      "Beheshtipour, B.",
+      "Papa, M. A.",
+      "Freire, P. C. C.",
+      "Steltner, B.",
+      "Machenschalk, B.",
+      "Behnke, O.",
+      "Allen, B.",
+      "Prix, R."
+    ],
+    "doi": "10.3847/1538-4357/ac2582",
+    "journal": "Astrophysical Journal",
+    "key": "Ashok+2021a",
+    "key-suffix": "a",
+    "pages": "85",
+    "title": "New Searches for Continuous Gravitational Waves from Seven Fast Pulsars",
+    "volume": "923",
+    "year": 2021
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "none",
+      "breadth": 7,
+      "category": "pulsar targeted",
+      "depth": 802.79,
+      "max-coherence-time": 143251200.0,
+      "obs-run": "O3",
+      "param-space": {
+        "num-pulsars": 7
+      },
+      "time-span": 143251200.0
+    }
+  ]
+}

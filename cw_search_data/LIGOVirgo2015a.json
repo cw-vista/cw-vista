@@ -1,0 +1,72 @@
+{
+  "reference": {
+    "author": [
+      "Aasi, J.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration"
+    ],
+    "doi": "10.1103/PhysRevD.91.022004",
+    "journal": "Physical Review D",
+    "key": "LIGOVirgo2015a",
+    "key-suffix": "a",
+    "pages": "022004",
+    "title": "Narrow-band search of continuous gravitational-wave signals from Crab and Vela pulsars in Virgo VSR4 data",
+    "volume": "91",
+    "year": 2015
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "5-vectors",
+      "algorithm-incoherent": "none",
+      "astro-target": "Crab",
+      "breadth": 1133070.666531628,
+      "category": "pulsar narrowband",
+      "depth": 100.5,
+      "max-coherence-time": 8121600.0,
+      "obs-run": "VSR4",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -7.419545e-10,
+              -7.417055e-10
+            ],
+            "freq": [
+              59.4348,
+              59.4548
+            ]
+          }
+        ]
+      },
+      "time-span": 8121600.0
+    },
+    {
+      "algorithm-coherent": "5-vectors",
+      "algorithm-incoherent": "none",
+      "astro-target": "Vela",
+      "breadth": 294619.0583313386,
+      "category": "pulsar narrowband",
+      "depth": 90.1,
+      "max-coherence-time": 8121600.0,
+      "obs-run": "VSR4",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -3.147405e-11,
+              -3.144595e-11
+            ],
+            "freq": [
+              22.374,
+              22.394000000000002
+            ]
+          }
+        ]
+      },
+      "time-span": 8121600.0
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "reference": {
+    "author": [
+      "Covas, P. B.",
+      "Sintes, A. M."
+    ],
+    "doi": "10.1103/PhysRevLett.124.191102",
+    "journal": "Physical Review Letters",
+    "key": "Covas+2020a",
+    "key-suffix": "a",
+    "pages": "191102",
+    "title": "First All-Sky Search for Continuous Gravitational-Wave Signals from Unknown Neutron Stars in Binary Systems Using Advanced LIGO Data",
+    "volume": "124",
+    "year": 2020
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "BinarySkyHough",
+      "breadth": 2.1951681320605504e+37,
+      "category": "allsky binary",
+      "depth": 20.6,
+      "max-coherence-time": 900,
+      "obs-run": "O2",
+      "param-space": {
+        "ranges": [
+          {
+            "bin-a-sin-i": [
+              10,
+              40
+            ],
+            "bin-period": [
+              1296000,
+              3888000
+            ],
+            "freq": [
+              100,
+              300
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 23155200.0
+    }
+  ]
+}

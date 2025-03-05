@@ -1,0 +1,48 @@
+{
+  "reference": {
+    "author": [
+      "Aasi, J.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration"
+    ],
+    "doi": "10.1103/PhysRevD.93.042006",
+    "journal": "Physical Review D",
+    "key": "LIGOVirgo2016b",
+    "key-suffix": "b",
+    "pages": "042006",
+    "title": "Search of the Orion spur for continuous gravitational waves using a loosely coherent algorithm on data from LIGO interferometers",
+    "volume": "93",
+    "year": 2016
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "PowerFlux (loosely coherent)",
+      "astro-target": "Orion Arm",
+      "breadth": 5.353602689899324e+26,
+      "category": "skypatch",
+      "depth": 36.55,
+      "max-coherence-time": 1800,
+      "obs-run": "S6",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              0.0,
+              -5e-09
+            ],
+            "freq": [
+              50,
+              1500
+            ]
+          }
+        ],
+        "sky-fraction": 0.00195625
+      },
+      "time-span": 20085802
+    }
+  ]
+}

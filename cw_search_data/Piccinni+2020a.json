@@ -1,0 +1,51 @@
+{
+  "reference": {
+    "author": [
+      "Piccinni, O. J.",
+      "Astone, P.",
+      "D'Antonio, S.",
+      "Frasca, S.",
+      "Intini, G.",
+      "La Rosa, I.",
+      "Leaci, P.",
+      "Mastrogiovanni, S.",
+      "Miller, A.",
+      "Palomba, C."
+    ],
+    "doi": "10.1103/PhysRevD.101.082004",
+    "journal": "Physical Review D",
+    "key": "Piccinni+2020a",
+    "key-suffix": "a",
+    "pages": "082004",
+    "title": "Directed search for continuous gravitational-wave signals from the Galactic Center in the Advanced LIGO second observing run",
+    "volume": "101",
+    "year": 2020
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "FrequencyHough",
+      "astro-target": "Galactic centre",
+      "breadth": 6780405559833685.0,
+      "category": "skypatch",
+      "depth": 51.46,
+      "max-coherence-time": 64208,
+      "obs-run": "O2",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -1.8e-09,
+              3.7e-11
+            ],
+            "freq": [
+              10,
+              710
+            ]
+          }
+        ]
+      },
+      "time-span": 23155200.0
+    }
+  ]
+}

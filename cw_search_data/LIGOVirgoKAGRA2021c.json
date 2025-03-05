@@ -1,0 +1,959 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, R.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration",
+      "KAGRA Collaboration"
+    ],
+    "doi": "10.3847/1538-4357/ac17ea",
+    "journal": "Astrophysical Journal",
+    "key": "LIGOVirgoKAGRA2021c",
+    "key-suffix": "c",
+    "pages": "80",
+    "title": "Searches for Continuous Gravitational Waves from Young Supernova Remnants in the Early Third Observing Run of Advanced LIGO and Virgo",
+    "volume": "921",
+    "year": 2021
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G19+03",
+      "breadth": 5.128253277446918e+19,
+      "category": "cco",
+      "depth": 7.95,
+      "max-coherence-time": 3600.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -3.858e-08,
+              3.858e-08
+            ],
+            "freq": [
+              31.56,
+              121.7
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G1117-21",
+      "breadth": 1.9308607497589414e+20,
+      "category": "cco",
+      "depth": 7.95,
+      "max-coherence-time": 3600.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -3.858e-08,
+              3.858e-08
+            ],
+            "freq": [
+              25.71,
+              365.1
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G159+02",
+      "breadth": 3.4878835553631935e+20,
+      "category": "cco",
+      "depth": 7.95,
+      "max-coherence-time": 3600.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -3.858e-08,
+              3.858e-08
+            ],
+            "freq": [
+              44.03,
+              657.1
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "FrequencyHough",
+      "astro-target": "G189-11",
+      "breadth": 7.156276564731247e+17,
+      "category": "cco",
+      "depth": 70.64,
+      "max-coherence-time": 28800.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -7.13e-10,
+              7.13e-11
+            ],
+            "freq": [
+              10.0,
+              1000.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G189-11",
+      "breadth": 1.7310323616376295e+20,
+      "category": "cco",
+      "depth": 6.15,
+      "max-coherence-time": 6840.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -1.507e-08,
+              1.507e-08
+            ],
+            "freq": [
+              31.02,
+              1511.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G189-11",
+      "breadth": 1.5988510024070304e+16,
+      "category": "cco",
+      "depth": 15.15,
+      "max-coherence-time": 32400.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -2.38e-10,
+              0.0
+            ],
+            "freq": [
+              50.0,
+              132.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G189-11",
+      "breadth": 6.395404009628122e+16,
+      "category": "cco",
+      "depth": 15.15,
+      "max-coherence-time": 32400.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -4.76e-10,
+              0.0
+            ],
+            "freq": [
+              100.0,
+              264.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "FrequencyHough",
+      "astro-target": "G1891+30",
+      "breadth": 6.340452722998459e+17,
+      "category": "cco",
+      "depth": 70.25,
+      "max-coherence-time": 28800.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -1.06e-09,
+              1.06e-10
+            ],
+            "freq": [
+              10.0,
+              600.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G1891+30",
+      "breadth": 4.091714226135485e+20,
+      "category": "cco",
+      "depth": 6.61,
+      "max-coherence-time": 5040.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -1.968e-08,
+              1.968e-08
+            ],
+            "freq": [
+              26.13,
+              2000.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G1891+30",
+      "breadth": 2.3712412079149972e+16,
+      "category": "cco",
+      "depth": 17.16,
+      "max-coherence-time": 43200.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -1.34e-10,
+              0.0
+            ],
+            "freq": [
+              50.0,
+              338.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G1891+30",
+      "breadth": 9.484964831659989e+16,
+      "category": "cco",
+      "depth": 17.16,
+      "max-coherence-time": 43200.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -2.68e-10,
+              0.0
+            ],
+            "freq": [
+              100.0,
+              676.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "FrequencyHough",
+      "astro-target": "G2662-12",
+      "breadth": 6.340452722998459e+17,
+      "category": "cco",
+      "depth": 73.09,
+      "max-coherence-time": 28800.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -1.06e-09,
+              1.06e-10
+            ],
+            "freq": [
+              10.0,
+              600.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G2662-12",
+      "breadth": 4.672206258675957e+20,
+      "category": "cco",
+      "depth": 7.95,
+      "max-coherence-time": 3600.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -3.858e-08,
+              3.858e-08
+            ],
+            "freq": [
+              18.36,
+              839.6
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G2662-12",
+      "breadth": 2.00831284448688e+16,
+      "category": "cco",
+      "depth": 15.15,
+      "max-coherence-time": 32400.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -2.38e-10,
+              0.0
+            ],
+            "freq": [
+              50.0,
+              153.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G2662-12",
+      "breadth": 8.03325137794752e+16,
+      "category": "cco",
+      "depth": 15.15,
+      "max-coherence-time": 32400.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -4.76e-10,
+              0.0
+            ],
+            "freq": [
+              100.0,
+              306.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G2910-01",
+      "breadth": 8.12436157953464e+20,
+      "category": "cco",
+      "depth": 7.95,
+      "max-coherence-time": 3600.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -3.858e-08,
+              3.858e-08
+            ],
+            "freq": [
+              31.97,
+              1460.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G3302+10",
+      "breadth": 5.184576449675368e+20,
+      "category": "cco",
+      "depth": 7.67,
+      "max-coherence-time": 3960.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -3.858e-08,
+              3.858e-08
+            ],
+            "freq": [
+              36.57,
+              1039.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G3473-05",
+      "breadth": 1.0953207127731811e+21,
+      "category": "cco",
+      "depth": 6.89,
+      "max-coherence-time": 3600.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -3.858e-08,
+              3.858e-08
+            ],
+            "freq": [
+              21.74,
+              1947.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G3501-03",
+      "breadth": 3.9718645918757395e+20,
+      "category": "cco",
+      "depth": 7.95,
+      "max-coherence-time": 3600.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -3.858e-08,
+              3.858e-08
+            ],
+            "freq": [
+              31.96,
+              730.1
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "FrequencyHough",
+      "astro-target": "G3536-07",
+      "breadth": 1.1743118626557584e+17,
+      "category": "cco",
+      "depth": 71.54,
+      "max-coherence-time": 28800.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -1.17e-10,
+              1.17e-11
+            ],
+            "freq": [
+              10.0,
+              1000.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G3536-07",
+      "breadth": 8.137276969473463e+17,
+      "category": "cco",
+      "depth": 18.25,
+      "max-coherence-time": 36000.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -2.295e-09,
+              2.295e-09
+            ],
+            "freq": [
+              77.86,
+              318.3
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G3536-07",
+      "breadth": 3.3510249014632084e+16,
+      "category": "cco",
+      "depth": 17.16,
+      "max-coherence-time": 43200.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -1.34e-10,
+              0.0
+            ],
+            "freq": [
+              50.0,
+              457.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G3536-07",
+      "breadth": 1.3404099605852834e+17,
+      "category": "cco",
+      "depth": 17.16,
+      "max-coherence-time": 43200.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -2.68e-10,
+              0.0
+            ],
+            "freq": [
+              100.0,
+              914.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G3544+00",
+      "breadth": 5.460503101501611e+19,
+      "category": "cco",
+      "depth": 7.95,
+      "max-coherence-time": 3600.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -3.858e-08,
+              3.858e-08
+            ],
+            "freq": [
+              25.72,
+              121.7
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "FrequencyHough",
+      "astro-target": "G392-03",
+      "breadth": 6.7748761307063e+17,
+      "category": "cco",
+      "depth": 78.16,
+      "max-coherence-time": 28800.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -6.75e-10,
+              6.75e-11
+            ],
+            "freq": [
+              10.0,
+              1000.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G392-03",
+      "breadth": 4.116651695239535e+19,
+      "category": "cco",
+      "depth": 8.18,
+      "max-coherence-time": 10080.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -1.968e-08,
+              1.968e-08
+            ],
+            "freq": [
+              62.02,
+              459.2
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G392-03",
+      "breadth": 7799273182473319.0,
+      "category": "cco",
+      "depth": 15.15,
+      "max-coherence-time": 32400.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -2.38e-10,
+              0.0
+            ],
+            "freq": [
+              50.0,
+              90.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G392-03",
+      "breadth": 3.1197092729893276e+16,
+      "category": "cco",
+      "depth": 15.15,
+      "max-coherence-time": 32400.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -4.76e-10,
+              0.0
+            ],
+            "freq": [
+              100.0,
+              180.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "FrequencyHough",
+      "astro-target": "G657+12",
+      "breadth": 6.340452722998459e+17,
+      "category": "cco",
+      "depth": 76.82,
+      "max-coherence-time": 28800.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -1.06e-09,
+              1.06e-10
+            ],
+            "freq": [
+              10.0,
+              600.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G657+12",
+      "breadth": 1.079803965054292e+19,
+      "category": "cco",
+      "depth": 13.0,
+      "max-coherence-time": 16920.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -3.149e-09,
+              3.149e-09
+            ],
+            "freq": [
+              35.1,
+              1128.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G657+12",
+      "breadth": 2.3712412079149972e+16,
+      "category": "cco",
+      "depth": 17.16,
+      "max-coherence-time": 43200.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -1.34e-10,
+              0.0
+            ],
+            "freq": [
+              50.0,
+              338.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G657+12",
+      "breadth": 9.484964831659989e+16,
+      "category": "cco",
+      "depth": 17.16,
+      "max-coherence-time": 43200.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -2.68e-10,
+              0.0
+            ],
+            "freq": [
+              100.0,
+              676.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "FrequencyHough",
+      "astro-target": "G933+69",
+      "breadth": 6.363365136100434e+17,
+      "category": "cco",
+      "depth": 73.72,
+      "max-coherence-time": 28800.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -6.34e-10,
+              6.34e-11
+            ],
+            "freq": [
+              10.0,
+              1000.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G933+69",
+      "breadth": 1.69719307625817e+20,
+      "category": "cco",
+      "depth": 11.74,
+      "max-coherence-time": 6840.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -1.335e-08,
+              1.335e-08
+            ],
+            "freq": [
+              30.0,
+              1668.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G933+69",
+      "breadth": 1.94981829561833e+16,
+      "category": "cco",
+      "depth": 15.15,
+      "max-coherence-time": 32400.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -2.38e-10,
+              0.0
+            ],
+            "freq": [
+              50.0,
+              150.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "G933+69",
+      "breadth": 7.79927318247332e+16,
+      "category": "cco",
+      "depth": 15.15,
+      "max-coherence-time": 32400.0,
+      "obs-run": "O3",
+      "param-space": {
+        "hmm-num-jumps": 3,
+        "ranges": [
+          {
+            "fdot": [
+              -4.76e-10,
+              0.0
+            ],
+            "freq": [
+              100.0,
+              300.0
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    }
+  ]
+}

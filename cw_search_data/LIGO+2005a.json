@@ -1,0 +1,35 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, B.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "others"
+    ],
+    "doi": "10.1103/PhysRevLett.94.181103",
+    "journal": "Physical Review Letters",
+    "key": "LIGO+2005a",
+    "key-suffix": "a",
+    "pages": "181103",
+    "title": "Limits on Gravitational-Wave Emission from Selected Pulsars Using LIGO Data",
+    "volume": "94",
+    "year": 2005
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "Bayesian",
+      "algorithm-incoherent": "none",
+      "breadth": 28,
+      "category": "pulsar targeted",
+      "depth": 156.4,
+      "max-coherence-time": 5097600.0,
+      "obs-run": "S2",
+      "param-space": {
+        "num-pulsars": 28
+      },
+      "time-span": 5097600.0
+    }
+  ]
+}

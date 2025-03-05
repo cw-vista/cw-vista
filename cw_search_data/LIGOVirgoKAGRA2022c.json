@@ -1,0 +1,81 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, R.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration",
+      "KAGRA Collaboration"
+    ],
+    "doi": "10.1103/PhysRevD.105.082005",
+    "journal": "Physical Review D",
+    "key": "LIGOVirgoKAGRA2022c",
+    "key-suffix": "c",
+    "pages": "082005",
+    "title": "Search of the early O3 LIGO data for continuous gravitational waves from the Cassiopeia A and Vela Jr. supernova remnants",
+    "volume": "105",
+    "year": 2022
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Weave",
+      "astro-target": "Cas A",
+      "breadth": 7.993537311975036e+19,
+      "category": "cco",
+      "depth": 72.4,
+      "max-coherence-time": 432000,
+      "obs-run": "O3",
+      "param-space": {
+        "ranges": [
+          {
+            "fddot": [
+              0.0,
+              1.2104184426148527e-17
+            ],
+            "fdot": [
+              -5.260222577128806e-08,
+              0.0
+            ],
+            "freq": [
+              20,
+              976
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Weave",
+      "astro-target": "Vela Jr",
+      "breadth": 6.292288846161107e+18,
+      "category": "cco",
+      "depth": 81.2,
+      "max-coherence-time": 648000.0,
+      "obs-run": "O3",
+      "param-space": {
+        "ranges": [
+          {
+            "fddot": [
+              0.0,
+              2.2232175476599342e-18
+            ],
+            "fdot": [
+              -2.2543811044837735e-08,
+              0.0
+            ],
+            "freq": [
+              20,
+              976
+            ]
+          }
+        ]
+      },
+      "time-span": 15811200.0
+    }
+  ]
+}

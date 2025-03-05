@@ -1,0 +1,47 @@
+{
+  "reference": {
+    "author": [
+      "Aasi, J.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration"
+    ],
+    "doi": "10.1088/0264-9381/31/8/085014",
+    "journal": "Classical and Quantum Gravity",
+    "key": "LIGOVirgo2014b",
+    "key-suffix": "b",
+    "pages": "085014",
+    "title": "Application of a Hough search for continuous gravitational waves on data from the fifth LIGO science run",
+    "volume": "31",
+    "year": 2014
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "SkyHough",
+      "breadth": 5.619645216370003e+29,
+      "category": "allsky isolated",
+      "depth": 28.1,
+      "max-coherence-time": 1800,
+      "obs-run": "S5",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -8.9e-10,
+              0.0
+            ],
+            "freq": [
+              50,
+              1000
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 60134400.0
+    }
+  ]
+}

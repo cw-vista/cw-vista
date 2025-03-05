@@ -1,0 +1,97 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, B. P.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration"
+    ],
+    "doi": "10.1103/PhysRevD.97.102003",
+    "journal": "Physical Review D",
+    "key": "LIGOVirgo2018a",
+    "key-suffix": "a",
+    "pages": "102003",
+    "title": "Full band all-sky search for periodic gravitational waves in the O1 LIGO data",
+    "volume": "97",
+    "year": 2018
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "PowerFlux (classic)",
+      "breadth": 6.6545748869349825e+28,
+      "category": "allsky isolated",
+      "depth": 22.1,
+      "max-coherence-time": 3600,
+      "obs-run": "O1",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -1e-08,
+              1e-09
+            ],
+            "freq": [
+              475,
+              2000
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 11145600.0
+    },
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "SkyHough",
+      "breadth": 6.6545748869349825e+28,
+      "category": "allsky isolated",
+      "depth": 16.8,
+      "max-coherence-time": 1800,
+      "obs-run": "O1",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -1e-08,
+              1e-09
+            ],
+            "freq": [
+              475,
+              2000
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 11145600.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "coincidence",
+      "breadth": 6.6545748869349825e+28,
+      "category": "allsky isolated",
+      "depth": 10.9,
+      "max-coherence-time": 172800,
+      "obs-run": "O1",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -1e-08,
+              1e-09
+            ],
+            "freq": [
+              475,
+              2000
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 11145600.0
+    }
+  ]
+}

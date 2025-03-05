@@ -1,0 +1,47 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, B. P.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration"
+    ],
+    "doi": "10.1103/PhysRevD.94.042002",
+    "journal": "Physical Review D",
+    "key": "LIGOVirgo2016c",
+    "key-suffix": "c",
+    "pages": "042002",
+    "title": "Comprehensive all-sky search for periodic gravitational waves in the sixth science run LIGO data",
+    "volume": "94",
+    "year": 2016
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "PowerFlux (classic)",
+      "breadth": 1.1928769814678969e+30,
+      "category": "allsky isolated",
+      "depth": 22.09,
+      "max-coherence-time": 1800,
+      "obs-run": "S6",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -1.18e-08,
+              1e-08
+            ],
+            "freq": [
+              100,
+              1500
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 20085802
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "reference": {
+    "author": [
+      "Jones, D.",
+      "Sun, L."
+    ],
+    "doi": "10.1103/PhysRevD.103.023020",
+    "journal": "Physical Review D",
+    "key": "Jones+2021a",
+    "key-suffix": "a",
+    "pages": "023020",
+    "title": "Search for continuous gravitational waves from Fomalhaut b in the second Advanced LIGO observing run with a hidden Markov model",
+    "volume": "103",
+    "year": 2021
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+      "astro-target": "Fomalhaut b",
+      "breadth": 347206962548957.56,
+      "category": "cco",
+      "depth": 72.78,
+      "max-coherence-time": 432000,
+      "obs-run": "O2",
+      "param-space": {
+        "hmm-num-jumps": 2,
+        "ranges": [
+          {
+            "fdot": [
+              -2.68e-12,
+              0.0
+            ],
+            "freq": [
+              100,
+              1000
+            ]
+          }
+        ]
+      },
+      "time-span": 23155200.0
+    }
+  ]
+}

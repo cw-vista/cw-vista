@@ -1,0 +1,118 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, B. P.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration",
+      "others"
+    ],
+    "doi": "10.1103/PhysRevD.100.024004",
+    "journal": "Physical Review D",
+    "key": "LIGOVirgo+2019c",
+    "key-suffix": "c",
+    "pages": "024004",
+    "title": "All-sky search for continuous gravitational waves from isolated neutron stars using Advanced LIGO O2 data",
+    "volume": "100",
+    "year": 2019
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "FrequencyHough",
+      "breadth": 2.588715611713141e+29,
+      "category": "allsky isolated",
+      "depth": 51.82,
+      "max-coherence-time": 8192,
+      "obs-run": "O2",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -7.96055e-09,
+              0.0
+            ],
+            "freq": [
+              10,
+              1024
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 23155200.0
+    },
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "SkyHough",
+      "breadth": 1.2265372458148987e+30,
+      "category": "allsky isolated",
+      "depth": 31.66,
+      "max-coherence-time": 3600,
+      "obs-run": "O2",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -1e-08,
+              2e-09
+            ],
+            "freq": [
+              50,
+              1500
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 23155200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "coincidence",
+      "breadth": 1.338811943987963e+30,
+      "category": "allsky isolated",
+      "depth": 32.93,
+      "max-coherence-time": 2073600,
+      "obs-run": "O2",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -1e-08,
+              2e-09
+            ],
+            "freq": [
+              20,
+              100
+            ]
+          },
+          {
+            "fdot": [
+              -1e-08,
+              2e-09
+            ],
+            "freq": [
+              100,
+              434
+            ]
+          },
+          {
+            "fdot": [
+              -1e-08,
+              2e-09
+            ],
+            "freq": [
+              1518,
+              1922
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 23155200.0
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "reference": {
+    "author": [
+      "Zhu, S. J.",
+      "Papa, M. A.",
+      "Eggenstein, H.-B.",
+      "Prix, R.",
+      "Wette, K.",
+      "Allen, B.",
+      "Bock, O.",
+      "Keitel, D.",
+      "Krishnan, B.",
+      "Machenschalk, B.",
+      "Shaltev, M.",
+      "Siemens, X."
+    ],
+    "doi": "10.1103/PhysRevD.94.082008",
+    "journal": "Physical Review D",
+    "key": "Zhu+2016a",
+    "key-suffix": "a",
+    "pages": "082008",
+    "title": "Einstein@Home search for continuous gravitational waves from Cassiopeia A",
+    "volume": "94",
+    "year": 2016
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Global Correlation Transform",
+      "astro-target": "Cas A",
+      "breadth": 6.157075444303465e+20,
+      "category": "cco",
+      "depth": 72.9,
+      "max-coherence-time": 504000,
+      "obs-run": "S6",
+      "param-space": {
+        "ranges": [
+          {
+            "fddot": [
+              0.0,
+              1.17149e-17
+            ],
+            "fdot": [
+              -5.54542e-08,
+              0.0
+            ],
+            "freq": [
+              50,
+              1000
+            ]
+          }
+        ]
+      },
+      "time-span": 22168564
+    }
+  ]
+}

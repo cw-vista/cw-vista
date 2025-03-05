@@ -34,4 +34,4 @@ repos:
         files: ^cw_search_data/.*\.json$
         require_serial: true
         language: python
-        additional_dependencies: ["jsonschema>=4.23.0"]
+        additional_dependencies: ["jsonschema>=4.23.0", "numpy"]

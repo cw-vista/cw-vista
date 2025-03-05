@@ -1,0 +1,93 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, R.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration"
+    ],
+    "doi": "10.1103/PhysRevD.103.064017",
+    "journal": "Physical Review D",
+    "key": "LIGOVirgo2021a",
+    "key-suffix": "a",
+    "pages": "064017",
+    "title": "All-sky search in early O3 LIGO data for continuous gravitational-wave signals from unknown neutron stars in binary systems",
+    "volume": "103",
+    "year": 2021
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "BinarySkyHough",
+      "breadth": 1.2175315940710786e+38,
+      "category": "allsky binary",
+      "depth": 23.0,
+      "max-coherence-time": 1024,
+      "obs-run": "O3",
+      "param-space": {
+        "ranges": [
+          {
+            "bin-a-sin-i": [
+              2,
+              5
+            ],
+            "bin-period": [
+              259200,
+              432000
+            ],
+            "freq": [
+              500,
+              300
+            ]
+          },
+          {
+            "bin-a-sin-i": [
+              2,
+              10
+            ],
+            "bin-period": [
+              432000,
+              604800
+            ],
+            "freq": [
+              500,
+              300
+            ]
+          },
+          {
+            "bin-a-sin-i": [
+              5,
+              15
+            ],
+            "bin-period": [
+              604800,
+              1296000
+            ],
+            "freq": [
+              500,
+              300
+            ]
+          },
+          {
+            "bin-a-sin-i": [
+              10,
+              40
+            ],
+            "bin-period": [
+              1296000,
+              3888000
+            ],
+            "freq": [
+              500,
+              300
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 15811200.0
+    }
+  ]
+}

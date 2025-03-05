@@ -1,0 +1,62 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, R.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration",
+      "KAGRA Collaboration"
+    ],
+    "doi": "10.3847/1538-4357/ac6acf",
+    "journal": "Astrophysical Journal",
+    "key": "LIGOVirgoKAGRA2022b",
+    "key-suffix": "b",
+    "pages": "1",
+    "title": "Searches for Gravitational Waves from Known Pulsars at Two Harmonics in the Second and Third LIGO-Virgo Observing Runs",
+    "volume": "935",
+    "year": 2022
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "Bayesian",
+      "algorithm-incoherent": "none",
+      "breadth": 470,
+      "category": "pulsar targeted",
+      "depth": 355.41,
+      "max-coherence-time": 104803200.0,
+      "obs-run": "O3",
+      "param-space": {
+        "num-pulsars": 470
+      },
+      "time-span": 104803200.0
+    },
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "none",
+      "breadth": 46,
+      "category": "pulsar targeted",
+      "depth": 97.23,
+      "max-coherence-time": 104803200.0,
+      "obs-run": "O3",
+      "param-space": {
+        "num-pulsars": 46
+      },
+      "time-span": 104803200.0
+    },
+    {
+      "algorithm-coherent": "5-vectors",
+      "algorithm-incoherent": "none",
+      "breadth": 35,
+      "category": "pulsar targeted",
+      "depth": 38.81,
+      "max-coherence-time": 31190400.0,
+      "obs-run": "O3",
+      "param-space": {
+        "num-pulsars": 35
+      },
+      "time-span": 31190400.0
+    }
+  ]
+}

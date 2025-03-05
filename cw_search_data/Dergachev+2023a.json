@@ -1,0 +1,47 @@
+{
+  "reference": {
+    "author": [
+      "Dergachev, V.",
+      "Papa, M. A."
+    ],
+    "doi": "10.1103/PhysRevX.13.021020",
+    "journal": "Physical Review X",
+    "key": "Dergachev+2023a",
+    "key-suffix": "a",
+    "pages": "021020",
+    "title": "Frequency-Resolved Atlas of the Sky in Continuous Gravitational Waves",
+    "volume": "13",
+    "year": 2023
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "power",
+      "algorithm-incoherent": "PowerFlux (loosely coherent)",
+      "breadth": 2.7548064931075506e+27,
+      "category": "allsky isolated",
+      "depth": 56.51,
+      "max-coherence-time": 43200.0,
+      "obs-run": "O3",
+      "param-space": {
+        "ranges": [
+          {
+            "fddot": [
+              -4e-20,
+              4e-20
+            ],
+            "fdot": [
+              -5e-11,
+              5e-11
+            ],
+            "freq": [
+              500,
+              1000
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 15811200.0
+    }
+  ]
+}

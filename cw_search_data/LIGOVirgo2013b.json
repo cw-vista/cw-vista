@@ -1,0 +1,47 @@
+{
+  "reference": {
+    "author": [
+      "Aasi, J.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration"
+    ],
+    "doi": "10.1103/PhysRevD.88.102002",
+    "journal": "Physical Review D",
+    "key": "LIGOVirgo2013b",
+    "key-suffix": "b",
+    "pages": "102002",
+    "title": "Directed search for continuous gravitational waves from the Galactic center",
+    "volume": "88",
+    "year": 2013
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Global Correlation Transform",
+      "astro-target": "Galactic centre",
+      "breadth": 1.755480340013867e+18,
+      "category": "skypatch",
+      "depth": 72.1,
+      "max-coherence-time": 41400.0,
+      "obs-run": "S5",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -4.54724e-08,
+              0.0
+            ],
+            "freq": [
+              78,
+              496
+            ]
+          }
+        ]
+      },
+      "time-span": 60134400.0
+    }
+  ]
+}

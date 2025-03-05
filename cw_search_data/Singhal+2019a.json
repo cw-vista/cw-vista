@@ -1,0 +1,61 @@
+{
+  "reference": {
+    "author": [
+      "Singhal, A.",
+      "Leaci, P.",
+      "Astone, P.",
+      "D'Antonio, S.",
+      "Frasca, S.",
+      "Intini, G.",
+      "La Rosa, I.",
+      "Mastrogiovanni, S.",
+      "Miller, A.",
+      "Muciaccia, F.",
+      "Palomba, C.",
+      "Piccinni, O."
+    ],
+    "doi": "10.1088/1361-6382/ab4367",
+    "journal": "Classical and Quantum Gravity",
+    "key": "Singhal+2019a",
+    "key-suffix": "a",
+    "pages": "205015",
+    "title": "A resampling algorithm to detect continuous gravitational-wave signals from neutron stars in binary systems",
+    "volume": "36",
+    "year": 2019
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "5-vectors",
+      "algorithm-incoherent": "none",
+      "astro-target": "Sco X-1",
+      "breadth": 987156881.0333227,
+      "category": "lmxb",
+      "depth": 67.93,
+      "max-coherence-time": 23155200.0,
+      "obs-run": "O2",
+      "param-space": {
+        "ranges": [
+          {
+            "bin-a-sin-i": [
+              1.786,
+              1.814
+            ],
+            "bin-period": [
+              68023.83648,
+              68023.88448000001
+            ],
+            "bin-time-asc": [
+              974433629.9,
+              974433630.1
+            ],
+            "freq": [
+              100,
+              199
+            ]
+          }
+        ]
+      },
+      "time-span": 23155200.0
+    }
+  ]
+}

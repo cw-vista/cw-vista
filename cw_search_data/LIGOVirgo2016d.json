@@ -1,0 +1,47 @@
+{
+  "reference": {
+    "author": [
+      "Abbott, B. P.",
+      "others"
+    ],
+    "collaboration": [
+      "LIGO Scientific Collaboration",
+      "Virgo Collaboration"
+    ],
+    "doi": "10.1103/PhysRevD.94.102002",
+    "journal": "Physical Review D",
+    "key": "LIGOVirgo2016d",
+    "key-suffix": "d",
+    "pages": "102002",
+    "title": "Results of the deepest all-sky survey for continuous gravitational waves on LIGO S6 data running on the Einstein@Home volunteer distributed computing project",
+    "volume": "94",
+    "year": 2016
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Global Correlation Transform",
+      "breadth": 9.832237691447122e+27,
+      "category": "allsky isolated",
+      "depth": 37.0,
+      "max-coherence-time": 216000,
+      "obs-run": "S6",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              3.39e-10,
+              -2.67e-09
+            ],
+            "freq": [
+              50,
+              510
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 22059873
+    }
+  ]
+}

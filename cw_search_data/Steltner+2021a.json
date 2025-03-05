@@ -1,0 +1,52 @@
+{
+  "reference": {
+    "author": [
+      "Steltner, B.",
+      "Papa, M. A.",
+      "Eggenstein, H.-B.",
+      "Allen, B.",
+      "Dergachev, V.",
+      "Prix, R.",
+      "Machenschalk, B.",
+      "Walsh, S.",
+      "Zhu, S. J.",
+      "Behnke, O.",
+      "Kwang, S."
+    ],
+    "doi": "10.3847/1538-4357/abc7c9",
+    "journal": "Astrophysical Journal",
+    "key": "Steltner+2021a",
+    "key-suffix": "a",
+    "pages": "79",
+    "title": "Einstein@Home All-sky Search for Continuous Gravitational Waves in LIGO O2 Public Data",
+    "volume": "909",
+    "year": 2021
+  },
+  "searches": [
+    {
+      "algorithm-coherent": "F-statistic",
+      "algorithm-incoherent": "Global Correlation Transform",
+      "breadth": 1.7353701496344663e+28,
+      "category": "allsky isolated",
+      "depth": 56.0,
+      "max-coherence-time": 216000,
+      "obs-run": "O2",
+      "param-space": {
+        "ranges": [
+          {
+            "fdot": [
+              -2.6e-09,
+              2.6e-10
+            ],
+            "freq": [
+              20,
+              585.15
+            ]
+          }
+        ],
+        "sky-fraction": 1
+      },
+      "time-span": 23155200.0
+    }
+  ]
+}
