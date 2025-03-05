@@ -9,6 +9,9 @@ repos:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-yaml
+      - id: file-contents-sorter
+        args: [--unique]
+        files: ^\.gitignore$
 
   - repo: https://github.com/pycqa/isort
     rev: 6.0.1
@@ -21,3 +24,14 @@ repos:
     hooks:
       - id: black
         args: ["--target-version=py310"]
+
+  - repo: local
+    hooks:
+      - id: validate
+        name: validate CW search data
+        entry: python3 scripts/validate_cw_search_data.py
+        types: [file]
+        files: ^cw_search_data/.*\.json$
+        require_serial: true
+        language: python
+        additional_dependencies: ["jsonschema>=4.23.0"]
