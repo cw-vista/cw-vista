@@ -2,6 +2,7 @@ import argparse
 import json
 from pathlib import Path
 
+import cw_search_breadth
 import cw_search_data_schema
 import jsonschema
 
@@ -29,6 +30,10 @@ for filename in args.filenames:
     with open(filename, encoding="utf-8") as f:
         data = json.load(f)
     jsonschema.validate(instance=data, schema=schema)
+
+    # compute parameter-space breadths
+    for s in data["searches"]:
+        s["breadth"] = cw_search_breadth.breadth(s)
 
     # create BibTeX key
     ref = data["reference"]

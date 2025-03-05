@@ -174,6 +174,7 @@ def get():
                         "time-span": {"type": "number", "exclusiveMinimum": 0},
                         "max-coherence-time": {"type": "number", "exclusiveMinimum": 0},
                         "depth": {"type": "number", "exclusiveMinimum": 0},
+                        "breadth": {"type": "number", "exclusiveMinimum": 0},
                         "param-space": {
                             "type": "object",
                             "additionalProperties": False,
