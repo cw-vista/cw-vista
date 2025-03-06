@@ -24,7 +24,7 @@
       "algorithm-coherent": "Bayesian",
       "algorithm-incoherent": "none",
       "astro-target": "J0537-6910",
-      "breadth": 1,
+      "breadth": 1.0,
       "category": "pulsar targeted",
       "depth": 548.69,
       "max-coherence-time": 82339200,

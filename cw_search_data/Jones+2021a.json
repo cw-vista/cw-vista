@@ -18,7 +18,7 @@
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
       "astro-target": "Fomalhaut b",
-      "breadth": 347206962548957.56,
+      "breadth": 347200000000000.0,
       "category": "cco",
       "depth": 72.78,
       "max-coherence-time": 432000,

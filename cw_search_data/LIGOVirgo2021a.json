@@ -21,7 +21,7 @@
     {
       "algorithm-coherent": "power",
       "algorithm-incoherent": "BinarySkyHough",
-      "breadth": 1.2175315940710786e+38,
+      "breadth": 1.218e+38,
       "category": "allsky binary",
       "depth": 23.0,
       "max-coherence-time": 1024,

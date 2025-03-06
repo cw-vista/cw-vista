@@ -20,7 +20,7 @@
     {
       "algorithm-coherent": "Bayesian",
       "algorithm-incoherent": "none",
-      "breadth": 43,
+      "breadth": 43.0,
       "category": "pulsar targeted",
       "depth": 1022.8,
       "max-coherence-time": 60134400.0,

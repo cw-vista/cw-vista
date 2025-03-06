@@ -21,7 +21,7 @@
     {
       "algorithm-coherent": "power",
       "algorithm-incoherent": "FrequencyHough",
-      "breadth": 2.2117179286377023e+26,
+      "breadth": 2.212e+26,
       "category": "allsky isolated",
       "depth": 35.5,
       "max-coherence-time": 8192,

@@ -19,7 +19,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "Weave",
-      "breadth": 7.215230149325842e+20,
+      "breadth": 7.215e+20,
       "category": "allsky isolated",
       "depth": 70.62,
       "max-coherence-time": 858194,

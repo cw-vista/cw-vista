@@ -21,7 +21,7 @@
     {
       "algorithm-coherent": "power",
       "algorithm-incoherent": "PowerFlux (classic)",
-      "breadth": 6.6545748869349825e+28,
+      "breadth": 6.655e+28,
       "category": "allsky isolated",
       "depth": 22.1,
       "max-coherence-time": 3600,
@@ -46,7 +46,7 @@
     {
       "algorithm-coherent": "power",
       "algorithm-incoherent": "SkyHough",
-      "breadth": 6.6545748869349825e+28,
+      "breadth": 6.655e+28,
       "category": "allsky isolated",
       "depth": 16.8,
       "max-coherence-time": 1800,
@@ -71,7 +71,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "coincidence",
-      "breadth": 6.6545748869349825e+28,
+      "breadth": 6.655e+28,
       "category": "allsky isolated",
       "depth": 10.9,
       "max-coherence-time": 172800,

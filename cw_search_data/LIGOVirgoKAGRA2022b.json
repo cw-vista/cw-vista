@@ -22,7 +22,7 @@
     {
       "algorithm-coherent": "Bayesian",
       "algorithm-incoherent": "none",
-      "breadth": 470,
+      "breadth": 470.0,
       "category": "pulsar targeted",
       "depth": 355.41,
       "max-coherence-time": 104803200.0,
@@ -35,7 +35,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "breadth": 46,
+      "breadth": 46.0,
       "category": "pulsar targeted",
       "depth": 97.23,
       "max-coherence-time": 104803200.0,
@@ -48,7 +48,7 @@
     {
       "algorithm-coherent": "5-vectors",
       "algorithm-incoherent": "none",
-      "breadth": 35,
+      "breadth": 35.0,
       "category": "pulsar targeted",
       "depth": 38.81,
       "max-coherence-time": 31190400.0,

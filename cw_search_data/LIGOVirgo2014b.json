@@ -21,7 +21,7 @@
     {
       "algorithm-coherent": "power",
       "algorithm-incoherent": "SkyHough",
-      "breadth": 5.619645216370003e+29,
+      "breadth": 5.62e+29,
       "category": "allsky isolated",
       "depth": 28.1,
       "max-coherence-time": 1800,

@@ -21,7 +21,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "coincidence",
-      "breadth": 2.234685298416778e+26,
+      "breadth": 2.235e+26,
       "category": "allsky isolated",
       "depth": 10.9,
       "max-coherence-time": 108000,

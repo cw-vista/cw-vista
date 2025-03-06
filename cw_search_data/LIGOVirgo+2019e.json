@@ -23,7 +23,7 @@
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
       "astro-target": "Sco X-1",
-      "breadth": 1.9960272010525123e+18,
+      "breadth": 1.996e+18,
       "category": "lmxb",
       "depth": 20.19,
       "max-coherence-time": 864000,

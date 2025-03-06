@@ -39,7 +39,10 @@ for filename in filenames:
 
     # compute parameter-space breadths
     for s in data["searches"]:
-        s["breadth"] = cw_search_breadth.breadth(s)
+        breadth = cw_search_breadth.breadth(s)
+
+        # round to a few significant figures
+        s["breadth"] = float(f"{breadth:0.4g}")
 
     # create BibTeX key
     ref = data["reference"]

@@ -21,7 +21,7 @@
       "algorithm-coherent": "power",
       "algorithm-incoherent": "CrossCorr",
       "astro-target": "SN 1987A",
-      "breadth": 6.19874071654781e+24,
+      "breadth": 6.199e+24,
       "category": "cco",
       "depth": 64.34,
       "max-coherence-time": 1800,

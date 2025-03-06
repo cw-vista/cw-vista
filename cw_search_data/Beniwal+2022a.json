@@ -23,7 +23,7 @@
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
       "astro-target": "HESS J1427-608",
-      "breadth": 1.1151321053587035e+18,
+      "breadth": 1.115e+18,
       "category": "pulsar narrowband",
       "depth": 53.48,
       "max-coherence-time": 27000.0,

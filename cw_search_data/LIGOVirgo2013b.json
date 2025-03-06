@@ -22,7 +22,7 @@
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "Global Correlation Transform",
       "astro-target": "Galactic centre",
-      "breadth": 1.755480340013867e+18,
+      "breadth": 1.755e+18,
       "category": "skypatch",
       "depth": 72.1,
       "max-coherence-time": 41400.0,

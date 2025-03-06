@@ -23,7 +23,7 @@
       "algorithm-coherent": "power",
       "algorithm-incoherent": "CrossCorr",
       "astro-target": "Sco X-1",
-      "breadth": 8.4293249597184e+18,
+      "breadth": 8.429e+18,
       "category": "lmxb",
       "depth": 24.0,
       "max-coherence-time": 25920,

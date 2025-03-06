@@ -20,7 +20,7 @@
       "algorithm-coherent": "power",
       "algorithm-incoherent": "PowerFlux (loosely coherent)",
       "astro-target": "Trz 5 GC",
-      "breadth": 6.956626557004429e+25,
+      "breadth": 6.957e+25,
       "category": "skypatch",
       "depth": 48.01,
       "max-coherence-time": 28800,

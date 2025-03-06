@@ -22,7 +22,7 @@
       "algorithm-coherent": "power",
       "algorithm-incoherent": "PowerFlux (loosely coherent)",
       "astro-target": "Orion Arm",
-      "breadth": 5.353602689899324e+26,
+      "breadth": 5.354e+26,
       "category": "skypatch",
       "depth": 36.55,
       "max-coherence-time": 1800,

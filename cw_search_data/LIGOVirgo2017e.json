@@ -21,7 +21,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "Global Correlation Transform",
-      "breadth": 2.215624737951503e+24,
+      "breadth": 2.216e+24,
       "category": "allsky isolated",
       "depth": 48.7,
       "max-coherence-time": 756000,

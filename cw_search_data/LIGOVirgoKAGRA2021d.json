@@ -22,7 +22,7 @@
     {
       "algorithm-coherent": "power",
       "algorithm-incoherent": "PowerFlux (classic)",
-      "breadth": 4.427220949382755e+29,
+      "breadth": 4.427e+29,
       "category": "allsky isolated",
       "depth": 33.79,
       "max-coherence-time": 7200,

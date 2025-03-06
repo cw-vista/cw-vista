@@ -20,7 +20,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "breadth": 1.9266819351548372e+18,
+      "breadth": 1.927e+18,
       "category": "allsky isolated",
       "depth": 5.5,
       "max-coherence-time": 36000,
@@ -46,7 +46,7 @@
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
       "astro-target": "Sco X-1",
-      "breadth": 1304464405.3152027,
+      "breadth": 1304000000.0,
       "category": "lmxb",
       "depth": 4.1,
       "max-coherence-time": 21600,

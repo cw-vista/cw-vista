@@ -24,7 +24,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "breadth": 7,
+      "breadth": 7.0,
       "category": "pulsar targeted",
       "depth": 802.79,
       "max-coherence-time": 143251200.0,

@@ -22,7 +22,7 @@
     {
       "algorithm-coherent": "power",
       "algorithm-incoherent": "FrequencyHough",
-      "breadth": 8.355014835156987e+30,
+      "breadth": 8.355e+30,
       "category": "allsky isolated",
       "depth": 55.61,
       "max-coherence-time": 8192,
@@ -47,7 +47,7 @@
     {
       "algorithm-coherent": "power",
       "algorithm-incoherent": "SkyHough",
-      "breadth": 3.7856827635688725e+27,
+      "breadth": 3.786e+27,
       "category": "allsky isolated",
       "depth": 53.49,
       "max-coherence-time": 7200,
@@ -72,7 +72,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "coincidence",
-      "breadth": 3.85598028458159e+28,
+      "breadth": 3.856e+28,
       "category": "allsky isolated",
       "depth": 48.95,
       "max-coherence-time": 518400,
@@ -97,7 +97,7 @@
     {
       "algorithm-coherent": "power",
       "algorithm-incoherent": "Hidden Markov Model (SOAP)",
-      "breadth": 1.3708350322431947e+35,
+      "breadth": 1.371e+35,
       "category": "allsky isolated",
       "depth": 18.19,
       "max-coherence-time": 1800,

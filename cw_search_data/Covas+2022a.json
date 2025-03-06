@@ -19,7 +19,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "BinarySkyHough",
-      "breadth": 1.2292761523215278e+38,
+      "breadth": 1.229e+38,
       "category": "allsky binary",
       "depth": 17.6,
       "max-coherence-time": 900,
