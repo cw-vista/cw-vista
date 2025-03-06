@@ -18,12 +18,18 @@ schema = cw_search_data_schema.get()
 
 # parse command line
 parser = argparse.ArgumentParser()
-parser.add_argument("filenames", type=Path, nargs="*")
+parser.add_argument("paths", type=Path, nargs="*")
 args = parser.parse_args()
+
+# get list of files to check
+if any(path.suffix == ".py" for path in args.paths):
+    filenames = Path("cw_search_data").glob("*.json")
+else:
+    filenames = args.paths
 
 # validate files
 new_filenames = {}
-for filename in args.filenames:
+for filename in filenames:
     print(f"Validating {filename}")
 
     # validate JSON file contents against schema

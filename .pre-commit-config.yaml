@@ -31,7 +31,7 @@ repos:
         name: validate CW search data
         entry: python3 scripts/validate_cw_search_data.py
         types: [file]
-        files: ^cw_search_data/.*\.json$
+        files: ^cw_search_data/.*\.json$|^scripts/.*\.py$
         require_serial: true
         language: python
         additional_dependencies: ["jsonschema>=4.23.0", "numpy"]
