@@ -216,25 +216,20 @@ def breadth(search):
         # check we have computed some breadths
         assert br
 
-        # for integration over frequency
-        fp["freq"] += 1
-
         # compute overall power in frequency
         f_power = 0
         for k in br:
             f_power += fp[k]
 
-        # correct component breadths by frequency factor [Eq. (73) of Wette 2023]
-        overall_f_fac = p_to_q(r, ("freq", f_power)) / f_power
-        for k in br:
-            br[k] *= overall_f_fac ** (fp[k] / f_power)
+        # compute factor from integrating over frequency
+        f_integration = p_to_q(r, ("freq", f_power + 1)) / (f_power + 1)
 
-        # multiply component breadths to get total for this range [Eq. (75) of Wette 2023]
-        br_r = 1
+        # integrate product of component breadths over frequency [Eq. (75) of Wette 2023]
+        br_range = f_integration
         for k in br:
-            br_r *= br[k]
+            br_range *= br[k]
 
-        # add to total breadth over all ranges
-        br_total += br_r
+        # add to total breadth
+        br_total += br_range
 
     return br_total
