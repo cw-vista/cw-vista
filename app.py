@@ -49,18 +49,19 @@ def gen_bibentry(entrytype, fields):
 def get_data():
 
     # load CW search data
-    max_ref_year = 2025
-    bibentries = {}
+    refs = {}
     searches = []
     for filename in Path("cw_search_data").glob("*.json"):
         with open(filename, encoding="utf-8") as f:
             data = json.load(f)
         ref = data["reference"]
-        max_ref_year = max(max_ref_year, ref["year"])
-        bibentries[ref["key"]] = gen_bibentry("article", ref)
+        refs[ref["key"]] = ref
         for search in data["searches"]:
             search["ref-key"] = ref["key"]
             searches.append(search)
+
+    # maximum year of cited papers
+    max_ref_year = max(r["year"] for r in refs.values())
 
     # compute log-10 depth and breadth
     for s in searches:
@@ -121,7 +122,7 @@ def get_data():
     )
 
     return (
-        bibentries,
+        refs,
         searches,
         {
             "max-ref-year": max_ref_year,
@@ -134,7 +135,7 @@ def get_data():
     )
 
 
-bibentries, searches, props = get_data()
+refs, searches, props = get_data()
 
 
 @st.cache_data
@@ -152,7 +153,8 @@ contributors = get_contributors()
 st.title("The CW Vista: Depth vs Breadth")
 
 st.write(
-    "**Contributors:** " + ", ".join(f"{first} {last}" for last, first in contributors)
+    "**Contributors to this webpage:** "
+    + ", ".join(f"{first} {last}" for last, first in contributors)
 )
 
 ### create sidebar
@@ -217,37 +219,6 @@ log_depth = np.array([s["log-depth"] for s in select_searches])
 log_breadth = np.array([s["log-breadth"] for s in select_searches])
 colours = [s["colour"] for s in select_searches]
 markers = [s["marker"] for s in select_searches]
-
-bibtex = gen_bibentry(
-    "article",
-    {
-        "key": "Wette2023",
-        "title": "Searches for continuous gravitational waves from neutron stars: A twenty-year retrospective",
-        "author": ["Wette, K."],
-        "journal": "Astropart. Phys.",
-        "volume": "153",
-        "pages": "102880",
-        "year": 2023,
-        "doi": "10.1016/j.astropartphys.2023.102880",
-    },
-)
-bibtex += "\n"
-
-bibtex += gen_bibentry(
-    "misc",
-    {
-        "key": "webapp",
-        "title": page_title,
-        "author": " and ".join(f"{last}, {first}" for last, first in contributors),
-        "year": props["max-ref-year"],
-        "url": page_url,
-    },
-)
-bibtex += "\n"
-
-bibtex += "\n".join(
-    sorted([bibentries[k] for k in set([s["ref-key"] for s in select_searches])])
-)
 
 st.sidebar.markdown("## Plotting Options")
 
@@ -331,6 +302,44 @@ if select_searches:
     )
 
     with_image_credit = st.sidebar.checkbox("With image credit", value=True)
+
+### generate BibTeX
+
+bibtex = gen_bibentry(
+    "article",
+    {
+        "key": "Wette2023",
+        "title": "Searches for continuous gravitational waves from neutron stars: A twenty-year retrospective",
+        "author": ["Wette, K."],
+        "journal": "Astropart. Phys.",
+        "volume": "153",
+        "pages": "102880",
+        "year": 2023,
+        "doi": "10.1016/j.astropartphys.2023.102880",
+    },
+)
+bibtex += "\n"
+
+bibtex += gen_bibentry(
+    "misc",
+    {
+        "key": "webapp",
+        "title": page_title,
+        "author": " and ".join(f"{last}, {first}" for last, first in contributors),
+        "year": max(2025, props["max-ref-year"]),
+        "url": page_url,
+    },
+)
+bibtex += "\n"
+
+bibtex += "\n".join(
+    sorted(
+        [
+            gen_bibentry("article", refs[k])
+            for k in set([s["ref-key"] for s in select_searches])
+        ]
+    )
+)
 
 ### vista plot
 
@@ -510,3 +519,20 @@ else:
                 mime="application/x-bibtex",
                 on_click="ignore",
             )
+
+        # show authors
+        authors = set()
+        collaborations = set()
+        for s in select_searches:
+            ref = refs[s["ref-key"]]
+            if "collaboration" in ref:
+                collaborations.update(ref["collaboration"])
+            else:
+                authors.update(ref["author"])
+        st.write(
+            "**CW search authors:** "
+            + "; ".join(sorted(authors))
+            + "; and "
+            + ", ".join(sorted(collaborations))
+            + "."
+        )
