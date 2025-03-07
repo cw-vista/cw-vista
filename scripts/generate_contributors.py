@@ -3,7 +3,7 @@ import subprocess
 import sys
 
 """
-Generate author list
+Generate contributor list
 """
 
 __author__ = "Karl Wette <karl.wette@anu.edu.au>"
@@ -17,27 +17,28 @@ r = subprocess.run(
     encoding="utf-8",
 )
 
-authors = []
+contributors = []
 missing_mailmap = False
 for line in r.stdout.splitlines():
     m = re.fullmatch(r"\s*(\d+)\s+([^<>]+)\s+<([^>]+)>\s*", line)
     n, name, mail = m.groups()
 
-    if not "," in name:
-        missing_mailmap = True
-        sys.stderr.write(
-            f"""
+    if "," in name and "." in name.split(",")[1]:
+        contributors.append(name)
+        continue
+
+    missing_mailmap = True
+    sys.stderr.write(
+        f"""
 Please add an entry to the `.mailmap` file of the form:
 
-    {name}'s last name, {name}'s first names <{mail}>
+    {name}'s last name, {name}'s initials <{mail}>
 
 """
-        )
-    else:
-        authors.append(name)
+    )
 
 if missing_mailmap:
     sys.exit(1)
 
-with open("AUTHORS", "w", encoding="utf-8") as f:
-    print("\n".join(sorted(authors)), file=f)
+with open("CONTRIBUTORS", "w", encoding="utf-8") as f:
+    print("\n".join(sorted(contributors)), file=f)

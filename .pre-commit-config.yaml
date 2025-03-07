@@ -36,9 +36,9 @@ repos:
         language: python
         additional_dependencies: ["jsonschema>=4.23.0", "numpy"]
 
-      - id: authors
-        name: generate AUTHORS
-        entry: python3 scripts/generate_authors.py
+      - id: contributors
+        name: generate CONTRIBUTORS
+        entry: python3 scripts/generate_contributors.py
         pass_filenames: false
         types: [file]
         files: .*

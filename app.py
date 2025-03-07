@@ -138,20 +138,22 @@ bibentries, searches, props = get_data()
 
 
 @st.cache_data
-def get_authors():
-    with open("AUTHORS", encoding="utf-8") as f:
-        authors = [[n.strip() for n in line.rstrip().split(",")] for line in f]
+def get_contributors():
+    with open("CONTRIBUTORS", encoding="utf-8") as f:
+        contributors = [[n.strip() for n in line.rstrip().split(",")] for line in f]
 
-    return authors
+    return contributors
 
 
-authors = get_authors()
+contributors = get_contributors()
 
 ### create page intro
 
 st.title("The CW Vista: Depth vs Breadth")
 
-st.write("**Authors:** " + ", ".join(f"{first} {last}" for last, first in authors))
+st.write(
+    "**Contributors:** " + ", ".join(f"{first} {last}" for last, first in contributors)
+)
 
 ### create sidebar
 
@@ -236,7 +238,7 @@ bibtex += gen_bibentry(
     {
         "key": "webapp",
         "title": page_title,
-        "author": " and ".join(f"{last}, {first}" for last, first in authors),
+        "author": " and ".join(f"{last}, {first}" for last, first in contributors),
         "year": props["max-ref-year"],
         "url": page_url,
     },
