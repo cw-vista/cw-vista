@@ -364,33 +364,34 @@ if select_searches:
         ):
             item.set_fontsize(font_size)
 
-        # fix layout
-        fig.tight_layout()
-
         # display figure
-        st.pyplot(fig)
+        st.pyplot(fig, clear_figure=False)
 
         ### download figure
 
-        st.sidebar.markdown("## Download Figure")
+        download_container, _ = st.columns(2)
 
-        fmt = st.sidebar.selectbox(
-            "Format", options=["", "png", "pdf", "svg"], key="download-fmt"
+        fmt = download_container.selectbox(
+            "Download format",
+            options=["png", "pdf", "svg"],
+            index=None,
+            key="download-fmt",
         )
 
         # once figure is downloaded, reset format selector to
         # prevent  calls to savefig() every time page is rerun
         def reset_fmt():
-            st.session_state["download-fmt"] = ""
+            st.session_state["download-fmt"] = None
 
-        if fmt != "":
+        if fmt is not None:
 
             # save figure to memory
-            img = io.BytesIO()
-            plt.savefig(img, format=fmt, dpi=600)
+            with st.spinner("Working ..."):
+                img = io.BytesIO()
+                plt.savefig(img, bbox_inches="tight", dpi=600, format=fmt)
 
             # download figure
-            st.sidebar.download_button(
+            download_container.download_button(
                 label="Download",
                 data=img,
                 file_name="cw-vista." + fmt,
