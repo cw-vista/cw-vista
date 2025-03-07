@@ -205,6 +205,10 @@ if select_searches:
 
     font_size = st.sidebar.slider("Font size", min_value=8, max_value=24, value=16)
 
+    marker_size = st.sidebar.slider(
+        "Marker size", min_value=10, max_value=100, value=50
+    )
+
     plot_lim = {}
     for a, maxv, step in (
         ("x", float(max(log_breadth)), 1.0),
@@ -277,7 +281,7 @@ if select_searches:
         ax.minorticks_on()
 
         # plot depth vs breadth
-        sc = ax.scatter(log_breadth, log_depth, c=colours, s=50)
+        sc = ax.scatter(log_breadth, log_depth, c=colours, s=marker_size)
 
         # set markers
         paths = []
