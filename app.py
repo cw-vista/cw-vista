@@ -262,7 +262,7 @@ if select_searches:
         "Figure height (inches)", min_value=1.0, max_value=8.3, value=3.5, step=0.1
     )
 
-    font_size = st.sidebar.slider("Font size", min_value=8, max_value=24, value=16)
+    font_size = st.sidebar.slider("Font size", min_value=8, max_value=24, value=14)
 
     marker_size = st.sidebar.slider(
         "Marker size", min_value=10, max_value=100, value=50
