@@ -162,7 +162,7 @@ st.sidebar.markdown("## Select CW Searches")
 select_searches = searches
 
 obs_run_cntr = st.sidebar.container()
-if st.sidebar.checkbox("Select All", value=True, key="select_all_obs_run"):
+if st.sidebar.checkbox("Select all", value=True, key="select_all_obs_run"):
     obs_runs = obs_run_cntr.pills(
         "Observing run",
         options=props["obs-runs"],
@@ -182,7 +182,7 @@ if (
 ):
 
     categories_cntr = st.sidebar.container()
-    if st.sidebar.checkbox("Select All", value=True, key="select_all_categories"):
+    if st.sidebar.checkbox("Select all", value=True, key="select_all_categories"):
         categories = categories_cntr.pills(
             "Category",
             options=props["categories"],
@@ -328,6 +328,8 @@ if select_searches:
         "Legend columns", min_value=1, max_value=10, value=2
     )
 
+    with_image_credit = st.sidebar.checkbox("With image credit", value=True)
+
 ### vista plot
 
 
@@ -427,6 +429,20 @@ def vista_plot(**kwargs):
             + ax.get_yticklabels()
         ):
             item.set_fontsize(font_size)
+
+        # fix layout
+        fig.tight_layout()
+
+        # add image credit
+        if with_image_credit:
+            fig.text(
+                0,
+                0,
+                "Image credit: " + page_url,
+                fontsize=6,
+                horizontalalignment="left",
+                verticalalignment="baseline",
+            )
 
         # save figure to memory
         img = io.BytesIO()
