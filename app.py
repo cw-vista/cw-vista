@@ -167,14 +167,18 @@ contributors = get_contributors()
 
 st.title("The CW Vista: Depth vs Breadth")
 
-st.write(
-    "**Contributors to this webpage:** "
-    + ", ".join(f"{first} {last}" for last, first in contributors)
-    + "."
-)
-st.write(
-    "**Please contribute!** See [here](https://github.com/cw-vista/cw-vista/blob/main/README.md) for instructions."
-)
+contributors_str = ", ".join(f"{first} {last}" for last, first in contributors)
+intro = f"""
+**Contributors to this webpage:** {contributors_str}. **Please contribute!** See
+[here](https://github.com/cw-vista/cw-vista/blob/main/README.md) for
+instructions.
+
+If you use a figure in an academic publication, please download the BibTeX and
+cite `cwv:Wette2023`, `cwv:webapp`, and (as appropriate) publications for the
+selected CW searches. Figures are licensed under the [Creative Commons CC BY
+4.0 International](https://creativecommons.org/licenses/by/4.0/) license.
+"""
+st.write(intro)
 
 ### create sidebar
 
@@ -613,9 +617,6 @@ else:
 
         # show vista plot
         vista_plot_cntr.image(st.session_state["display-img"], use_container_width=True)
-        vista_plot_cntr.write(
-            "Figures are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)."
-        )
 
         # show download buttons
         if download_img is not None:
