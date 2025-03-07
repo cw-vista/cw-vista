@@ -21,6 +21,10 @@ mpl.use("agg")
 
 st.set_page_config(page_title="CW Vista", page_icon="icon.jpeg", layout="wide")
 
+# vista plot show be plotted when page is first loaded
+if not "display-img-first-time" in st.session_state:
+    st.session_state["display-img-first-time"] = True
+
 ### get data
 
 
@@ -196,6 +200,8 @@ st.sidebar.markdown("## Plotting Options")
 
 if select_searches:
 
+    figure_fmt = st.sidebar.selectbox("Figure format", options=["png", "pdf", "svg"])
+
     width = st.sidebar.number_input(
         "Figure width (inches)", min_value=1.0, max_value=8.3, value=8.3, step=0.1
     )
@@ -271,7 +277,8 @@ if select_searches:
 
 ### vista plot
 
-if select_searches:
+
+def vista_plot(**kwargs):
 
     with _lock:
 
@@ -368,43 +375,58 @@ if select_searches:
         ):
             item.set_fontsize(font_size)
 
-        # display figure
-        st.pyplot(fig, clear_figure=False)
+        # save figure to memory
+        img = io.BytesIO()
+        plt.savefig(img, bbox_inches="tight", **kwargs)
 
-        ### download figure
+        return img
 
-        download_container, _ = st.columns(2)
 
-        fmt = download_container.selectbox(
-            "Download format",
-            options=["png", "pdf", "svg"],
-            index=None,
-            key="download-fmt",
-        )
-
-        # once figure is downloaded, reset format selector to
-        # prevent  calls to savefig() every time page is rerun
-        def reset_fmt():
-            st.session_state["download-fmt"] = None
-
-        if fmt is not None:
-
-            # save figure to memory
-            with st.spinner("Working ..."):
-                img = io.BytesIO()
-                plt.savefig(img, bbox_inches="tight", dpi=600, format=fmt)
-
-            # download figure
-            download_container.download_button(
-                label="Download",
-                data=img,
-                file_name="cw-vista." + fmt,
-                mime="image/" + fmt,
-                on_click=reset_fmt,
-            )
-
-else:
-
+if not select_searches:
     st.markdown(
         "**No CW searches have been selected! Please select searches in the sidebar.**"
     )
+
+    # remove any old vista plots
+    if "display-img" in st.session_state:
+        del st.session_state["display-img"]
+
+else:
+
+    download_img = None
+
+    action_container = st.empty()
+
+    vista_plot_container = st.container()
+
+    if st.session_state["display-img-first-time"] or action_container.button("Replot"):
+
+        with st.spinner("Working ..."):
+
+            # store vista plot in session state, so can be displayed while changing options
+            display_img = vista_plot(format="svg")
+            st.session_state["display-img"] = display_img.getvalue().decode("utf-8")
+
+            st.session_state["display-img-first-time"] = False
+
+            # create downloadable vista plot in requested format
+            if figure_fmt == "svg":
+                download_img = display_img
+            else:
+                download_img = vista_plot(format=figure_fmt, dpi=600)
+
+    if "display-img" in st.session_state:
+
+        # show vista plot
+        vista_plot_container.image(
+            st.session_state["display-img"], use_container_width=True
+        )
+
+        # show download button
+        if download_img is not None:
+            action_container.download_button(
+                label="Download",
+                data=download_img,
+                file_name="cw-vista." + figure_fmt,
+                mime="image/" + figure_fmt,
+            )
