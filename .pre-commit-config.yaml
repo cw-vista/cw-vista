@@ -11,7 +11,7 @@ repos:
       - id: check-yaml
       - id: file-contents-sorter
         args: [--unique]
-        files: ^\.gitignore$
+        files: ^\.gitignore$|^requirements.txt$
 
   - repo: https://github.com/pycqa/isort
     rev: 6.0.1
