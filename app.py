@@ -243,15 +243,15 @@ select_categories = set([s["category"] for s in select_searches])
 log_depth = np.array([s["log-depth"] for s in select_searches])
 log_breadth = np.array([s["log-breadth"] for s in select_searches])
 
-max_depth = max(select_searches, key=lambda s: s["log-depth"])
-max_breadth = max(select_searches, key=lambda s: s["log-breadth"])
-
 colours = [s["colour"] for s in select_searches]
 markers = [s["marker"] for s in select_searches]
 
 st.sidebar.markdown("## Plotting Options")
 
 if select_searches:
+
+    max_depth = max(select_searches, key=lambda s: s["log-depth"])
+    max_breadth = max(select_searches, key=lambda s: s["log-breadth"])
 
     figure_fmt = st.sidebar.selectbox(
         "Figure format", options=["png", "eps", "pdf", "svg"]
