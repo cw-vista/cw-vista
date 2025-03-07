@@ -58,8 +58,8 @@ def get_data():
     category_map = {
         "pulsar targeted": ("Pulsars (Targeted)", "PSR T", "red"),
         "pulsar narrowband": ("Pulsars (Narrowband)", "PSR NB", "orange"),
-        "cco": ("Central Compact Objects", "CCOs", "gold"),
-        "lmxb": ("Low-Mass X-ray Binaries", "LMXBs", "green"),
+        "cco": ("Central Compact Objects", "CCO", "gold"),
+        "lmxb": ("Low-Mass X-ray Binaries", "LMXB", "green"),
         "skypatch": ("Sky Patches", "SkyPatch", "blue"),
         "allsky isolated": ("All Sky (Isolated)", "AllSky 1", "indigo"),
         "allsky binary": ("All Sky (Binary)", "AllSky 2", "violet"),
@@ -200,7 +200,9 @@ st.sidebar.markdown("## Plotting Options")
 
 if select_searches:
 
-    figure_fmt = st.sidebar.selectbox("Figure format", options=["png", "pdf", "svg"])
+    figure_fmt = st.sidebar.selectbox(
+        "Figure format", options=["png", "eps", "pdf", "svg"]
+    )
 
     width = st.sidebar.number_input(
         "Figure width (inches)", min_value=1.0, max_value=8.3, value=8.3, step=0.1
@@ -337,7 +339,7 @@ def vista_plot(**kwargs):
                         color="grey",
                         marker=mkr,
                         linestyle="none",
-                        markersize=8,
+                        markersize=legend_font_size - 2,
                         label=obs_run,
                     )
                 )
