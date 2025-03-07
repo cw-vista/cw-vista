@@ -178,7 +178,9 @@ st.write(
 
 ### create sidebar
 
-st.sidebar.image("icon.jpeg", width=100)
+icon_cntr, qr_code_cntr = st.sidebar.columns(2)
+icon_cntr.image("icon.jpeg", width=100)
+qr_code_cntr.image("qr-code.png", width=100)
 
 st.sidebar.markdown("## Select CW Searches")
 
