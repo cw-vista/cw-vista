@@ -502,7 +502,7 @@ def vista_plot(**kwargs):
             fig.text(
                 0,
                 0,
-                "Image credit: " + page_url,
+                f"Image credit: {page_url}, (C) CC BY 4.0",
                 fontsize=6,
                 ha="left",
                 va="baseline",
@@ -561,6 +561,9 @@ else:
 
         # show vista plot
         vista_plot_cntr.image(st.session_state["display-img"], use_container_width=True)
+        vista_plot_cntr.write(
+            "Figures are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)."
+        )
 
         # show download buttons
         if download_img is not None:
