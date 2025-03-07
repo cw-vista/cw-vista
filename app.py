@@ -112,11 +112,22 @@ def get_data():
 
 refs, searches, props = get_data()
 
+
+@st.cache_data
+def get_authors():
+    with open("AUTHORS", encoding="utf-8") as f:
+        authors = [line.rstrip().split(",") for line in f]
+
+    return authors
+
+
+authors = get_authors()
+
 ### create page intro
 
 st.title("The CW Vista: Depth vs Breadth")
 
-st.write("Hello world!")
+st.write("**Authors:** " + ", ".join(f"{first} {last}" for last, first in authors))
 
 ### create sidebar
 
