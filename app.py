@@ -20,6 +20,8 @@ mpl.use("agg")
 ### configure page
 
 page_title = "The CW Vista"
+page_url = "https://cw-vista.streamlit.app/"
+
 st.set_page_config(page_title=page_title, page_icon="icon.jpeg", layout="wide")
 
 # vista plot show be plotted when page is first loaded
@@ -29,19 +31,35 @@ if not "display-img-first-time" in st.session_state:
 ### get data
 
 
+def gen_bibentry(entrytype, fields):
+    s = "@" + entrytype.upper() + "{cwv:" + fields["key"] + ",\n"
+    for f, v in sorted(fields.items()):
+        if f.startswith("key"):
+            continue
+        if isinstance(v, list):
+            v = " and ".join(v)
+        if f.endswith("title"):
+            v = "{" + v + "}"
+        s += "  " + f + " = {" + str(v) + "},\n"
+    s += "}\n"
+    return s
+
+
 @st.cache_data
 def get_data():
 
     # load CW search data
-    refs = {}
+    max_ref_year = 2025
+    bibentries = {}
     searches = []
     for filename in Path("cw_search_data").glob("*.json"):
         with open(filename, encoding="utf-8") as f:
             data = json.load(f)
         ref = data["reference"]
-        refs[ref["key"]] = ref
+        max_ref_year = max(max_ref_year, ref["year"])
+        bibentries[ref["key"]] = gen_bibentry("article", ref)
         for search in data["searches"]:
-            search["ref-key"] = ref
+            search["ref-key"] = ref["key"]
             searches.append(search)
 
     # compute log-10 depth and breadth
@@ -103,9 +121,10 @@ def get_data():
     )
 
     return (
-        refs,
+        bibentries,
         searches,
         {
+            "max-ref-year": max_ref_year,
             "obs-runs": obs_runs,
             "categories": categories,
             "astro-targets": astro_targets,
@@ -115,13 +134,13 @@ def get_data():
     )
 
 
-refs, searches, props = get_data()
+bibentries, searches, props = get_data()
 
 
 @st.cache_data
 def get_authors():
     with open("AUTHORS", encoding="utf-8") as f:
-        authors = [line.rstrip().split(",") for line in f]
+        authors = [[n.strip() for n in line.rstrip().split(",")] for line in f]
 
     return authors
 
@@ -196,6 +215,37 @@ log_depth = np.array([s["log-depth"] for s in select_searches])
 log_breadth = np.array([s["log-breadth"] for s in select_searches])
 colours = [s["colour"] for s in select_searches]
 markers = [s["marker"] for s in select_searches]
+
+bibtex = gen_bibentry(
+    "article",
+    {
+        "key": "Wette2023",
+        "title": "Searches for continuous gravitational waves from neutron stars: A twenty-year retrospective",
+        "author": ["Wette, K."],
+        "journal": "Astropart. Phys.",
+        "volume": "153",
+        "pages": "102880",
+        "year": 2023,
+        "doi": "10.1016/j.astropartphys.2023.102880",
+    },
+)
+bibtex += "\n"
+
+bibtex += gen_bibentry(
+    "misc",
+    {
+        "key": "webapp",
+        "title": page_title,
+        "author": " and ".join(f"{last}, {first}" for last, first in authors),
+        "year": props["max-ref-year"],
+        "url": page_url,
+    },
+)
+bibtex += "\n"
+
+bibtex += "\n".join(
+    sorted([bibentries[k] for k in set([s["ref-key"] for s in select_searches])])
+)
 
 st.sidebar.markdown("## Plotting Options")
 
@@ -429,9 +479,16 @@ else:
         # show download buttons
         if download_img is not None:
             download_img_cntr.download_button(
-                label="Download figure",
+                label="Download Figure",
                 data=download_img,
                 file_name="cw-vista." + figure_fmt,
                 mime="image/" + figure_fmt,
+                on_click="ignore",
+            )
+            download_refs_cntr.download_button(
+                label="Download BibTeX",
+                data=bibtex,
+                file_name="cw-vista.bib",
+                mime="application/x-bibtex",
                 on_click="ignore",
             )
