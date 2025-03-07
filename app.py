@@ -2,6 +2,7 @@ import io
 import json
 import re
 from pathlib import Path
+from textwrap import dedent
 from threading import RLock
 
 import matplotlib as mpl
@@ -235,6 +236,10 @@ select_categories = set([s["category"] for s in select_searches])
 
 log_depth = np.array([s["log-depth"] for s in select_searches])
 log_breadth = np.array([s["log-breadth"] for s in select_searches])
+
+max_depth = max(select_searches, key=lambda s: s["log-depth"])
+max_breadth = max(select_searches, key=lambda s: s["log-breadth"])
+
 colours = [s["colour"] for s in select_searches]
 markers = [s["marker"] for s in select_searches]
 
@@ -261,8 +266,8 @@ if select_searches:
 
     plot_lim = {}
     for a, maxv, step in (
-        ("x", float(max(log_breadth)), 1.0),
-        ("y", float(max(log_depth)), 0.1),
+        ("x", max_breadth["log-breadth"], 1.0),
+        ("y", max_depth["log-depth"], 0.1),
     ):
         if (
             st.sidebar.pills(
@@ -291,6 +296,21 @@ if select_searches:
             default="major",
             key=f"{a}-axis-grid-lines",
         )
+
+    with_horizon = st.sidebar.checkbox(
+        "With horizon",
+        value=True,
+        help=dedent(
+            """\
+            The **horizon** is the line which satisfies the following properties:
+            1. A line parallel to the horizon which intersects the search
+               of maximum depth will also intersect the search of maximum
+               breadth (and vice versa).
+            2. The Y-intercept of the horizon is the maximum Y-intercept of
+               any line parallel to the horizon which intersects a search.
+            """
+        ),
+    )
 
     label_by = st.sidebar.selectbox(
         "Label points by",
@@ -467,6 +487,13 @@ def vista_plot(**kwargs):
                         label=obs_run,
                     )
                 )
+        if with_horizon:
+            legend_handles.append(
+                mlines.Line2D(
+                    [], [], color="black", linewidth=0.5, linestyle=":", label="horiz."
+                )
+            )
+
         if legend_position == "outside":
             box = ax.get_position()
             ax.set_position([box.x0, box.y0, box.width * 0.9, box.height])
@@ -487,6 +514,25 @@ def vista_plot(**kwargs):
                 framealpha=1,
                 loc=legend_position,
                 fontsize=legend_font_size,
+            )
+
+        # plot horizon
+        if with_horizon:
+            depth_diff = max_depth["log-depth"] - max_breadth["log-depth"]
+            breadth_diff = max_depth["log-breadth"] - max_breadth["log-breadth"]
+            horizon_slope = -breadth_diff / depth_diff
+            assert horizon_slope > 0
+            horizon_origin = max(
+                select_searches,
+                key=lambda s: horizon_slope * s["log-depth"] + s["log-breadth"],
+            )
+            ax.axline(
+                (horizon_origin["log-breadth"], horizon_origin["log-depth"]),
+                slope=-1 / horizon_slope,
+                color="black",
+                linewidth=0.5,
+                linestyle=":",
+                zorder=-10,
             )
 
         # set axis labels
