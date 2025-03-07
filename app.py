@@ -397,25 +397,28 @@ else:
 
     download_img = None
 
-    action_container = st.empty()
+    replot_cntr = st.empty()
 
-    vista_plot_container = st.container()
+    download_img_cntr, download_refs_cntr = st.columns((1, 1))
 
-    if st.session_state["display-img-first-time"] or action_container.button("Replot"):
+    vista_plot_cntr = st.container()
 
-        with st.spinner("Working ..."):
+    if st.session_state["display-img-first-time"] or replot_cntr.button("Replot"):
 
-            # store vista plot in session state, so can be displayed while changing options
-            display_img = vista_plot(format="svg")
-            st.session_state["display-img"] = display_img.getvalue().decode("utf-8")
+        with replot_cntr:
+            with st.spinner("Working ..."):
 
-            st.session_state["display-img-first-time"] = False
+                # store vista plot in session state, so can be displayed while changing options
+                display_img = vista_plot(format="svg")
+                st.session_state["display-img"] = display_img.getvalue().decode("utf-8")
 
-            # create downloadable vista plot in requested format
-            if figure_fmt == "svg":
-                download_img = display_img
-            else:
-                download_img = vista_plot(format=figure_fmt, dpi=600)
+                st.session_state["display-img-first-time"] = False
+
+                # create downloadable vista plot in requested format
+                if figure_fmt == "svg":
+                    download_img = display_img
+                else:
+                    download_img = vista_plot(format=figure_fmt, dpi=600)
 
     if "display-img" in st.session_state:
 
