@@ -26,7 +26,7 @@ page_url = "https://cw-vista.streamlit.app/"
 st.set_page_config(page_title=page_title, page_icon="icon.jpeg", layout="wide")
 
 # vista plot show be plotted when page is first loaded
-if not "display-img-first-time" in st.session_state:
+if "display-img-first-time" not in st.session_state:
     st.session_state["display-img-first-time"] = True
 
 ### get data
