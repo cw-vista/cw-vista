@@ -1,3 +1,5 @@
+import json
+
 """
 JSON schema to validate CW search data
 """
@@ -7,6 +9,14 @@ __copyright__ = "Copyright (C) 2025 Karl Wette"
 
 
 def get():
+
+    with open("label_map.json", encoding="utf-8") as f:
+        label_map = json.load(f)
+
+    algorithm_coherent_regex = "|".join(label_map["algorithm-coherent"].keys())
+    algorithm_incoherent_regex = r"^none$|" + "|".join(
+        label_map["algorithm-incoherent"].keys()
+    )
 
     range_anyof_items = []
     for range_item_req in (
@@ -169,8 +179,14 @@ def get():
                             "type": "string",
                             "pattern": r"^(S1|S2|S4|S5|S6|VSR1|VSR2|VSR4|O[1-9])$",
                         },
-                        "algorithm-coherent": {"type": "string"},
-                        "algorithm-incoherent": {"type": "string"},
+                        "algorithm-coherent": {
+                            "type": "string",
+                            "pattern": algorithm_coherent_regex,
+                        },
+                        "algorithm-incoherent": {
+                            "type": "string",
+                            "pattern": algorithm_incoherent_regex,
+                        },
                         "time-span": {"type": "number", "exclusiveMinimum": 0},
                         "max-coherence-time": {"type": "number", "exclusiveMinimum": 0},
                         "depth": {"type": "number", "exclusiveMinimum": 0},

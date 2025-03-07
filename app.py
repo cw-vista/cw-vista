@@ -11,6 +11,7 @@ import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 import numpy as np
 import streamlit as st
+from adjustText import adjust_text
 
 # to protect against non-reentrant matplotlib
 _lock = RLock()
@@ -43,7 +44,7 @@ def get_data():
         ref = data["reference"]
         refs[ref["key"]] = ref
         for search in data["searches"]:
-            search["ref-key"] = ref["key"]
+            search["ref-key"] = search["citation"] = ref["key"]
             searches.append(search)
 
     # maximum year of cited papers
@@ -53,6 +54,32 @@ def get_data():
     for s in searches:
         for n in ("depth", "breadth"):
             s["log-" + n] = np.log10(s[n])
+
+    # set labels
+    label_by_map = {
+        "Astronomical object": "astro-target",
+        "Algorithm": "algorithm",
+        "Algorithm (coherent)": "algorithm-coherent",
+        "Algorithm (incoherent)": "algorithm-incoherent",
+        "Citation": "citation",
+    }
+    with open("label_map.json", encoding="utf-8") as f:
+        label_map = json.load(f)
+    for k in label_by_map.values():
+        if k in label_map:
+            for s in searches:
+                if k in s:
+                    for r, v in label_map[k].items():
+                        s[k] = re.sub(r, v, s[k])
+
+    # add algorithm label
+    for s in searches:
+        if s["algorithm-incoherent"] == "none":
+            s["algorithm"] = s["algorithm-coherent"]
+        else:
+            s["algorithm"] = (
+                s["algorithm-incoherent"] + "-on-" + s["algorithm-coherent"]
+            )
 
     # list unique observing runs
     obs_runs_unique = set([s["obs-run"] for s in searches])
@@ -112,6 +139,7 @@ def get_data():
         searches,
         {
             "max-ref-year": max_ref_year,
+            "label-by-map": label_by_map,
             "obs-runs": obs_runs,
             "categories": categories,
             "astro-targets": astro_targets,
@@ -189,7 +217,7 @@ if (
 else:
 
     astro_targets = st.sidebar.multiselect(
-        "Astronomical Object", options=props["astro-targets"]
+        "Astronomical object", options=props["astro-targets"]
     )
 
     select_searches = [
@@ -221,7 +249,7 @@ if select_searches:
         "Figure height (inches)", min_value=1.0, max_value=8.3, value=3.5, step=0.1
     )
 
-    font_size = st.sidebar.slider("Font size", min_value=8, max_value=24, value=14)
+    font_size = st.sidebar.slider("Font size", min_value=6, max_value=24, value=14)
 
     marker_size = st.sidebar.slider(
         "Marker size", min_value=10, max_value=100, value=50
@@ -260,8 +288,14 @@ if select_searches:
             key=f"{a}-axis-grid-lines",
         )
 
-    legend_font_size = st.sidebar.slider(
-        "Legend font size", min_value=8, max_value=24, value=12
+    label_by = st.sidebar.selectbox(
+        "Label points by",
+        options=["none"] + list(props["label-by-map"].keys()),
+        index=0,
+    )
+
+    label_font_size = st.sidebar.slider(
+        "Label font size", min_value=6, max_value=24, value=8
     )
 
     legend_position = st.sidebar.selectbox(
@@ -285,6 +319,10 @@ if select_searches:
 
     legend_columns = st.sidebar.slider(
         "Legend columns", min_value=1, max_value=10, value=2
+    )
+
+    legend_font_size = st.sidebar.slider(
+        "Legend font size", min_value=6, max_value=24, value=12
     )
 
     with_image_credit = st.sidebar.checkbox("With image credit", value=True)
@@ -390,6 +428,23 @@ def vista_plot(**kwargs):
                 else:
                     ax.grid(visible=False, which="minor", axis=a)
 
+        # set labels
+        labels = []
+        if label_by != "none":
+            label_by_key = props["label-by-map"][label_by]
+            for s in select_searches:
+                if label_by_key in s:
+                    labels.append(
+                        ax.text(
+                            s["log-breadth"],
+                            s["log-depth"],
+                            s[label_by_key],
+                            fontsize=label_font_size,
+                            ha="center",
+                            va="center",
+                        )
+                    )
+
         # set legend
         legend_handles = []
         for category, (lbl, clr) in props["category-legend"].items():
@@ -442,9 +497,6 @@ def vista_plot(**kwargs):
         ):
             item.set_fontsize(font_size)
 
-        # fix layout
-        fig.tight_layout()
-
         # add image credit
         if with_image_credit:
             fig.text(
@@ -452,9 +504,15 @@ def vista_plot(**kwargs):
                 0,
                 "Image credit: " + page_url,
                 fontsize=6,
-                horizontalalignment="left",
-                verticalalignment="baseline",
+                ha="left",
+                va="baseline",
             )
+
+        # fix layout
+        fig.tight_layout()
+
+        # adjust labels
+        adjust_text(labels)
 
         # save figure to memory
         img = io.BytesIO()

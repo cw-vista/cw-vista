@@ -9,6 +9,7 @@ repos:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-yaml
+      - id: check-json
       - id: file-contents-sorter
         args: [--unique]
         files: ^\.gitignore$|^requirements.txt$
