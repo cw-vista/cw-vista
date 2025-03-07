@@ -23,7 +23,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "HETE J19001-2455",
+      "astro-target": "HETE J1900.1-2455",
       "breadth": 441.9,
       "category": "lmxb",
       "depth": 94.89,
@@ -773,7 +773,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "SAX J17489-2021",
+      "astro-target": "SAX J1748.9-2021",
       "breadth": 99130.0,
       "category": "lmxb",
       "depth": 59.46,
@@ -843,7 +843,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "SAX J18084-3658",
+      "astro-target": "SAX J1808.4-3658",
       "breadth": 1166.0,
       "category": "lmxb",
       "depth": 87.19,
@@ -913,7 +913,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "Swift J17494-2807",
+      "astro-target": "Swift J1749.4-2807",
       "breadth": 232300.0,
       "category": "lmxb",
       "depth": 40.8,
@@ -983,7 +983,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "Swift J17569-2508",
+      "astro-target": "Swift J1756.9-2508",
       "breadth": 335400.0,
       "category": "lmxb",
       "depth": 59.43,

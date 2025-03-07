@@ -17,7 +17,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "astro-target": "G19+03",
+      "astro-target": "G1.9+0.3",
       "breadth": 1390000000000.0,
       "category": "cco",
       "depth": 35.02,
@@ -46,7 +46,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "astro-target": "G159+02",
+      "astro-target": "G15.9+0.2",
       "breadth": 1228000000000.0,
       "category": "cco",
       "depth": 45.94,
@@ -75,7 +75,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "astro-target": "G159+02",
+      "astro-target": "G15.9+0.2",
       "breadth": 907500000000.0,
       "category": "cco",
       "depth": 56.36,
@@ -104,7 +104,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "astro-target": "G189-11",
+      "astro-target": "G18.9-1.1",
       "breadth": 777600000000.0,
       "category": "cco",
       "depth": 60.42,
@@ -133,7 +133,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "astro-target": "G1891+30",
+      "astro-target": "G189.1+3.0",
       "breadth": 856000000000.0,
       "category": "cco",
       "depth": 58.72,
@@ -162,7 +162,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "astro-target": "G1891+30",
+      "astro-target": "G189.1+3.0",
       "breadth": 557100000000.0,
       "category": "cco",
       "depth": 72.76,
@@ -191,7 +191,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "astro-target": "G2910-01",
+      "astro-target": "G291.0-0.1",
       "breadth": 1050000000000.0,
       "category": "cco",
       "depth": 57.01,
@@ -220,7 +220,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "astro-target": "G3302+10",
+      "astro-target": "G330.2+1.0",
       "breadth": 1087000000000.0,
       "category": "cco",
       "depth": 52.91,
@@ -249,7 +249,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "astro-target": "G3302+10",
+      "astro-target": "G330.2+1.0",
       "breadth": 880600000000.0,
       "category": "cco",
       "depth": 61.23,
@@ -278,7 +278,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "astro-target": "G3501-03",
+      "astro-target": "G350.1-0.3",
       "breadth": 1204000000000.0,
       "category": "cco",
       "depth": 46.25,
@@ -307,7 +307,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "astro-target": "G3536-07",
+      "astro-target": "G353.6-0.7",
       "breadth": 520400000000.0,
       "category": "cco",
       "depth": 73.76,
@@ -336,7 +336,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "astro-target": "G3544+00",
+      "astro-target": "G354.4+0.0",
       "breadth": 1408000000000.0,
       "category": "cco",
       "depth": 37.39,
@@ -365,7 +365,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "astro-target": "G3544+00",
+      "astro-target": "G354.4+0.0",
       "breadth": 1215000000000.0,
       "category": "cco",
       "depth": 45.18,
@@ -394,7 +394,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "astro-target": "G392-03",
+      "astro-target": "G39.2-0.3",
       "breadth": 851700000000.0,
       "category": "cco",
       "depth": 55.16,
@@ -423,7 +423,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "astro-target": "G657+12",
+      "astro-target": "G65.7+1.2",
       "breadth": 550500000000.0,
       "category": "cco",
       "depth": 70.93,
@@ -452,7 +452,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "none",
-      "astro-target": "G933+69",
+      "astro-target": "G93.3+6.9",
       "breadth": 721400000000.0,
       "category": "cco",
       "depth": 63.6,

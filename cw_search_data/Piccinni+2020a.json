@@ -25,7 +25,7 @@
     {
       "algorithm-coherent": "power",
       "algorithm-incoherent": "FrequencyHough",
-      "astro-target": "Galactic centre",
+      "astro-target": "Galactic Centre",
       "breadth": 6780000000000000.0,
       "category": "skypatch",
       "depth": 51.46,

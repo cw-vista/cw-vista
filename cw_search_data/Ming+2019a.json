@@ -56,7 +56,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "Global Correlation Transform",
-      "astro-target": "G3473",
+      "astro-target": "G347.3",
       "breadth": 5.35e+17,
       "category": "cco",
       "depth": 82.9,
@@ -85,7 +85,7 @@
     {
       "algorithm-coherent": "F-statistic",
       "algorithm-incoherent": "Global Correlation Transform",
-      "astro-target": "Vela Jr",
+      "astro-target": "Vela Jr.",
       "breadth": 6.389e+18,
       "category": "cco",
       "depth": 76.5,
