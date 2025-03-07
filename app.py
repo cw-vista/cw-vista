@@ -284,7 +284,7 @@ def vista_plot(**kwargs):
 
     with _lock:
 
-        mpl.rcParams.update({"font.family": "serif", "text.usetex": True})
+        mpl.rcParams.update({"font.family": "serif", "text.usetex": False})
 
         fig, ax = plt.subplots(figsize=(width, height))
         ax.minorticks_on()
