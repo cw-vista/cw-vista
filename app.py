@@ -19,7 +19,8 @@ mpl.use("agg")
 
 ### configure page
 
-st.set_page_config(page_title="CW Vista", page_icon="icon.jpeg", layout="wide")
+page_title = "The CW Vista"
+st.set_page_config(page_title=page_title, page_icon="icon.jpeg", layout="wide")
 
 # vista plot show be plotted when page is first loaded
 if not "display-img-first-time" in st.session_state:
@@ -141,16 +142,16 @@ st.sidebar.markdown("## Select CW Searches")
 
 select_searches = searches
 
-obs_run_container = st.sidebar.container()
+obs_run_cntr = st.sidebar.container()
 if st.sidebar.checkbox("Select All", value=True, key="select_all_obs_run"):
-    obs_runs = obs_run_container.pills(
+    obs_runs = obs_run_cntr.pills(
         "Observing run",
         options=props["obs-runs"],
         selection_mode="multi",
         default=props["obs-runs"],
     )
 else:
-    obs_runs = obs_run_container.pills(
+    obs_runs = obs_run_cntr.pills(
         "Observing run", options=props["obs-runs"], selection_mode="multi"
     )
 
@@ -161,16 +162,16 @@ if (
     == "Category"
 ):
 
-    categories_container = st.sidebar.container()
+    categories_cntr = st.sidebar.container()
     if st.sidebar.checkbox("Select All", value=True, key="select_all_categories"):
-        categories = categories_container.pills(
+        categories = categories_cntr.pills(
             "Category",
             options=props["categories"],
             selection_mode="multi",
             default=props["categories"],
         )
     else:
-        categories = categories_container.pills(
+        categories = categories_cntr.pills(
             "Category", options=props["categories"], selection_mode="multi"
         )
 
@@ -423,15 +424,14 @@ else:
     if "display-img" in st.session_state:
 
         # show vista plot
-        vista_plot_container.image(
-            st.session_state["display-img"], use_container_width=True
-        )
+        vista_plot_cntr.image(st.session_state["display-img"], use_container_width=True)
 
-        # show download button
+        # show download buttons
         if download_img is not None:
-            action_container.download_button(
-                label="Download",
+            download_img_cntr.download_button(
+                label="Download figure",
                 data=download_img,
                 file_name="cw-vista." + figure_fmt,
                 mime="image/" + figure_fmt,
+                on_click="ignore",
             )
