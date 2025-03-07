@@ -169,6 +169,10 @@ st.title("The CW Vista: Depth vs Breadth")
 st.write(
     "**Contributors to this webpage:** "
     + ", ".join(f"{first} {last}" for last, first in contributors)
+    + "."
+)
+st.write(
+    "**Please contribute!** See [here](https://github.com/cw-vista/cw-vista/blob/main/README.md) for instructions."
 )
 
 ### create sidebar
