@@ -31,20 +31,6 @@ if not "display-img-first-time" in st.session_state:
 ### get data
 
 
-def gen_bibentry(entrytype, fields):
-    s = "@" + entrytype.upper() + "{cwv:" + fields["key"] + ",\n"
-    for f, v in sorted(fields.items()):
-        if f.startswith("key"):
-            continue
-        if isinstance(v, list):
-            v = " and ".join(v)
-        if f.endswith("title"):
-            v = "{" + v + "}"
-        s += "  " + f + " = {" + str(v) + "},\n"
-    s += "}\n"
-    return s
-
-
 @st.cache_data
 def get_data():
 
@@ -304,6 +290,21 @@ if select_searches:
     with_image_credit = st.sidebar.checkbox("With image credit", value=True)
 
 ### generate BibTeX
+
+
+def gen_bibentry(entrytype, fields):
+    s = "@" + entrytype.upper() + "{cwv:" + fields["key"] + ",\n"
+    for f, v in sorted(fields.items()):
+        if f.startswith("key"):
+            continue
+        if isinstance(v, list):
+            v = " and ".join(v)
+        if f.endswith("title"):
+            v = "{" + v + "}"
+        s += "  " + f + " = {" + str(v) + "},\n"
+    s += "}\n"
+    return s
+
 
 bibtex = gen_bibentry(
     "article",
