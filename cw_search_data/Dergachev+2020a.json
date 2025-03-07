@@ -1,43 +1,43 @@
 {
-  "reference": {
-    "author": [
-      "Dergachev, V.",
-      "Papa, M. A."
-    ],
-    "doi": "10.1103/PhysRevD.101.022001",
-    "journal": "Phys. Rev. D",
-    "key": "Dergachev+2020a",
-    "key-suffix": "a",
-    "pages": "022001",
-    "title": "Results from an extended Falcon all-sky survey for continuous gravitational waves",
-    "volume": "101",
-    "year": 2020
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "PowerFlux (loosely coherent)",
-      "breadth": 1.771e+27,
-      "category": "allsky isolated",
-      "depth": 37.2,
-      "max-coherence-time": 14400,
-      "obs-run": "O1",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1e-08,
-              1.11e-09
-            ],
-            "freq": [
-              200,
-              600
-            ]
-          }
+    "reference": {
+        "author": [
+            "Dergachev, V.",
+            "Papa, M. A."
         ],
-        "sky-fraction": 1
-      },
-      "time-span": 11145600.0
-    }
-  ]
+        "doi": "10.1103/PhysRevD.101.022001",
+        "journal": "Phys. Rev. D",
+        "key": "Dergachev+2020a",
+        "key-suffix": "a",
+        "pages": "022001",
+        "title": "Results from an extended Falcon all-sky survey for continuous gravitational waves",
+        "volume": "101",
+        "year": 2020
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "PowerFlux (loosely coherent)",
+            "breadth": 1.771e+27,
+            "category": "allsky isolated",
+            "depth": 37.2,
+            "max-coherence-time": 14400,
+            "obs-run": "O1",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1e-08,
+                            1.11e-09
+                        ],
+                        "freq": [
+                            200,
+                            600
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 11145600.0
+        }
+    ]
 }

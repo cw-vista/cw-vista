@@ -1,138 +1,138 @@
 {
-  "reference": {
-    "author": [
-      "Aasi, J.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration",
-      "Virgo Collaboration"
-    ],
-    "doi": "10.1103/PhysRevD.90.062010",
-    "journal": "Phys. Rev. D",
-    "key": "LIGOVirgo2014d",
-    "key-suffix": "d",
-    "pages": "062010",
-    "title": "First all-sky search for continuous gravitational waves from unknown sources in binary systems",
-    "volume": "90",
-    "year": 2014
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "TwoSpect",
-      "breadth": 7.385e+37,
-      "category": "allsky binary",
-      "depth": 3.2,
-      "max-coherence-time": 1800,
-      "obs-run": "S6",
-      "param-space": {
-        "ranges": [
-          {
-            "bin-freq-mod-depth": [
-              0.000277,
-              0.1
-            ],
-            "bin-period": [
-              7200,
-              8115840.0
-            ],
-            "freq": [
-              50,
-              520
-            ]
-          }
+    "reference": {
+        "author": [
+            "Aasi, J.",
+            "others"
         ],
-        "sky-fraction": 1
-      },
-      "time-span": 40608000.0
-    },
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "TwoSpect",
-      "breadth": 1.004e+35,
-      "category": "allsky binary",
-      "depth": 3.2,
-      "max-coherence-time": 1800,
-      "obs-run": "S6",
-      "param-space": {
-        "ranges": [
-          {
-            "bin-freq-mod-depth": [
-              0.000277,
-              0.1
-            ],
-            "bin-period": [
-              7200,
-              8115840.0
-            ],
-            "freq": [
-              20,
-              100
-            ]
-          }
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "Virgo Collaboration"
         ],
-        "sky-fraction": 1
-      },
-      "time-span": 40521600.0
+        "doi": "10.1103/PhysRevD.90.062010",
+        "journal": "Phys. Rev. D",
+        "key": "LIGOVirgo2014d",
+        "key-suffix": "d",
+        "pages": "062010",
+        "title": "First all-sky search for continuous gravitational waves from unknown sources in binary systems",
+        "volume": "90",
+        "year": 2014
     },
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "TwoSpect",
-      "astro-target": "Sco X-1",
-      "breadth": 147000000000000.0,
-      "category": "lmxb",
-      "depth": 8.2,
-      "max-coherence-time": 1800,
-      "obs-run": "S6",
-      "param-space": {
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.8999999999999999,
-              1.98
-            ],
-            "bin-period": [
-              68023.66176,
-              68023.74816
-            ],
-            "freq": [
-              50,
-              57.25
-            ]
-          }
-        ]
-      },
-      "time-span": 40608000.0
-    },
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "TwoSpect",
-      "astro-target": "Sco X-1",
-      "breadth": 344700000000000.0,
-      "category": "lmxb",
-      "depth": 8.2,
-      "max-coherence-time": 1800,
-      "obs-run": "S6",
-      "param-space": {
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.8999999999999999,
-              1.98
-            ],
-            "bin-period": [
-              68023.66176,
-              68023.74816
-            ],
-            "freq": [
-              20,
-              57.25
-            ]
-          }
-        ]
-      },
-      "time-span": 40521600.0
-    }
-  ]
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "TwoSpect",
+            "breadth": 7.385e+37,
+            "category": "allsky binary",
+            "depth": 3.2,
+            "max-coherence-time": 1800,
+            "obs-run": "S6",
+            "param-space": {
+                "ranges": [
+                    {
+                        "bin-freq-mod-depth": [
+                            0.000277,
+                            0.1
+                        ],
+                        "bin-period": [
+                            7200,
+                            8115840.0
+                        ],
+                        "freq": [
+                            50,
+                            520
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 40608000.0
+        },
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "TwoSpect",
+            "breadth": 1.004e+35,
+            "category": "allsky binary",
+            "depth": 3.2,
+            "max-coherence-time": 1800,
+            "obs-run": "S6",
+            "param-space": {
+                "ranges": [
+                    {
+                        "bin-freq-mod-depth": [
+                            0.000277,
+                            0.1
+                        ],
+                        "bin-period": [
+                            7200,
+                            8115840.0
+                        ],
+                        "freq": [
+                            20,
+                            100
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 40521600.0
+        },
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "TwoSpect",
+            "astro-target": "Sco X-1",
+            "breadth": 147000000000000.0,
+            "category": "lmxb",
+            "depth": 8.2,
+            "max-coherence-time": 1800,
+            "obs-run": "S6",
+            "param-space": {
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.8999999999999999,
+                            1.98
+                        ],
+                        "bin-period": [
+                            68023.66176,
+                            68023.74816
+                        ],
+                        "freq": [
+                            50,
+                            57.25
+                        ]
+                    }
+                ]
+            },
+            "time-span": 40608000.0
+        },
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "TwoSpect",
+            "astro-target": "Sco X-1",
+            "breadth": 344700000000000.0,
+            "category": "lmxb",
+            "depth": 8.2,
+            "max-coherence-time": 1800,
+            "obs-run": "S6",
+            "param-space": {
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.8999999999999999,
+                            1.98
+                        ],
+                        "bin-period": [
+                            68023.66176,
+                            68023.74816
+                        ],
+                        "freq": [
+                            20,
+                            57.25
+                        ]
+                    }
+                ]
+            },
+            "time-span": 40521600.0
+        }
+    ]
 }

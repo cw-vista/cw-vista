@@ -1,62 +1,62 @@
 {
-  "reference": {
-    "author": [
-      "Abbott, R.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration",
-      "Virgo Collaboration",
-      "others"
-    ],
-    "doi": "10.3847/2041-8213/abb655",
-    "journal": "Astrophys. J. Lett.",
-    "key": "LIGOVirgo+2020a",
-    "key-suffix": "a",
-    "pages": "L21",
-    "title": "Gravitational-wave Constraints on the Equatorial Ellipticity of Millisecond Pulsars",
-    "volume": "902",
-    "year": 2020
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "Bayesian",
-      "algorithm-incoherent": "none",
-      "breadth": 10.0,
-      "category": "pulsar targeted",
-      "depth": 126.19,
-      "max-coherence-time": 143251200.0,
-      "obs-run": "O3",
-      "param-space": {
-        "num-pulsars": 10
-      },
-      "time-span": 143251200.0
+    "reference": {
+        "author": [
+            "Abbott, R.",
+            "others"
+        ],
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "Virgo Collaboration",
+            "others"
+        ],
+        "doi": "10.3847/2041-8213/abb655",
+        "journal": "Astrophys. J. Lett.",
+        "key": "LIGOVirgo+2020a",
+        "key-suffix": "a",
+        "pages": "L21",
+        "title": "Gravitational-wave Constraints on the Equatorial Ellipticity of Millisecond Pulsars",
+        "volume": "902",
+        "year": 2020
     },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "breadth": 10.0,
-      "category": "pulsar targeted",
-      "depth": 136.71,
-      "max-coherence-time": 143251200.0,
-      "obs-run": "O3",
-      "param-space": {
-        "num-pulsars": 10
-      },
-      "time-span": 143251200.0
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "breadth": 6.0,
-      "category": "pulsar targeted",
-      "depth": 348.03,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "num-pulsars": 6
-      },
-      "time-span": 31190400.0
-    }
-  ]
+    "searches": [
+        {
+            "algorithm-coherent": "Bayesian",
+            "algorithm-incoherent": "none",
+            "breadth": 10.0,
+            "category": "pulsar targeted",
+            "depth": 126.19,
+            "max-coherence-time": 143251200.0,
+            "obs-run": "O3",
+            "param-space": {
+                "num-pulsars": 10
+            },
+            "time-span": 143251200.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "breadth": 10.0,
+            "category": "pulsar targeted",
+            "depth": 136.71,
+            "max-coherence-time": 143251200.0,
+            "obs-run": "O3",
+            "param-space": {
+                "num-pulsars": 10
+            },
+            "time-span": 143251200.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "breadth": 6.0,
+            "category": "pulsar targeted",
+            "depth": 348.03,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "num-pulsars": 6
+            },
+            "time-span": 31190400.0
+        }
+    ]
 }

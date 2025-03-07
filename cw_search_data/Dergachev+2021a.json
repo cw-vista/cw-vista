@@ -1,43 +1,43 @@
 {
-  "reference": {
-    "author": [
-      "Dergachev, V.",
-      "Papa, M. A."
-    ],
-    "doi": "10.1103/PhysRevD.104.043003",
-    "journal": "Phys. Rev. D",
-    "key": "Dergachev+2021a",
-    "key-suffix": "a",
-    "pages": "043003",
-    "title": "Search for continuous gravitational waves from small-ellipticity sources at low frequencies",
-    "volume": "104",
-    "year": 2021
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "PowerFlux (loosely coherent)",
-      "breadth": 2.271e+24,
-      "category": "allsky isolated",
-      "depth": 76.53,
-      "max-coherence-time": 172800,
-      "obs-run": "O2",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -3e-13,
-              3e-13
-            ],
-            "freq": [
-              20,
-              500
-            ]
-          }
+    "reference": {
+        "author": [
+            "Dergachev, V.",
+            "Papa, M. A."
         ],
-        "sky-fraction": 1
-      },
-      "time-span": 23155200.0
-    }
-  ]
+        "doi": "10.1103/PhysRevD.104.043003",
+        "journal": "Phys. Rev. D",
+        "key": "Dergachev+2021a",
+        "key-suffix": "a",
+        "pages": "043003",
+        "title": "Search for continuous gravitational waves from small-ellipticity sources at low frequencies",
+        "volume": "104",
+        "year": 2021
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "PowerFlux (loosely coherent)",
+            "breadth": 2.271e+24,
+            "category": "allsky isolated",
+            "depth": 76.53,
+            "max-coherence-time": 172800,
+            "obs-run": "O2",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -3e-13,
+                            3e-13
+                        ],
+                        "freq": [
+                            20,
+                            500
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 23155200.0
+        }
+    ]
 }

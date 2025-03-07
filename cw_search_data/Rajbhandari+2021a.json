@@ -1,107 +1,107 @@
 {
-  "reference": {
-    "author": [
-      "Rajbhandari, B.",
-      "Owen, B. J.",
-      "Caride, S.",
-      "Inta, R."
-    ],
-    "doi": "10.1103/PhysRevD.104.122008",
-    "journal": "Phys. Rev. D",
-    "key": "Rajbhandari+2021a",
-    "key-suffix": "a",
-    "pages": "122008",
-    "title": "First searches for gravitational waves from r -modes of the Crab pulsar",
-    "volume": "104",
-    "year": 2021
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "Crab",
-      "breadth": 1575000000.0,
-      "category": "pulsar narrowband",
-      "depth": 104.8,
-      "max-coherence-time": 11180160.0,
-      "obs-run": "O2",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              3.5659925494736766e-20
-            ],
-            "fdot": [
-              -4.950348510617035e-13,
-              0.0
-            ],
-            "freq": [
-              41.21,
-              46.569
-            ]
-          }
-        ]
-      },
-      "time-span": 11180160.0
+    "reference": {
+        "author": [
+            "Rajbhandari, B.",
+            "Owen, B. J.",
+            "Caride, S.",
+            "Inta, R."
+        ],
+        "doi": "10.1103/PhysRevD.104.122008",
+        "journal": "Phys. Rev. D",
+        "key": "Rajbhandari+2021a",
+        "key-suffix": "a",
+        "pages": "122008",
+        "title": "First searches for gravitational waves from r -modes of the Crab pulsar",
+        "volume": "104",
+        "year": 2021
     },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "Crab",
-      "breadth": 1571000000.0,
-      "category": "pulsar narrowband",
-      "depth": 93.29,
-      "max-coherence-time": 11180160.0,
-      "obs-run": "O2",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              2.840957335680236e-20
-            ],
-            "fdot": [
-              -4.940044143112189e-13,
-              0.0
-            ],
-            "freq": [
-              41.1903,
-              46.5467
-            ]
-          }
-        ]
-      },
-      "time-span": 11180160.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "Crab",
-      "breadth": 4038000000.0,
-      "category": "pulsar narrowband",
-      "depth": 106.72,
-      "max-coherence-time": 13037760.0,
-      "obs-run": "O2",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              3.6991634125606564e-20
-            ],
-            "fdot": [
-              -4.937121442555558e-13,
-              0.0
-            ],
-            "freq": [
-              41.185,
-              46.5408
-            ]
-          }
-        ]
-      },
-      "time-span": 13037760.0
-    }
-  ]
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 1575000000.0,
+            "category": "pulsar narrowband",
+            "depth": 104.8,
+            "max-coherence-time": 11180160.0,
+            "obs-run": "O2",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            3.5659925494736766e-20
+                        ],
+                        "fdot": [
+                            -4.950348510617035e-13,
+                            0.0
+                        ],
+                        "freq": [
+                            41.21,
+                            46.569
+                        ]
+                    }
+                ]
+            },
+            "time-span": 11180160.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 1571000000.0,
+            "category": "pulsar narrowband",
+            "depth": 93.29,
+            "max-coherence-time": 11180160.0,
+            "obs-run": "O2",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            2.840957335680236e-20
+                        ],
+                        "fdot": [
+                            -4.940044143112189e-13,
+                            0.0
+                        ],
+                        "freq": [
+                            41.1903,
+                            46.5467
+                        ]
+                    }
+                ]
+            },
+            "time-span": 11180160.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 4038000000.0,
+            "category": "pulsar narrowband",
+            "depth": 106.72,
+            "max-coherence-time": 13037760.0,
+            "obs-run": "O2",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            3.6991634125606564e-20
+                        ],
+                        "fdot": [
+                            -4.937121442555558e-13,
+                            0.0
+                        ],
+                        "freq": [
+                            41.185,
+                            46.5408
+                        ]
+                    }
+                ]
+            },
+            "time-span": 13037760.0
+        }
+    ]
 }

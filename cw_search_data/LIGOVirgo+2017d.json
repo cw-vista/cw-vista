@@ -1,56 +1,56 @@
 {
-  "reference": {
-    "author": [
-      "Abbott, B. P.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration",
-      "Virgo Collaboration",
-      "others"
-    ],
-    "doi": "10.3847/1538-4357/aa86f0",
-    "journal": "Astrophys. J.",
-    "key": "LIGOVirgo+2017d",
-    "key-suffix": "d",
-    "pages": "47",
-    "title": "Upper Limits on Gravitational Waves from Scorpius X-1 from a Model-based Cross-correlation Search in Advanced LIGO Data",
-    "volume": "847",
-    "year": 2017
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "CrossCorr",
-      "astro-target": "Sco X-1",
-      "breadth": 8.429e+18,
-      "category": "lmxb",
-      "depth": 24.0,
-      "max-coherence-time": 25920,
-      "obs-run": "O1",
-      "param-space": {
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.36,
-              3.25
-            ],
-            "bin-period": [
-              68023.58,
-              68023.81999999999
-            ],
-            "bin-time-asc": [
-              1131414867,
-              1131415941
-            ],
-            "freq": [
-              25,
-              2000.0
-            ]
-          }
-        ]
-      },
-      "time-span": 11145600.0
-    }
-  ]
+    "reference": {
+        "author": [
+            "Abbott, B. P.",
+            "others"
+        ],
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "Virgo Collaboration",
+            "others"
+        ],
+        "doi": "10.3847/1538-4357/aa86f0",
+        "journal": "Astrophys. J.",
+        "key": "LIGOVirgo+2017d",
+        "key-suffix": "d",
+        "pages": "47",
+        "title": "Upper Limits on Gravitational Waves from Scorpius X-1 from a Model-based Cross-correlation Search in Advanced LIGO Data",
+        "volume": "847",
+        "year": 2017
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "CrossCorr",
+            "astro-target": "Sco X-1",
+            "breadth": 8.429e+18,
+            "category": "lmxb",
+            "depth": 24.0,
+            "max-coherence-time": 25920,
+            "obs-run": "O1",
+            "param-space": {
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.36,
+                            3.25
+                        ],
+                        "bin-period": [
+                            68023.58,
+                            68023.81999999999
+                        ],
+                        "bin-time-asc": [
+                            1131414867,
+                            1131415941
+                        ],
+                        "freq": [
+                            25,
+                            2000.0
+                        ]
+                    }
+                ]
+            },
+            "time-span": 11145600.0
+        }
+    ]
 }

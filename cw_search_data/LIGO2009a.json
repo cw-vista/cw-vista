@@ -1,46 +1,46 @@
 {
-  "reference": {
-    "author": [
-      "Abbott, B.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration"
-    ],
-    "doi": "10.1103/PhysRevD.79.022001",
-    "journal": "Phys. Rev. D",
-    "key": "LIGO2009a",
-    "key-suffix": "a",
-    "pages": "022001",
-    "title": "Einstein@Home search for periodic gravitational waves in LIGO S4 data",
-    "volume": "79",
-    "year": 2009
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "coincidence",
-      "breadth": 1.223e+24,
-      "category": "allsky isolated",
-      "depth": 8.5,
-      "max-coherence-time": 108000,
-      "obs-run": "S4",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -2.98469e-09,
-              0.0
-            ],
-            "freq": [
-              50,
-              1500
-            ]
-          }
+    "reference": {
+        "author": [
+            "Abbott, B.",
+            "others"
         ],
-        "sky-fraction": 1
-      },
-      "time-span": 2505600.0
-    }
-  ]
+        "collaboration": [
+            "LIGO Scientific Collaboration"
+        ],
+        "doi": "10.1103/PhysRevD.79.022001",
+        "journal": "Phys. Rev. D",
+        "key": "LIGO2009a",
+        "key-suffix": "a",
+        "pages": "022001",
+        "title": "Einstein@Home search for periodic gravitational waves in LIGO S4 data",
+        "volume": "79",
+        "year": 2009
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "coincidence",
+            "breadth": 1.223e+24,
+            "category": "allsky isolated",
+            "depth": 8.5,
+            "max-coherence-time": 108000,
+            "obs-run": "S4",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -2.98469e-09,
+                            0.0
+                        ],
+                        "freq": [
+                            50,
+                            1500
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 2505600.0
+        }
+    ]
 }

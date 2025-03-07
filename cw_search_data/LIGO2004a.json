@@ -1,49 +1,49 @@
 {
-  "reference": {
-    "author": [
-      "Abbott, B.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration"
-    ],
-    "doi": "10.1103/PhysRevD.69.082004",
-    "journal": "Phys. Rev. D",
-    "key": "LIGO2004a",
-    "key-suffix": "a",
-    "pages": "082004",
-    "title": "Setting upper limits on the strength of periodic gravitational waves from PSR J1939+2134 using the first science data from the GEO 600 and LIGO detectors",
-    "volume": "69",
-    "year": 2004
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1939+2134",
-      "breadth": 1.0,
-      "category": "pulsar targeted",
-      "depth": 101.8,
-      "max-coherence-time": 1468800.0,
-      "obs-run": "S1",
-      "param-space": {
-        "num-pulsars": 1
-      },
-      "time-span": 1468800.0
+    "reference": {
+        "author": [
+            "Abbott, B.",
+            "others"
+        ],
+        "collaboration": [
+            "LIGO Scientific Collaboration"
+        ],
+        "doi": "10.1103/PhysRevD.69.082004",
+        "journal": "Phys. Rev. D",
+        "key": "LIGO2004a",
+        "key-suffix": "a",
+        "pages": "082004",
+        "title": "Setting upper limits on the strength of periodic gravitational waves from PSR J1939+2134 using the first science data from the GEO 600 and LIGO detectors",
+        "volume": "69",
+        "year": 2004
     },
-    {
-      "algorithm-coherent": "Bayesian",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1939+2134",
-      "breadth": 1.0,
-      "category": "pulsar targeted",
-      "depth": 85.2,
-      "max-coherence-time": 1468800.0,
-      "obs-run": "S1",
-      "param-space": {
-        "num-pulsars": 1
-      },
-      "time-span": 1468800.0
-    }
-  ]
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1939+2134",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 101.8,
+            "max-coherence-time": 1468800.0,
+            "obs-run": "S1",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 1468800.0
+        },
+        {
+            "algorithm-coherent": "Bayesian",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1939+2134",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 85.2,
+            "max-coherence-time": 1468800.0,
+            "obs-run": "S1",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 1468800.0
+        }
+    ]
 }

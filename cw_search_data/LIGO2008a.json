@@ -1,96 +1,96 @@
 {
-  "reference": {
-    "author": [
-      "Abbott, B.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration"
-    ],
-    "doi": "10.1103/PhysRevD.77.022001",
-    "journal": "Phys. Rev. D",
-    "key": "LIGO2008a",
-    "key-suffix": "a",
-    "pages": "022001",
-    "title": "All-sky search for periodic gravitational waves in LIGO S4 data",
-    "volume": "77",
-    "year": 2008
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "SkyHough",
-      "breadth": 1.214e+24,
-      "category": "allsky isolated",
-      "depth": 13.4,
-      "max-coherence-time": 1800,
-      "obs-run": "S4",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1e-08,
-              0.0
-            ],
-            "freq": [
-              50,
-              1000
-            ]
-          }
+    "reference": {
+        "author": [
+            "Abbott, B.",
+            "others"
         ],
-        "sky-fraction": 1
-      },
-      "time-span": 2505600.0
+        "collaboration": [
+            "LIGO Scientific Collaboration"
+        ],
+        "doi": "10.1103/PhysRevD.77.022001",
+        "journal": "Phys. Rev. D",
+        "key": "LIGO2008a",
+        "key-suffix": "a",
+        "pages": "022001",
+        "title": "All-sky search for periodic gravitational waves in LIGO S4 data",
+        "volume": "77",
+        "year": 2008
     },
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "StackSlide",
-      "breadth": 1.214e+24,
-      "category": "allsky isolated",
-      "depth": 10.5,
-      "max-coherence-time": 1800,
-      "obs-run": "S4",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1e-08,
-              0.0
-            ],
-            "freq": [
-              50,
-              1000
-            ]
-          }
-        ],
-        "sky-fraction": 1
-      },
-      "time-span": 2505600.0
-    },
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "PowerFlux (classic)",
-      "breadth": 1.214e+24,
-      "category": "allsky isolated",
-      "depth": 8.24,
-      "max-coherence-time": 1800,
-      "obs-run": "S4",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1e-08,
-              0.0
-            ],
-            "freq": [
-              50,
-              1000
-            ]
-          }
-        ],
-        "sky-fraction": 1
-      },
-      "time-span": 2505600.0
-    }
-  ]
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "SkyHough",
+            "breadth": 1.214e+24,
+            "category": "allsky isolated",
+            "depth": 13.4,
+            "max-coherence-time": 1800,
+            "obs-run": "S4",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1e-08,
+                            0.0
+                        ],
+                        "freq": [
+                            50,
+                            1000
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 2505600.0
+        },
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "StackSlide",
+            "breadth": 1.214e+24,
+            "category": "allsky isolated",
+            "depth": 10.5,
+            "max-coherence-time": 1800,
+            "obs-run": "S4",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1e-08,
+                            0.0
+                        ],
+                        "freq": [
+                            50,
+                            1000
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 2505600.0
+        },
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "PowerFlux (classic)",
+            "breadth": 1.214e+24,
+            "category": "allsky isolated",
+            "depth": 8.24,
+            "max-coherence-time": 1800,
+            "obs-run": "S4",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1e-08,
+                            0.0
+                        ],
+                        "freq": [
+                            50,
+                            1000
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 2505600.0
+        }
+    ]
 }

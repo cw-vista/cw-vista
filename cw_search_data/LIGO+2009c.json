@@ -1,47 +1,47 @@
 {
-  "reference": {
-    "author": [
-      "Abbott, B. P.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration",
-      "others"
-    ],
-    "doi": "10.1103/PhysRevD.80.042003",
-    "journal": "Phys. Rev. D",
-    "key": "LIGO+2009c",
-    "key-suffix": "c",
-    "pages": "042003",
-    "title": "Einstein@Home search for periodic gravitational waves in early S5 LIGO data",
-    "volume": "80",
-    "year": 2009
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "coincidence",
-      "breadth": 2.235e+26,
-      "category": "allsky isolated",
-      "depth": 10.9,
-      "max-coherence-time": 108000,
-      "obs-run": "S5",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -4.11809e-09,
-              0.0
-            ],
-            "freq": [
-              50,
-              1500
-            ]
-          }
+    "reference": {
+        "author": [
+            "Abbott, B. P.",
+            "others"
         ],
-        "sky-fraction": 1
-      },
-      "time-span": 5702400
-    }
-  ]
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "others"
+        ],
+        "doi": "10.1103/PhysRevD.80.042003",
+        "journal": "Phys. Rev. D",
+        "key": "LIGO+2009c",
+        "key-suffix": "c",
+        "pages": "042003",
+        "title": "Einstein@Home search for periodic gravitational waves in early S5 LIGO data",
+        "volume": "80",
+        "year": 2009
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "coincidence",
+            "breadth": 2.235e+26,
+            "category": "allsky isolated",
+            "depth": 10.9,
+            "max-coherence-time": 108000,
+            "obs-run": "S5",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -4.11809e-09,
+                            0.0
+                        ],
+                        "freq": [
+                            50,
+                            1500
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 5702400
+        }
+    ]
 }

@@ -1,51 +1,51 @@
 {
-  "reference": {
-    "author": [
-      "Abbott, B. P.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration",
-      "Virgo Collaboration"
-    ],
-    "doi": "10.1103/PhysRevD.95.082005",
-    "journal": "Phys. Rev. D",
-    "key": "LIGOVirgo2017a",
-    "key-suffix": "a",
-    "pages": "082005",
-    "title": "Search for continuous gravitational waves from neutron stars in globular cluster NGC 6544",
-    "volume": "95",
-    "year": 2017
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "NGC 6544",
-      "breadth": 4197000000000.0,
-      "category": "skypatch",
-      "depth": 29.6,
-      "max-coherence-time": 794879.9999999999,
-      "obs-run": "S6",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              1.01599e-17
-            ],
-            "fdot": [
-              -3.37786e-08,
-              0.0
-            ],
-            "freq": [
-              92.5,
-              675
-            ]
-          }
-        ]
-      },
-      "time-span": 794879.9999999999
-    }
-  ]
+    "reference": {
+        "author": [
+            "Abbott, B. P.",
+            "others"
+        ],
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "Virgo Collaboration"
+        ],
+        "doi": "10.1103/PhysRevD.95.082005",
+        "journal": "Phys. Rev. D",
+        "key": "LIGOVirgo2017a",
+        "key-suffix": "a",
+        "pages": "082005",
+        "title": "Search for continuous gravitational waves from neutron stars in globular cluster NGC 6544",
+        "volume": "95",
+        "year": 2017
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "NGC 6544",
+            "breadth": 4197000000000.0,
+            "category": "skypatch",
+            "depth": 29.6,
+            "max-coherence-time": 794879.9999999999,
+            "obs-run": "S6",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            1.01599e-17
+                        ],
+                        "fdot": [
+                            -3.37786e-08,
+                            0.0
+                        ],
+                        "freq": [
+                            92.5,
+                            675
+                        ]
+                    }
+                ]
+            },
+            "time-span": 794879.9999999999
+        }
+    ]
 }

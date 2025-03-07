@@ -1,312 +1,312 @@
 {
-  "reference": {
-    "author": [
-      "Aasi, J.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration",
-      "Virgo Collaboration"
-    ],
-    "doi": "10.1088/0004-637X/813/1/39",
-    "journal": "Astrophys. J.",
-    "key": "LIGOVirgo2015c",
-    "key-suffix": "c",
-    "pages": "39",
-    "title": "Searches for Continuous Gravitational Waves from Nine Young Supernova Remnants",
-    "volume": "813",
-    "year": 2015
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "Cas A",
-      "breadth": 2287000000000.0,
-      "category": "cco",
-      "depth": 31.5,
-      "max-coherence-time": 725760.0,
-      "obs-run": "S6",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              8.66919e-18
-            ],
-            "fdot": [
-              -2.92235e-08,
-              0.0
-            ],
-            "freq": [
-              91,
-              573
-            ]
-          }
-        ]
-      },
-      "time-span": 725760.0
+    "reference": {
+        "author": [
+            "Aasi, J.",
+            "others"
+        ],
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "Virgo Collaboration"
+        ],
+        "doi": "10.1088/0004-637X/813/1/39",
+        "journal": "Astrophys. J.",
+        "key": "LIGOVirgo2015c",
+        "key-suffix": "c",
+        "pages": "39",
+        "title": "Searches for Continuous Gravitational Waves from Nine Young Supernova Remnants",
+        "volume": "813",
+        "year": 2015
     },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "G1.9+0.3",
-      "breadth": 1703000000000.0,
-      "category": "cco",
-      "depth": 28.3,
-      "max-coherence-time": 786240.0,
-      "obs-run": "S6",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              4.44373e-17
-            ],
-            "fdot": [
-              -5.65104e-08,
-              0.0
-            ],
-            "freq": [
-              141,
-              287
-            ]
-          }
-        ]
-      },
-      "time-span": 786240.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "G18.9-1.1",
-      "breadth": 950200000000.0,
-      "category": "cco",
-      "depth": 44.4,
-      "max-coherence-time": 2185920.0,
-      "obs-run": "S6",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              2.33021e-20
-            ],
-            "fdot": [
-              -1.29033e-09,
-              0.0
-            ],
-            "freq": [
-              132,
-              298
-            ]
-          }
-        ]
-      },
-      "time-span": 2185920.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "G189.1+3.0",
-      "breadth": 1442000000000.0,
-      "category": "cco",
-      "depth": 39.2,
-      "max-coherence-time": 1555200,
-      "obs-run": "S6",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              7.13788e-20
-            ],
-            "fdot": [
-              -2.48663e-09,
-              0.0
-            ],
-            "freq": [
-              101,
-              464
-            ]
-          }
-        ]
-      },
-      "time-span": 1555200
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "G291.0-0.1",
-      "breadth": 1286000000000.0,
-      "category": "cco",
-      "depth": 44.0,
-      "max-coherence-time": 1486080.0,
-      "obs-run": "S6",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              3.23931e-19
-            ],
-            "fdot": [
-              -4.83023e-09,
-              0.0
-            ],
-            "freq": [
-              124,
-              315
-            ]
-          }
-        ]
-      },
-      "time-span": 1486080.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "G347.3-0.5",
-      "breadth": 2212000000000.0,
-      "category": "cco",
-      "depth": 32.1,
-      "max-coherence-time": 907200.0,
-      "obs-run": "S6",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              4.83965e-19
-            ],
-            "fdot": [
-              -8.29337e-09,
-              0.0
-            ],
-            "freq": [
-              82,
-              923
-            ]
-          }
-        ]
-      },
-      "time-span": 907200.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "G350.1-0.3",
-      "breadth": 1401000000000.0,
-      "category": "cco",
-      "depth": 36.1,
-      "max-coherence-time": 1270080.0,
-      "obs-run": "S6",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              1.2632e-18
-            ],
-            "fdot": [
-              -9.52843e-09,
-              0.0
-            ],
-            "freq": [
-              132,
-              301
-            ]
-          }
-        ]
-      },
-      "time-span": 1270080.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "G93.3+6.9",
-      "breadth": 1164000000000.0,
-      "category": "cco",
-      "depth": 49.6,
-      "max-coherence-time": 2013120.0,
-      "obs-run": "S6",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              2.11971e-20
-            ],
-            "fdot": [
-              -1.2728e-09,
-              0.0
-            ],
-            "freq": [
-              109,
-              373
-            ]
-          }
-        ]
-      },
-      "time-span": 2013120.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "Vela Jr.",
-      "breadth": 3227000000000.0,
-      "category": "cco",
-      "depth": 26.1,
-      "max-coherence-time": 457920.0,
-      "obs-run": "S6",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              5.6962e-18
-            ],
-            "fdot": [
-              -3.98015e-08,
-              0.0
-            ],
-            "freq": [
-              46,
-              2034
-            ]
-          }
-        ]
-      },
-      "time-span": 457920.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "Vela Jr.",
-      "breadth": 1672000000000.0,
-      "category": "cco",
-      "depth": 40.8,
-      "max-coherence-time": 1218240.0,
-      "obs-run": "S6",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              6.14968e-20
-            ],
-            "fdot": [
-              -2.84947e-09,
-              0.0
-            ],
-            "freq": [
-              82,
-              846
-            ]
-          }
-        ]
-      },
-      "time-span": 1218240.0
-    }
-  ]
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Cas A",
+            "breadth": 2287000000000.0,
+            "category": "cco",
+            "depth": 31.5,
+            "max-coherence-time": 725760.0,
+            "obs-run": "S6",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            8.66919e-18
+                        ],
+                        "fdot": [
+                            -2.92235e-08,
+                            0.0
+                        ],
+                        "freq": [
+                            91,
+                            573
+                        ]
+                    }
+                ]
+            },
+            "time-span": 725760.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "G1.9+0.3",
+            "breadth": 1703000000000.0,
+            "category": "cco",
+            "depth": 28.3,
+            "max-coherence-time": 786240.0,
+            "obs-run": "S6",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            4.44373e-17
+                        ],
+                        "fdot": [
+                            -5.65104e-08,
+                            0.0
+                        ],
+                        "freq": [
+                            141,
+                            287
+                        ]
+                    }
+                ]
+            },
+            "time-span": 786240.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "G18.9-1.1",
+            "breadth": 950200000000.0,
+            "category": "cco",
+            "depth": 44.4,
+            "max-coherence-time": 2185920.0,
+            "obs-run": "S6",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            2.33021e-20
+                        ],
+                        "fdot": [
+                            -1.29033e-09,
+                            0.0
+                        ],
+                        "freq": [
+                            132,
+                            298
+                        ]
+                    }
+                ]
+            },
+            "time-span": 2185920.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "G189.1+3.0",
+            "breadth": 1442000000000.0,
+            "category": "cco",
+            "depth": 39.2,
+            "max-coherence-time": 1555200,
+            "obs-run": "S6",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            7.13788e-20
+                        ],
+                        "fdot": [
+                            -2.48663e-09,
+                            0.0
+                        ],
+                        "freq": [
+                            101,
+                            464
+                        ]
+                    }
+                ]
+            },
+            "time-span": 1555200
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "G291.0-0.1",
+            "breadth": 1286000000000.0,
+            "category": "cco",
+            "depth": 44.0,
+            "max-coherence-time": 1486080.0,
+            "obs-run": "S6",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            3.23931e-19
+                        ],
+                        "fdot": [
+                            -4.83023e-09,
+                            0.0
+                        ],
+                        "freq": [
+                            124,
+                            315
+                        ]
+                    }
+                ]
+            },
+            "time-span": 1486080.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "G347.3-0.5",
+            "breadth": 2212000000000.0,
+            "category": "cco",
+            "depth": 32.1,
+            "max-coherence-time": 907200.0,
+            "obs-run": "S6",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            4.83965e-19
+                        ],
+                        "fdot": [
+                            -8.29337e-09,
+                            0.0
+                        ],
+                        "freq": [
+                            82,
+                            923
+                        ]
+                    }
+                ]
+            },
+            "time-span": 907200.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "G350.1-0.3",
+            "breadth": 1401000000000.0,
+            "category": "cco",
+            "depth": 36.1,
+            "max-coherence-time": 1270080.0,
+            "obs-run": "S6",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            1.2632e-18
+                        ],
+                        "fdot": [
+                            -9.52843e-09,
+                            0.0
+                        ],
+                        "freq": [
+                            132,
+                            301
+                        ]
+                    }
+                ]
+            },
+            "time-span": 1270080.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "G93.3+6.9",
+            "breadth": 1164000000000.0,
+            "category": "cco",
+            "depth": 49.6,
+            "max-coherence-time": 2013120.0,
+            "obs-run": "S6",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            2.11971e-20
+                        ],
+                        "fdot": [
+                            -1.2728e-09,
+                            0.0
+                        ],
+                        "freq": [
+                            109,
+                            373
+                        ]
+                    }
+                ]
+            },
+            "time-span": 2013120.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Vela Jr.",
+            "breadth": 3227000000000.0,
+            "category": "cco",
+            "depth": 26.1,
+            "max-coherence-time": 457920.0,
+            "obs-run": "S6",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            5.6962e-18
+                        ],
+                        "fdot": [
+                            -3.98015e-08,
+                            0.0
+                        ],
+                        "freq": [
+                            46,
+                            2034
+                        ]
+                    }
+                ]
+            },
+            "time-span": 457920.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Vela Jr.",
+            "breadth": 1672000000000.0,
+            "category": "cco",
+            "depth": 40.8,
+            "max-coherence-time": 1218240.0,
+            "obs-run": "S6",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            6.14968e-20
+                        ],
+                        "fdot": [
+                            -2.84947e-09,
+                            0.0
+                        ],
+                        "freq": [
+                            82,
+                            846
+                        ]
+                    }
+                ]
+            },
+            "time-span": 1218240.0
+        }
+    ]
 }

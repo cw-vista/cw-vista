@@ -1,115 +1,115 @@
 {
-  "reference": {
-    "author": [
-      "Ming, J.",
-      "Papa, M. A.",
-      "Singh, A.",
-      "Eggenstein, H.-B.",
-      "Zhu, S. J.",
-      "Dergachev, V.",
-      "Hu, Y.",
-      "Prix, R.",
-      "Machenschalk, B.",
-      "Beer, C.",
-      "Behnke, O.",
-      "Allen, B."
-    ],
-    "doi": "10.1103/PhysRevD.100.024063",
-    "journal": "Phys. Rev. D",
-    "key": "Ming+2019a",
-    "key-suffix": "a",
-    "pages": "024063",
-    "title": "Results from an Einstein@Home search for continuous gravitational waves from Cassiopeia A, Vela Jr., and G347.3",
-    "volume": "100",
-    "year": 2019
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Global Correlation Transform",
-      "astro-target": "Cas A",
-      "breadth": 6.098e+19,
-      "category": "cco",
-      "depth": 60.3,
-      "max-coherence-time": 882000,
-      "obs-run": "O1",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              3.50387e-17
-            ],
-            "fdot": [
-              -7.29786e-08,
-              0.0
-            ],
-            "freq": [
-              20,
-              1500
-            ]
-          }
-        ]
-      },
-      "time-span": 11145600.0
+    "reference": {
+        "author": [
+            "Ming, J.",
+            "Papa, M. A.",
+            "Singh, A.",
+            "Eggenstein, H.-B.",
+            "Zhu, S. J.",
+            "Dergachev, V.",
+            "Hu, Y.",
+            "Prix, R.",
+            "Machenschalk, B.",
+            "Beer, C.",
+            "Behnke, O.",
+            "Allen, B."
+        ],
+        "doi": "10.1103/PhysRevD.100.024063",
+        "journal": "Phys. Rev. D",
+        "key": "Ming+2019a",
+        "key-suffix": "a",
+        "pages": "024063",
+        "title": "Results from an Einstein@Home search for continuous gravitational waves from Cassiopeia A, Vela Jr., and G347.3",
+        "volume": "100",
+        "year": 2019
     },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Global Correlation Transform",
-      "astro-target": "G347.3",
-      "breadth": 5.35e+17,
-      "category": "cco",
-      "depth": 82.9,
-      "max-coherence-time": 1760400,
-      "obs-run": "O1",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              1.49051e-18
-            ],
-            "fdot": [
-              -1.50518e-08,
-              0.0
-            ],
-            "freq": [
-              20,
-              1500
-            ]
-          }
-        ]
-      },
-      "time-span": 11145600.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Global Correlation Transform",
-      "astro-target": "Vela Jr.",
-      "breadth": 6.389e+18,
-      "category": "cco",
-      "depth": 76.5,
-      "max-coherence-time": 1328400,
-      "obs-run": "O1",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              7.78717e-18
-            ],
-            "fdot": [
-              -3.44042e-08,
-              0.0
-            ],
-            "freq": [
-              20,
-              1500
-            ]
-          }
-        ]
-      },
-      "time-span": 11145600.0
-    }
-  ]
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Global Correlation Transform",
+            "astro-target": "Cas A",
+            "breadth": 6.098e+19,
+            "category": "cco",
+            "depth": 60.3,
+            "max-coherence-time": 882000,
+            "obs-run": "O1",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            3.50387e-17
+                        ],
+                        "fdot": [
+                            -7.29786e-08,
+                            0.0
+                        ],
+                        "freq": [
+                            20,
+                            1500
+                        ]
+                    }
+                ]
+            },
+            "time-span": 11145600.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Global Correlation Transform",
+            "astro-target": "G347.3",
+            "breadth": 5.35e+17,
+            "category": "cco",
+            "depth": 82.9,
+            "max-coherence-time": 1760400,
+            "obs-run": "O1",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            1.49051e-18
+                        ],
+                        "fdot": [
+                            -1.50518e-08,
+                            0.0
+                        ],
+                        "freq": [
+                            20,
+                            1500
+                        ]
+                    }
+                ]
+            },
+            "time-span": 11145600.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Global Correlation Transform",
+            "astro-target": "Vela Jr.",
+            "breadth": 6.389e+18,
+            "category": "cco",
+            "depth": 76.5,
+            "max-coherence-time": 1328400,
+            "obs-run": "O1",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            7.78717e-18
+                        ],
+                        "fdot": [
+                            -3.44042e-08,
+                            0.0
+                        ],
+                        "freq": [
+                            20,
+                            1500
+                        ]
+                    }
+                ]
+            },
+            "time-span": 11145600.0
+        }
+    ]
 }

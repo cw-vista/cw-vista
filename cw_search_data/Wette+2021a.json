@@ -1,45 +1,45 @@
 {
-  "reference": {
-    "author": [
-      "Wette, K.",
-      "Dunn, L.",
-      "Clearwater, P.",
-      "Melatos, A."
-    ],
-    "doi": "10.1103/PhysRevD.103.083020",
-    "journal": "Phys. Rev. D",
-    "key": "Wette+2021a",
-    "key-suffix": "a",
-    "pages": "083020",
-    "title": "Deep exploration for continuous gravitational waves at 171--172 Hz in LIGO second observing run data",
-    "volume": "103",
-    "year": 2021
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Weave",
-      "breadth": 7.215e+20,
-      "category": "allsky isolated",
-      "depth": 70.62,
-      "max-coherence-time": 858194,
-      "obs-run": "O2",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -2.7e-13,
-              -3.8e-18
-            ],
-            "freq": [
-              171,
-              172
-            ]
-          }
+    "reference": {
+        "author": [
+            "Wette, K.",
+            "Dunn, L.",
+            "Clearwater, P.",
+            "Melatos, A."
         ],
-        "sky-fraction": 1
-      },
-      "time-span": 23155200.0
-    }
-  ]
+        "doi": "10.1103/PhysRevD.103.083020",
+        "journal": "Phys. Rev. D",
+        "key": "Wette+2021a",
+        "key-suffix": "a",
+        "pages": "083020",
+        "title": "Deep exploration for continuous gravitational waves at 171--172 Hz in LIGO second observing run data",
+        "volume": "103",
+        "year": 2021
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Weave",
+            "breadth": 7.215e+20,
+            "category": "allsky isolated",
+            "depth": 70.62,
+            "max-coherence-time": 858194,
+            "obs-run": "O2",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -2.7e-13,
+                            -3.8e-18
+                        ],
+                        "freq": [
+                            171,
+                            172
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 23155200.0
+        }
+    ]
 }

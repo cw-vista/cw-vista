@@ -1,93 +1,93 @@
 {
-  "reference": {
-    "author": [
-      "Meadors, G. D.",
-      "Goetz, E.",
-      "Riles, K.",
-      "Creighton, T.",
-      "Robinet, F."
-    ],
-    "doi": "10.1103/PhysRevD.95.042005",
-    "journal": "Phys. Rev. D",
-    "key": "Meadors+2017a",
-    "key-suffix": "a",
-    "pages": "042005",
-    "title": "Searches for continuous gravitational waves from Scorpius X-1 and XTE J1751-305 in LIGO's sixth science run",
-    "volume": "95",
-    "year": 2017
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "TwoSpect",
-      "astro-target": "Sco X-1",
-      "breadth": 1.702e+20,
-      "category": "lmxb",
-      "depth": 5.7,
-      "max-coherence-time": 864,
-      "obs-run": "S6",
-      "param-space": {
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              1.26,
-              1.6199999999999999
-            ],
-            "bin-period": [
-              68023.66,
-              68023.73999999999
-            ],
-            "freq": [
-              40,
-              2048
-            ]
-          }
-        ]
-      },
-      "time-span": 40569120
+    "reference": {
+        "author": [
+            "Meadors, G. D.",
+            "Goetz, E.",
+            "Riles, K.",
+            "Creighton, T.",
+            "Robinet, F."
+        ],
+        "doi": "10.1103/PhysRevD.95.042005",
+        "journal": "Phys. Rev. D",
+        "key": "Meadors+2017a",
+        "key-suffix": "a",
+        "pages": "042005",
+        "title": "Searches for continuous gravitational waves from Scorpius X-1 and XTE J1751-305 in LIGO's sixth science run",
+        "volume": "95",
+        "year": 2017
     },
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "TwoSpect",
-      "astro-target": "XTE J1751-305",
-      "breadth": 1.069e+19,
-      "category": "lmxb",
-      "depth": 9.4,
-      "max-coherence-time": 240,
-      "obs-run": "S6",
-      "param-space": {
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              10.1051,
-              10.1217
-            ],
-            "bin-period": [
-              2545.3376,
-              2545.3451999999997
-            ],
-            "freq": [
-              620.30338,
-              622.30338
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              10.1051,
-              10.1217
-            ],
-            "bin-period": [
-              2545.3376,
-              2545.3451999999997
-            ],
-            "freq": [
-              869.63598,
-              871.63598
-            ]
-          }
-        ]
-      },
-      "time-span": 40569120
-    }
-  ]
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "TwoSpect",
+            "astro-target": "Sco X-1",
+            "breadth": 1.702e+20,
+            "category": "lmxb",
+            "depth": 5.7,
+            "max-coherence-time": 864,
+            "obs-run": "S6",
+            "param-space": {
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            1.26,
+                            1.6199999999999999
+                        ],
+                        "bin-period": [
+                            68023.66,
+                            68023.73999999999
+                        ],
+                        "freq": [
+                            40,
+                            2048
+                        ]
+                    }
+                ]
+            },
+            "time-span": 40569120
+        },
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "TwoSpect",
+            "astro-target": "XTE J1751-305",
+            "breadth": 1.069e+19,
+            "category": "lmxb",
+            "depth": 9.4,
+            "max-coherence-time": 240,
+            "obs-run": "S6",
+            "param-space": {
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            10.1051,
+                            10.1217
+                        ],
+                        "bin-period": [
+                            2545.3376,
+                            2545.3451999999997
+                        ],
+                        "freq": [
+                            620.30338,
+                            622.30338
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            10.1051,
+                            10.1217
+                        ],
+                        "bin-period": [
+                            2545.3376,
+                            2545.3451999999997
+                        ],
+                        "freq": [
+                            869.63598,
+                            871.63598
+                        ]
+                    }
+                ]
+            },
+            "time-span": 40569120
+        }
+    ]
 }

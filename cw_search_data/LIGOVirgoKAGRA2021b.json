@@ -1,81 +1,81 @@
 {
-  "reference": {
-    "author": [
-      "Abbott, R.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration",
-      "Virgo Collaboration",
-      "KAGRA Collaboration"
-    ],
-    "doi": "10.3847/1538-4357/ac0d52",
-    "journal": "Astrophys. J.",
-    "key": "LIGOVirgoKAGRA2021b",
-    "key-suffix": "b",
-    "pages": "71",
-    "title": "Constraints from LIGO O3 Data on Gravitational-wave Emission Due to R-modes in the Glitching Pulsar PSR J0537-6910",
-    "volume": "922",
-    "year": 2021
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "J0537-6910",
-      "breadth": 1464000000000.0,
-      "category": "pulsar narrowband",
-      "depth": 130.52,
-      "max-coherence-time": 14688000,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              1.47581e-20
-            ],
-            "fdot": [
-              -1.1652e-12,
-              0.0
-            ],
-            "freq": [
-              86,
-              97
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
+    "reference": {
+        "author": [
+            "Abbott, R.",
+            "others"
+        ],
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "Virgo Collaboration",
+            "KAGRA Collaboration"
+        ],
+        "doi": "10.3847/1538-4357/ac0d52",
+        "journal": "Astrophys. J.",
+        "key": "LIGOVirgoKAGRA2021b",
+        "key-suffix": "b",
+        "pages": "71",
+        "title": "Constraints from LIGO O3 Data on Gravitational-wave Emission Due to R-modes in the Glitching Pulsar PSR J0537-6910",
+        "volume": "922",
+        "year": 2021
     },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "J0537-6910",
-      "breadth": 1464000000000.0,
-      "category": "pulsar narrowband",
-      "depth": 179.85,
-      "max-coherence-time": 7344000,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              1.47581e-20
-            ],
-            "fdot": [
-              -1.1652e-12,
-              0.0
-            ],
-            "freq": [
-              86,
-              97
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    }
-  ]
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "J0537-6910",
+            "breadth": 1464000000000.0,
+            "category": "pulsar narrowband",
+            "depth": 130.52,
+            "max-coherence-time": 14688000,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            1.47581e-20
+                        ],
+                        "fdot": [
+                            -1.1652e-12,
+                            0.0
+                        ],
+                        "freq": [
+                            86,
+                            97
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "J0537-6910",
+            "breadth": 1464000000000.0,
+            "category": "pulsar narrowband",
+            "depth": 179.85,
+            "max-coherence-time": 7344000,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            1.47581e-20
+                        ],
+                        "fdot": [
+                            -1.1652e-12,
+                            0.0
+                        ],
+                        "freq": [
+                            86,
+                            97
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        }
+    ]
 }

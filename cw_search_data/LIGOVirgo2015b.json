@@ -1,55 +1,55 @@
 {
-  "reference": {
-    "author": [
-      "Aasi, J.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration",
-      "Virgo Collaboration"
-    ],
-    "doi": "10.1103/PhysRevD.91.062008",
-    "journal": "Phys. Rev. D",
-    "key": "LIGOVirgo2015b",
-    "key-suffix": "b",
-    "pages": "062008",
-    "title": "Directed search for gravitational waves from Scorpius X-1 with initial LIGO data",
-    "volume": "91",
-    "year": 2015
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "Sco X-1",
-      "breadth": 5101000000000.0,
-      "category": "lmxb",
-      "depth": 8.1,
-      "max-coherence-time": 864000,
-      "obs-run": "S5",
-      "param-space": {
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              1.26,
-              1.6199999999999999
-            ],
-            "bin-period": [
-              68023.66176,
-              68023.74816
-            ],
-            "bin-time-asc": [
-              614638084,
-              614638884
-            ],
-            "freq": [
-              50,
-              550
-            ]
-          }
-        ]
-      },
-      "time-span": 864000
-    }
-  ]
+    "reference": {
+        "author": [
+            "Aasi, J.",
+            "others"
+        ],
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "Virgo Collaboration"
+        ],
+        "doi": "10.1103/PhysRevD.91.062008",
+        "journal": "Phys. Rev. D",
+        "key": "LIGOVirgo2015b",
+        "key-suffix": "b",
+        "pages": "062008",
+        "title": "Directed search for gravitational waves from Scorpius X-1 with initial LIGO data",
+        "volume": "91",
+        "year": 2015
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Sco X-1",
+            "breadth": 5101000000000.0,
+            "category": "lmxb",
+            "depth": 8.1,
+            "max-coherence-time": 864000,
+            "obs-run": "S5",
+            "param-space": {
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            1.26,
+                            1.6199999999999999
+                        ],
+                        "bin-period": [
+                            68023.66176,
+                            68023.74816
+                        ],
+                        "bin-time-asc": [
+                            614638084,
+                            614638884
+                        ],
+                        "freq": [
+                            50,
+                            550
+                        ]
+                    }
+                ]
+            },
+            "time-span": 864000
+        }
+    ]
 }

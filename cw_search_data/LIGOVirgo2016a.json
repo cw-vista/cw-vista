@@ -1,47 +1,47 @@
 {
-  "reference": {
-    "author": [
-      "Aasi, J.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration",
-      "Virgo Collaboration"
-    ],
-    "doi": "10.1103/PhysRevD.93.042007",
-    "journal": "Phys. Rev. D",
-    "key": "LIGOVirgo2016a",
-    "key-suffix": "a",
-    "pages": "042007",
-    "title": "First low frequency all-sky search for continuous gravitational wave signals",
-    "volume": "93",
-    "year": 2016
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "FrequencyHough",
-      "breadth": 2.212e+26,
-      "category": "allsky isolated",
-      "depth": 35.5,
-      "max-coherence-time": 8192,
-      "obs-run": "VSR4",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1e-10,
-              1.5e-11
-            ],
-            "freq": [
-              20,
-              128
-            ]
-          }
+    "reference": {
+        "author": [
+            "Aasi, J.",
+            "others"
         ],
-        "sky-fraction": 1
-      },
-      "time-span": 68256000.0
-    }
-  ]
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "Virgo Collaboration"
+        ],
+        "doi": "10.1103/PhysRevD.93.042007",
+        "journal": "Phys. Rev. D",
+        "key": "LIGOVirgo2016a",
+        "key-suffix": "a",
+        "pages": "042007",
+        "title": "First low frequency all-sky search for continuous gravitational wave signals",
+        "volume": "93",
+        "year": 2016
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "FrequencyHough",
+            "breadth": 2.212e+26,
+            "category": "allsky isolated",
+            "depth": 35.5,
+            "max-coherence-time": 8192,
+            "obs-run": "VSR4",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1e-10,
+                            1.5e-11
+                        ],
+                        "freq": [
+                            20,
+                            128
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 68256000.0
+        }
+    ]
 }

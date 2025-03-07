@@ -1,948 +1,948 @@
 {
-  "reference": {
-    "author": [
-      "Abbott, R.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration",
-      "Virgo Collaboration",
-      "KAGRA Collaboration"
-    ],
-    "doi": "10.3847/1538-4357/ac6ad0",
-    "journal": "Astrophys. J.",
-    "key": "LIGOVirgoKAGRA2022d",
-    "key-suffix": "d",
-    "pages": "133",
-    "title": "Narrowband Searches for Continuous and Long-duration Transient Gravitational Waves from Known Pulsars in the LIGO-Virgo Third Observing Run",
-    "volume": "932",
-    "year": 2022
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "Crab",
-      "breadth": 2039000000.0,
-      "category": "pulsar narrowband",
-      "depth": 186.51,
-      "max-coherence-time": 20563200,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -7.381500000000001e-10,
-              -7.3585e-10
-            ],
-            "freq": [
-              59.121,
-              59.361
-            ]
-          }
-        ]
-      },
-      "time-span": 20563200
+    "reference": {
+        "author": [
+            "Abbott, R.",
+            "others"
+        ],
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "Virgo Collaboration",
+            "KAGRA Collaboration"
+        ],
+        "doi": "10.3847/1538-4357/ac6ad0",
+        "journal": "Astrophys. J.",
+        "key": "LIGOVirgoKAGRA2022d",
+        "key-suffix": "d",
+        "pages": "133",
+        "title": "Narrowband Searches for Continuous and Long-duration Transient Gravitational Waves from Known Pulsars in the LIGO-Virgo Third Observing Run",
+        "volume": "932",
+        "year": 2022
     },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "Crab",
-      "breadth": 2570000000.0,
-      "category": "pulsar narrowband",
-      "depth": 168.37,
-      "max-coherence-time": 20563200,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -7.384500000000001e-10,
-              -7.3555e-10
-            ],
-            "freq": [
-              59.121,
-              59.361
-            ]
-          }
-        ]
-      },
-      "time-span": 20563200
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "Crab",
-      "breadth": 275100000.0,
-      "category": "pulsar narrowband",
-      "depth": 109.83,
-      "max-coherence-time": 9763200,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -7.384500000000001e-10,
-              -7.3555e-10
-            ],
-            "freq": [
-              59.121,
-              59.361
-            ]
-          }
-        ]
-      },
-      "time-span": 9763200
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J0711-6830",
-      "breadth": 40730000.0,
-      "category": "pulsar narrowband",
-      "depth": 290.14,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -2.0390000000000002e-15,
-              6.10000000000002e-17
-            ],
-            "freq": [
-              363.87399999999997,
-              364.594
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J0711-6830",
-      "breadth": 84860000.0,
-      "category": "pulsar narrowband",
-      "depth": 249.79,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -9.91e-16,
-              -9.869999999999999e-16
-            ],
-            "freq": [
-              363.484,
-              364.984
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1101-6101",
-      "breadth": 31830000.0,
-      "category": "pulsar narrowband",
-      "depth": 275.06,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -4.539499999999999e-12,
-              -4.5204999999999996e-12
-            ],
-            "freq": [
-              31.781,
-              31.911
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1101-6101",
-      "breadth": 30160000.0,
-      "category": "pulsar narrowband",
-      "depth": 239.28,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -4.538999999999999e-12,
-              -4.521e-12
-            ],
-            "freq": [
-              31.781,
-              31.911
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1105-6107",
-      "breadth": 49280000.0,
-      "category": "pulsar narrowband",
-      "depth": 273.72,
-      "max-coherence-time": 30326400,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -7.986000000000001e-12,
-              -7.954000000000001e-12
-            ],
-            "freq": [
-              31.578999999999997,
-              31.709
-            ]
-          }
-        ]
-      },
-      "time-span": 30326400
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1105-6107",
-      "breadth": 49280000.0,
-      "category": "pulsar narrowband",
-      "depth": 226.33,
-      "max-coherence-time": 30326400,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -7.986000000000001e-12,
-              -7.954000000000001e-12
-            ],
-            "freq": [
-              31.578999999999997,
-              31.709
-            ]
-          }
-        ]
-      },
-      "time-span": 30326400
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1809-1917",
-      "breadth": 40000000.0,
-      "category": "pulsar narrowband",
-      "depth": 279.6,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -7.456e-12,
-              -7.424e-12
-            ],
-            "freq": [
-              24.1175,
-              24.2145
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1809-1917",
-      "breadth": 37500000.0,
-      "category": "pulsar narrowband",
-      "depth": 225.55,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -7.455e-12,
-              -7.425000000000001e-12
-            ],
-            "freq": [
-              24.1175,
-              24.2145
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1813-1749",
-      "breadth": 47950000.0,
-      "category": "pulsar narrowband",
-      "depth": 128.44,
-      "max-coherence-time": 10713600,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1.2925499999999998e-10,
-              -1.28745e-10
-            ],
-            "freq": [
-              44.613,
-              44.793000000000006
-            ]
-          }
-        ]
-      },
-      "time-span": 10713600
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1813-1749",
-      "breadth": 1206000000.0,
-      "category": "pulsar narrowband",
-      "depth": 274.15,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1.2926e-10,
-              -1.2873999999999999e-10
-            ],
-            "freq": [
-              44.613,
-              44.793000000000006
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1813-1749",
-      "breadth": 1183000000.0,
-      "category": "pulsar narrowband",
-      "depth": 214.94,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1.2925499999999998e-10,
-              -1.28745e-10
-            ],
-            "freq": [
-              44.613,
-              44.793000000000006
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1828-1101",
-      "breadth": 32610000.0,
-      "category": "pulsar narrowband",
-      "depth": 256.35,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -5.7115000000000005e-12,
-              -5.6885e-12
-            ],
-            "freq": [
-              27.699,
-              27.809
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1828-1101",
-      "breadth": 32610000.0,
-      "category": "pulsar narrowband",
-      "depth": 228.55,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -5.7115000000000005e-12,
-              -5.6885e-12
-            ],
-            "freq": [
-              27.699,
-              27.809
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1833-0827",
-      "breadth": 13330000.0,
-      "category": "pulsar narrowband",
-      "depth": 283.42,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -2.5255e-12,
-              -2.5145000000000002e-12
-            ],
-            "freq": [
-              23.402,
-              23.496000000000002
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1833-0827",
-      "breadth": 12110000.0,
-      "category": "pulsar narrowband",
-      "depth": 235.16,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -2.5250000000000002e-12,
-              -2.515e-12
-            ],
-            "freq": [
-              23.402,
-              23.496000000000002
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1838-0655",
-      "breadth": 117700000.0,
-      "category": "pulsar narrowband",
-      "depth": 263.4,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1.99415e-11,
-              -1.98585e-11
-            ],
-            "freq": [
-              28.308,
-              28.418
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1838-0655",
-      "breadth": 113400000.0,
-      "category": "pulsar narrowband",
-      "depth": 240.26,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1.994e-11,
-              -1.986e-11
-            ],
-            "freq": [
-              28.308,
-              28.418
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1856+0245",
-      "breadth": 100800000.0,
-      "category": "pulsar narrowband",
-      "depth": 278.21,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1.89395e-11,
-              -1.88605e-11
-            ],
-            "freq": [
-              24.6645,
-              24.763499999999997
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1913+1011",
-      "breadth": 65210000.0,
-      "category": "pulsar narrowband",
-      "depth": 261.63,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -5.2615000000000006e-12,
-              -5.2385e-12
-            ],
-            "freq": [
-              55.584,
-              55.804
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1913+1011",
-      "breadth": 59540000.0,
-      "category": "pulsar narrowband",
-      "depth": 201.3,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -5.2605e-12,
-              -5.239500000000001e-12
-            ],
-            "freq": [
-              55.584,
-              55.804
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1925+1720",
-      "breadth": 21260000.0,
-      "category": "pulsar narrowband",
-      "depth": 292.31,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -3.6675e-12,
-              -3.6525000000000004e-12
-            ],
-            "freq": [
-              26.379,
-              26.489
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1925+1720",
-      "breadth": 21260000.0,
-      "category": "pulsar narrowband",
-      "depth": 225.95,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -3.6675e-12,
-              -3.6525000000000004e-12
-            ],
-            "freq": [
-              26.379,
-              26.489
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1928+1746",
-      "breadth": 35570000.0,
-      "category": "pulsar narrowband",
-      "depth": 314.0,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -5.581500000000001e-12,
-              -5.558500000000001e-12
-            ],
-            "freq": [
-              29.037000000000003,
-              29.157
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1928+1746",
-      "breadth": 34020000.0,
-      "category": "pulsar narrowband",
-      "depth": 251.68,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -5.5810000000000006e-12,
-              -5.559000000000001e-12
-            ],
-            "freq": [
-              29.037000000000003,
-              29.157
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1935+2025",
-      "breadth": 93670000.0,
-      "category": "pulsar narrowband",
-      "depth": 287.94,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1.89395e-11,
-              -1.88605e-11
-            ],
-            "freq": [
-              24.909,
-              25.000999999999998
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1935+2025",
-      "breadth": 97940000.0,
-      "category": "pulsar narrowband",
-      "depth": 237.27,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1.8938e-11,
-              -1.8862e-11
-            ],
-            "freq": [
-              24.904999999999998,
-              25.005
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1952+3252",
-      "breadth": 82480000.0,
-      "category": "pulsar narrowband",
-      "depth": 304.68,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -7.506000000000001e-12,
-              -7.474000000000001e-12
-            ],
-            "freq": [
-              50.487,
-              50.687000000000005
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J1952+3252",
-      "breadth": 77320000.0,
-      "category": "pulsar narrowband",
-      "depth": 228.66,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -7.505000000000001e-12,
-              -7.475000000000002e-12
-            ],
-            "freq": [
-              50.487,
-              50.687000000000005
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J2124-3358",
-      "breadth": 51480000.0,
-      "category": "pulsar narrowband",
-      "depth": 300.38,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -2.74e-15,
-              -6.3999999999999975e-16
-            ],
-            "freq": [
-              405.13300000000004,
-              406.043
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J2124-3358",
-      "breadth": 90520000.0,
-      "category": "pulsar narrowband",
-      "depth": 245.21,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1.6933999999999999e-15,
-              -1.6865999999999998e-15
-            ],
-            "freq": [
-              404.788,
-              406.38800000000003
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J2229+6114",
-      "breadth": 463900000.0,
-      "category": "pulsar narrowband",
-      "depth": 256.92,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -5.912e-11,
-              -5.888000000000001e-11
-            ],
-            "freq": [
-              38.634,
-              38.784000000000006
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "PSR J2229+6114",
-      "breadth": 536100000.0,
-      "category": "pulsar narrowband",
-      "depth": 213.67,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -5.913000000000001e-11,
-              -5.887e-11
-            ],
-            "freq": [
-              38.629000000000005,
-              38.789
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "Vela",
-      "breadth": 149100000.0,
-      "category": "pulsar narrowband",
-      "depth": 246.39,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -3.1365e-11,
-              -3.1234999999999996e-11
-            ],
-            "freq": [
-              22.3265,
-              22.415499999999998
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "Vela",
-      "breadth": 137600000.0,
-      "category": "pulsar narrowband",
-      "depth": 223.54,
-      "max-coherence-time": 31190400.0,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -3.1359999999999996e-11,
-              -3.124e-11
-            ],
-            "freq": [
-              22.3265,
-              22.415499999999998
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    }
-  ]
+    "searches": [
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 2039000000.0,
+            "category": "pulsar narrowband",
+            "depth": 186.51,
+            "max-coherence-time": 20563200,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -7.381500000000001e-10,
+                            -7.3585e-10
+                        ],
+                        "freq": [
+                            59.121,
+                            59.361
+                        ]
+                    }
+                ]
+            },
+            "time-span": 20563200
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 2570000000.0,
+            "category": "pulsar narrowband",
+            "depth": 168.37,
+            "max-coherence-time": 20563200,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -7.384500000000001e-10,
+                            -7.3555e-10
+                        ],
+                        "freq": [
+                            59.121,
+                            59.361
+                        ]
+                    }
+                ]
+            },
+            "time-span": 20563200
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 275100000.0,
+            "category": "pulsar narrowband",
+            "depth": 109.83,
+            "max-coherence-time": 9763200,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -7.384500000000001e-10,
+                            -7.3555e-10
+                        ],
+                        "freq": [
+                            59.121,
+                            59.361
+                        ]
+                    }
+                ]
+            },
+            "time-span": 9763200
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J0711-6830",
+            "breadth": 40730000.0,
+            "category": "pulsar narrowband",
+            "depth": 290.14,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -2.0390000000000002e-15,
+                            6.10000000000002e-17
+                        ],
+                        "freq": [
+                            363.87399999999997,
+                            364.594
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J0711-6830",
+            "breadth": 84860000.0,
+            "category": "pulsar narrowband",
+            "depth": 249.79,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -9.91e-16,
+                            -9.869999999999999e-16
+                        ],
+                        "freq": [
+                            363.484,
+                            364.984
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1101-6101",
+            "breadth": 31830000.0,
+            "category": "pulsar narrowband",
+            "depth": 275.06,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -4.539499999999999e-12,
+                            -4.5204999999999996e-12
+                        ],
+                        "freq": [
+                            31.781,
+                            31.911
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1101-6101",
+            "breadth": 30160000.0,
+            "category": "pulsar narrowband",
+            "depth": 239.28,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -4.538999999999999e-12,
+                            -4.521e-12
+                        ],
+                        "freq": [
+                            31.781,
+                            31.911
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1105-6107",
+            "breadth": 49280000.0,
+            "category": "pulsar narrowband",
+            "depth": 273.72,
+            "max-coherence-time": 30326400,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -7.986000000000001e-12,
+                            -7.954000000000001e-12
+                        ],
+                        "freq": [
+                            31.578999999999997,
+                            31.709
+                        ]
+                    }
+                ]
+            },
+            "time-span": 30326400
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1105-6107",
+            "breadth": 49280000.0,
+            "category": "pulsar narrowband",
+            "depth": 226.33,
+            "max-coherence-time": 30326400,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -7.986000000000001e-12,
+                            -7.954000000000001e-12
+                        ],
+                        "freq": [
+                            31.578999999999997,
+                            31.709
+                        ]
+                    }
+                ]
+            },
+            "time-span": 30326400
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1809-1917",
+            "breadth": 40000000.0,
+            "category": "pulsar narrowband",
+            "depth": 279.6,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -7.456e-12,
+                            -7.424e-12
+                        ],
+                        "freq": [
+                            24.1175,
+                            24.2145
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1809-1917",
+            "breadth": 37500000.0,
+            "category": "pulsar narrowband",
+            "depth": 225.55,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -7.455e-12,
+                            -7.425000000000001e-12
+                        ],
+                        "freq": [
+                            24.1175,
+                            24.2145
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1813-1749",
+            "breadth": 47950000.0,
+            "category": "pulsar narrowband",
+            "depth": 128.44,
+            "max-coherence-time": 10713600,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1.2925499999999998e-10,
+                            -1.28745e-10
+                        ],
+                        "freq": [
+                            44.613,
+                            44.793000000000006
+                        ]
+                    }
+                ]
+            },
+            "time-span": 10713600
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1813-1749",
+            "breadth": 1206000000.0,
+            "category": "pulsar narrowband",
+            "depth": 274.15,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1.2926e-10,
+                            -1.2873999999999999e-10
+                        ],
+                        "freq": [
+                            44.613,
+                            44.793000000000006
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1813-1749",
+            "breadth": 1183000000.0,
+            "category": "pulsar narrowband",
+            "depth": 214.94,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1.2925499999999998e-10,
+                            -1.28745e-10
+                        ],
+                        "freq": [
+                            44.613,
+                            44.793000000000006
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1828-1101",
+            "breadth": 32610000.0,
+            "category": "pulsar narrowband",
+            "depth": 256.35,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -5.7115000000000005e-12,
+                            -5.6885e-12
+                        ],
+                        "freq": [
+                            27.699,
+                            27.809
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1828-1101",
+            "breadth": 32610000.0,
+            "category": "pulsar narrowband",
+            "depth": 228.55,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -5.7115000000000005e-12,
+                            -5.6885e-12
+                        ],
+                        "freq": [
+                            27.699,
+                            27.809
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1833-0827",
+            "breadth": 13330000.0,
+            "category": "pulsar narrowband",
+            "depth": 283.42,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -2.5255e-12,
+                            -2.5145000000000002e-12
+                        ],
+                        "freq": [
+                            23.402,
+                            23.496000000000002
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1833-0827",
+            "breadth": 12110000.0,
+            "category": "pulsar narrowband",
+            "depth": 235.16,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -2.5250000000000002e-12,
+                            -2.515e-12
+                        ],
+                        "freq": [
+                            23.402,
+                            23.496000000000002
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1838-0655",
+            "breadth": 117700000.0,
+            "category": "pulsar narrowband",
+            "depth": 263.4,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1.99415e-11,
+                            -1.98585e-11
+                        ],
+                        "freq": [
+                            28.308,
+                            28.418
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1838-0655",
+            "breadth": 113400000.0,
+            "category": "pulsar narrowband",
+            "depth": 240.26,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1.994e-11,
+                            -1.986e-11
+                        ],
+                        "freq": [
+                            28.308,
+                            28.418
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1856+0245",
+            "breadth": 100800000.0,
+            "category": "pulsar narrowband",
+            "depth": 278.21,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1.89395e-11,
+                            -1.88605e-11
+                        ],
+                        "freq": [
+                            24.6645,
+                            24.763499999999997
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1913+1011",
+            "breadth": 65210000.0,
+            "category": "pulsar narrowband",
+            "depth": 261.63,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -5.2615000000000006e-12,
+                            -5.2385e-12
+                        ],
+                        "freq": [
+                            55.584,
+                            55.804
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1913+1011",
+            "breadth": 59540000.0,
+            "category": "pulsar narrowband",
+            "depth": 201.3,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -5.2605e-12,
+                            -5.239500000000001e-12
+                        ],
+                        "freq": [
+                            55.584,
+                            55.804
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1925+1720",
+            "breadth": 21260000.0,
+            "category": "pulsar narrowband",
+            "depth": 292.31,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -3.6675e-12,
+                            -3.6525000000000004e-12
+                        ],
+                        "freq": [
+                            26.379,
+                            26.489
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1925+1720",
+            "breadth": 21260000.0,
+            "category": "pulsar narrowband",
+            "depth": 225.95,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -3.6675e-12,
+                            -3.6525000000000004e-12
+                        ],
+                        "freq": [
+                            26.379,
+                            26.489
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1928+1746",
+            "breadth": 35570000.0,
+            "category": "pulsar narrowband",
+            "depth": 314.0,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -5.581500000000001e-12,
+                            -5.558500000000001e-12
+                        ],
+                        "freq": [
+                            29.037000000000003,
+                            29.157
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1928+1746",
+            "breadth": 34020000.0,
+            "category": "pulsar narrowband",
+            "depth": 251.68,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -5.5810000000000006e-12,
+                            -5.559000000000001e-12
+                        ],
+                        "freq": [
+                            29.037000000000003,
+                            29.157
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1935+2025",
+            "breadth": 93670000.0,
+            "category": "pulsar narrowband",
+            "depth": 287.94,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1.89395e-11,
+                            -1.88605e-11
+                        ],
+                        "freq": [
+                            24.909,
+                            25.000999999999998
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1935+2025",
+            "breadth": 97940000.0,
+            "category": "pulsar narrowband",
+            "depth": 237.27,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1.8938e-11,
+                            -1.8862e-11
+                        ],
+                        "freq": [
+                            24.904999999999998,
+                            25.005
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1952+3252",
+            "breadth": 82480000.0,
+            "category": "pulsar narrowband",
+            "depth": 304.68,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -7.506000000000001e-12,
+                            -7.474000000000001e-12
+                        ],
+                        "freq": [
+                            50.487,
+                            50.687000000000005
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J1952+3252",
+            "breadth": 77320000.0,
+            "category": "pulsar narrowband",
+            "depth": 228.66,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -7.505000000000001e-12,
+                            -7.475000000000002e-12
+                        ],
+                        "freq": [
+                            50.487,
+                            50.687000000000005
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J2124-3358",
+            "breadth": 51480000.0,
+            "category": "pulsar narrowband",
+            "depth": 300.38,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -2.74e-15,
+                            -6.3999999999999975e-16
+                        ],
+                        "freq": [
+                            405.13300000000004,
+                            406.043
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J2124-3358",
+            "breadth": 90520000.0,
+            "category": "pulsar narrowband",
+            "depth": 245.21,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1.6933999999999999e-15,
+                            -1.6865999999999998e-15
+                        ],
+                        "freq": [
+                            404.788,
+                            406.38800000000003
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J2229+6114",
+            "breadth": 463900000.0,
+            "category": "pulsar narrowband",
+            "depth": 256.92,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -5.912e-11,
+                            -5.888000000000001e-11
+                        ],
+                        "freq": [
+                            38.634,
+                            38.784000000000006
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "PSR J2229+6114",
+            "breadth": 536100000.0,
+            "category": "pulsar narrowband",
+            "depth": 213.67,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -5.913000000000001e-11,
+                            -5.887e-11
+                        ],
+                        "freq": [
+                            38.629000000000005,
+                            38.789
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "Vela",
+            "breadth": 149100000.0,
+            "category": "pulsar narrowband",
+            "depth": 246.39,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -3.1365e-11,
+                            -3.1234999999999996e-11
+                        ],
+                        "freq": [
+                            22.3265,
+                            22.415499999999998
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Vela",
+            "breadth": 137600000.0,
+            "category": "pulsar narrowband",
+            "depth": 223.54,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -3.1359999999999996e-11,
+                            -3.124e-11
+                        ],
+                        "freq": [
+                            22.3265,
+                            22.415499999999998
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        }
+    ]
 }

@@ -1,50 +1,50 @@
 {
-  "reference": {
-    "author": [
-      "Abadie, J.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration"
-    ],
-    "doi": "10.1088/0004-637X/722/2/1504",
-    "journal": "Astrophys. J.",
-    "key": "LIGO2010b",
-    "key-suffix": "b",
-    "pages": "1504",
-    "title": "First Search for Gravitational Waves from the Youngest Known Neutron Star",
-    "volume": "722",
-    "year": 2010
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "Cas A",
-      "breadth": 1667000000000.0,
-      "category": "cco",
-      "depth": 35.5,
-      "max-coherence-time": 1036800,
-      "obs-run": "S5",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              4.81234e-18
-            ],
-            "fdot": [
-              -1.76045e-08,
-              0.0
-            ],
-            "freq": [
-              100,
-              300
-            ]
-          }
-        ]
-      },
-      "time-span": 1036800
-    }
-  ]
+    "reference": {
+        "author": [
+            "Abadie, J.",
+            "others"
+        ],
+        "collaboration": [
+            "LIGO Scientific Collaboration"
+        ],
+        "doi": "10.1088/0004-637X/722/2/1504",
+        "journal": "Astrophys. J.",
+        "key": "LIGO2010b",
+        "key-suffix": "b",
+        "pages": "1504",
+        "title": "First Search for Gravitational Waves from the Youngest Known Neutron Star",
+        "volume": "722",
+        "year": 2010
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Cas A",
+            "breadth": 1667000000000.0,
+            "category": "cco",
+            "depth": 35.5,
+            "max-coherence-time": 1036800,
+            "obs-run": "S5",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            4.81234e-18
+                        ],
+                        "fdot": [
+                            -1.76045e-08,
+                            0.0
+                        ],
+                        "freq": [
+                            100,
+                            300
+                        ]
+                    }
+                ]
+            },
+            "time-span": 1036800
+        }
+    ]
 }

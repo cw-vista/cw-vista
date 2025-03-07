@@ -1,46 +1,46 @@
 {
-  "reference": {
-    "author": [
-      "Abbott, B. P.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration"
-    ],
-    "doi": "10.1103/PhysRevLett.102.111102",
-    "journal": "Phys. Rev. Lett.",
-    "key": "LIGO2009b",
-    "key-suffix": "b",
-    "pages": "111102",
-    "title": "All-Sky LIGO Search for Periodic Gravitational Waves in the Early Fifth-Science-Run Data",
-    "volume": "102",
-    "year": 2009
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "PowerFlux (classic)",
-      "breadth": 1.332e+29,
-      "category": "allsky isolated",
-      "depth": 19.96,
-      "max-coherence-time": 1800,
-      "obs-run": "S5",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -5e-09,
-              0.0
-            ],
-            "freq": [
-              50,
-              1100
-            ]
-          }
+    "reference": {
+        "author": [
+            "Abbott, B. P.",
+            "others"
         ],
-        "sky-fraction": 1
-      },
-      "time-span": 21038400.0
-    }
-  ]
+        "collaboration": [
+            "LIGO Scientific Collaboration"
+        ],
+        "doi": "10.1103/PhysRevLett.102.111102",
+        "journal": "Phys. Rev. Lett.",
+        "key": "LIGO2009b",
+        "key-suffix": "b",
+        "pages": "111102",
+        "title": "All-Sky LIGO Search for Periodic Gravitational Waves in the Early Fifth-Science-Run Data",
+        "volume": "102",
+        "year": 2009
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "PowerFlux (classic)",
+            "breadth": 1.332e+29,
+            "category": "allsky isolated",
+            "depth": 19.96,
+            "max-coherence-time": 1800,
+            "obs-run": "S5",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -5e-09,
+                            0.0
+                        ],
+                        "freq": [
+                            50,
+                            1100
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 21038400.0
+        }
+    ]
 }

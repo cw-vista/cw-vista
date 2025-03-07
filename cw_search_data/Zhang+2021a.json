@@ -1,53 +1,53 @@
 {
-  "reference": {
-    "author": [
-      "Zhang, Y.",
-      "Papa, M. A.",
-      "Krishnan, B.",
-      "Watts, A. L."
-    ],
-    "doi": "10.3847/2041-8213/abd256",
-    "journal": "Astrophys. J. Lett.",
-    "key": "Zhang+2021a",
-    "key-suffix": "a",
-    "pages": "L14",
-    "title": "Search for Continuous Gravitational Waves from Scorpius X-1 in LIGO O2 Data",
-    "volume": "906",
-    "year": 2021
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "CrossCorr",
-      "astro-target": "Sco X-1",
-      "breadth": 1687000000000000.0,
-      "category": "lmxb",
-      "depth": 57.17,
-      "max-coherence-time": 68400,
-      "obs-run": "O2",
-      "param-space": {
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              1.45,
-              3.25
-            ],
-            "bin-period": [
-              68023.74,
-              68023.98
-            ],
-            "bin-time-asc": [
-              1178555812,
-              1178556646
-            ],
-            "freq": [
-              40,
-              180
-            ]
-          }
-        ]
-      },
-      "time-span": 23155200.0
-    }
-  ]
+    "reference": {
+        "author": [
+            "Zhang, Y.",
+            "Papa, M. A.",
+            "Krishnan, B.",
+            "Watts, A. L."
+        ],
+        "doi": "10.3847/2041-8213/abd256",
+        "journal": "Astrophys. J. Lett.",
+        "key": "Zhang+2021a",
+        "key-suffix": "a",
+        "pages": "L14",
+        "title": "Search for Continuous Gravitational Waves from Scorpius X-1 in LIGO O2 Data",
+        "volume": "906",
+        "year": 2021
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "CrossCorr",
+            "astro-target": "Sco X-1",
+            "breadth": 1687000000000000.0,
+            "category": "lmxb",
+            "depth": 57.17,
+            "max-coherence-time": 68400,
+            "obs-run": "O2",
+            "param-space": {
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            1.45,
+                            3.25
+                        ],
+                        "bin-period": [
+                            68023.74,
+                            68023.98
+                        ],
+                        "bin-time-asc": [
+                            1178555812,
+                            1178556646
+                        ],
+                        "freq": [
+                            40,
+                            180
+                        ]
+                    }
+                ]
+            },
+            "time-span": 23155200.0
+        }
+    ]
 }

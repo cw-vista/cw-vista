@@ -1,65 +1,65 @@
 {
-  "reference": {
-    "author": [
-      "Abadie, J.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration",
-      "Virgo Collaboration",
-      "others"
-    ],
-    "doi": "10.1088/0004-637X/737/2/93",
-    "journal": "Astrophys. J.",
-    "key": "LIGOVirgo+2011a",
-    "key-suffix": "a",
-    "pages": "93",
-    "title": "Beating the spin-down limit on gravitational wave emission from the Vela pulsar",
-    "volume": "737",
-    "year": 2011
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "Bayesian",
-      "algorithm-incoherent": "none",
-      "astro-target": "Vela",
-      "breadth": 1.0,
-      "category": "pulsar targeted",
-      "depth": 589.26,
-      "max-coherence-time": 15984000.0,
-      "obs-run": "VSR2",
-      "param-space": {
-        "num-pulsars": 1
-      },
-      "time-span": 15984000.0
+    "reference": {
+        "author": [
+            "Abadie, J.",
+            "others"
+        ],
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "Virgo Collaboration",
+            "others"
+        ],
+        "doi": "10.1088/0004-637X/737/2/93",
+        "journal": "Astrophys. J.",
+        "key": "LIGOVirgo+2011a",
+        "key-suffix": "a",
+        "pages": "93",
+        "title": "Beating the spin-down limit on gravitational wave emission from the Vela pulsar",
+        "volume": "737",
+        "year": 2011
     },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "Vela",
-      "breadth": 1.0,
-      "category": "pulsar targeted",
-      "depth": 589.26,
-      "max-coherence-time": 15984000.0,
-      "obs-run": "VSR2",
-      "param-space": {
-        "num-pulsars": 1
-      },
-      "time-span": 15984000.0
-    },
-    {
-      "algorithm-coherent": "5-vectors",
-      "algorithm-incoherent": "none",
-      "astro-target": "Vela",
-      "breadth": 1.0,
-      "category": "pulsar targeted",
-      "depth": 642.82,
-      "max-coherence-time": 15984000.0,
-      "obs-run": "VSR2",
-      "param-space": {
-        "num-pulsars": 1
-      },
-      "time-span": 15984000.0
-    }
-  ]
+    "searches": [
+        {
+            "algorithm-coherent": "Bayesian",
+            "algorithm-incoherent": "none",
+            "astro-target": "Vela",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 589.26,
+            "max-coherence-time": 15984000.0,
+            "obs-run": "VSR2",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 15984000.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Vela",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 589.26,
+            "max-coherence-time": 15984000.0,
+            "obs-run": "VSR2",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 15984000.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "Vela",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 642.82,
+            "max-coherence-time": 15984000.0,
+            "obs-run": "VSR2",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 15984000.0
+        }
+    ]
 }

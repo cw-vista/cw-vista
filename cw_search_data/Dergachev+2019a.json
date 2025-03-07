@@ -1,43 +1,43 @@
 {
-  "reference": {
-    "author": [
-      "Dergachev, V.",
-      "Papa, M. A."
-    ],
-    "doi": "10.1103/PhysRevLett.123.101101",
-    "journal": "Phys. Rev. Lett.",
-    "key": "Dergachev+2019a",
-    "key-suffix": "a",
-    "pages": "101101",
-    "title": "Sensitivity Improvements in the Search for Periodic Gravitational Waves Using O1 LIGO Data",
-    "volume": "123",
-    "year": 2019
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "PowerFlux (loosely coherent)",
-      "breadth": 6.806e+25,
-      "category": "allsky isolated",
-      "depth": 28.9,
-      "max-coherence-time": 14400,
-      "obs-run": "O1",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1e-08,
-              1.11e-09
-            ],
-            "freq": [
-              20,
-              200
-            ]
-          }
+    "reference": {
+        "author": [
+            "Dergachev, V.",
+            "Papa, M. A."
         ],
-        "sky-fraction": 1
-      },
-      "time-span": 11145600.0
-    }
-  ]
+        "doi": "10.1103/PhysRevLett.123.101101",
+        "journal": "Phys. Rev. Lett.",
+        "key": "Dergachev+2019a",
+        "key-suffix": "a",
+        "pages": "101101",
+        "title": "Sensitivity Improvements in the Search for Periodic Gravitational Waves Using O1 LIGO Data",
+        "volume": "123",
+        "year": 2019
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "PowerFlux (loosely coherent)",
+            "breadth": 6.806e+25,
+            "category": "allsky isolated",
+            "depth": 28.9,
+            "max-coherence-time": 14400,
+            "obs-run": "O1",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1e-08,
+                            1.11e-09
+                        ],
+                        "freq": [
+                            20,
+                            200
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 11145600.0
+        }
+    ]
 }

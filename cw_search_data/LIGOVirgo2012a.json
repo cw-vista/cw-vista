@@ -1,47 +1,47 @@
 {
-  "reference": {
-    "author": [
-      "Abadie, J.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration",
-      "Virgo Collaboration"
-    ],
-    "doi": "10.1103/PhysRevD.85.022001",
-    "journal": "Phys. Rev. D",
-    "key": "LIGOVirgo2012a",
-    "key-suffix": "a",
-    "pages": "022001",
-    "title": "All-sky search for periodic gravitational waves in the full S5 LIGO data",
-    "volume": "85",
-    "year": 2012
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "PowerFlux (classic)",
-      "breadth": 1.466e+30,
-      "category": "allsky isolated",
-      "depth": 30.75,
-      "max-coherence-time": 1800,
-      "obs-run": "S5",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -6e-09,
-              0.0
-            ],
-            "freq": [
-              500,
-              800
-            ]
-          }
+    "reference": {
+        "author": [
+            "Abadie, J.",
+            "others"
         ],
-        "sky-fraction": 1
-      },
-      "time-span": 60134400.0
-    }
-  ]
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "Virgo Collaboration"
+        ],
+        "doi": "10.1103/PhysRevD.85.022001",
+        "journal": "Phys. Rev. D",
+        "key": "LIGOVirgo2012a",
+        "key-suffix": "a",
+        "pages": "022001",
+        "title": "All-sky search for periodic gravitational waves in the full S5 LIGO data",
+        "volume": "85",
+        "year": 2012
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "PowerFlux (classic)",
+            "breadth": 1.466e+30,
+            "category": "allsky isolated",
+            "depth": 30.75,
+            "max-coherence-time": 1800,
+            "obs-run": "S5",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -6e-09,
+                            0.0
+                        ],
+                        "freq": [
+                            500,
+                            800
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 60134400.0
+        }
+    ]
 }

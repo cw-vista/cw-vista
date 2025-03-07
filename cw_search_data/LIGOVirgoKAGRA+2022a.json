@@ -1,1334 +1,1334 @@
 {
-  "reference": {
-    "author": [
-      "Abbott, R.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration",
-      "Virgo Collaboration",
-      "KAGRA Collaboration",
-      "others"
-    ],
-    "doi": "10.1103/PhysRevD.105.022002",
-    "journal": "Phys. Rev. D",
-    "key": "LIGOVirgoKAGRA+2022a",
-    "key-suffix": "a",
-    "pages": "022002",
-    "title": "Search for continuous gravitational waves from 20 accreting millisecond x-ray pulsars in O3 LIGO data",
-    "volume": "105",
-    "year": 2022
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "HETE J1900.1-2455",
-      "breadth": 441.9,
-      "category": "lmxb",
-      "depth": 94.89,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.01838,
-              0.018500000000000003
-            ],
-            "bin-period": [
-              4995.2615,
-              4995.2645
-            ],
-            "bin-time-asc": [
-              1238161384.0,
-              1238161642.0
-            ],
-            "freq": [
-              377.29617195599997,
-              377.296171986
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.01838,
-              0.018500000000000003
-            ],
-            "bin-period": [
-              4995.2615,
-              4995.2645
-            ],
-            "bin-time-asc": [
-              1238161384.0,
-              1238161642.0
-            ],
-            "freq": [
-              754.5923439119999,
-              754.592343972
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
+    "reference": {
+        "author": [
+            "Abbott, R.",
+            "others"
+        ],
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "Virgo Collaboration",
+            "KAGRA Collaboration",
+            "others"
+        ],
+        "doi": "10.1103/PhysRevD.105.022002",
+        "journal": "Phys. Rev. D",
+        "key": "LIGOVirgoKAGRA+2022a",
+        "key-suffix": "a",
+        "pages": "022002",
+        "title": "Search for continuous gravitational waves from 20 accreting millisecond x-ray pulsars in O3 LIGO data",
+        "volume": "105",
+        "year": 2022
     },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "IGR J00291+5934",
-      "breadth": 22.4,
-      "category": "lmxb",
-      "depth": 100.82,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.06498699999999999,
-              0.064999
-            ],
-            "bin-period": [
-              8844.07646,
-              8844.077000000001
-            ],
-            "bin-time-asc": [
-              1238157684.0,
-              1238157690.0
-            ],
-            "freq": [
-              798.52284108,
-              798.52284156
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.06498699999999999,
-              0.064999
-            ],
-            "bin-period": [
-              8844.07646,
-              8844.077000000001
-            ],
-            "bin-time-asc": [
-              1238157684.0,
-              1238157690.0
-            ],
-            "freq": [
-              1197.78426162,
-              1197.7842623400002
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "IGR J16597-3704",
-      "breadth": 2224000.0,
-      "category": "lmxb",
-      "depth": 84.5,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.00471,
-              0.004889999999999999
-            ],
-            "bin-period": [
-              2757.2999999999997,
-              2759.1
-            ],
-            "bin-time-asc": [
-              1238162397.9,
-              1238165156.1
-            ],
-            "freq": [
-              105.1758262,
-              105.17582800000001
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.00471,
-              0.004889999999999999
-            ],
-            "bin-period": [
-              2757.2999999999997,
-              2759.1
-            ],
-            "bin-time-asc": [
-              1238162397.9,
-              1238165156.1
-            ],
-            "freq": [
-              210.3516524,
-              210.35165600000002
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "IGR J17062-6143",
-      "breadth": 0.04184,
-      "category": "lmxb",
-      "depth": 104.62,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.003945000000000001,
-              0.003981
-            ],
-            "bin-period": [
-              2278.2111800000002,
-              2278.2113
-            ],
-            "bin-time-asc": [
-              1238165930.0,
-              1238165954.0
-            ],
-            "freq": [
-              163.656110022,
-              163.656110076
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.003945000000000001,
-              0.003981
-            ],
-            "bin-period": [
-              2278.2111800000002,
-              2278.2113
-            ],
-            "bin-time-asc": [
-              1238165930.0,
-              1238165954.0
-            ],
-            "freq": [
-              218.208146696,
-              218.20814676799998
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.003945000000000001,
-              0.003981
-            ],
-            "bin-period": [
-              2278.2111800000002,
-              2278.2113
-            ],
-            "bin-time-asc": [
-              1238165930.0,
-              1238165954.0
-            ],
-            "freq": [
-              327.312220044,
-              327.312220152
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "IGR J17379-3747",
-      "breadth": 4350.0,
-      "category": "lmxb",
-      "depth": 67.84,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.076937,
-              0.077021
-            ],
-            "bin-period": [
-              6765.8337,
-              6765.843900000001
-            ],
-            "bin-time-asc": [
-              1238162724.0,
-              1238162772.0
-            ],
-            "freq": [
-              468.083266584,
-              468.083266626
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.076937,
-              0.077021
-            ],
-            "bin-period": [
-              6765.8337,
-              6765.843900000001
-            ],
-            "bin-time-asc": [
-              1238162724.0,
-              1238162772.0
-            ],
-            "freq": [
-              624.1110221119999,
-              624.111022168
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.076937,
-              0.077021
-            ],
-            "bin-period": [
-              6765.8337,
-              6765.843900000001
-            ],
-            "bin-time-asc": [
-              1238162724.0,
-              1238162772.0
-            ],
-            "freq": [
-              936.166533168,
-              936.166533252
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "IGR J17494-3030",
-      "breadth": 901800.0,
-      "category": "lmxb",
-      "depth": 62.09,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.01515,
-              0.015222
-            ],
-            "bin-period": [
-              4496.58,
-              4496.76
-            ],
-            "bin-time-asc": [
-              1238162675.0,
-              1238164661.0
-            ],
-            "freq": [
-              376.0501701,
-              376.05017033999997
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.01515,
-              0.015222
-            ],
-            "bin-period": [
-              4496.58,
-              4496.76
-            ],
-            "bin-time-asc": [
-              1238162675.0,
-              1238164661.0
-            ],
-            "freq": [
-              752.1003402,
-              752.1003406799999
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "IGR J17498-2921",
-      "breadth": 540.0,
-      "category": "lmxb",
-      "depth": 76.46,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.36516000000000004,
-              0.36517
-            ],
-            "bin-period": [
-              13835.618,
-              13835.62
-            ],
-            "bin-time-asc": [
-              1238164002.0,
-              1238164038.0
-            ],
-            "freq": [
-              400.99018724999996,
-              400.99018743
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.36516000000000004,
-              0.36517
-            ],
-            "bin-period": [
-              13835.618,
-              13835.62
-            ],
-            "bin-time-asc": [
-              1238164002.0,
-              1238164038.0
-            ],
-            "freq": [
-              534.6535829999999,
-              534.6535832399999
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.36516000000000004,
-              0.36517
-            ],
-            "bin-period": [
-              13835.618,
-              13835.62
-            ],
-            "bin-time-asc": [
-              1238164002.0,
-              1238164038.0
-            ],
-            "freq": [
-              801.9803744999999,
-              801.98037486
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "IGR J17511-3057",
-      "breadth": 615.3,
-      "category": "lmxb",
-      "depth": 88.09,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.2751898,
-              0.27520059999999996
-            ],
-            "bin-period": [
-              12487.5109,
-              12487.5133
-            ],
-            "bin-time-asc": [
-              1238160540.0,
-              1238160600.0
-            ],
-            "freq": [
-              244.83395118,
-              244.83395172
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.2751898,
-              0.27520059999999996
-            ],
-            "bin-period": [
-              12487.5109,
-              12487.5133
-            ],
-            "bin-time-asc": [
-              1238160540.0,
-              1238160600.0
-            ],
-            "freq": [
-              326.44526823999996,
-              326.44526895999996
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.2751898,
-              0.27520059999999996
-            ],
-            "bin-period": [
-              12487.5109,
-              12487.5133
-            ],
-            "bin-time-asc": [
-              1238160540.0,
-              1238160600.0
-            ],
-            "freq": [
-              489.66790236,
-              489.66790344
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "IGR J17591-2342",
-      "breadth": 62.45,
-      "category": "lmxb",
-      "depth": 65.07,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              1.227702,
-              1.2277259999999999
-            ],
-            "bin-period": [
-              31684.7488,
-              31684.7518
-            ],
-            "bin-time-asc": [
-              1238144175.8,
-              1238144177.6000001
-            ],
-            "freq": [
-              527.425700551,
-              527.4257006050001
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              1.227702,
-              1.2277259999999999
-            ],
-            "bin-period": [
-              31684.7488,
-              31684.7518
-            ],
-            "bin-time-asc": [
-              1238144175.8,
-              1238144177.6000001
-            ],
-            "freq": [
-              703.2342674013333,
-              703.2342674733333
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              1.227702,
-              1.2277259999999999
-            ],
-            "bin-period": [
-              31684.7488,
-              31684.7518
-            ],
-            "bin-time-asc": [
-              1238144175.8,
-              1238144177.6000001
-            ],
-            "freq": [
-              1054.851401102,
-              1054.8514012100002
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "IGR J18245-2452",
-      "breadth": 12240.0,
-      "category": "lmxb",
-      "depth": 79.92,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.76588,
-              0.76594
-            ],
-            "bin-period": [
-              39692.791,
-              39692.833
-            ],
-            "bin-time-asc": [
-              1238127997.0,
-              1238128195.0
-            ],
-            "freq": [
-              254.3330307,
-              254.33303130000002
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.76588,
-              0.76594
-            ],
-            "bin-period": [
-              39692.791,
-              39692.833
-            ],
-            "bin-time-asc": [
-              1238127997.0,
-              1238128195.0
-            ],
-            "freq": [
-              339.1107076,
-              339.11070839999996
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "MAXI J0911-655",
-      "breadth": 21830.0,
-      "category": "lmxb",
-      "depth": 91.85,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.017568,
-              0.017622
-            ],
-            "bin-period": [
-              2659.9317100000003,
-              2659.93453
-            ],
-            "bin-time-asc": [
-              1238165870.0,
-              1238165966.0
-            ],
-            "freq": [
-              339.9750114,
-              339.9750132
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.017568,
-              0.017622
-            ],
-            "bin-period": [
-              2659.9317100000003,
-              2659.93453
-            ],
-            "bin-time-asc": [
-              1238165870.0,
-              1238165966.0
-            ],
-            "freq": [
-              453.3000152,
-              453.3000176
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.017568,
-              0.017622
-            ],
-            "bin-period": [
-              2659.9317100000003,
-              2659.93453
-            ],
-            "bin-time-asc": [
-              1238165870.0,
-              1238165966.0
-            ],
-            "freq": [
-              679.9500228,
-              679.9500264
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "NGC 6440 X-2",
-      "breadth": 105600.0,
-      "category": "lmxb",
-      "depth": 74.47,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.00611,
-              0.006169999999999999
-            ],
-            "bin-period": [
-              3457.8907999999997,
-              3457.895
-            ],
-            "bin-time-asc": [
-              1238166278.0,
-              1238166620.0
-            ],
-            "freq": [
-              205.89215000000002,
-              205.89227
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.00611,
-              0.006169999999999999
-            ],
-            "bin-period": [
-              3457.8907999999997,
-              3457.895
-            ],
-            "bin-time-asc": [
-              1238166278.0,
-              1238166620.0
-            ],
-            "freq": [
-              274.52286666666663,
-              274.5230266666667
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.00611,
-              0.006169999999999999
-            ],
-            "bin-period": [
-              3457.8907999999997,
-              3457.895
-            ],
-            "bin-time-asc": [
-              1238166278.0,
-              1238166620.0
-            ],
-            "freq": [
-              411.78430000000003,
-              411.78454
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "SAX J1748.9-2021",
-      "breadth": 99130.0,
-      "category": "lmxb",
-      "depth": 59.46,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.38751,
-              0.38763000000000003
-            ],
-            "bin-period": [
-              31555.291,
-              31555.308999999997
-            ],
-            "bin-time-asc": [
-              1238151695.0,
-              1238151767.0
-            ],
-            "freq": [
-              442.3610951,
-              442.36109630000004
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.38751,
-              0.38763000000000003
-            ],
-            "bin-period": [
-              31555.291,
-              31555.308999999997
-            ],
-            "bin-time-asc": [
-              1238151695.0,
-              1238151767.0
-            ],
-            "freq": [
-              589.8147934666667,
-              589.8147950666666
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.38751,
-              0.38763000000000003
-            ],
-            "bin-period": [
-              31555.291,
-              31555.308999999997
-            ],
-            "bin-time-asc": [
-              1238151695.0,
-              1238151767.0
-            ],
-            "freq": [
-              884.7221902,
-              884.7221926000001
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "SAX J1808.4-3658",
-      "breadth": 1166.0,
-      "category": "lmxb",
-      "depth": 87.19,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.06278800000000001,
-              0.06283
-            ],
-            "bin-period": [
-              7249.146,
-              7249.164
-            ],
-            "bin-time-asc": [
-              1238161158.0,
-              1238161188.0
-            ],
-            "freq": [
-              400.97521034,
-              400.97521040000004
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.06278800000000001,
-              0.06283
-            ],
-            "bin-period": [
-              7249.146,
-              7249.164
-            ],
-            "bin-time-asc": [
-              1238161158.0,
-              1238161188.0
-            ],
-            "freq": [
-              534.6336137866666,
-              534.6336138666667
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.06278800000000001,
-              0.06283
-            ],
-            "bin-period": [
-              7249.146,
-              7249.164
-            ],
-            "bin-time-asc": [
-              1238161158.0,
-              1238161188.0
-            ],
-            "freq": [
-              801.95042068,
-              801.9504208000001
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "Swift J1749.4-2807",
-      "breadth": 232300.0,
-      "category": "lmxb",
-      "depth": 40.8,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              1.899535,
-              1.8996009999999999
-            ],
-            "bin-period": [
-              31740.8336,
-              31740.8498
-            ],
-            "bin-time-asc": [
-              1238136587.0,
-              1238136617.0
-            ],
-            "freq": [
-              517.92001367,
-              517.9200140300001
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              1.899535,
-              1.8996009999999999
-            ],
-            "bin-period": [
-              31740.8336,
-              31740.8498
-            ],
-            "bin-time-asc": [
-              1238136587.0,
-              1238136617.0
-            ],
-            "freq": [
-              690.5600182266667,
-              690.5600187066666
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              1.899535,
-              1.8996009999999999
-            ],
-            "bin-period": [
-              31740.8336,
-              31740.8498
-            ],
-            "bin-time-asc": [
-              1238136587.0,
-              1238136617.0
-            ],
-            "freq": [
-              1035.84002734,
-              1035.8400280600001
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "Swift J1756.9-2508",
-      "breadth": 335400.0,
-      "category": "lmxb",
-      "depth": 59.43,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.0059,
-              0.00602
-            ],
-            "bin-period": [
-              3282.28,
-              3282.52
-            ],
-            "bin-time-asc": [
-              1238164985.0,
-              1238167253.0
-            ],
-            "freq": [
-              182.06580344,
-              182.0658041
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.0059,
-              0.00602
-            ],
-            "bin-period": [
-              3282.28,
-              3282.52
-            ],
-            "bin-time-asc": [
-              1238164985.0,
-              1238167253.0
-            ],
-            "freq": [
-              242.75440458666665,
-              242.75440546666667
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.0059,
-              0.00602
-            ],
-            "bin-period": [
-              3282.28,
-              3282.52
-            ],
-            "bin-time-asc": [
-              1238164985.0,
-              1238167253.0
-            ],
-            "freq": [
-              364.13160688,
-              364.1316082
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "XTE J0929-314",
-      "breadth": 2473.0,
-      "category": "lmxb",
-      "depth": 89.56,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.0062629999999999995,
-              0.006317
-            ],
-            "bin-period": [
-              2614.737,
-              2614.755
-            ],
-            "bin-time-asc": [
-              1238164455.627,
-              1238167070.373
-            ],
-            "freq": [
-              185.10525427,
-              185.105254324
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.0062629999999999995,
-              0.006317
-            ],
-            "bin-period": [
-              2614.737,
-              2614.755
-            ],
-            "bin-time-asc": [
-              1238164455.627,
-              1238167070.373
-            ],
-            "freq": [
-              246.8070056933333,
-              246.8070057653333
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.0062629999999999995,
-              0.006317
-            ],
-            "bin-period": [
-              2614.737,
-              2614.755
-            ],
-            "bin-time-asc": [
-              1238164455.627,
-              1238167070.373
-            ],
-            "freq": [
-              370.21050854,
-              370.210508648
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "XTE J1751-305",
-      "breadth": 206300.0,
-      "category": "lmxb",
-      "depth": 83.51,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.010110000000000001,
-              0.01014
-            ],
-            "bin-period": [
-              2545.33,
-              2545.3527999999997
-            ],
-            "bin-time-asc": [
-              1238163371.3293,
-              1238165916.6707
-            ],
-            "freq": [
-              435.31799348,
-              435.31799366
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.010110000000000001,
-              0.01014
-            ],
-            "bin-period": [
-              2545.33,
-              2545.3527999999997
-            ],
-            "bin-time-asc": [
-              1238163371.3293,
-              1238165916.6707
-            ],
-            "freq": [
-              580.4239913066666,
-              580.4239915466666
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.010110000000000001,
-              0.01014
-            ],
-            "bin-period": [
-              2545.33,
-              2545.3527999999997
-            ],
-            "bin-time-asc": [
-              1238163371.3293,
-              1238165916.6707
-            ],
-            "freq": [
-              870.63598696,
-              870.63598732
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "XTE J1807-294",
-      "breadth": 43.86,
-      "category": "lmxb",
-      "depth": 93.16,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.004821,
-              0.004839
-            ],
-            "bin-period": [
-              2404.4154,
-              2404.4172
-            ],
-            "bin-time-asc": [
-              1238165522.0,
-              1238165900.0
-            ],
-            "freq": [
-              190.6235069,
-              190.62350714000002
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.004821,
-              0.004839
-            ],
-            "bin-period": [
-              2404.4154,
-              2404.4172
-            ],
-            "bin-time-asc": [
-              1238165522.0,
-              1238165900.0
-            ],
-            "freq": [
-              254.16467586666664,
-              254.16467618666667
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.004821,
-              0.004839
-            ],
-            "bin-period": [
-              2404.4154,
-              2404.4172
-            ],
-            "bin-time-asc": [
-              1238165522.0,
-              1238165900.0
-            ],
-            "freq": [
-              381.2470138,
-              381.24701428000003
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "XTE J1814-338",
-      "breadth": 155.8,
-      "category": "lmxb",
-      "depth": 93.83,
-      "max-coherence-time": 864000,
-      "obs-run": "O3",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              0.390606,
-              0.39066
-            ],
-            "bin-period": [
-              15388.722300000001,
-              15388.7235
-            ],
-            "bin-time-asc": [
-              1238151585.0,
-              1238151609.0
-            ],
-            "freq": [
-              314.35610876,
-              314.35610882000003
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.390606,
-              0.39066
-            ],
-            "bin-period": [
-              15388.722300000001,
-              15388.7235
-            ],
-            "bin-time-asc": [
-              1238151585.0,
-              1238151609.0
-            ],
-            "freq": [
-              419.1414783466667,
-              419.14147842666665
-            ]
-          },
-          {
-            "bin-a-sin-i": [
-              0.390606,
-              0.39066
-            ],
-            "bin-period": [
-              15388.722300000001,
-              15388.7235
-            ],
-            "bin-time-asc": [
-              1238151585.0,
-              1238151609.0
-            ],
-            "freq": [
-              628.71221752,
-              628.7122176400001
-            ]
-          }
-        ]
-      },
-      "time-span": 31190400.0
-    }
-  ]
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "HETE J1900.1-2455",
+            "breadth": 441.9,
+            "category": "lmxb",
+            "depth": 94.89,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.01838,
+                            0.018500000000000003
+                        ],
+                        "bin-period": [
+                            4995.2615,
+                            4995.2645
+                        ],
+                        "bin-time-asc": [
+                            1238161384.0,
+                            1238161642.0
+                        ],
+                        "freq": [
+                            377.29617195599997,
+                            377.296171986
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.01838,
+                            0.018500000000000003
+                        ],
+                        "bin-period": [
+                            4995.2615,
+                            4995.2645
+                        ],
+                        "bin-time-asc": [
+                            1238161384.0,
+                            1238161642.0
+                        ],
+                        "freq": [
+                            754.5923439119999,
+                            754.592343972
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "IGR J00291+5934",
+            "breadth": 22.4,
+            "category": "lmxb",
+            "depth": 100.82,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.06498699999999999,
+                            0.064999
+                        ],
+                        "bin-period": [
+                            8844.07646,
+                            8844.077000000001
+                        ],
+                        "bin-time-asc": [
+                            1238157684.0,
+                            1238157690.0
+                        ],
+                        "freq": [
+                            798.52284108,
+                            798.52284156
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.06498699999999999,
+                            0.064999
+                        ],
+                        "bin-period": [
+                            8844.07646,
+                            8844.077000000001
+                        ],
+                        "bin-time-asc": [
+                            1238157684.0,
+                            1238157690.0
+                        ],
+                        "freq": [
+                            1197.78426162,
+                            1197.7842623400002
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "IGR J16597-3704",
+            "breadth": 2224000.0,
+            "category": "lmxb",
+            "depth": 84.5,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.00471,
+                            0.004889999999999999
+                        ],
+                        "bin-period": [
+                            2757.2999999999997,
+                            2759.1
+                        ],
+                        "bin-time-asc": [
+                            1238162397.9,
+                            1238165156.1
+                        ],
+                        "freq": [
+                            105.1758262,
+                            105.17582800000001
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.00471,
+                            0.004889999999999999
+                        ],
+                        "bin-period": [
+                            2757.2999999999997,
+                            2759.1
+                        ],
+                        "bin-time-asc": [
+                            1238162397.9,
+                            1238165156.1
+                        ],
+                        "freq": [
+                            210.3516524,
+                            210.35165600000002
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "IGR J17062-6143",
+            "breadth": 0.04184,
+            "category": "lmxb",
+            "depth": 104.62,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.003945000000000001,
+                            0.003981
+                        ],
+                        "bin-period": [
+                            2278.2111800000002,
+                            2278.2113
+                        ],
+                        "bin-time-asc": [
+                            1238165930.0,
+                            1238165954.0
+                        ],
+                        "freq": [
+                            163.656110022,
+                            163.656110076
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.003945000000000001,
+                            0.003981
+                        ],
+                        "bin-period": [
+                            2278.2111800000002,
+                            2278.2113
+                        ],
+                        "bin-time-asc": [
+                            1238165930.0,
+                            1238165954.0
+                        ],
+                        "freq": [
+                            218.208146696,
+                            218.20814676799998
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.003945000000000001,
+                            0.003981
+                        ],
+                        "bin-period": [
+                            2278.2111800000002,
+                            2278.2113
+                        ],
+                        "bin-time-asc": [
+                            1238165930.0,
+                            1238165954.0
+                        ],
+                        "freq": [
+                            327.312220044,
+                            327.312220152
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "IGR J17379-3747",
+            "breadth": 4350.0,
+            "category": "lmxb",
+            "depth": 67.84,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.076937,
+                            0.077021
+                        ],
+                        "bin-period": [
+                            6765.8337,
+                            6765.843900000001
+                        ],
+                        "bin-time-asc": [
+                            1238162724.0,
+                            1238162772.0
+                        ],
+                        "freq": [
+                            468.083266584,
+                            468.083266626
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.076937,
+                            0.077021
+                        ],
+                        "bin-period": [
+                            6765.8337,
+                            6765.843900000001
+                        ],
+                        "bin-time-asc": [
+                            1238162724.0,
+                            1238162772.0
+                        ],
+                        "freq": [
+                            624.1110221119999,
+                            624.111022168
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.076937,
+                            0.077021
+                        ],
+                        "bin-period": [
+                            6765.8337,
+                            6765.843900000001
+                        ],
+                        "bin-time-asc": [
+                            1238162724.0,
+                            1238162772.0
+                        ],
+                        "freq": [
+                            936.166533168,
+                            936.166533252
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "IGR J17494-3030",
+            "breadth": 901800.0,
+            "category": "lmxb",
+            "depth": 62.09,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.01515,
+                            0.015222
+                        ],
+                        "bin-period": [
+                            4496.58,
+                            4496.76
+                        ],
+                        "bin-time-asc": [
+                            1238162675.0,
+                            1238164661.0
+                        ],
+                        "freq": [
+                            376.0501701,
+                            376.05017033999997
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.01515,
+                            0.015222
+                        ],
+                        "bin-period": [
+                            4496.58,
+                            4496.76
+                        ],
+                        "bin-time-asc": [
+                            1238162675.0,
+                            1238164661.0
+                        ],
+                        "freq": [
+                            752.1003402,
+                            752.1003406799999
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "IGR J17498-2921",
+            "breadth": 540.0,
+            "category": "lmxb",
+            "depth": 76.46,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.36516000000000004,
+                            0.36517
+                        ],
+                        "bin-period": [
+                            13835.618,
+                            13835.62
+                        ],
+                        "bin-time-asc": [
+                            1238164002.0,
+                            1238164038.0
+                        ],
+                        "freq": [
+                            400.99018724999996,
+                            400.99018743
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.36516000000000004,
+                            0.36517
+                        ],
+                        "bin-period": [
+                            13835.618,
+                            13835.62
+                        ],
+                        "bin-time-asc": [
+                            1238164002.0,
+                            1238164038.0
+                        ],
+                        "freq": [
+                            534.6535829999999,
+                            534.6535832399999
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.36516000000000004,
+                            0.36517
+                        ],
+                        "bin-period": [
+                            13835.618,
+                            13835.62
+                        ],
+                        "bin-time-asc": [
+                            1238164002.0,
+                            1238164038.0
+                        ],
+                        "freq": [
+                            801.9803744999999,
+                            801.98037486
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "IGR J17511-3057",
+            "breadth": 615.3,
+            "category": "lmxb",
+            "depth": 88.09,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.2751898,
+                            0.27520059999999996
+                        ],
+                        "bin-period": [
+                            12487.5109,
+                            12487.5133
+                        ],
+                        "bin-time-asc": [
+                            1238160540.0,
+                            1238160600.0
+                        ],
+                        "freq": [
+                            244.83395118,
+                            244.83395172
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.2751898,
+                            0.27520059999999996
+                        ],
+                        "bin-period": [
+                            12487.5109,
+                            12487.5133
+                        ],
+                        "bin-time-asc": [
+                            1238160540.0,
+                            1238160600.0
+                        ],
+                        "freq": [
+                            326.44526823999996,
+                            326.44526895999996
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.2751898,
+                            0.27520059999999996
+                        ],
+                        "bin-period": [
+                            12487.5109,
+                            12487.5133
+                        ],
+                        "bin-time-asc": [
+                            1238160540.0,
+                            1238160600.0
+                        ],
+                        "freq": [
+                            489.66790236,
+                            489.66790344
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "IGR J17591-2342",
+            "breadth": 62.45,
+            "category": "lmxb",
+            "depth": 65.07,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            1.227702,
+                            1.2277259999999999
+                        ],
+                        "bin-period": [
+                            31684.7488,
+                            31684.7518
+                        ],
+                        "bin-time-asc": [
+                            1238144175.8,
+                            1238144177.6000001
+                        ],
+                        "freq": [
+                            527.425700551,
+                            527.4257006050001
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            1.227702,
+                            1.2277259999999999
+                        ],
+                        "bin-period": [
+                            31684.7488,
+                            31684.7518
+                        ],
+                        "bin-time-asc": [
+                            1238144175.8,
+                            1238144177.6000001
+                        ],
+                        "freq": [
+                            703.2342674013333,
+                            703.2342674733333
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            1.227702,
+                            1.2277259999999999
+                        ],
+                        "bin-period": [
+                            31684.7488,
+                            31684.7518
+                        ],
+                        "bin-time-asc": [
+                            1238144175.8,
+                            1238144177.6000001
+                        ],
+                        "freq": [
+                            1054.851401102,
+                            1054.8514012100002
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "IGR J18245-2452",
+            "breadth": 12240.0,
+            "category": "lmxb",
+            "depth": 79.92,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.76588,
+                            0.76594
+                        ],
+                        "bin-period": [
+                            39692.791,
+                            39692.833
+                        ],
+                        "bin-time-asc": [
+                            1238127997.0,
+                            1238128195.0
+                        ],
+                        "freq": [
+                            254.3330307,
+                            254.33303130000002
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.76588,
+                            0.76594
+                        ],
+                        "bin-period": [
+                            39692.791,
+                            39692.833
+                        ],
+                        "bin-time-asc": [
+                            1238127997.0,
+                            1238128195.0
+                        ],
+                        "freq": [
+                            339.1107076,
+                            339.11070839999996
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "MAXI J0911-655",
+            "breadth": 21830.0,
+            "category": "lmxb",
+            "depth": 91.85,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.017568,
+                            0.017622
+                        ],
+                        "bin-period": [
+                            2659.9317100000003,
+                            2659.93453
+                        ],
+                        "bin-time-asc": [
+                            1238165870.0,
+                            1238165966.0
+                        ],
+                        "freq": [
+                            339.9750114,
+                            339.9750132
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.017568,
+                            0.017622
+                        ],
+                        "bin-period": [
+                            2659.9317100000003,
+                            2659.93453
+                        ],
+                        "bin-time-asc": [
+                            1238165870.0,
+                            1238165966.0
+                        ],
+                        "freq": [
+                            453.3000152,
+                            453.3000176
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.017568,
+                            0.017622
+                        ],
+                        "bin-period": [
+                            2659.9317100000003,
+                            2659.93453
+                        ],
+                        "bin-time-asc": [
+                            1238165870.0,
+                            1238165966.0
+                        ],
+                        "freq": [
+                            679.9500228,
+                            679.9500264
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "NGC 6440 X-2",
+            "breadth": 105600.0,
+            "category": "lmxb",
+            "depth": 74.47,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.00611,
+                            0.006169999999999999
+                        ],
+                        "bin-period": [
+                            3457.8907999999997,
+                            3457.895
+                        ],
+                        "bin-time-asc": [
+                            1238166278.0,
+                            1238166620.0
+                        ],
+                        "freq": [
+                            205.89215000000002,
+                            205.89227
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.00611,
+                            0.006169999999999999
+                        ],
+                        "bin-period": [
+                            3457.8907999999997,
+                            3457.895
+                        ],
+                        "bin-time-asc": [
+                            1238166278.0,
+                            1238166620.0
+                        ],
+                        "freq": [
+                            274.52286666666663,
+                            274.5230266666667
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.00611,
+                            0.006169999999999999
+                        ],
+                        "bin-period": [
+                            3457.8907999999997,
+                            3457.895
+                        ],
+                        "bin-time-asc": [
+                            1238166278.0,
+                            1238166620.0
+                        ],
+                        "freq": [
+                            411.78430000000003,
+                            411.78454
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "SAX J1748.9-2021",
+            "breadth": 99130.0,
+            "category": "lmxb",
+            "depth": 59.46,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.38751,
+                            0.38763000000000003
+                        ],
+                        "bin-period": [
+                            31555.291,
+                            31555.308999999997
+                        ],
+                        "bin-time-asc": [
+                            1238151695.0,
+                            1238151767.0
+                        ],
+                        "freq": [
+                            442.3610951,
+                            442.36109630000004
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.38751,
+                            0.38763000000000003
+                        ],
+                        "bin-period": [
+                            31555.291,
+                            31555.308999999997
+                        ],
+                        "bin-time-asc": [
+                            1238151695.0,
+                            1238151767.0
+                        ],
+                        "freq": [
+                            589.8147934666667,
+                            589.8147950666666
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.38751,
+                            0.38763000000000003
+                        ],
+                        "bin-period": [
+                            31555.291,
+                            31555.308999999997
+                        ],
+                        "bin-time-asc": [
+                            1238151695.0,
+                            1238151767.0
+                        ],
+                        "freq": [
+                            884.7221902,
+                            884.7221926000001
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "SAX J1808.4-3658",
+            "breadth": 1166.0,
+            "category": "lmxb",
+            "depth": 87.19,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.06278800000000001,
+                            0.06283
+                        ],
+                        "bin-period": [
+                            7249.146,
+                            7249.164
+                        ],
+                        "bin-time-asc": [
+                            1238161158.0,
+                            1238161188.0
+                        ],
+                        "freq": [
+                            400.97521034,
+                            400.97521040000004
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.06278800000000001,
+                            0.06283
+                        ],
+                        "bin-period": [
+                            7249.146,
+                            7249.164
+                        ],
+                        "bin-time-asc": [
+                            1238161158.0,
+                            1238161188.0
+                        ],
+                        "freq": [
+                            534.6336137866666,
+                            534.6336138666667
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.06278800000000001,
+                            0.06283
+                        ],
+                        "bin-period": [
+                            7249.146,
+                            7249.164
+                        ],
+                        "bin-time-asc": [
+                            1238161158.0,
+                            1238161188.0
+                        ],
+                        "freq": [
+                            801.95042068,
+                            801.9504208000001
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "Swift J1749.4-2807",
+            "breadth": 232300.0,
+            "category": "lmxb",
+            "depth": 40.8,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            1.899535,
+                            1.8996009999999999
+                        ],
+                        "bin-period": [
+                            31740.8336,
+                            31740.8498
+                        ],
+                        "bin-time-asc": [
+                            1238136587.0,
+                            1238136617.0
+                        ],
+                        "freq": [
+                            517.92001367,
+                            517.9200140300001
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            1.899535,
+                            1.8996009999999999
+                        ],
+                        "bin-period": [
+                            31740.8336,
+                            31740.8498
+                        ],
+                        "bin-time-asc": [
+                            1238136587.0,
+                            1238136617.0
+                        ],
+                        "freq": [
+                            690.5600182266667,
+                            690.5600187066666
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            1.899535,
+                            1.8996009999999999
+                        ],
+                        "bin-period": [
+                            31740.8336,
+                            31740.8498
+                        ],
+                        "bin-time-asc": [
+                            1238136587.0,
+                            1238136617.0
+                        ],
+                        "freq": [
+                            1035.84002734,
+                            1035.8400280600001
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "Swift J1756.9-2508",
+            "breadth": 335400.0,
+            "category": "lmxb",
+            "depth": 59.43,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.0059,
+                            0.00602
+                        ],
+                        "bin-period": [
+                            3282.28,
+                            3282.52
+                        ],
+                        "bin-time-asc": [
+                            1238164985.0,
+                            1238167253.0
+                        ],
+                        "freq": [
+                            182.06580344,
+                            182.0658041
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.0059,
+                            0.00602
+                        ],
+                        "bin-period": [
+                            3282.28,
+                            3282.52
+                        ],
+                        "bin-time-asc": [
+                            1238164985.0,
+                            1238167253.0
+                        ],
+                        "freq": [
+                            242.75440458666665,
+                            242.75440546666667
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.0059,
+                            0.00602
+                        ],
+                        "bin-period": [
+                            3282.28,
+                            3282.52
+                        ],
+                        "bin-time-asc": [
+                            1238164985.0,
+                            1238167253.0
+                        ],
+                        "freq": [
+                            364.13160688,
+                            364.1316082
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "XTE J0929-314",
+            "breadth": 2473.0,
+            "category": "lmxb",
+            "depth": 89.56,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.0062629999999999995,
+                            0.006317
+                        ],
+                        "bin-period": [
+                            2614.737,
+                            2614.755
+                        ],
+                        "bin-time-asc": [
+                            1238164455.627,
+                            1238167070.373
+                        ],
+                        "freq": [
+                            185.10525427,
+                            185.105254324
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.0062629999999999995,
+                            0.006317
+                        ],
+                        "bin-period": [
+                            2614.737,
+                            2614.755
+                        ],
+                        "bin-time-asc": [
+                            1238164455.627,
+                            1238167070.373
+                        ],
+                        "freq": [
+                            246.8070056933333,
+                            246.8070057653333
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.0062629999999999995,
+                            0.006317
+                        ],
+                        "bin-period": [
+                            2614.737,
+                            2614.755
+                        ],
+                        "bin-time-asc": [
+                            1238164455.627,
+                            1238167070.373
+                        ],
+                        "freq": [
+                            370.21050854,
+                            370.210508648
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "XTE J1751-305",
+            "breadth": 206300.0,
+            "category": "lmxb",
+            "depth": 83.51,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.010110000000000001,
+                            0.01014
+                        ],
+                        "bin-period": [
+                            2545.33,
+                            2545.3527999999997
+                        ],
+                        "bin-time-asc": [
+                            1238163371.3293,
+                            1238165916.6707
+                        ],
+                        "freq": [
+                            435.31799348,
+                            435.31799366
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.010110000000000001,
+                            0.01014
+                        ],
+                        "bin-period": [
+                            2545.33,
+                            2545.3527999999997
+                        ],
+                        "bin-time-asc": [
+                            1238163371.3293,
+                            1238165916.6707
+                        ],
+                        "freq": [
+                            580.4239913066666,
+                            580.4239915466666
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.010110000000000001,
+                            0.01014
+                        ],
+                        "bin-period": [
+                            2545.33,
+                            2545.3527999999997
+                        ],
+                        "bin-time-asc": [
+                            1238163371.3293,
+                            1238165916.6707
+                        ],
+                        "freq": [
+                            870.63598696,
+                            870.63598732
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "XTE J1807-294",
+            "breadth": 43.86,
+            "category": "lmxb",
+            "depth": 93.16,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.004821,
+                            0.004839
+                        ],
+                        "bin-period": [
+                            2404.4154,
+                            2404.4172
+                        ],
+                        "bin-time-asc": [
+                            1238165522.0,
+                            1238165900.0
+                        ],
+                        "freq": [
+                            190.6235069,
+                            190.62350714000002
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.004821,
+                            0.004839
+                        ],
+                        "bin-period": [
+                            2404.4154,
+                            2404.4172
+                        ],
+                        "bin-time-asc": [
+                            1238165522.0,
+                            1238165900.0
+                        ],
+                        "freq": [
+                            254.16467586666664,
+                            254.16467618666667
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.004821,
+                            0.004839
+                        ],
+                        "bin-period": [
+                            2404.4154,
+                            2404.4172
+                        ],
+                        "bin-time-asc": [
+                            1238165522.0,
+                            1238165900.0
+                        ],
+                        "freq": [
+                            381.2470138,
+                            381.24701428000003
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "XTE J1814-338",
+            "breadth": 155.8,
+            "category": "lmxb",
+            "depth": 93.83,
+            "max-coherence-time": 864000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            0.390606,
+                            0.39066
+                        ],
+                        "bin-period": [
+                            15388.722300000001,
+                            15388.7235
+                        ],
+                        "bin-time-asc": [
+                            1238151585.0,
+                            1238151609.0
+                        ],
+                        "freq": [
+                            314.35610876,
+                            314.35610882000003
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.390606,
+                            0.39066
+                        ],
+                        "bin-period": [
+                            15388.722300000001,
+                            15388.7235
+                        ],
+                        "bin-time-asc": [
+                            1238151585.0,
+                            1238151609.0
+                        ],
+                        "freq": [
+                            419.1414783466667,
+                            419.14147842666665
+                        ]
+                    },
+                    {
+                        "bin-a-sin-i": [
+                            0.390606,
+                            0.39066
+                        ],
+                        "bin-period": [
+                            15388.722300000001,
+                            15388.7235
+                        ],
+                        "bin-time-asc": [
+                            1238151585.0,
+                            1238151609.0
+                        ],
+                        "freq": [
+                            628.71221752,
+                            628.7122176400001
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        }
+    ]
 }

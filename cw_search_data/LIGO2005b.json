@@ -1,46 +1,46 @@
 {
-  "reference": {
-    "author": [
-      "Abbott, B.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration"
-    ],
-    "doi": "10.1103/PhysRevD.72.102004",
-    "journal": "Phys. Rev. D",
-    "key": "LIGO2005b",
-    "key-suffix": "b",
-    "pages": "102004",
-    "title": "First all-sky upper limits from LIGO on the strength of periodic gravitational waves using the Hough transform",
-    "volume": "72",
-    "year": 2005
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "SkyHough",
-      "breadth": 5.112e+23,
-      "category": "allsky isolated",
-      "depth": 11.3,
-      "max-coherence-time": 1800,
-      "obs-run": "S2",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1.1e-09,
-              0.0
-            ],
-            "freq": [
-              200,
-              400
-            ]
-          }
+    "reference": {
+        "author": [
+            "Abbott, B.",
+            "others"
         ],
-        "sky-fraction": 1
-      },
-      "time-span": 5097600.0
-    }
-  ]
+        "collaboration": [
+            "LIGO Scientific Collaboration"
+        ],
+        "doi": "10.1103/PhysRevD.72.102004",
+        "journal": "Phys. Rev. D",
+        "key": "LIGO2005b",
+        "key-suffix": "b",
+        "pages": "102004",
+        "title": "First all-sky upper limits from LIGO on the strength of periodic gravitational waves using the Hough transform",
+        "volume": "72",
+        "year": 2005
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "SkyHough",
+            "breadth": 5.112e+23,
+            "category": "allsky isolated",
+            "depth": 11.3,
+            "max-coherence-time": 1800,
+            "obs-run": "S2",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1.1e-09,
+                            0.0
+                        ],
+                        "freq": [
+                            200,
+                            400
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 5097600.0
+        }
+    ]
 }

@@ -1,35 +1,35 @@
 {
-  "reference": {
-    "author": [
-      "Abbott, B.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration",
-      "others"
-    ],
-    "doi": "10.1103/PhysRevD.76.042001",
-    "journal": "Phys. Rev. D",
-    "key": "LIGO+2007b",
-    "key-suffix": "b",
-    "pages": "042001",
-    "title": "Upper limits on gravitational wave emission from 78 radio pulsars",
-    "volume": "76",
-    "year": 2007
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "Bayesian",
-      "algorithm-incoherent": "none",
-      "breadth": 78.0,
-      "category": "pulsar targeted",
-      "depth": 299.5,
-      "max-coherence-time": 43977600.0,
-      "obs-run": "S4",
-      "param-space": {
-        "num-pulsars": 78
-      },
-      "time-span": 43977600.0
-    }
-  ]
+    "reference": {
+        "author": [
+            "Abbott, B.",
+            "others"
+        ],
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "others"
+        ],
+        "doi": "10.1103/PhysRevD.76.042001",
+        "journal": "Phys. Rev. D",
+        "key": "LIGO+2007b",
+        "key-suffix": "b",
+        "pages": "042001",
+        "title": "Upper limits on gravitational wave emission from 78 radio pulsars",
+        "volume": "76",
+        "year": 2007
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "Bayesian",
+            "algorithm-incoherent": "none",
+            "breadth": 78.0,
+            "category": "pulsar targeted",
+            "depth": 299.5,
+            "max-coherence-time": 43977600.0,
+            "obs-run": "S4",
+            "param-space": {
+                "num-pulsars": 78
+            },
+            "time-span": 43977600.0
+        }
+    ]
 }

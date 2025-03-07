@@ -1,46 +1,46 @@
 {
-  "reference": {
-    "author": [
-      "Sun, L.",
-      "Melatos, A.",
-      "Lasky, P. D.",
-      "Chung, C. T. Y.",
-      "Darman, N. S."
-    ],
-    "doi": "10.1103/PhysRevD.94.082004",
-    "journal": "Phys. Rev. D",
-    "key": "Sun+2016a",
-    "key-suffix": "a",
-    "pages": "082004",
-    "title": "Cross-correlation search for continuous gravitational waves from a compact object in SNR 1987A in LIGO Science run 5",
-    "volume": "94",
-    "year": 2016
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "CrossCorr",
-      "astro-target": "SN 1987A",
-      "breadth": 6.199e+24,
-      "category": "cco",
-      "depth": 64.34,
-      "max-coherence-time": 1800,
-      "obs-run": "S5",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1.23839,
-              0.0
-            ],
-            "freq": [
-              75,
-              450
-            ]
-          }
-        ]
-      },
-      "time-span": 31557600.0
-    }
-  ]
+    "reference": {
+        "author": [
+            "Sun, L.",
+            "Melatos, A.",
+            "Lasky, P. D.",
+            "Chung, C. T. Y.",
+            "Darman, N. S."
+        ],
+        "doi": "10.1103/PhysRevD.94.082004",
+        "journal": "Phys. Rev. D",
+        "key": "Sun+2016a",
+        "key-suffix": "a",
+        "pages": "082004",
+        "title": "Cross-correlation search for continuous gravitational waves from a compact object in SNR 1987A in LIGO Science run 5",
+        "volume": "94",
+        "year": 2016
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "CrossCorr",
+            "astro-target": "SN 1987A",
+            "breadth": 6.199e+24,
+            "category": "cco",
+            "depth": 64.34,
+            "max-coherence-time": 1800,
+            "obs-run": "S5",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1.23839,
+                            0.0
+                        ],
+                        "freq": [
+                            75,
+                            450
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31557600.0
+        }
+    ]
 }

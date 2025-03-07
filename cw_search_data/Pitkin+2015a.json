@@ -1,34 +1,34 @@
 {
-  "reference": {
-    "author": [
-      "Pitkin, M.",
-      "Gill, C.",
-      "Jones, D. I.",
-      "Woan, G.",
-      "Davies, G. S."
-    ],
-    "doi": "10.1093/mnras/stv1931",
-    "journal": "Mon. Not. R. Astron. Soc.",
-    "key": "Pitkin+2015a",
-    "key-suffix": "a",
-    "pages": "4399",
-    "title": "First results and future prospects for dual-harmonic searches for gravitational waves from spinning neutron stars",
-    "volume": "453",
-    "year": 2015
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "Bayesian",
-      "algorithm-incoherent": "none",
-      "breadth": 43.0,
-      "category": "pulsar targeted",
-      "depth": 1022.8,
-      "max-coherence-time": 60134400.0,
-      "obs-run": "S5",
-      "param-space": {
-        "num-pulsars": 43
-      },
-      "time-span": 60134400.0
-    }
-  ]
+    "reference": {
+        "author": [
+            "Pitkin, M.",
+            "Gill, C.",
+            "Jones, D. I.",
+            "Woan, G.",
+            "Davies, G. S."
+        ],
+        "doi": "10.1093/mnras/stv1931",
+        "journal": "Mon. Not. R. Astron. Soc.",
+        "key": "Pitkin+2015a",
+        "key-suffix": "a",
+        "pages": "4399",
+        "title": "First results and future prospects for dual-harmonic searches for gravitational waves from spinning neutron stars",
+        "volume": "453",
+        "year": 2015
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "Bayesian",
+            "algorithm-incoherent": "none",
+            "breadth": 43.0,
+            "category": "pulsar targeted",
+            "depth": 1022.8,
+            "max-coherence-time": 60134400.0,
+            "obs-run": "S5",
+            "param-space": {
+                "num-pulsars": 43
+            },
+            "time-span": 60134400.0
+        }
+    ]
 }

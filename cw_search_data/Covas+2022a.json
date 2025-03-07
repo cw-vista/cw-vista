@@ -1,49 +1,49 @@
 {
-  "reference": {
-    "author": [
-      "Covas, P. B.",
-      "Papa, M. A.",
-      "Prix, R.",
-      "Owen, B. J."
-    ],
-    "doi": "10.3847/2041-8213/ac62d7",
-    "journal": "Astrophys. J. Lett.",
-    "key": "Covas+2022a",
-    "key-suffix": "a",
-    "pages": "L19",
-    "title": "Constraints on r-modes and Mountains on Millisecond Neutron Stars in Binary Systems",
-    "volume": "929",
-    "year": 2022
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "BinarySkyHough",
-      "breadth": 1.229e+38,
-      "category": "allsky binary",
-      "depth": 17.6,
-      "max-coherence-time": 900,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "bin-a-sin-i": [
-              10,
-              40
-            ],
-            "bin-period": [
-              1296000,
-              5184000
-            ],
-            "freq": [
-              300,
-              500
-            ]
-          }
+    "reference": {
+        "author": [
+            "Covas, P. B.",
+            "Papa, M. A.",
+            "Prix, R.",
+            "Owen, B. J."
         ],
-        "sky-fraction": 1
-      },
-      "time-span": 15811200.0
-    }
-  ]
+        "doi": "10.3847/2041-8213/ac62d7",
+        "journal": "Astrophys. J. Lett.",
+        "key": "Covas+2022a",
+        "key-suffix": "a",
+        "pages": "L19",
+        "title": "Constraints on r-modes and Mountains on Millisecond Neutron Stars in Binary Systems",
+        "volume": "929",
+        "year": 2022
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "BinarySkyHough",
+            "breadth": 1.229e+38,
+            "category": "allsky binary",
+            "depth": 17.6,
+            "max-coherence-time": 900,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            10,
+                            40
+                        ],
+                        "bin-period": [
+                            1296000,
+                            5184000
+                        ],
+                        "freq": [
+                            300,
+                            500
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 15811200.0
+        }
+    ]
 }

@@ -1,49 +1,49 @@
 {
-  "reference": {
-    "author": [
-      "Beniwal, D.",
-      "Clearwater, P.",
-      "Dunn, L.",
-      "Strang, L.",
-      "Rowell, G.",
-      "Melatos, A.",
-      "Ottaway, D."
-    ],
-    "doi": "10.1103/PhysRevD.106.103018",
-    "journal": "Phys. Rev. D",
-    "key": "Beniwal+2022a",
-    "key-suffix": "a",
-    "pages": "103018",
-    "title": "Search for continuous gravitational waves from HESS J1427-608 with a hidden Markov model",
-    "volume": "106",
-    "year": 2022
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
-      "astro-target": "HESS J1427-608",
-      "breadth": 1.115e+18,
-      "category": "pulsar narrowband",
-      "depth": 53.48,
-      "max-coherence-time": 27000.0,
-      "obs-run": "O2",
-      "param-space": {
-        "hmm-num-jumps": 3,
-        "ranges": [
-          {
-            "fdot": [
-              -6.85e-10,
-              6.85e-10
-            ],
-            "freq": [
-              20,
-              200
-            ]
-          }
-        ]
-      },
-      "time-span": 23155200.0
-    }
-  ]
+    "reference": {
+        "author": [
+            "Beniwal, D.",
+            "Clearwater, P.",
+            "Dunn, L.",
+            "Strang, L.",
+            "Rowell, G.",
+            "Melatos, A.",
+            "Ottaway, D."
+        ],
+        "doi": "10.1103/PhysRevD.106.103018",
+        "journal": "Phys. Rev. D",
+        "key": "Beniwal+2022a",
+        "key-suffix": "a",
+        "pages": "103018",
+        "title": "Search for continuous gravitational waves from HESS J1427-608 with a hidden Markov model",
+        "volume": "106",
+        "year": 2022
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "astro-target": "HESS J1427-608",
+            "breadth": 1.115e+18,
+            "category": "pulsar narrowband",
+            "depth": 53.48,
+            "max-coherence-time": 27000.0,
+            "obs-run": "O2",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "fdot": [
+                            -6.85e-10,
+                            6.85e-10
+                        ],
+                        "freq": [
+                            20,
+                            200
+                        ]
+                    }
+                ]
+            },
+            "time-span": 23155200.0
+        }
+    ]
 }

@@ -1,77 +1,77 @@
 {
-  "reference": {
-    "author": [
-      "Owen, B. J.",
-      "Lindblom, L.",
-      "Pinheiro, L. S."
-    ],
-    "doi": "10.3847/2041-8213/ac84dc",
-    "journal": "Astrophys. J. Lett.",
-    "key": "Owen+2022a",
-    "key-suffix": "a",
-    "pages": "L7",
-    "title": "First Constraining Upper Limits on Gravitational-wave Emission from NS 1987A in SNR 1987A",
-    "volume": "935",
-    "year": 2022
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "SN 1987A",
-      "breadth": 15060000000000.0,
-      "category": "cco",
-      "depth": 36.0,
-      "max-coherence-time": 1102464.0,
-      "obs-run": "O2",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              2.26735e-16
-            ],
-            "fdot": [
-              -8.80225e-08,
-              0.0
-            ],
-            "freq": [
-              75,
-              125
-            ]
-          }
-        ]
-      },
-      "time-span": 1102464.0
+    "reference": {
+        "author": [
+            "Owen, B. J.",
+            "Lindblom, L.",
+            "Pinheiro, L. S."
+        ],
+        "doi": "10.3847/2041-8213/ac84dc",
+        "journal": "Astrophys. J. Lett.",
+        "key": "Owen+2022a",
+        "key-suffix": "a",
+        "pages": "L7",
+        "title": "First Constraining Upper Limits on Gravitational-wave Emission from NS 1987A in SNR 1987A",
+        "volume": "935",
+        "year": 2022
     },
-    {
-      "algorithm-coherent": "F-statistic",
-      "algorithm-incoherent": "none",
-      "astro-target": "SN 1987A",
-      "breadth": 19010000000000.0,
-      "category": "cco",
-      "depth": 29.0,
-      "max-coherence-time": 754272.0,
-      "obs-run": "O2",
-      "param-space": {
-        "ranges": [
-          {
-            "fddot": [
-              0.0,
-              4.65039e-16
-            ],
-            "fdot": [
-              -1.76045e-07,
-              0.0
-            ],
-            "freq": [
-              125,
-              275
-            ]
-          }
-        ]
-      },
-      "time-span": 754272.0
-    }
-  ]
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "SN 1987A",
+            "breadth": 15060000000000.0,
+            "category": "cco",
+            "depth": 36.0,
+            "max-coherence-time": 1102464.0,
+            "obs-run": "O2",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            2.26735e-16
+                        ],
+                        "fdot": [
+                            -8.80225e-08,
+                            0.0
+                        ],
+                        "freq": [
+                            75,
+                            125
+                        ]
+                    }
+                ]
+            },
+            "time-span": 1102464.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "SN 1987A",
+            "breadth": 19010000000000.0,
+            "category": "cco",
+            "depth": 29.0,
+            "max-coherence-time": 754272.0,
+            "obs-run": "O2",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            0.0,
+                            4.65039e-16
+                        ],
+                        "fdot": [
+                            -1.76045e-07,
+                            0.0
+                        ],
+                        "freq": [
+                            125,
+                            275
+                        ]
+                    }
+                ]
+            },
+            "time-span": 754272.0
+        }
+    ]
 }

@@ -1,48 +1,48 @@
 {
-  "reference": {
-    "author": [
-      "Abbott, R.",
-      "others"
-    ],
-    "collaboration": [
-      "LIGO Scientific Collaboration",
-      "Virgo Collaboration",
-      "KAGRA Collaboration"
-    ],
-    "doi": "10.1103/PhysRevD.104.082004",
-    "journal": "Phys. Rev. D",
-    "key": "LIGOVirgoKAGRA2021d",
-    "key-suffix": "d",
-    "pages": "082004",
-    "title": "All-sky search for continuous gravitational waves from isolated neutron stars in the early O3 LIGO data",
-    "volume": "104",
-    "year": 2021
-  },
-  "searches": [
-    {
-      "algorithm-coherent": "power",
-      "algorithm-incoherent": "PowerFlux (classic)",
-      "breadth": 4.427e+29,
-      "category": "allsky isolated",
-      "depth": 33.79,
-      "max-coherence-time": 7200,
-      "obs-run": "O3",
-      "param-space": {
-        "ranges": [
-          {
-            "fdot": [
-              -1e-08,
-              1e-09
-            ],
-            "freq": [
-              20,
-              2000
-            ]
-          }
+    "reference": {
+        "author": [
+            "Abbott, R.",
+            "others"
         ],
-        "sky-fraction": 1
-      },
-      "time-span": 15811200.0
-    }
-  ]
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "Virgo Collaboration",
+            "KAGRA Collaboration"
+        ],
+        "doi": "10.1103/PhysRevD.104.082004",
+        "journal": "Phys. Rev. D",
+        "key": "LIGOVirgoKAGRA2021d",
+        "key-suffix": "d",
+        "pages": "082004",
+        "title": "All-sky search for continuous gravitational waves from isolated neutron stars in the early O3 LIGO data",
+        "volume": "104",
+        "year": 2021
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "PowerFlux (classic)",
+            "breadth": 4.427e+29,
+            "category": "allsky isolated",
+            "depth": 33.79,
+            "max-coherence-time": 7200,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1e-08,
+                            1e-09
+                        ],
+                        "freq": [
+                            20,
+                            2000
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 15811200.0
+        }
+    ]
 }
