@@ -413,7 +413,7 @@ bibtex += "\n".join(
 ### vista plot
 
 
-def vista_plot(**kwargs):
+def vista_plot(toast=True, **kwargs):
 
     with _lock:
 
@@ -432,6 +432,31 @@ def vista_plot(**kwargs):
             path = m_obj.get_path().transformed(m_obj.get_transform())
             paths.append(path)
         sc.set_paths(paths)
+
+        # plot horizon
+        depth_diff = max_depth["log-depth"] - max_breadth["log-depth"]
+        breadth_diff = max_depth["log-breadth"] - max_breadth["log-breadth"]
+        if depth_diff == 0 and toast:
+            st.toast(
+                """
+                **Warning:** could not plot horizon, search of
+                max. depth is same as search of max. breadth
+                """
+            )
+        if with_horizon and depth_diff != 0:
+            horizon_slope = -breadth_diff / depth_diff
+            horizon_origin = max(
+                select_searches,
+                key=lambda s: horizon_slope * s["log-depth"] + s["log-breadth"],
+            )
+            ax.axline(
+                (horizon_origin["log-breadth"], horizon_origin["log-depth"]),
+                slope=-1 / horizon_slope,
+                color="black",
+                linewidth=0.5,
+                linestyle=":",
+                zorder=-10,
+            )
 
         # set plot limits
         if plot_lim["x"] is not None:
@@ -493,7 +518,7 @@ def vista_plot(**kwargs):
                         label=obs_run,
                     )
                 )
-        if with_horizon:
+        if with_horizon and depth_diff != 0:
             legend_handles.append(
                 mlines.Line2D(
                     [], [], color="black", linewidth=0.5, linestyle=":", label="horiz."
@@ -520,25 +545,6 @@ def vista_plot(**kwargs):
                 framealpha=1,
                 loc=legend_position,
                 fontsize=legend_font_size,
-            )
-
-        # plot horizon
-        if with_horizon:
-            depth_diff = max_depth["log-depth"] - max_breadth["log-depth"]
-            breadth_diff = max_depth["log-breadth"] - max_breadth["log-breadth"]
-            horizon_slope = -breadth_diff / depth_diff
-            assert horizon_slope > 0
-            horizon_origin = max(
-                select_searches,
-                key=lambda s: horizon_slope * s["log-depth"] + s["log-breadth"],
-            )
-            ax.axline(
-                (horizon_origin["log-breadth"], horizon_origin["log-depth"]),
-                slope=-1 / horizon_slope,
-                color="black",
-                linewidth=0.5,
-                linestyle=":",
-                zorder=-10,
             )
 
         # set axis labels
@@ -611,7 +617,7 @@ else:
                 if figure_fmt == "svg":
                     download_img = display_img
                 else:
-                    download_img = vista_plot(format=figure_fmt, dpi=600)
+                    download_img = vista_plot(toast=False, format=figure_fmt, dpi=600)
 
     if "display-img" in st.session_state:
 
