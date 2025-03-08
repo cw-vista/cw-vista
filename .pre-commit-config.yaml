@@ -36,16 +36,16 @@ repos:
     hooks:
       - id: validate
         name: validate CW search data
-        entry: python3 scripts/validate_cw_search_data.py
+        entry: python3 cw_search_scripts/validate_cw_search_data.py
         types: [file]
-        files: ^cw_search_data/.*\.json$|^scripts/.*\.py$
+        files: ^cw_search_data/.*\.json$|^cw_search_scripts/.*\.py$
         require_serial: true
         language: python
         additional_dependencies: ["jsonschema>=4.23.0", "numpy"]
 
       - id: contributors
         name: generate CONTRIBUTORS
-        entry: python3 scripts/generate_contributors.py
+        entry: python3 misc_scripts/generate_contributors.py
         pass_filenames: false
         types: [file]
         files: .*
