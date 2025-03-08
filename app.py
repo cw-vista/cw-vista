@@ -401,14 +401,14 @@ bibtex += gen_bibentry(
 )
 bibtex += "\n"
 
-bibtex += "\n".join(
-    sorted(
-        [
-            gen_bibentry("article", refs[k])
-            for k in set([s["ref-key"] for s in select_searches])
-        ]
-    )
+select_searches_bibtex = sorted(
+    [
+        gen_bibentry("article", refs[k])
+        for k in set([s["ref-key"] for s in select_searches])
+    ]
 )
+
+bibtex += "\n".join(select_searches_bibtex)
 
 ### vista plot
 
@@ -641,7 +641,13 @@ else:
                 on_click="ignore",
             )
 
-        # show authors
+        # show statistics and authors
+        st.write(
+            f"**Number of CW searches that appear in this plot:** {len(select_searches)}"
+        )
+        st.write(
+            f"**Number of CW search publications represented in this plot:** {len(select_searches_bibtex)}"
+        )
         authors = set()
         collaborations = set()
         for s in select_searches:
@@ -651,7 +657,7 @@ else:
             else:
                 authors.update(ref["author"])
         st.write(
-            "**CW search authors:** "
+            "**CW search publication authors:** "
             + "; ".join(sorted(authors))
             + "; and "
             + ", ".join(sorted(collaborations))
