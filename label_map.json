@@ -2,7 +2,7 @@
     "algorithm-coherent": {
         "5-vectors": "5-vec",
         "Bayesian": "Bayes",
-        "F-statistic": "$\\\\mathcal{F}$",
+        "F-statistic": "$\\mathcal{F}$",
         "power": "pwr"
     },
     "algorithm-incoherent": {
