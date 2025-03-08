@@ -1,6 +1,6 @@
 # The CW Vista: Depth vs Breadth of Continuous Gravitational Wave Searches
 
-This respository contains code and data for generating *vista plots*: plots of
+This repository contains code and data for generating *vista plots*: plots of
 the sensitivity depth versus the parameter-space breadth of searches for
 continuous gravitational waves (CWs). See [Wette (2023)][wette2023] and
 references therein for further information.
@@ -92,7 +92,7 @@ is a JSON record which must have the following fields:
 }
 ```
 
-* The `reference` field is intially set to the string `unpublished`. In this way
+* The `reference` field is initially set to the string `unpublished`. In this way
   you can already enter data for a CW search before it has been published. Once
   it is published, you can replace this field with a record containing the usual
   BibTeX fields:
@@ -169,7 +169,7 @@ is a JSON record which must have the following fields:
     analysed.
 
   * `max-coherence-time`: Maximum time-span of any data that was coherently
-  * analysed, in seconds. This may be, for example, the timebase of a short
+  * analysed, in seconds. This may be, for example, the time-base of a short
   * Fourier transform, or the time-span of segments of data analysed with the
   * $\mathcal{F}$-statistic.  `depth`: Sensitivity depth achieved by your
   * search.
@@ -213,7 +213,7 @@ is a JSON record which must have the following fields:
       each time step.
 
     * `ranges` (*required*): This field is a list, and each element of the list
-      presents a subspace of the parameter space in frequency, spindown, and (if
+      presents a subspace of the parameter space in frequency, spin-down, and (if
       appropriate) binary orbital parameters. Each subspace of the parameter
       space must be representable by simple minimum/maximum ranges in each
       parameter; for more complicated parameter space, average/representative
@@ -222,9 +222,9 @@ is a JSON record which must have the following fields:
 
       * `freq` (*required*): frequency;
 
-      * `fdot`: first spindown;
+      * `fdot`: first spin-down;
 
-      * `fddot`: second spindown;
+      * `fddot`: second spin-down;
 
       * `bin-period`: binary orbital period
 
@@ -238,7 +238,6 @@ is a JSON record which must have the following fields:
       Parameter-space breadths are calculated separately for each subspace given
       in `ranges`, and are then summed to give the total breadth of the search.
 
----
 
 [json]:             https://www.json.org/
 [pre-commit]:       https://pre-commit.com/
