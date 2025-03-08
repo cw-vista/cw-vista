@@ -1,4 +1,5 @@
 import json
+import re
 
 """
 JSON schema to validate CW search data
@@ -13,14 +14,22 @@ def get():
     with open("category_map.json", encoding="utf-8") as f:
         category_map = json.load(f)
 
-    category_regex = r"^(" + "|".join(category_map.keys()) + r")$"
+    category_regex = (
+        r"^(" + "|".join([re.escape(s) for s in category_map.keys()]) + r")$"
+    )
 
     with open("label_map.json", encoding="utf-8") as f:
         label_map = json.load(f)
 
-    algorithm_coherent_regex = "|".join(label_map["algorithm-coherent"].keys())
-    algorithm_incoherent_regex = r"^none$|" + "|".join(
-        label_map["algorithm-incoherent"].keys()
+    algorithm_coherent_regex = (
+        r"^("
+        + "|".join([re.escape(s) for s in label_map["algorithm-coherent"].keys()])
+        + r")$"
+    )
+    algorithm_incoherent_regex = (
+        r"^(none|"
+        + "|".join(re.escape(s) for s in label_map["algorithm-incoherent"].keys())
+        + r")$"
     )
 
     range_anyof_items = []
