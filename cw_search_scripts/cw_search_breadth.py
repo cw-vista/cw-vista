@@ -214,7 +214,9 @@ def breadth(search):
             )
 
         # check we have computed some breadths
-        assert br
+        if not br:
+            msg = "no breadths computed"
+            raise ValueError(msg)
 
         # compute overall power in frequency
         f_power = 0
