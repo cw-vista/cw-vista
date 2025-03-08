@@ -1,0 +1,70 @@
+#!/usr/bin/env python3
+
+import json
+import sys
+from pathlib import Path
+
+"""
+Create a new CW search data file
+"""
+
+__author__ = "Karl Wette <karl.wette@anu.edu.au>"
+__copyright__ = "Copyright (C) 2025 Karl Wette"
+
+with open("category_map.json", encoding="utf-8") as f:
+    category_map = json.load(f)
+
+new_filename = Path("cw_search_data") / "unpublished.json"
+
+if new_filename.is_file():
+    print(f"\n{new_filename} already exists!\n")
+    sys.exit(1)
+
+print("Please select a search category from:")
+category_keys = list(category_map.keys())
+for n, k in enumerate(category_keys):
+    print(f"{n}: {category_map[k]['long-name']}")
+ui = int(input("Selection: "))
+category = category_keys[ui]
+
+if category == "pulsar targeted":
+    new_param_space = {"num-pulsars": "REQUIRED"}
+else:
+    new_param_space = {
+        "sky-fraction": "OPTIONAL",
+        "hmm-num-jumps": "OPTIONAL",
+        "ranges": [
+            {
+                "freq": ["REQUIRED: MIN", "MAX"],
+                "fdot": ["OPTIONAL: MIN", "MAX"],
+                "fddot": ["OPTIONAL: MIN", "MAX"],
+                "bin-period": ["OPTIONAL: MIN", "MAX"],
+                "bin-a-sin-i": ["OPTIONAL: MIN", "MAX"],
+                "bin-time-asc": ["OPTIONAL: MIN", "MAX"],
+                "bin-freq-mod-depth": ["OPTIONAL: MIN", "MAX"],
+            }
+        ],
+    }
+
+new_data = {
+    "reference": "unpublished",
+    "searches": [
+        {
+            "category": category,
+            "astro-target": "OPTIONAL",
+            "obs-run": "REQUIRED",
+            "algorithm-coherent": "REQUIRED",
+            "algorithm-incoherent": "REQUIRED",
+            "time-span": "REQUIRED",
+            "max-coherence-time": "REQUIRED",
+            "depth": "REQUIRED",
+            "param-space": new_param_space,
+        }
+    ],
+}
+
+with open(new_filename, "w", encoding="utf-8") as f:
+    json.dump(new_data, f, indent="    ", sort_keys=False)
+    f.write("\n")
+
+print(f"\nNew CW search data file created at {new_filename}\n")
