@@ -180,8 +180,17 @@ def get():
                         "algorithm-incoherent",
                         "time-span",
                         "max-coherence-time",
-                        "depth",
                         "param-space",
+                    ],
+                    "anyOf": [
+                        {"required": ["depth"]},
+                        {
+                            "required": [
+                                "depth-h0",
+                                "depth-freq",
+                                "depth-Sh-obs-det",
+                            ]
+                        },
                     ],
                     "properties": {
                         "category": {
@@ -204,6 +213,14 @@ def get():
                         "time-span": {"type": "number", "exclusiveMinimum": 0},
                         "max-coherence-time": {"type": "number", "exclusiveMinimum": 0},
                         "depth": {"type": "number", "exclusiveMinimum": 0},
+                        "depth-h0": {"type": "number", "exclusiveMinimum": 0},
+                        "depth-freq": {"type": "number", "exclusiveMinimum": 0},
+                        "depth-Sh-obs-det": {
+                            "type": "array",
+                            "minItems": 1,
+                            "uniqueItems": True,
+                            "items": {"type": "string"},
+                        },
                         "breadth": {"type": "number", "exclusiveMinimum": 0},
                         "param-space": {
                             "type": "object",

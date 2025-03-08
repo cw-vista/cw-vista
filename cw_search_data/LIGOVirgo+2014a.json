@@ -37,7 +37,15 @@
             "algorithm-incoherent": "none",
             "breadth": 7.0,
             "category": "pulsar targeted",
-            "depth": 983.3,
+            "depth": 529.9,
+            "depth-Sh-obs-det": [
+                "S6-H1",
+                "S6-L1",
+                "VSR2-V1",
+                "VSR4-V1"
+            ],
+            "depth-freq": 59.44,
+            "depth-h0": 2.3e-25,
             "max-coherence-time": 68256000.0,
             "obs-run": "S6",
             "param-space": {
@@ -50,7 +58,15 @@
             "algorithm-incoherent": "none",
             "breadth": 7.0,
             "category": "pulsar targeted",
-            "depth": 532.2,
+            "depth": 755.1,
+            "depth-Sh-obs-det": [
+                "S6-H1",
+                "S6-L1",
+                "VSR2-V1",
+                "VSR4-V1"
+            ],
+            "depth-freq": 50.59,
+            "depth-h0": 3.1e-25,
             "max-coherence-time": 68256000.0,
             "obs-run": "S6",
             "param-space": {
