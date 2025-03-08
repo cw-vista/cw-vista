@@ -34,7 +34,7 @@ repos:
 
   - repo: local
     hooks:
-      - id: validate
+      - id: validate-cw-search-data
         name: validate CW search data
         entry: python3 cw_search_scripts/validate_cw_search_data.py
         types: [file]
@@ -43,7 +43,15 @@ repos:
         language: python
         additional_dependencies: ["jsonschema>=4.23.0", "numpy"]
 
-      - id: contributors
+      - id: check-noise-curves
+        name: check noise curves
+        entry: python3 misc_scripts/check_noise_curves.py
+        types: [file]
+        files: ^noise_curves/.*\.txt\.gz$
+        require_serial: true
+        language: python
+
+      - id: generate-contributors
         name: generate CONTRIBUTORS
         entry: python3 misc_scripts/generate_contributors.py
         pass_filenames: false
