@@ -127,7 +127,12 @@ is a JSON record which must have the following fields:
           "algorithm-incoherent": ...,
           "time-span": ...,
           "max-coherence-time": ...,
-          "depth": ...,
+          # EITHER:
+              "depth": ...,
+          # OR:
+              "depth-h0": ...,
+              "depth-freq": ...,
+              "depth-Sh-obs-det": ...,
           "param-space": ...
       },
       ...
@@ -171,8 +176,25 @@ is a JSON record which must have the following fields:
   * `max-coherence-time`: Maximum time-span of any data that was coherently
     analysed, in seconds. This may be, for example, the time-base of a short
     Fourier transform, or the time-span of segments of data analysed with the
-    $\mathcal{F}$-statistic.  `depth`: Sensitivity depth achieved by your
-    search.
+    $\mathcal{F}$-statistic.
+
+  * `depth`: Sensitivity depth achieved by your search. This may be specified in
+    one of two ways:
+
+    * If a field `depth` is given, its value is simply used.
+
+    * Otherwise, the sensitivity depth is computed using the following fields:
+
+      * `depth-h0`: $h_0$ upper limit to use for the depth.
+
+      * `depth-freq`: frequency at which the $h_0$ upper limit was placed.
+
+      * `depth-Sh-obs-det`: a list of strings of the form `<observing
+        run>-<detector>` which specify the detector noise curve to use to
+        compute the noise floor $S_h$ for the depth. For example, `O3a-H1`
+        specifies data from the LIGO Hanford detector recording during the first
+        part of the 3rd observing run. See the directory `noise_curves/` for a
+        complete list of available noise curves.
 
 * The `param-space` field of `searches` describes the parameter-space of the
   search, this will be used to compute the parameter-space breadth.
