@@ -43,13 +43,17 @@ def get_data():
         with open(filename, encoding="utf-8") as f:
             data = json.load(f)
         ref = data["reference"]
-        refs[ref["key"]] = ref
+        if ref == "unpublished":
+            ref_key = "This work"
+        else:
+            ref_key = ref["key"]
+        refs[ref_key] = ref
         for search in data["searches"]:
-            search["ref-key"] = search["citation"] = ref["key"]
+            search["ref-key"] = search["citation"] = ref_key
             searches.append(search)
 
     # maximum year of cited papers
-    max_ref_year = max(r["year"] for r in refs.values())
+    max_ref_year = max(r["year"] for r in refs.values() if r != "unpublished")
 
     # compute log-10 depth and breadth
     for s in searches:
@@ -71,7 +75,10 @@ def get_data():
             for s in searches:
                 if k in s:
                     for r, v in label_map[k].items():
-                        s[k] = re.sub(r, v, s[k])
+                        if r.startswith(r"^"):
+                            s[k] = re.sub(r, v, s[k])
+                        elif s[k] == r:
+                            s[k] = v
 
     # add algorithm label
     for s in searches:
@@ -172,17 +179,17 @@ st.write(
     **Contributors to this webpage:** {contributors_str}.
 
     This webpage generate *vista plots* of the sensitivity depth versus the
-    parameter-space breadth of searches for continuous gravitational waves. They
-    are designed to give a richer comparison between different searches, and the
-    different trade-offs made between sensitivity and parameter space
-    coverage. They also serve as a big-picture overview of efforts towards a
-    first detection of continuous gravitational waves which began in the early
-    2000s. See [Wette
+    parameter-space breadth of searches for continuous gravitational waves
+    (CWs). They are designed to give a richer comparison between different
+    searches, and the different trade-offs made between sensitivity and
+    parameter space coverage. They also serve as a big-picture overview of
+    efforts towards a first detection of continuous gravitational waves which
+    began in the early 2000s. See [Wette
     (2023)](https://doi.org/10.1016/j.astropartphys.2023.102880) and references
     therein for further information.
 
     **Please contribute!** If you have published a search for continuous
-    gravitational waves, please contribute your results to keep the CW vista
+    gravitational waves, please contribute your results and keep the CW vista
     up-to-date. See
     [here](https://github.com/cw-vista/cw-vista/blob/main/README.md) for
     instructions.
@@ -190,7 +197,7 @@ st.write(
     If you use a vista plot in an academic publication, please download the
     BibTeX and cite `cwv:Wette2023`, `cwv:webapp`, and (as appropriate)
     publications for the CW searches that appear in the plot. Figures are
-    licensed under the [Creative Commons CC BY 4.0
+    licensed under a [Creative Commons CC BY 4.0
     International](https://creativecommons.org/licenses/by/4.0/) license.
 
     """

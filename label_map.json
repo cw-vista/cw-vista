@@ -1,27 +1,26 @@
 {
     "algorithm-coherent": {
-        "^5-vectors$": "5-vec",
-        "^Bayesian$": "Bayes",
-        "^F-statistic$": "$\\\\mathcal{F}$",
-        "^power$": "pwr"
+        "5-vectors": "5-vec",
+        "Bayesian": "Bayes",
+        "F-statistic": "$\\mathcal{F}$",
+        "power": "pwr"
     },
     "algorithm-incoherent": {
-        "^BinarySkyHough$": "BSHgh",
-        "^CrossCorr$": "XCorr",
-        "^FrequencyHough$": "FrHgh",
-        "^Global Correlation Transform$": "GCT",
-        "^Hidden Markov Model \\(SOAP\\)$": "SOAP",
-        "^Hidden Markov Model \\(Viterbi\\)$": "Vtrbi",
-        "^PowerFlux \\(classic\\)$": "PFx",
-        "^PowerFlux \\(loosely coherent\\)$": "PFxLC",
-        "^SkyHough$": "SkHgh",
-        "^StackSlide$": "SSlide",
-        "^TwoSpect$": "2Spect",
-        "^Weave$": "Weave",
-        "^coincidence$": "coinc"
+        "BinarySkyHough": "BSHgh",
+        "CrossCorr": "XCorr",
+        "FrequencyHough": "FrHgh",
+        "Global Correlation Transform": "GCT",
+        "Hidden Markov Model (SOAP)": "SOAP",
+        "Hidden Markov Model (Viterbi)": "Vtrbi",
+        "PowerFlux (classic)": "PFx",
+        "PowerFlux (loosely coherent)": "PFxLC",
+        "SkyHough": "SkHgh",
+        "StackSlide": "SSlide",
+        "TwoSpect": "2Spect",
+        "Weave": "Weave",
+        "coincidence": "coinc"
     },
     "citation": {
-        "^unpublished$": "This work",
         "^LIGOVirgoKAGRA": "LVK",
         "^LIGOVirgo": "LVC",
         "^LIGO": "LSC"
