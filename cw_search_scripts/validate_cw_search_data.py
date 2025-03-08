@@ -4,6 +4,7 @@ from pathlib import Path
 
 import cw_search_breadth
 import cw_search_data_schema
+import cw_search_depth
 import jsonschema
 
 """
@@ -37,11 +38,15 @@ for filename in filenames:
         data = json.load(f)
     jsonschema.validate(instance=data, schema=schema)
 
-    # compute parameter-space breadths
+    # compute sensitivity depths and parameter-space breadths
     for s in data["searches"]:
-        breadth = cw_search_breadth.breadth(s)
 
-        # round to a few significant figures
+        # compute depth, rounded to a few significant figures
+        depth = cw_search_depth.depth(s)
+        s["depth"] = float(f"{depth:0.4g}")
+
+        # compute breadth, rounded to a few significant figures
+        breadth = cw_search_breadth.breadth(s)
         s["breadth"] = float(f"{breadth:0.4g}")
 
     # create BibTeX key

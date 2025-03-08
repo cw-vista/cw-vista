@@ -80,7 +80,7 @@
             "astro-target": "Crab",
             "breadth": 4038000000.0,
             "category": "pulsar narrowband",
-            "depth": 106.72,
+            "depth": 106.7,
             "max-coherence-time": 13037760.0,
             "obs-run": "O2",
             "param-space": {

@@ -25,7 +25,7 @@
             "astro-target": "Vela",
             "breadth": 1.0,
             "category": "pulsar targeted",
-            "depth": 589.26,
+            "depth": 589.3,
             "max-coherence-time": 15984000.0,
             "obs-run": "VSR2",
             "param-space": {
@@ -39,7 +39,7 @@
             "astro-target": "Vela",
             "breadth": 1.0,
             "category": "pulsar targeted",
-            "depth": 589.26,
+            "depth": 589.3,
             "max-coherence-time": 15984000.0,
             "obs-run": "VSR2",
             "param-space": {
@@ -53,7 +53,7 @@
             "astro-target": "Vela",
             "breadth": 1.0,
             "category": "pulsar targeted",
-            "depth": 642.82,
+            "depth": 642.8,
             "max-coherence-time": 15984000.0,
             "obs-run": "VSR2",
             "param-space": {

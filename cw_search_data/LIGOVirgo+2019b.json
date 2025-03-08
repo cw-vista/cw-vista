@@ -25,7 +25,7 @@
             "astro-target": "Crab",
             "breadth": 166400000.0,
             "category": "pulsar narrowband",
-            "depth": 110.65,
+            "depth": 110.7,
             "max-coherence-time": 12960000,
             "obs-run": "O2",
             "param-space": {
@@ -100,7 +100,7 @@
             "astro-target": "PSR J0205+6449",
             "breadth": 22240000.0,
             "category": "pulsar narrowband",
-            "depth": 118.66,
+            "depth": 118.7,
             "max-coherence-time": 15292800,
             "obs-run": "O2",
             "param-space": {
@@ -125,7 +125,7 @@
             "astro-target": "PSR J0537-6910",
             "breadth": 1056000000.0,
             "category": "pulsar narrowband",
-            "depth": 220.51,
+            "depth": 220.5,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -150,7 +150,7 @@
             "astro-target": "PSR J0540-6919",
             "breadth": 318900000.0,
             "category": "pulsar narrowband",
-            "depth": 161.24,
+            "depth": 161.2,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -250,7 +250,7 @@
             "astro-target": "PSR J1105-6107",
             "breadth": 6327000.0,
             "category": "pulsar narrowband",
-            "depth": 246.16,
+            "depth": 246.2,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -275,7 +275,7 @@
             "astro-target": "PSR J1112-6103",
             "breadth": 11070000.0,
             "category": "pulsar narrowband",
-            "depth": 188.04,
+            "depth": 188.0,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -300,7 +300,7 @@
             "astro-target": "PSR J1300+1240",
             "breadth": 26880000.0,
             "category": "pulsar narrowband",
-            "depth": 238.69,
+            "depth": 238.7,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -325,7 +325,7 @@
             "astro-target": "PSR J1302-6350",
             "breadth": 3360000.0,
             "category": "pulsar narrowband",
-            "depth": 237.02,
+            "depth": 237.0,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -350,7 +350,7 @@
             "astro-target": "PSR J1400-6325",
             "breadth": 113100000.0,
             "category": "pulsar narrowband",
-            "depth": 202.16,
+            "depth": 202.2,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -375,7 +375,7 @@
             "astro-target": "PSR J1410-6132",
             "breadth": 29570000.0,
             "category": "pulsar narrowband",
-            "depth": 203.77,
+            "depth": 203.8,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -400,7 +400,7 @@
             "astro-target": "PSR J1420-6048",
             "breadth": 31640000.0,
             "category": "pulsar narrowband",
-            "depth": 253.57,
+            "depth": 253.6,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -425,7 +425,7 @@
             "astro-target": "PSR J1524-5625",
             "breadth": 7909000.0,
             "category": "pulsar narrowband",
-            "depth": 172.21,
+            "depth": 172.2,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -450,7 +450,7 @@
             "astro-target": "PSR J1531-5610",
             "breadth": 3955000.0,
             "category": "pulsar narrowband",
-            "depth": 156.87,
+            "depth": 156.9,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -475,7 +475,7 @@
             "astro-target": "PSR J1617-5055",
             "breadth": 36380000.0,
             "category": "pulsar narrowband",
-            "depth": 165.35,
+            "depth": 165.3,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -500,7 +500,7 @@
             "astro-target": "PSR J1718-3825",
             "breadth": 2277000.0,
             "category": "pulsar narrowband",
-            "depth": 147.22,
+            "depth": 147.2,
             "max-coherence-time": 18403200,
             "obs-run": "O2",
             "param-space": {
@@ -525,7 +525,7 @@
             "astro-target": "PSR J1747-2809",
             "breadth": 99130000.0,
             "category": "pulsar narrowband",
-            "depth": 174.67,
+            "depth": 174.7,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -550,7 +550,7 @@
             "astro-target": "PSR J1747-2958",
             "breadth": 6327000.0,
             "category": "pulsar narrowband",
-            "depth": 142.31,
+            "depth": 142.3,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -600,7 +600,7 @@
             "astro-target": "PSR J1811-1925",
             "breadth": 14240000.0,
             "category": "pulsar narrowband",
-            "depth": 142.54,
+            "depth": 142.5,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -625,7 +625,7 @@
             "astro-target": "PSR J1813-1246",
             "breadth": 14760000.0,
             "category": "pulsar narrowband",
-            "depth": 186.84,
+            "depth": 186.8,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -650,7 +650,7 @@
             "astro-target": "PSR J1813-1749",
             "breadth": 123400000.0,
             "category": "pulsar narrowband",
-            "depth": 183.73,
+            "depth": 183.7,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -675,7 +675,7 @@
             "astro-target": "PSR J1831-0952",
             "breadth": 3164000.0,
             "category": "pulsar narrowband",
-            "depth": 170.76,
+            "depth": 170.8,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -700,7 +700,7 @@
             "astro-target": "PSR J1833-1034",
             "breadth": 68020000.0,
             "category": "pulsar narrowband",
-            "depth": 165.31,
+            "depth": 165.3,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -725,7 +725,7 @@
             "astro-target": "PSR J1838-0655",
             "breadth": 17430000.0,
             "category": "pulsar narrowband",
-            "depth": 159.95,
+            "depth": 159.9,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -750,7 +750,7 @@
             "astro-target": "PSR J1913+1011",
             "breadth": 8700000.0,
             "category": "pulsar narrowband",
-            "depth": 168.81,
+            "depth": 168.8,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -775,7 +775,7 @@
             "astro-target": "PSR J1952+3252",
             "breadth": 10550000.0,
             "category": "pulsar narrowband",
-            "depth": 220.68,
+            "depth": 220.7,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -800,7 +800,7 @@
             "astro-target": "PSR J2022+3842",
             "breadth": 63270000.0,
             "category": "pulsar narrowband",
-            "depth": 204.69,
+            "depth": 204.7,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -850,7 +850,7 @@
             "astro-target": "PSR J2124-3358",
             "breadth": 34020000.0,
             "category": "pulsar narrowband",
-            "depth": 282.11,
+            "depth": 282.1,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -875,7 +875,7 @@
             "astro-target": "PSR J2229+6114",
             "breadth": 50620000.0,
             "category": "pulsar narrowband",
-            "depth": 205.91,
+            "depth": 205.9,
             "max-coherence-time": 23155200.0,
             "obs-run": "O2",
             "param-space": {
@@ -900,7 +900,7 @@
             "astro-target": "Vela",
             "breadth": 14750000.0,
             "category": "pulsar narrowband",
-            "depth": 138.48,
+            "depth": 138.5,
             "max-coherence-time": 21686400,
             "obs-run": "O2",
             "param-space": {

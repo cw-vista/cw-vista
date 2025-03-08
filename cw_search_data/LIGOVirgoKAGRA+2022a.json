@@ -78,7 +78,7 @@
             "astro-target": "IGR J00291+5934",
             "breadth": 22.4,
             "category": "lmxb",
-            "depth": 100.82,
+            "depth": 100.8,
             "max-coherence-time": 864000,
             "obs-run": "O3",
             "param-space": {
@@ -182,7 +182,7 @@
             "astro-target": "IGR J17062-6143",
             "breadth": 0.04184,
             "category": "lmxb",
-            "depth": 104.62,
+            "depth": 104.6,
             "max-coherence-time": 864000,
             "obs-run": "O3",
             "param-space": {

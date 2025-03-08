@@ -24,7 +24,7 @@
             "algorithm-incoherent": "none",
             "breadth": 10.0,
             "category": "pulsar targeted",
-            "depth": 126.19,
+            "depth": 126.2,
             "max-coherence-time": 143251200.0,
             "obs-run": "O3",
             "param-space": {
@@ -37,7 +37,7 @@
             "algorithm-incoherent": "none",
             "breadth": 10.0,
             "category": "pulsar targeted",
-            "depth": 136.71,
+            "depth": 136.7,
             "max-coherence-time": 143251200.0,
             "obs-run": "O3",
             "param-space": {
@@ -50,7 +50,7 @@
             "algorithm-incoherent": "none",
             "breadth": 6.0,
             "category": "pulsar targeted",
-            "depth": 348.03,
+            "depth": 348.0,
             "max-coherence-time": 31190400.0,
             "obs-run": "O3",
             "param-space": {

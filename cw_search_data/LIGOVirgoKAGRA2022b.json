@@ -24,7 +24,7 @@
             "algorithm-incoherent": "none",
             "breadth": 470.0,
             "category": "pulsar targeted",
-            "depth": 355.41,
+            "depth": 355.4,
             "max-coherence-time": 104803200.0,
             "obs-run": "O3",
             "param-space": {
