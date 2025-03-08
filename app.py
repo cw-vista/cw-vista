@@ -89,19 +89,17 @@ def get_data():
         obs_runs.extend(sorted([o for o in obs_runs_unique if o.startswith(p)]))
 
     # set category labels and colours
-    category_map = {
-        "pulsar targeted": ("Pulsars (Targeted)", "PSR T", "red"),
-        "pulsar narrowband": ("Pulsars (Narrowband)", "PSR NB", "orange"),
-        "cco": ("Central Compact Objects", "CCO", "gold"),
-        "lmxb": ("Low-Mass X-ray Binaries", "LMXB", "green"),
-        "skypatch": ("Sky Patches", "SkyPatch", "blue"),
-        "allsky isolated": ("All Sky (Isolated)", "AllSky 1", "indigo"),
-        "allsky binary": ("All Sky (Binary)", "AllSky 2", "violet"),
-    }
+    with open("category_map.json", encoding="utf-8") as f:
+        category_map = json.load(f)
     for s in searches:
-        s["category"], s["category-short"], s["colour"] = category_map[s["category"]]
-    categories = [v[0] for v in category_map.values()]
-    category_legend = {v[0]: (v[1], v[2]) for v in category_map.values()}
+        category_key = s["category"]
+        s["category"] = category_map[category_key]["long-name"]
+        s["category-short"] = category_map[category_key]["short-name"]
+        s["colour"] = category_map[category_key]["colour"]
+    categories = [v["long-name"] for v in category_map.values()]
+    category_legend = {
+        v["long-name"]: (v["short-name"], v["colour"]) for v in category_map.values()
+    }
 
     # set observing run markers
     initial_era_markers = {

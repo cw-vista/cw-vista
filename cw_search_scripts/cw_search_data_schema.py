@@ -10,6 +10,11 @@ __copyright__ = "Copyright (C) 2025 Karl Wette"
 
 def get():
 
+    with open("category_map.json", encoding="utf-8") as f:
+        category_map = json.load(f)
+
+    category_regex = r"^(" + "|".join(category_map.keys()) + r")$"
+
     with open("label_map.json", encoding="utf-8") as f:
         label_map = json.load(f)
 
@@ -172,7 +177,7 @@ def get():
                     "properties": {
                         "category": {
                             "type": "string",
-                            "pattern": r"^(pulsar targeted|pulsar narrowband|cco|lmxb|skypatch|allsky isolated|allsky binary)$",
+                            "pattern": category_regex,
                         },
                         "astro-target": {"type": "string"},
                         "obs-run": {
