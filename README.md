@@ -169,10 +169,10 @@ is a JSON record which must have the following fields:
     analysed.
 
   * `max-coherence-time`: Maximum time-span of any data that was coherently
-  * analysed, in seconds. This may be, for example, the time-base of a short
-  * Fourier transform, or the time-span of segments of data analysed with the
-  * $\mathcal{F}$-statistic.  `depth`: Sensitivity depth achieved by your
-  * search.
+    analysed, in seconds. This may be, for example, the time-base of a short
+    Fourier transform, or the time-span of segments of data analysed with the
+    $\mathcal{F}$-statistic.  `depth`: Sensitivity depth achieved by your
+    search.
 
 * The `param-space` field of `searches` describes the parameter-space of the
   search, this will be used to compute the parameter-space breadth.

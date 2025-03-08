@@ -687,12 +687,12 @@ else:
             + "."
         )
 
-# acknowledge software
-st.write(
-    """
-    **Software:** Plots were generated using
-    [Matplotlib](https://matplotlib.org/),
-    [adjustText](https://adjusttext.readthedocs.io/), and
-    [NumPy](https://numpy.org/).
-    """
-)
+        # acknowledge software
+        st.write(
+            """
+            **Software:** Plots were generated using
+            [Matplotlib](https://matplotlib.org/),
+            [adjustText](https://adjusttext.readthedocs.io/), and
+            [NumPy](https://numpy.org/).
+            """
+        )
