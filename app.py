@@ -165,20 +165,38 @@ contributors = get_contributors()
 
 ### create page intro
 
-st.title("The CW Vista: Depth vs Breadth")
-
 contributors_str = ", ".join(f"{first} {last}" for last, first in contributors)
-intro = f"""
-**Contributors to this webpage:** {contributors_str}. **Please contribute!** See
-[here](https://github.com/cw-vista/cw-vista/blob/main/README.md) for
-instructions.
 
-If you use a figure in an academic publication, please download the BibTeX and
-cite `cwv:Wette2023`, `cwv:webapp`, and (as appropriate) publications for the
-selected CW searches. Figures are licensed under the [Creative Commons CC BY
-4.0 International](https://creativecommons.org/licenses/by/4.0/) license.
-"""
-st.write(intro)
+st.title("The CW Vista: Depth vs Breadth")
+st.write(
+    f"""
+
+    **Contributors to this webpage:** {contributors_str}.
+
+    This webpage generate *vista plots* of the sensitivity depth versus the
+    parameter-space breadth of searches for continuous gravitational waves. They
+    are designed to give a richer comparison between different searches, and the
+    different trade-offs made between sensitivity and parameter space
+    coverage. They also serve as a big-picture overview of efforts towards a
+    first detection of continuous gravitational waves which began in the early
+    2000s. See [Wette
+    (2023)](https://doi.org/10.1016/j.astropartphys.2023.102880) and references
+    therein for further information.
+
+    **Please contribute!** If you have published a search for continuous
+    gravitational waves, please contribute your results to keep the CW vista
+    up-to-date. See
+    [here](https://github.com/cw-vista/cw-vista/blob/main/README.md) for
+    instructions.
+
+    If you use a vista plot in an academic publication, please download the
+    BibTeX and cite `cwv:Wette2023`, `cwv:webapp`, and (as appropriate)
+    publications for the CW searches that appear in the plot. Figures are
+    licensed under the [Creative Commons CC BY 4.0
+    International](https://creativecommons.org/licenses/by/4.0/) license.
+
+    """
+)
 
 ### create sidebar
 
@@ -663,3 +681,13 @@ else:
             + ", ".join(sorted(collaborations))
             + "."
         )
+
+# acknowledge software
+st.write(
+    """
+    **Software:** Plots were generated using
+    [Matplotlib](https://matplotlib.org/),
+    [adjustText](https://adjusttext.readthedocs.io/), and
+    [NumPy](https://numpy.org/).
+    """
+)
