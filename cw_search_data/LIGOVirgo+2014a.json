@@ -73,6 +73,132 @@
                 "num-pulsars": 7
             },
             "time-span": 68256000.0
+        },
+        {
+            "algorithm-coherent": "Bayesian",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 761.7,
+            "depth-Sh-obs-det": [
+                "S6-H1",
+                "S6-L1",
+                "VSR2-V1",
+                "VSR4-V1"
+            ],
+            "depth-freq": 59.44,
+            "depth-h0": 1.6e-25,
+            "max-coherence-time": 68256000.0,
+            "obs-run": "S6",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 68256000.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 529.9,
+            "depth-Sh-obs-det": [
+                "S6-H1",
+                "S6-L1",
+                "VSR2-V1",
+                "VSR4-V1"
+            ],
+            "depth-freq": 59.44,
+            "depth-h0": 2.3e-25,
+            "max-coherence-time": 68256000.0,
+            "obs-run": "S6",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 68256000.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 677.1,
+            "depth-Sh-obs-det": [
+                "S6-H1",
+                "S6-L1",
+                "VSR2-V1",
+                "VSR4-V1"
+            ],
+            "depth-freq": 59.44,
+            "depth-h0": 1.8e-25,
+            "max-coherence-time": 68256000.0,
+            "obs-run": "S6",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 68256000.0
+        },
+        {
+            "algorithm-coherent": "Bayesian",
+            "algorithm-incoherent": "none",
+            "astro-target": "Vela",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 433.9,
+            "depth-Sh-obs-det": [
+                "VSR2-V1",
+                "VSR4-V1"
+            ],
+            "depth-freq": 22.38,
+            "depth-h0": 1.1e-24,
+            "max-coherence-time": 68256000.0,
+            "obs-run": "S6",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 68256000.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Vela",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 1136.0,
+            "depth-Sh-obs-det": [
+                "VSR2-V1",
+                "VSR4-V1"
+            ],
+            "depth-freq": 22.38,
+            "depth-h0": 4.2e-25,
+            "max-coherence-time": 68256000.0,
+            "obs-run": "S6",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 68256000.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "Vela",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 433.9,
+            "depth-Sh-obs-det": [
+                "VSR2-V1",
+                "VSR4-V1"
+            ],
+            "depth-freq": 22.38,
+            "depth-h0": 1.1e-24,
+            "max-coherence-time": 68256000.0,
+            "obs-run": "S6",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 68256000.0
         }
     ]
 }

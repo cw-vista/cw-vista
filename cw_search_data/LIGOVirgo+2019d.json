@@ -57,6 +57,138 @@
                 "num-pulsars": 42
             },
             "time-span": 23155200.0
+        },
+        {
+            "algorithm-coherent": "Bayesian",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 716.2,
+            "depth-Sh-obs-det": [
+                "O1-H1",
+                "O1-L1",
+                "O2-H1",
+                "O2-L1"
+            ],
+            "depth-freq": 59.4,
+            "depth-h0": 1.9e-26,
+            "max-coherence-time": 61603200.0,
+            "obs-run": "O2",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 61603200.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 618.6,
+            "depth-Sh-obs-det": [
+                "O1-H1",
+                "O1-L1",
+                "O2-H1",
+                "O2-L1"
+            ],
+            "depth-freq": 59.4,
+            "depth-h0": 2.2e-26,
+            "max-coherence-time": 61603200.0,
+            "obs-run": "O2",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 61603200.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 469.3,
+            "depth-Sh-obs-det": [
+                "O1-H1",
+                "O1-L1",
+                "O2-H1",
+                "O2-L1"
+            ],
+            "depth-freq": 59.4,
+            "depth-h0": 2.9e-26,
+            "max-coherence-time": 23155200.0,
+            "obs-run": "O2",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 23155200.0
+        },
+        {
+            "algorithm-coherent": "Bayesian",
+            "algorithm-incoherent": "none",
+            "astro-target": "Vela",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 602.5,
+            "depth-Sh-obs-det": [
+                "O1-H1",
+                "O1-L1",
+                "O2-H1",
+                "O2-L1"
+            ],
+            "depth-freq": 22.4,
+            "depth-h0": 1.4e-25,
+            "max-coherence-time": 61603200.0,
+            "obs-run": "O2",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 61603200.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Vela",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 324.4,
+            "depth-Sh-obs-det": [
+                "O1-H1",
+                "O1-L1",
+                "O2-H1",
+                "O2-L1"
+            ],
+            "depth-freq": 22.4,
+            "depth-h0": 2.6e-25,
+            "max-coherence-time": 61603200.0,
+            "obs-run": "O2",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 61603200.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "Vela",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 366.7,
+            "depth-Sh-obs-det": [
+                "O1-H1",
+                "O1-L1",
+                "O2-H1",
+                "O2-L1"
+            ],
+            "depth-freq": 22.4,
+            "depth-h0": 2.3e-25,
+            "max-coherence-time": 23155200.0,
+            "obs-run": "O2",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 23155200.0
         }
     ]
 }

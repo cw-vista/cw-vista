@@ -30,6 +30,27 @@
                 "num-pulsars": 28
             },
             "time-span": 5097600.0
+        },
+        {
+            "algorithm-coherent": "Bayesian",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 310.7,
+            "depth-Sh-obs-det": [
+                "S2-H1",
+                "S2-H2",
+                "S2-L1"
+            ],
+            "depth-freq": 59.62,
+            "depth-h0": 4.1e-23,
+            "max-coherence-time": 5097600.0,
+            "obs-run": "S2",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 5097600.0
         }
     ]
 }

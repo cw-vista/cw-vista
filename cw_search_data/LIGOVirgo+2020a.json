@@ -57,6 +57,174 @@
                 "num-pulsars": 6
             },
             "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "Bayesian",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 705.6,
+            "depth-Sh-obs-det": [
+                "O1-H1",
+                "O1-L1",
+                "O2-H1",
+                "O2-L1",
+                "O3a-H1",
+                "O3a-L1",
+                "O3a-V1",
+                "O3b-H1",
+                "O3b-L1",
+                "O3b-V1"
+            ],
+            "depth-freq": 59.2,
+            "depth-h0": 1.5e-26,
+            "max-coherence-time": 143251200.0,
+            "obs-run": "O3",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 143251200.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 557.1,
+            "depth-Sh-obs-det": [
+                "O1-H1",
+                "O1-L1",
+                "O2-H1",
+                "O2-L1",
+                "O3a-H1",
+                "O3a-L1",
+                "O3a-V1",
+                "O3b-H1",
+                "O3b-L1",
+                "O3b-V1"
+            ],
+            "depth-freq": 59.2,
+            "depth-h0": 1.9e-26,
+            "max-coherence-time": 143251200.0,
+            "obs-run": "O3",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 143251200.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 352.8,
+            "depth-Sh-obs-det": [
+                "O1-H1",
+                "O1-L1",
+                "O2-H1",
+                "O2-L1",
+                "O3a-H1",
+                "O3a-L1",
+                "O3a-V1",
+                "O3b-H1",
+                "O3b-L1",
+                "O3b-V1"
+            ],
+            "depth-freq": 59.2,
+            "depth-h0": 3e-26,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "Bayesian",
+            "algorithm-incoherent": "none",
+            "astro-target": "Vela",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 384.3,
+            "depth-Sh-obs-det": [
+                "O1-H1",
+                "O1-L1",
+                "O2-H1",
+                "O2-L1",
+                "O3a-H1",
+                "O3a-L1",
+                "O3a-V1",
+                "O3b-H1",
+                "O3b-L1",
+                "O3b-V1"
+            ],
+            "depth-freq": 22.4,
+            "depth-h0": 2.2e-25,
+            "max-coherence-time": 143251200.0,
+            "obs-run": "O3",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 143251200.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "Vela",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 367.6,
+            "depth-Sh-obs-det": [
+                "O1-H1",
+                "O1-L1",
+                "O2-H1",
+                "O2-L1",
+                "O3a-H1",
+                "O3a-L1",
+                "O3a-V1",
+                "O3b-H1",
+                "O3b-L1",
+                "O3b-V1"
+            ],
+            "depth-freq": 22.4,
+            "depth-h0": 2.3e-25,
+            "max-coherence-time": 143251200.0,
+            "obs-run": "O3",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 143251200.0
+        },
+        {
+            "algorithm-coherent": "5-vectors",
+            "algorithm-incoherent": "none",
+            "astro-target": "Vela",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 352.3,
+            "depth-Sh-obs-det": [
+                "O1-H1",
+                "O1-L1",
+                "O2-H1",
+                "O2-L1",
+                "O3a-H1",
+                "O3a-L1",
+                "O3a-V1",
+                "O3b-H1",
+                "O3b-L1",
+                "O3b-V1"
+            ],
+            "depth-freq": 22.4,
+            "depth-h0": 2.4e-25,
+            "max-coherence-time": 31190400.0,
+            "obs-run": "O3",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 31190400.0
         }
     ]
 }
