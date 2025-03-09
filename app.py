@@ -446,7 +446,7 @@ def vista_plot(toast=True, **kwargs):
         ax.minorticks_on()
 
         # plot depth vs breadth
-        sc = ax.scatter(log_breadth, log_depth, c=colours, s=marker_size)
+        sc = ax.scatter(log_breadth, log_depth, c=colours, s=marker_size, zorder=0)
 
         # set markers
         paths = []
@@ -478,7 +478,7 @@ def vista_plot(toast=True, **kwargs):
                 color="black",
                 linewidth=0.5,
                 linestyle=":",
-                zorder=-10,
+                zorder=-5,
             )
 
         # set plot limits
@@ -505,23 +505,6 @@ def vista_plot(toast=True, **kwargs):
                     )
                 else:
                     ax.grid(visible=False, which="minor", axis=a)
-
-        # set labels
-        labels = []
-        if label_by != "none":
-            label_by_key = props["label-by-map"][label_by]
-            for s in select_searches:
-                if label_by_key in s:
-                    labels.append(
-                        ax.text(
-                            s["log-breadth"],
-                            s["log-depth"],
-                            s[label_by_key],
-                            fontsize=label_font_size,
-                            ha="center",
-                            va="center",
-                        )
-                    )
 
         # set legend
         legend_handles = []
@@ -591,13 +574,50 @@ def vista_plot(toast=True, **kwargs):
                 fontsize=6,
                 ha="left",
                 va="baseline",
+                zorder=10,
+            )
+
+        # add labels
+        labels = {}
+        if label_by != "none":
+            label_by_key = props["label-by-map"][label_by]
+            for s in select_searches:
+                lbl = s[label_by_key]
+                if lbl not in labels:
+                    labels[lbl] = {"x": [], "y": [], "text": None}
+                labels[lbl]["x"].append(s["log-breadth"])
+                labels[lbl]["y"].append(s["log-depth"])
+        for lbl in labels:
+            labels[lbl]["text"] = ax.text(
+                np.mean(labels[lbl]["x"]),
+                np.mean(labels[lbl]["y"]),
+                lbl,
+                fontsize=label_font_size,
+                ha="center",
+                va="center",
+                bbox={"facecolor": "white", "edgecolor": "none", "pad": 0},
+                zorder=-10,
             )
 
         # fix layout
         fig.tight_layout()
 
-        # adjust labels
-        adjust_text(labels)
+        # adjust labels and add arrows
+        if labels:
+            adjust_text([v["text"] for v in labels.values()])
+            for v in labels.values():
+                if len(v["x"]) > 1:
+                    for i in range(len(v["x"])):
+                        ax.add_patch(
+                            mpatches.FancyArrowPatch(
+                                v["text"].get_position(),
+                                (v["x"][i], v["y"][i]),
+                                color="grey",
+                                linewidth=0.25,
+                                linestyle=":",
+                                zorder=-100,
+                            )
+                        )
 
         # save figure to memory
         img = io.BytesIO()
