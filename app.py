@@ -691,7 +691,7 @@ else:
         st.write(
             """
 
-            **Acknowledgements:** This work builds upon [Behnke et
+            **Acknowledgements:** This work builds upon: [Behnke et
             al. (2015)](http://doi.org/10.1103/PhysRevD.91.064007) for the
             definition of $\\mathcal{D}$, [Dreissigacker et
             al. (2018)](https://doi.org/10.1103/PhysRevD.98.084058) for
