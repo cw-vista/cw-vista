@@ -185,8 +185,8 @@ st.write(
     parameter space coverage. They also serve as a big-picture overview of
     efforts towards a first detection of continuous gravitational waves which
     began in the early 2000s. See [Wette
-    (2023)](https://doi.org/10.1016/j.astropartphys.2023.102880) and references
-    therein for further information.
+    (2023)](https://doi.org/10.1016/j.astropartphys.2023.102880) for further
+    information.
 
     **Please contribute!** If you have published a search for continuous
     gravitational waves, please contribute your results and keep the CW vista
@@ -687,12 +687,21 @@ else:
             + "."
         )
 
-        # acknowledge software
+        # acknowledgements
         st.write(
             """
-            **Software:** Plots were generated using
-            [Matplotlib](https://matplotlib.org/),
+
+            **Acknowledgements:** This work builds upon [Behnke et
+            al. (2015)](http://doi.org/10.1103/PhysRevD.91.064007) for the
+            definition of $\\mathcal{D}$, [Dreissigacker et
+            al. (2018)](https://doi.org/10.1103/PhysRevD.98.084058) for
+            computing $\\mathcal{D}$ for CW searches from the initial and early
+            advanced detector eras, and [Wette
+            (2023)](https://doi.org/10.1016/j.astropartphys.2023.102880) for the
+            definition of $\\mathcal{B}$ and the original vista plot. This
+            webpage generates plots using [Matplotlib](https://matplotlib.org/),
             [adjustText](https://adjusttext.readthedocs.io/), and
             [NumPy](https://numpy.org/).
+
             """
         )
