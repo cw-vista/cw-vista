@@ -281,7 +281,7 @@ if select_searches:
     )
 
     width = st.sidebar.number_input(
-        "Figure width (inches)", min_value=1.0, max_value=8.3, value=8.3, step=0.1
+        "Figure width (inches)", min_value=1.0, max_value=11.7, value=8.3, step=0.1
     )
     height = st.sidebar.number_input(
         "Figure height (inches)", min_value=1.0, max_value=8.3, value=3.5, step=0.1
