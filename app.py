@@ -684,7 +684,7 @@ else:
                 on_click="ignore",
             )
 
-        # show statistics and authors
+        # show statistics
         st.write(
             f"**Number of CW searches that appear in this plot:** {len(select_searches)}"
         )
@@ -700,11 +700,7 @@ else:
             else:
                 authors.update(ref["author"])
         st.write(
-            "**CW search publication authors:** "
-            + "; ".join(sorted(authors))
-            + "; and "
-            + ", ".join(sorted(collaborations))
-            + "."
+            f"**Number of CW search publication authors:** {len(authors)} individuals, {len(collaborations)} collaborations"
         )
 
         # acknowledgements
