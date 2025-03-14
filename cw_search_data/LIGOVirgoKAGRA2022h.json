@@ -26,6 +26,14 @@
             "breadth": 7.729e+18,
             "category": "lmxb",
             "depth": 38.91,
+            "depth-Sh-obs-det": [
+                "O3a-H1",
+                "O3a-L1",
+                "O3b-H1",
+                "O3b-L1"
+            ],
+            "depth-freq": 153.25,
+            "depth-h0": 1.23e-25,
             "max-coherence-time": 18720,
             "obs-run": "O3",
             "param-space": {
