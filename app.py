@@ -699,6 +699,8 @@ else:
                 collaborations.update(ref["collaboration"])
             else:
                 authors.update(ref["author"])
+        authors.discard("others")
+        collaborations.discard("others")
         st.write(
             f"**Number of CW search publication authors:** {len(authors)} individuals, {len(collaborations)} collaborations"
         )
