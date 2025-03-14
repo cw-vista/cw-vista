@@ -1,6 +1,7 @@
 import argparse
 import json
 from pathlib import Path
+from string import ascii_lowercase
 
 import cw_search_breadth
 import cw_search_data_schema
@@ -30,6 +31,7 @@ else:
 
 # validate files
 new_filenames = {}
+check_suffixes = set()
 for filename in filenames:
     print(f"Validating {filename}")
 
@@ -54,20 +56,24 @@ for filename in filenames:
     if ref == "unpublished":
         key = ref
     else:
-        key = ""
+        author = ""
+        others = ""
         if "collaboration" in ref:
             for collab in ref["collaboration"]:
                 if collab == "others":
-                    key += "+"
+                    others = "+"
                     break
                 else:
-                    key += collab.split(" ")[0]
+                    author += collab.split(" ")[0]
         else:
-            key += ref["author"][0].split(",")[0].strip()
+            author = ref["author"][0].split(",")[0].strip()
             if len(ref["author"]) > 1:
-                key += "+"
-        key += str(ref["year"]) + ref["key-suffix"]
+                others = "+"
+        year = str(ref["year"])
+        key = author + others + year + ref["key-suffix"]
         ref["key"] = key
+
+        check_suffixes.add((author, year))
 
     # create new filename consistent with BibTeX key
     new_filename = filename.with_stem(key)
@@ -87,3 +93,31 @@ for new_filename, filename in new_filenames.items():
     if new_filename != filename:
         print(f"Renaming {filename} to {new_filename}")
         filename.rename(new_filename)
+
+# check for missing/duplicate suffixes
+print("Checking for missing/duplicate suffixes")
+for author, year in sorted(check_suffixes):
+    suffix_used = []
+    for k in ascii_lowercase:
+        json_filename = Path("cw_search_data") / f"{author}{year}{k}.json"
+        json_plus_filename = Path("cw_search_data") / f"{author}+{year}{k}.json"
+        if json_filename.is_file() and json_plus_filename.is_file():
+            msg = f"Duplicate suffixes used by {json_filename} and {json_plus_filename}"
+            raise ValueError(msg)
+        if json_filename.is_file():
+            suffix_used.append((k, json_filename))
+        elif json_plus_filename.is_file():
+            suffix_used.append((k, json_plus_filename))
+        else:
+            suffix_used.append((k, None))
+    while suffix_used[-1][1] is None:
+        suffix_used.pop()
+    if not all([f is not None for k, f in suffix_used]):
+        missing_suffixes = "\n".join(
+            [
+                "    " + (f"(no file with suffix {k})" if f is None else str(f))
+                for k, f in suffix_used
+            ]
+        )
+        msg = f"Missing suffixes in the sequence:\n{missing_suffixes}"
+        raise ValueError(msg)
