@@ -108,6 +108,11 @@ def get_data():
         v["long-name"]: (v["short-name"], v["colour"]) for v in category_map.values()
     }
 
+    # add missing astronomical target labels
+    for s in searches:
+        if "astro-target" not in s:
+            s["astro-target"] = s["category-short"]
+
     # set observing run markers
     initial_era_markers = {
         "S1": ">",
