@@ -54,7 +54,7 @@
             "category": "allsky binary",
             "depth": 3.2,
             "max-coherence-time": 1800,
-            "obs-run": "S6",
+            "obs-run": "VSR23",
             "param-space": {
                 "ranges": [
                     {
@@ -113,7 +113,7 @@
             "category": "lmxb",
             "depth": 8.2,
             "max-coherence-time": 1800,
-            "obs-run": "S6",
+            "obs-run": "VSR23",
             "param-space": {
                 "ranges": [
                     {
