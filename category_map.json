@@ -2,12 +2,12 @@
     "pulsar targeted": {
         "colour": "red",
         "long-name": "Pulsars (Targeted)",
-        "short-name": "PSR T"
+        "short-name": "PSR-T"
     },
     "pulsar narrowband": {
         "colour": "orange",
         "long-name": "Pulsars (Narrowband)",
-        "short-name": "PSR NB"
+        "short-name": "PSR-NB"
     },
     "cco": {
         "colour": "gold",
@@ -27,11 +27,11 @@
     "allsky isolated": {
         "colour": "indigo",
         "long-name": "All Sky (Isolated)",
-        "short-name": "AllSky 1"
+        "short-name": "AllSky-1"
     },
     "allsky binary": {
         "colour": "violet",
         "long-name": "All Sky (Binary)",
-        "short-name": "AllSky 2"
+        "short-name": "AllSky-2"
     }
 }
