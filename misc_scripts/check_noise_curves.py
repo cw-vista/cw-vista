@@ -20,7 +20,7 @@ for filename in args.filenames:
 
     if (
         re.match(
-            r"^(?:S|VSR|O)[1-9][a-z]?-[HLVK][12]$",
+            r"^(?:S|VSR|O)[1-9][1-9a-z]?-[HLVK][12]$",
             filename.parts[1],
         )
         is None

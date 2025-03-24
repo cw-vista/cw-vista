@@ -200,7 +200,7 @@ def get():
                         "astro-target": {"type": "string"},
                         "obs-run": {
                             "type": "string",
-                            "pattern": r"^(S1|S2|S4|S5|S6|VSR1|VSR2|VSR4|O[1-9])$",
+                            "pattern": r"^(S1|S2|S4|S5|S6|VSR1|VSR23|VSR4|O[1-9])$",
                         },
                         "algorithm-coherent": {
                             "type": "string",

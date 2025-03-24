@@ -121,7 +121,7 @@ def get_data():
         "S5": "p",
         "S6": "h",
         "VSR1": "v",
-        "VSR2": "^",
+        "VSR23": "^",
         "VSR4": "d",
     }
     advanced_era_markers = set()
