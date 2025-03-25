@@ -21,7 +21,7 @@
     "searches": [
         {
             "algorithm-coherent": "power",
-            "algorithm-incoherent": "PowerFlux (classic)",
+            "algorithm-incoherent": "PowerFlux",
             "breadth": 4.427e+29,
             "category": "allsky isolated",
             "depth": 33.79,

@@ -19,7 +19,7 @@
     },
     "searches": [
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "astro-target": "Crab",
             "breadth": 1133000.0,
@@ -44,7 +44,7 @@
             "time-span": 8121600.0
         },
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "astro-target": "Vela",
             "breadth": 294600.0,

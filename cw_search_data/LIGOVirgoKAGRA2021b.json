@@ -49,7 +49,7 @@
             "time-span": 31190400.0
         },
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "astro-target": "J0537-6910",
             "breadth": 1464000000000.0,

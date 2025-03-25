@@ -16,7 +16,7 @@
     "searches": [
         {
             "algorithm-coherent": "power",
-            "algorithm-incoherent": "PowerFlux (loosely coherent)",
+            "algorithm-incoherent": "LooselyCoherent",
             "breadth": 2.271e+24,
             "category": "allsky isolated",
             "depth": 76.53,

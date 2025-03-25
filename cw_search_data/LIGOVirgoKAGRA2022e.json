@@ -96,7 +96,7 @@
         },
         {
             "algorithm-coherent": "power",
-            "algorithm-incoherent": "Hidden Markov Model (SOAP)",
+            "algorithm-incoherent": "SOAP",
             "breadth": 1.371e+35,
             "category": "allsky isolated",
             "depth": 18.19,

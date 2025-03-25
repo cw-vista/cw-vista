@@ -26,7 +26,7 @@
     "searches": [
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Global Correlation Transform",
+            "algorithm-incoherent": "GlobalCorrelationTransform",
             "astro-target": "Cas A",
             "breadth": 6.157e+20,
             "category": "cco",

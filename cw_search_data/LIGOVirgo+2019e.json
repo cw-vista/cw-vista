@@ -21,7 +21,7 @@
     "searches": [
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "Sco X-1",
             "breadth": 1.996e+18,
             "category": "lmxb",

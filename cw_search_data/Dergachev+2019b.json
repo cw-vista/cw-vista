@@ -18,7 +18,7 @@
     "searches": [
         {
             "algorithm-coherent": "power",
-            "algorithm-incoherent": "PowerFlux (loosely coherent)",
+            "algorithm-incoherent": "LooselyCoherent",
             "astro-target": "Terzan 5",
             "breadth": 6.957e+25,
             "category": "skypatch",

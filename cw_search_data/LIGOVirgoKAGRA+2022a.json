@@ -22,7 +22,7 @@
     "searches": [
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "HETE J1900.1-2455",
             "breadth": 441.9,
             "category": "lmxb",
@@ -74,7 +74,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "IGR J00291+5934",
             "breadth": 22.4,
             "category": "lmxb",
@@ -126,7 +126,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "IGR J16597-3704",
             "breadth": 2224000.0,
             "category": "lmxb",
@@ -178,7 +178,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "IGR J17062-6143",
             "breadth": 0.04184,
             "category": "lmxb",
@@ -248,7 +248,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "IGR J17379-3747",
             "breadth": 4350.0,
             "category": "lmxb",
@@ -318,7 +318,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "IGR J17494-3030",
             "breadth": 901800.0,
             "category": "lmxb",
@@ -370,7 +370,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "IGR J17498-2921",
             "breadth": 540.0,
             "category": "lmxb",
@@ -440,7 +440,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "IGR J17511-3057",
             "breadth": 615.3,
             "category": "lmxb",
@@ -510,7 +510,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "IGR J17591-2342",
             "breadth": 62.45,
             "category": "lmxb",
@@ -580,7 +580,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "IGR J18245-2452",
             "breadth": 12240.0,
             "category": "lmxb",
@@ -632,7 +632,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "MAXI J0911-655",
             "breadth": 21830.0,
             "category": "lmxb",
@@ -702,7 +702,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "NGC 6440 X-2",
             "breadth": 105600.0,
             "category": "lmxb",
@@ -772,7 +772,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "SAX J1748.9-2021",
             "breadth": 99130.0,
             "category": "lmxb",
@@ -842,7 +842,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "SAX J1808.4-3658",
             "breadth": 1166.0,
             "category": "lmxb",
@@ -912,7 +912,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "Swift J1749.4-2807",
             "breadth": 232300.0,
             "category": "lmxb",
@@ -982,7 +982,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "Swift J1756.9-2508",
             "breadth": 335400.0,
             "category": "lmxb",
@@ -1052,7 +1052,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "XTE J0929-314",
             "breadth": 2473.0,
             "category": "lmxb",
@@ -1122,7 +1122,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "XTE J1751-305",
             "breadth": 206300.0,
             "category": "lmxb",
@@ -1192,7 +1192,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "XTE J1807-294",
             "breadth": 43.86,
             "category": "lmxb",
@@ -1262,7 +1262,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "XTE J1814-338",
             "breadth": 155.8,
             "category": "lmxb",

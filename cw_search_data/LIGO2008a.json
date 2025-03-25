@@ -69,7 +69,7 @@
         },
         {
             "algorithm-coherent": "power",
-            "algorithm-incoherent": "PowerFlux (classic)",
+            "algorithm-incoherent": "PowerFlux",
             "breadth": 1.214e+24,
             "category": "allsky isolated",
             "depth": 8.24,

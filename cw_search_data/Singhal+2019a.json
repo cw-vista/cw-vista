@@ -25,7 +25,7 @@
     },
     "searches": [
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "astro-target": "Sco X-1",
             "breadth": 987200000.0,

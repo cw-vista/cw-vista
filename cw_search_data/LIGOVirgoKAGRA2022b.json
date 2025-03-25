@@ -46,7 +46,7 @@
             "time-span": 104803200.0
         },
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "breadth": 35.0,
             "category": "pulsar targeted",
@@ -111,7 +111,7 @@
             "time-span": 104803200.0
         },
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "astro-target": "Crab",
             "breadth": 1.0,
@@ -189,7 +189,7 @@
             "time-span": 104803200.0
         },
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "astro-target": "Vela",
             "breadth": 1.0,

@@ -26,7 +26,7 @@
     "searches": [
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Global Correlation Transform",
+            "algorithm-incoherent": "GlobalCorrelationTransform",
             "astro-target": "Cas A",
             "breadth": 6.098e+19,
             "category": "cco",
@@ -55,7 +55,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Global Correlation Transform",
+            "algorithm-incoherent": "GlobalCorrelationTransform",
             "astro-target": "G347.3",
             "breadth": 5.35e+17,
             "category": "cco",
@@ -84,7 +84,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Global Correlation Transform",
+            "algorithm-incoherent": "GlobalCorrelationTransform",
             "astro-target": "Vela Jr.",
             "breadth": 6.389e+18,
             "category": "cco",

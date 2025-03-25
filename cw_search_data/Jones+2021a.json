@@ -16,7 +16,7 @@
     "searches": [
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "Fomalhaut b",
             "breadth": 347200000000000.0,
             "category": "cco",

@@ -20,7 +20,7 @@
     },
     "searches": [
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "astro-target": "Crab",
             "breadth": 87030000.0,
@@ -45,7 +45,7 @@
             "time-span": 11145600.0
         },
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "astro-target": "PSR J0205+6449",
             "breadth": 3087000.0,
@@ -70,7 +70,7 @@
             "time-span": 11145600.0
         },
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "astro-target": "PSR J1400-6326",
             "breadth": 7204000.0,
@@ -95,7 +95,7 @@
             "time-span": 11145600.0
         },
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "astro-target": "PSR J1813-1246",
             "breadth": 1512000.0,
@@ -120,7 +120,7 @@
             "time-span": 11145600.0
         },
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "astro-target": "PSR J1813-1749",
             "breadth": 8909000.0,
@@ -145,7 +145,7 @@
             "time-span": 11145600.0
         },
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "astro-target": "PSR J1833-1034",
             "breadth": 4963000.0,
@@ -170,7 +170,7 @@
             "time-span": 11145600.0
         },
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "astro-target": "PSR J1952+3252",
             "breadth": 1891000.0,
@@ -195,7 +195,7 @@
             "time-span": 11145600.0
         },
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "astro-target": "PSR J2022+3842",
             "breadth": 3764000.0,
@@ -220,7 +220,7 @@
             "time-span": 11145600.0
         },
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "astro-target": "PSR J2043+2740",
             "breadth": 1891000.0,
@@ -245,7 +245,7 @@
             "time-span": 11145600.0
         },
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "astro-target": "PSR J2229+6114",
             "breadth": 4199000.0,
@@ -270,7 +270,7 @@
             "time-span": 11145600.0
         },
         {
-            "algorithm-coherent": "5-vectors",
+            "algorithm-coherent": "5-vector",
             "algorithm-incoherent": "none",
             "astro-target": "Vela",
             "breadth": 1134000.0,

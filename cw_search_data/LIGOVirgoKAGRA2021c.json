@@ -21,7 +21,7 @@
     "searches": [
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G1.9+0.3",
             "breadth": 5.128e+19,
             "category": "cco",
@@ -47,7 +47,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G111.7-2.1",
             "breadth": 1.931e+20,
             "category": "cco",
@@ -73,7 +73,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G15.9+0.2",
             "breadth": 3.488e+20,
             "category": "cco",
@@ -125,7 +125,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G18.9-1.1",
             "breadth": 1.731e+20,
             "category": "cco",
@@ -151,7 +151,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G18.9-1.1",
             "breadth": 1.599e+16,
             "category": "cco",
@@ -177,7 +177,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G18.9-1.1",
             "breadth": 6.395e+16,
             "category": "cco",
@@ -229,7 +229,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G189.1+3.0",
             "breadth": 4.092e+20,
             "category": "cco",
@@ -255,7 +255,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G189.1+3.0",
             "breadth": 2.371e+16,
             "category": "cco",
@@ -281,7 +281,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G189.1+3.0",
             "breadth": 9.485e+16,
             "category": "cco",
@@ -333,7 +333,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G266.2-1.2",
             "breadth": 4.672e+20,
             "category": "cco",
@@ -359,7 +359,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G266.2-1.2",
             "breadth": 2.008e+16,
             "category": "cco",
@@ -385,7 +385,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G266.2-1.2",
             "breadth": 8.033e+16,
             "category": "cco",
@@ -411,7 +411,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G291.0-0.1",
             "breadth": 8.124e+20,
             "category": "cco",
@@ -437,7 +437,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G330.2+1.0",
             "breadth": 5.185e+20,
             "category": "cco",
@@ -463,7 +463,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G347.3-0.5",
             "breadth": 1.095e+21,
             "category": "cco",
@@ -489,7 +489,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G350.1-0.3",
             "breadth": 3.972e+20,
             "category": "cco",
@@ -541,7 +541,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G353.6-0.7",
             "breadth": 8.137e+17,
             "category": "cco",
@@ -567,7 +567,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G353.6-0.7",
             "breadth": 3.351e+16,
             "category": "cco",
@@ -593,7 +593,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G353.6-0.7",
             "breadth": 1.34e+17,
             "category": "cco",
@@ -619,7 +619,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G354.4+0.0",
             "breadth": 5.461e+19,
             "category": "cco",
@@ -671,7 +671,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G39.2-0.3",
             "breadth": 4.117e+19,
             "category": "cco",
@@ -697,7 +697,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G39.2-0.3",
             "breadth": 7799000000000000.0,
             "category": "cco",
@@ -723,7 +723,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G39.2-0.3",
             "breadth": 3.12e+16,
             "category": "cco",
@@ -775,7 +775,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G65.7+1.2",
             "breadth": 1.08e+19,
             "category": "cco",
@@ -801,7 +801,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G65.7+1.2",
             "breadth": 2.371e+16,
             "category": "cco",
@@ -827,7 +827,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G65.7+1.2",
             "breadth": 9.485e+16,
             "category": "cco",
@@ -879,7 +879,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G93.3+6.9",
             "breadth": 1.697e+20,
             "category": "cco",
@@ -905,7 +905,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G93.3+6.9",
             "breadth": 1.95e+16,
             "category": "cco",
@@ -931,7 +931,7 @@
         },
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Hidden Markov Model (Viterbi)",
+            "algorithm-incoherent": "Viterbi",
             "astro-target": "G93.3+6.9",
             "breadth": 7.799e+16,
             "category": "cco",

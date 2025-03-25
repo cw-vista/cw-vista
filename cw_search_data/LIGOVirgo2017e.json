@@ -20,7 +20,7 @@
     "searches": [
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Global Correlation Transform",
+            "algorithm-incoherent": "GlobalCorrelationTransform",
             "breadth": 2.216e+24,
             "category": "allsky isolated",
             "depth": 48.7,

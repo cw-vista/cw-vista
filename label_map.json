@@ -1,24 +1,25 @@
 {
     "algorithm-coherent": [
-        {"key": "5-vectors", "symbol": "5-vec", "label": "5-vec"},
-        {"key": "Bayesian", "symbol": "Bayes", "label": "Bayes"},
-        {"key": "F-statistic", "symbol": "$\\mathcal{F}$", "label": "$\\mathcal{F}$"},
-        {"key": "power", "symbol": "pwr", "label": "pwr"}
+        {"key": "5-vector", "symbol": "5v", "label": "5-vectors"},
+        {"key": "Bayesian", "symbol": "$\\mathcal{O}$", "label": "Bayesian"},
+        {"key": "F-statistic", "symbol": "$\\mathcal{F}$", "label": "$\\mathcal{F}$-statistic"},
+        {"key": "power", "symbol": "$P$", "label": "power"}
     ],
     "algorithm-incoherent": [
-        {"key": "BinarySkyHough", "symbol": "BSHgh", "label": "BSHgh"},
-        {"key": "CrossCorr", "symbol": "XCorr", "label": "XCorr"},
-        {"key": "FrequencyHough", "symbol": "FrHgh", "label": "FrHgh"},
-        {"key": "Global Correlation Transform", "symbol": "GCT", "label": "GCT"},
-        {"key": "Hidden Markov Model (SOAP)", "symbol": "SOAP", "label": "SOAP"},
-        {"key": "Hidden Markov Model (Viterbi)", "symbol": "Vtrbi", "label": "Vtrbi"},
-        {"key": "PowerFlux (classic)", "symbol": "PFx", "label": "PFx"},
-        {"key": "PowerFlux (loosely coherent)", "symbol": "PFxLC", "label": "PFxLC"},
-        {"key": "SkyHough", "symbol": "SkHgh", "label": "SkHgh"},
-        {"key": "StackSlide", "symbol": "SSlide", "label": "SSlide"},
-        {"key": "TwoSpect", "symbol": "2Spect", "label": "2Spect"},
-        {"key": "Weave", "symbol": "Weave", "label": "Weave"},
-        {"key": "coincidence", "symbol": "coinc", "label": "coinc"}
+        {"key": "none", "symbol": "f.c.", "label": "fully coherent"},
+        {"key": "BinarySkyHough", "symbol": "BSH", "label": "BinarySkyHough"},
+        {"key": "CrossCorr", "symbol": "XC", "label": "CorrCorr"},
+        {"key": "FrequencyHough", "symbol": "FH", "label": "FrequencyHough"},
+        {"key": "GlobalCorrelationTransform", "symbol": "GCT", "label": "G.C.T."},
+        {"key": "SOAP", "symbol": "SP", "label": "SOAP"},
+        {"key": "Viterbi", "symbol": "Vtr", "label": "Viterbi"},
+        {"key": "PowerFlux", "symbol": "PF", "label": "PowerFlux"},
+        {"key": "LooselyCoherent", "symbol": "LC", "label": "Loosely coherent"},
+        {"key": "SkyHough", "symbol": "SH", "label": "SkyHough"},
+        {"key": "StackSlide", "symbol": "SS", "label": "StackSlide"},
+        {"key": "TwoSpect", "symbol": "2Sp", "label": "TwoSpect"},
+        {"key": "Weave", "symbol": "Wv", "label": "Weave"},
+        {"key": "coincidence", "symbol": "co.", "label": "coincidence"}
     ],
     "citation": [
         {"replace": "^LIGOVirgoKAGRA", "with": "LVK"},

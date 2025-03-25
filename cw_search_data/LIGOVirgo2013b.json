@@ -20,7 +20,7 @@
     "searches": [
         {
             "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "Global Correlation Transform",
+            "algorithm-incoherent": "GlobalCorrelationTransform",
             "astro-target": "Galactic Centre",
             "breadth": 1.755e+18,
             "category": "skypatch",
