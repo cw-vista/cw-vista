@@ -32,7 +32,7 @@ else:
 # validate files
 new_filenames = {}
 check_suffixes = set()
-for filename in filenames:
+for filename in sorted(filenames):
     print(f"Validating {filename}")
 
     # validate JSON file contents against schema

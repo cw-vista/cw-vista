@@ -16,7 +16,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument("filenames", type=Path, nargs="*")
 args = parser.parse_args()
 
-for filename in args.filenames:
+# validate files
+for filename in sorted(args.filenames):
+    print(f"Validating {filename}")
 
     if (
         re.match(
