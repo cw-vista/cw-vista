@@ -1,28 +1,28 @@
 {
-    "algorithm-coherent": {
-        "5-vectors": "5-vec",
-        "Bayesian": "Bayes",
-        "F-statistic": "$\\mathcal{F}$",
-        "power": "pwr"
-    },
-    "algorithm-incoherent": {
-        "BinarySkyHough": "BSHgh",
-        "CrossCorr": "XCorr",
-        "FrequencyHough": "FrHgh",
-        "Global Correlation Transform": "GCT",
-        "Hidden Markov Model (SOAP)": "SOAP",
-        "Hidden Markov Model (Viterbi)": "Vtrbi",
-        "PowerFlux (classic)": "PFx",
-        "PowerFlux (loosely coherent)": "PFxLC",
-        "SkyHough": "SkHgh",
-        "StackSlide": "SSlide",
-        "TwoSpect": "2Spect",
-        "Weave": "Weave",
-        "coincidence": "coinc"
-    },
-    "citation": {
-        "^LIGOVirgoKAGRA": "LVK",
-        "^LIGOVirgo": "LVC",
-        "^LIGO": "LSC"
-    }
+    "algorithm-coherent": [
+        {"key": "5-vectors", "symbol": "5-vec", "label": "5-vec"},
+        {"key": "Bayesian", "symbol": "Bayes", "label": "Bayes"},
+        {"key": "F-statistic", "symbol": "$\\mathcal{F}$", "label": "$\\mathcal{F}$"},
+        {"key": "power", "symbol": "pwr", "label": "pwr"}
+    ],
+    "algorithm-incoherent": [
+        {"key": "BinarySkyHough", "symbol": "BSHgh", "label": "BSHgh"},
+        {"key": "CrossCorr", "symbol": "XCorr", "label": "XCorr"},
+        {"key": "FrequencyHough", "symbol": "FrHgh", "label": "FrHgh"},
+        {"key": "Global Correlation Transform", "symbol": "GCT", "label": "GCT"},
+        {"key": "Hidden Markov Model (SOAP)", "symbol": "SOAP", "label": "SOAP"},
+        {"key": "Hidden Markov Model (Viterbi)", "symbol": "Vtrbi", "label": "Vtrbi"},
+        {"key": "PowerFlux (classic)", "symbol": "PFx", "label": "PFx"},
+        {"key": "PowerFlux (loosely coherent)", "symbol": "PFxLC", "label": "PFxLC"},
+        {"key": "SkyHough", "symbol": "SkHgh", "label": "SkHgh"},
+        {"key": "StackSlide", "symbol": "SSlide", "label": "SSlide"},
+        {"key": "TwoSpect", "symbol": "2Spect", "label": "2Spect"},
+        {"key": "Weave", "symbol": "Weave", "label": "Weave"},
+        {"key": "coincidence", "symbol": "coinc", "label": "coinc"}
+    ],
+    "citation": [
+        {"replace": "^LIGOVirgoKAGRA", "with": "LVK"},
+        {"replace": "^LIGOVirgo", "with": "LVC"},
+        {"replace": "^LIGO", "with": "LSC"}
+    ]
 }

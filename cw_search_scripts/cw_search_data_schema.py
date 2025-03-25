@@ -23,12 +23,12 @@ def get():
 
     algorithm_coherent_regex = (
         r"^("
-        + "|".join([re.escape(s) for s in label_map["algorithm-coherent"].keys()])
+        + "|".join(re.escape(r["key"]) for r in label_map["algorithm-coherent"])
         + r")$"
     )
     algorithm_incoherent_regex = (
         r"^(none|"
-        + "|".join(re.escape(s) for s in label_map["algorithm-incoherent"].keys())
+        + "|".join(re.escape(r["key"]) for r in label_map["algorithm-incoherent"])
         + r")$"
     )
 

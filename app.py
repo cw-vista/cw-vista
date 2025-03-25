@@ -74,11 +74,12 @@ def get_data():
         if k in label_map:
             for s in searches:
                 if k in s:
-                    for r, v in label_map[k].items():
-                        if r.startswith(r"^"):
-                            s[k] = re.sub(r, v, s[k])
-                        elif s[k] == r:
-                            s[k] = v
+                    for r in label_map[k]:
+                        if "replace" in r:
+                            s[k] = re.sub(r["replace"], r["with"], s[k])
+                        elif "key" in r and s[k] == r["key"]:
+                            s[k] = r["symbol"]
+                            s[k + "-label"] = r["label"]
 
     # add algorithm label
     for s in searches:
