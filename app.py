@@ -10,6 +10,7 @@ import matplotlib.lines as mlines
 import matplotlib.markers as mmarkers
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
+import matplotlib.text as mtext
 import numpy as np
 import streamlit as st
 from adjustText import adjust_text
@@ -80,6 +81,7 @@ def get_data():
                         elif "key" in r and s[k] == r["key"]:
                             s[k] = r["symbol"]
                             s[k + "-label"] = r["label"]
+                            s[k + "-key"] = r["key"]
 
     # add algorithm label
     for s in searches:
@@ -352,6 +354,11 @@ if select_searches:
         options=["none"] + list(props["label-by-map"].keys()),
         index=0,
     )
+    with_algorithm_labels = st.sidebar.checkbox(
+        "Add algorithm labels to legend",
+        value=True,
+        disabled=not props["label-by-map"].get(label_by, "").startswith("algorithm"),
+    )
 
     label_font_size = st.sidebar.slider(
         "Label font size", min_value=6, max_value=24, value=8
@@ -442,6 +449,33 @@ bibtex += "\n".join(select_searches_bibtex)
 ### vista plot
 
 
+# handler to create text artists for algorithm legend labels
+class TextLegendHandler:
+    def legend_artist(self, legend, orig_handle, fontsize, handlebox):
+        x0, y0 = handlebox.xdescent, handlebox.ydescent
+        w, h = handlebox.width, handlebox.height
+        p = mpatches.Rectangle(
+            [x0, y0],
+            w,
+            h,
+            facecolor="none",
+            edgecolor="none",
+            transform=handlebox.get_transform(),
+        )
+        handlebox.add_artist(p)
+        t = mtext.Text(
+            x0 + 0.5 * w,
+            y0 + 0.5 * h,
+            orig_handle.get_text(),
+            fontsize=label_font_size,
+            ha="center",
+            va="center",
+            transform=handlebox.get_transform(),
+        )
+        handlebox.add_artist(t)
+        return p
+
+
 def vista_plot(toast=True, **kwargs):
 
     with _lock:
@@ -450,9 +484,11 @@ def vista_plot(toast=True, **kwargs):
 
         fig, ax = plt.subplots(figsize=(width, height))
         ax.minorticks_on()
+        ax.get_xaxis().set_zorder(-50)
+        ax.get_yaxis().set_zorder(-50)
 
         # plot depth vs breadth
-        sc = ax.scatter(log_breadth, log_depth, c=colours, s=marker_size, zorder=0)
+        sc = ax.scatter(log_breadth, log_depth, c=colours, s=marker_size, zorder=-10)
 
         # set markers
         paths = []
@@ -484,7 +520,7 @@ def vista_plot(toast=True, **kwargs):
                 color="black",
                 linewidth=0.5,
                 linestyle=":",
-                zorder=-5,
+                zorder=-10,
             )
 
         # set plot limits
@@ -536,12 +572,31 @@ def vista_plot(toast=True, **kwargs):
                     [], [], color="black", linewidth=0.5, linestyle=":", label="horiz."
                 )
             )
-
+        if with_algorithm_labels:
+            label_by_key = props["label-by-map"].get(label_by, "")
+            if label_by_key.startswith("algorithm"):
+                if label_by_key == "algorithm":
+                    with_algorithm_label_keys = (
+                        "algorithm-coherent",
+                        "algorithm-incoherent",
+                    )
+                else:
+                    with_algorithm_label_keys = (label_by_key,)
+                algorithm_labels = set()
+                for s in select_searches:
+                    for k in with_algorithm_label_keys:
+                        if k in s and k + "-label" in s:
+                            algorithm_labels.add(
+                                (s[k + "-key"].lower(), s[k], s[k + "-label"])
+                            )
+                for _, symb, lbl in sorted(algorithm_labels):
+                    legend_handles.append(mtext.Text(text=symb, label=lbl))
         if legend_position == "outside":
             box = ax.get_position()
             ax.set_position([box.x0, box.y0, box.width * 0.9, box.height])
             ax.legend(
                 handles=legend_handles,
+                handler_map={mtext.Text: TextLegendHandler()},
                 ncols=legend_columns,
                 columnspacing=0.5,
                 framealpha=1,
@@ -552,6 +607,7 @@ def vista_plot(toast=True, **kwargs):
         else:
             ax.legend(
                 handles=legend_handles,
+                handler_map={mtext.Text: TextLegendHandler()},
                 ncols=legend_columns,
                 columnspacing=0.5,
                 framealpha=1,
@@ -601,8 +657,13 @@ def vista_plot(toast=True, **kwargs):
                 fontsize=label_font_size,
                 ha="center",
                 va="center",
-                bbox={"facecolor": "white", "edgecolor": "none", "pad": 0},
-                zorder=-10,
+                bbox={
+                    "facecolor": "white",
+                    "alpha": 0.5,
+                    "edgecolor": "none",
+                    "pad": 0,
+                },
+                zorder=-5,
             )
 
         # fix layout
@@ -621,7 +682,7 @@ def vista_plot(toast=True, **kwargs):
                                 color="grey",
                                 linewidth=0.25,
                                 linestyle=":",
-                                zorder=-100,
+                                zorder=-15,
                             )
                         )
 
