@@ -198,9 +198,8 @@ st.write(
 
     **Please contribute!** If you have published a search for continuous
     gravitational waves, please contribute your results and keep the CW vista
-    up-to-date. See
-    [here](https://github.com/cw-vista/cw-vista/blob/main/README.md) for
-    instructions.
+    up-to-date. See [this link for
+    instructions](https://github.com/cw-vista/cw-vista/blob/main/README.md).
 
     If you use a vista plot in an academic publication, please download the
     BibTeX and cite `cwv:Wette2023`, `cwv:webapp`, and (as appropriate)
