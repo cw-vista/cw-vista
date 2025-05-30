@@ -1,0 +1,23 @@
+stages:
+  - Docker
+  - Test
+
+docker:
+  stage: Docker
+  image: docker:latest
+  variables:
+    IMAGE_TAG: latest
+  before_script:
+    - docker login -u gitlab-ci-token -p ${CI_JOB_TOKEN} ${CI_REGISTRY}
+  script:
+    - docker build --pull -t ${CI_REGISTRY_IMAGE}:${IMAGE_TAG} .
+    - docker push ${CI_REGISTRY_IMAGE}:${IMAGE_TAG}
+  rules:
+    - if: '$CI_PROJECT_PATH == "CW/publications/cw-vista" && $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH'
+
+test:
+  stage: Test
+  image: containers.ligo.org/cw/publications/cw-vista:latest
+  script:
+    - pre-commit install
+    - pre-commit run -a
