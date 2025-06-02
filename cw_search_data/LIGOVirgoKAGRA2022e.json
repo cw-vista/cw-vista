@@ -72,7 +72,7 @@
         {
             "algorithm-coherent": "F-statistic",
             "algorithm-incoherent": "coincidence",
-            "breadth": 3.856e+28,
+            "breadth": 3.866e+28,
             "category": "allsky isolated",
             "depth": 48.95,
             "max-coherence-time": 518400,
@@ -81,8 +81,8 @@
                 "ranges": [
                     {
                         "fdot": [
-                            -1.0337e-09,
-                            0.0
+                            "-3.2e-9 * (freq/100) if freq < 200 else -2e-10",
+                            "+0.0                 if freq < 200 else +2e-11"
                         ],
                         "freq": [
                             20,
@@ -107,8 +107,8 @@
                 "ranges": [
                     {
                         "fdot": [
-                            -1.11837e-08,
-                            0.0
+                            "-1.0 * (1e-9 if freq < 1000 else 1e-8)",
+                            "+1.0 * (1e-9 if freq < 1000 else 1e-8)"
                         ],
                         "freq": [
                             40,
