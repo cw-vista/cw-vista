@@ -216,11 +216,12 @@ is a JSON record which must have the following fields:
         "hmm-num-jumps": ...,
         "ranges": [
             {
-                    "freq": [minimum, maximum],
+                "freq": [minimum, maximum],
                 ...
             },
             ...
-        ]
+        ],
+        "freq-space-vals": { ... }
     }
     ```
 
@@ -235,20 +236,27 @@ is a JSON record which must have the following fields:
       each time step.
 
     * `ranges` (*required*): This field is a list, and each element of the list
-      presents a subspace of the parameter space in frequency, spin-down, and (if
-      appropriate) binary orbital parameters. Each subspace of the parameter
-      space must be representable by simple minimum/maximum ranges in each
-      parameter; for more complicated parameter space, average/representative
-      ranges may be given. Support parameter ranges are *optional* unless stated
-      otherwise:
+      presents a sub-space of the parameter space in frequency, spin-down, and
+      (if appropriate) binary orbital parameters. Except where indicated below,
+      each sub-space of the parameter space must be representable by simple
+      minimum/maximum range. Support parameter ranges are *optional* unless
+      stated otherwise:
 
-      * `freq` (*required*): frequency;
+      * `freq` (*required*): frequency.
 
-      * `fdot`: first spin-down;
+      * `fdot`: first spin-down. The sub-space in this parameter may be
+        described by a mathematical expression (in valid Python syntax) giving
+        the minimum and/or maximum range as a function of frequency
+        (`freq`). Additional parameters may be given in the `freq-space-vals`
+        field (see below).
 
-      * `fddot`: second spin-down;
+      * `fddot`: second spin-down. The sub-space in this parameter may be
+        described by a mathematical expression (in valid Python syntax) giving
+        the minimum and/or maximum range as a function of frequency (`freq`) and
+        first spin-down (`fdot`). Additional parameters may be given in the
+        `freq-space-vals` field (see below).
 
-      * `bin-period`: binary orbital period
+      * `bin-period`: binary orbital period.
 
       * `bin-a-sin-i` (also requires `bin-period`): binary orbit, projected semi-major axis.
 
@@ -257,8 +265,17 @@ is a JSON record which must have the following fields:
       * `bin-freq-mod-depth`: binary orbit, frequency modulation depth (as used
         by the TwoSpect algorithm).
 
-      Parameter-space breadths are calculated separately for each subspace given
-      in `ranges`, and are then summed to give the total breadth of the search.
+      Parameter-space breadths are calculated separately for each sub-space
+      given in `ranges`, and are then summed to give the total breadth of the
+      search.
+
+      If mathematical expressions are used to describe the `fdot` and `fddot`
+      parameter sub-spaces, the `freq-space-vals` field may be used to supply
+      additional parameter values to those expressions. This is a simple list of
+      fields (the additional parameter names) and their values. For convenience,
+      the following additional parameter values are automatically defined:
+
+      * `yr = 365.25 * 86400`: Julian year.
 
 ## Running the Webapp Locally
 
