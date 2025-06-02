@@ -21,7 +21,7 @@
             "algorithm-coherent": "power",
             "algorithm-incoherent": "CrossCorr",
             "astro-target": "SN 1987A",
-            "breadth": 6.199e+24,
+            "breadth": 3.264e+18,
             "category": "cco",
             "depth": 64.34,
             "max-coherence-time": 1800,
@@ -30,11 +30,21 @@
                 "ranges": [
                     {
                         "fdot": [
-                            -1.23839,
-                            0.0
+                            "-6.17e-19*freq**5 - 2.00e-16*freq**3",
+                            "-2.00e-22*freq**5 - 1.00e-21*freq**3"
                         ],
                         "freq": [
                             75,
+                            350
+                        ]
+                    },
+                    {
+                        "fdot": [
+                            "-4.99e-20*freq**5 - 2.00e-16*freq**3",
+                            "-2.00e-22*freq**5 - 1.00e-21*freq**3"
+                        ],
+                        "freq": [
+                            350,
                             450
                         ]
                     }
