@@ -31,8 +31,8 @@
                 "ranges": [
                     {
                         "fdot": [
-                            -7.96055e-09,
-                            0.0
+                            "-1e-8 if freq < 512 else -2e-9",
+                            "+2e-9 if freq < 512 else +2e-9"
                         ],
                         "freq": [
                             10,
