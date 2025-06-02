@@ -41,7 +41,7 @@ repos:
         files: ^cw_search_data/.*\.json$|^cw_search_scripts/.*\.py$
         require_serial: true
         language: python
-        additional_dependencies: ["jsonschema>=4.23.0", "numpy"]
+        additional_dependencies: ["jsonschema>=4.23.0", "numpy", "scipy"]
 
       - id: check-noise-curves
         name: check noise curves

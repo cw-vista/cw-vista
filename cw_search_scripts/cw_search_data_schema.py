@@ -61,7 +61,7 @@ def get():
                             "maxItems": 2,
                             "uniqueItems": True,
                             "items": {
-                                "type": "number",
+                                "oneOf": [{"type": "number"}, {"type": "string"}]
                             },
                         },
                         "fddot": {
@@ -70,7 +70,7 @@ def get():
                             "maxItems": 2,
                             "uniqueItems": True,
                             "items": {
-                                "type": "number",
+                                "oneOf": [{"type": "number"}, {"type": "string"}]
                             },
                         },
                         "bin-a-sin-i": {
@@ -248,6 +248,10 @@ def get():
                                     "type": "array",
                                     "minItems": 1,
                                     "anyOf": range_anyof_items,
+                                },
+                                "freq-space-vals": {
+                                    "type": "object",
+                                    "additionalProperties": {"type": "number"},
                                 },
                             },
                         },

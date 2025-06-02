@@ -1,4 +1,5 @@
 import numpy as np
+import scipy as sp
 
 """
 Compute parameter-space breadths of CW searches
@@ -69,26 +70,87 @@ def freq_breadth_fac(*, T):
     return br, 0
 
 
-def fdot_breadth(*, T, r):
+def fsp_unity(*args):
+    """
+    Returns unity; for integrating over spindown parameter spaces.
+    """
+
+    return 1
+
+
+def fsp_bound(expr, *args, **vals):
+    """
+    Returns a function which evaluates a spindown parameter
+    space bound `expr`, using the variables defined in `vals`.
+    """
+
+    code = compile(str(expr), f"<{expr}>", "eval")
+    for name in code.co_names:
+        if name not in args and name not in vals:
+            msg = f"'{expr}' contains unknown parameter '{name}'"
+            raise ValueError(msg)
+
+    def _fsp_bound(freq, fdot=0):
+        v = vals.copy()
+        v["freq"] = freq
+        v["fdot"] = fdot
+        return eval(code, {"__builtins__": {}}, v)
+
+    return _fsp_bound
+
+
+def fdot_breadth(*, T, r, v):
     """
     First spindown parameter-space breadth.
 
-    See Eq. (63) of Wette 2023.
+    Extends Eq. (63) of Wette 2023 to arbitrary parameter-space bounds.
     """
 
-    br = max(1, np.pi * T**2 / (6 * np.sqrt(5)) * p_to_q(r, ("fdot", 1)))
+    freq_space = max(r["freq"]) - min(r["freq"])
+
+    fdot_space, err = sp.integrate.dblquad(
+        fsp_unity,
+        a=min(r["freq"]),
+        b=max(r["freq"]),
+        gfun=fsp_bound(r["fdot"][0], "freq", **v),
+        hfun=fsp_bound(r["fdot"][1], "freq", **v),
+    )
+
+    fdot_range = abs(fdot_space) / freq_space
+
+    br = max(1, np.pi * T**2 / (6 * np.sqrt(5)) * fdot_range)
 
     return br, 0
 
 
-def fddot_breadth(*, T, r):
+def fddot_breadth(*, T, r, v):
     """
     Second spindown parameter-space breadth.
 
-    See Eq. (64) of Wette 2023.
+    Extends Eq. (64) of Wette 2023 to arbitrary parameter-space bounds.
     """
 
-    br = max(1, np.pi * T**3 / (60 * np.sqrt(7)) * p_to_q(r, ("fddot", 1)))
+    fdot_space, err = sp.integrate.dblquad(
+        fsp_unity,
+        a=min(r["freq"]),
+        b=max(r["freq"]),
+        gfun=fsp_bound(r["fdot"][0], "freq", **v),
+        hfun=fsp_bound(r["fdot"][1], "freq", **v),
+    )
+
+    fddot_space, err = sp.integrate.tplquad(
+        fsp_unity,
+        a=min(r["freq"]),
+        b=max(r["freq"]),
+        gfun=fsp_bound(r["fdot"][0], "freq", **v),
+        hfun=fsp_bound(r["fdot"][1], "freq", **v),
+        qfun=fsp_bound(r["fddot"][0], "freq", "fdot", **v),
+        rfun=fsp_bound(r["fddot"][1], "freq", "fdot", **v),
+    )
+
+    fddot_range = abs(fddot_space) / abs(fdot_space)
+
+    br = max(1, np.pi * T**3 / (60 * np.sqrt(7)) * fddot_range)
 
     return br, 0
 
@@ -177,6 +239,10 @@ def breadth(search):
         # by definition, breadth of targeted search is number of pulsars
         return ps["num-pulsars"]
 
+    fsp_vals = {"yr": 365.25 * 86400}
+    if "freq-space-vals" in ps:
+        fsp_vals.update(ps["freq-space-vals"])
+
     br_total = 0
 
     for r in ps["ranges"]:
@@ -193,10 +259,10 @@ def breadth(search):
             br["sky"], fp["sky"] = sky_breadth(sky=ps["sky-fraction"], T=Tspan)
 
         if "fdot" in r:
-            br["fdot"], fp["fdot"] = fdot_breadth(T=Tspan, r=r)
+            br["fdot"], fp["fdot"] = fdot_breadth(T=Tspan, r=r, v=fsp_vals)
 
         if "fddot" in r:
-            br["fddot"], fp["fddot"] = fddot_breadth(T=Tspan, r=r)
+            br["fddot"], fp["fddot"] = fddot_breadth(T=Tspan, r=r, v=fsp_vals)
 
         if "bin-freq-mod-depth" in r:
             br["bin"], fp["bin"] = binary_unknown_tasc_freq_mod_depth_breadth(
