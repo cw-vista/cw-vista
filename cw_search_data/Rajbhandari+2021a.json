@@ -26,15 +26,24 @@
             "max-coherence-time": 11180160.0,
             "obs-run": "O2",
             "param-space": {
+                "freq-space-vals": {
+                    "Amax": 1.57,
+                    "Amin": 1.39,
+                    "Bmax": 0.195,
+                    "nu": 29.66181,
+                    "nuK": 506,
+                    "nud": -3.69383e-10,
+                    "nudd": 2.41e-20
+                },
                 "ranges": [
                     {
                         "fddot": [
                             0.0,
-                            3.5659925494736766e-20
+                            "nudd * (freq/nu)"
                         ],
                         "fdot": [
-                            -4.950348510617035e-13,
-                            0.0
+                            "nud * ((freq/nu) - 2*Bmax*(nu/nuK)**2)",
+                            "nud * (freq/nu)"
                         ],
                         "freq": [
                             41.21,
@@ -55,15 +64,24 @@
             "max-coherence-time": 11180160.0,
             "obs-run": "O2",
             "param-space": {
+                "freq-space-vals": {
+                    "Amax": 1.57,
+                    "Amin": 1.39,
+                    "Bmax": 0.195,
+                    "nu": 29.64761,
+                    "nuK": 506,
+                    "nud": -3.689673e-10,
+                    "nudd": 1.92e-20
+                },
                 "ranges": [
                     {
                         "fddot": [
                             0.0,
-                            2.840957335680236e-20
+                            "nudd * (freq/nu)"
                         ],
                         "fdot": [
-                            -4.940044143112189e-13,
-                            0.0
+                            "nud * ((freq/nu) - 2*Bmax*(nu/nuK)**2)",
+                            "nud * (freq/nu)"
                         ],
                         "freq": [
                             41.1903,
@@ -84,15 +102,24 @@
             "max-coherence-time": 13037760.0,
             "obs-run": "O2",
             "param-space": {
+                "freq-space-vals": {
+                    "Amax": 1.57,
+                    "Amin": 1.39,
+                    "Bmax": 0.195,
+                    "nu": 29.6438,
+                    "nuK": 506,
+                    "nud": -3.688438e-10,
+                    "nudd": 2.5e-20
+                },
                 "ranges": [
                     {
                         "fddot": [
                             0.0,
-                            3.6991634125606564e-20
+                            "nudd * (freq/nu)"
                         ],
                         "fdot": [
-                            -4.937121442555558e-13,
-                            0.0
+                            "nud * ((freq/nu) - 2*Bmax*(nu/nuK)**2)",
+                            "nud * (freq/nu)"
                         ],
                         "freq": [
                             41.185,
