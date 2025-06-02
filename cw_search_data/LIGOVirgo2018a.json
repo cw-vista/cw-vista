@@ -19,6 +19,31 @@
     },
     "searches": [
         {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "coincidence",
+            "breadth": 6.655e+28,
+            "category": "allsky isolated",
+            "depth": 10.9,
+            "max-coherence-time": 172800,
+            "obs-run": "O1",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1e-08,
+                            1e-09
+                        ],
+                        "freq": [
+                            475,
+                            2000
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 11145600.0
+        },
+        {
             "algorithm-coherent": "power",
             "algorithm-incoherent": "PowerFlux",
             "breadth": 6.655e+28,
@@ -50,31 +75,6 @@
             "category": "allsky isolated",
             "depth": 16.8,
             "max-coherence-time": 1800,
-            "obs-run": "O1",
-            "param-space": {
-                "ranges": [
-                    {
-                        "fdot": [
-                            -1e-08,
-                            1e-09
-                        ],
-                        "freq": [
-                            475,
-                            2000
-                        ]
-                    }
-                ],
-                "sky-fraction": 1
-            },
-            "time-span": 11145600.0
-        },
-        {
-            "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "coincidence",
-            "breadth": 6.655e+28,
-            "category": "allsky isolated",
-            "depth": 10.9,
-            "max-coherence-time": 172800,
             "obs-run": "O1",
             "param-space": {
                 "ranges": [

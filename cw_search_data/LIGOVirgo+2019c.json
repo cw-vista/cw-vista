@@ -20,6 +20,51 @@
     },
     "searches": [
         {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "coincidence",
+            "breadth": 1.339e+30,
+            "category": "allsky isolated",
+            "depth": 32.93,
+            "max-coherence-time": 2073600,
+            "obs-run": "O2",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1e-08,
+                            2e-09
+                        ],
+                        "freq": [
+                            20,
+                            100
+                        ]
+                    },
+                    {
+                        "fdot": [
+                            -1e-08,
+                            2e-09
+                        ],
+                        "freq": [
+                            100,
+                            434
+                        ]
+                    },
+                    {
+                        "fdot": [
+                            -1e-08,
+                            2e-09
+                        ],
+                        "freq": [
+                            1518,
+                            1922
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 23155200.0
+        },
+        {
             "algorithm-coherent": "power",
             "algorithm-incoherent": "FrequencyHough",
             "breadth": 2.589e+29,
@@ -62,51 +107,6 @@
                         "freq": [
                             50,
                             1500
-                        ]
-                    }
-                ],
-                "sky-fraction": 1
-            },
-            "time-span": 23155200.0
-        },
-        {
-            "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "coincidence",
-            "breadth": 1.339e+30,
-            "category": "allsky isolated",
-            "depth": 32.93,
-            "max-coherence-time": 2073600,
-            "obs-run": "O2",
-            "param-space": {
-                "ranges": [
-                    {
-                        "fdot": [
-                            -1e-08,
-                            2e-09
-                        ],
-                        "freq": [
-                            20,
-                            100
-                        ]
-                    },
-                    {
-                        "fdot": [
-                            -1e-08,
-                            2e-09
-                        ],
-                        "freq": [
-                            100,
-                            434
-                        ]
-                    },
-                    {
-                        "fdot": [
-                            -1e-08,
-                            2e-09
-                        ],
-                        "freq": [
-                            1518,
-                            1922
                         ]
                     }
                 ],

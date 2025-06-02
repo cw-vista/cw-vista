@@ -123,40 +123,6 @@
         {
             "algorithm-coherent": "F-statistic",
             "algorithm-incoherent": "none",
-            "astro-target": "G111.7-2.1",
-            "breadth": 34840000000000.0,
-            "category": "cco",
-            "depth": 30.15,
-            "max-coherence-time": 775855,
-            "obs-run": "O1",
-            "param-space": {
-                "freq-space-vals": {
-                    "nmax": 7.0,
-                    "nmin": 2.0,
-                    "tau": 0.3
-                },
-                "ranges": [
-                    {
-                        "fddot": [
-                            "nmin * fdot**2 / freq",
-                            "nmax * fdot**2 / freq"
-                        ],
-                        "fdot": [
-                            "-freq / ((nmin - 1) * tau * 1000 * yr)",
-                            "-freq / ((nmax - 1) * tau * 1000 * yr)"
-                        ],
-                        "freq": [
-                            31,
-                            1998
-                        ]
-                    }
-                ]
-            },
-            "time-span": 775855
-        },
-        {
-            "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "none",
             "astro-target": "G15.9+0.2",
             "breadth": 2065000000000.0,
             "category": "cco",
@@ -221,6 +187,142 @@
                 ]
             },
             "time-span": 1133255
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "G39.2-0.3",
+            "breadth": 1099000000000.0,
+            "category": "cco",
+            "depth": 38.29,
+            "max-coherence-time": 1965780,
+            "obs-run": "O1",
+            "param-space": {
+                "freq-space-vals": {
+                    "nmax": 7.0,
+                    "nmin": 2.0,
+                    "tau": 3
+                },
+                "ranges": [
+                    {
+                        "fddot": [
+                            "nmin * fdot**2 / freq",
+                            "nmax * fdot**2 / freq"
+                        ],
+                        "fdot": [
+                            "-freq / ((nmin - 1) * tau * 1000 * yr)",
+                            "-freq / ((nmax - 1) * tau * 1000 * yr)"
+                        ],
+                        "freq": [
+                            98,
+                            295
+                        ]
+                    }
+                ]
+            },
+            "time-span": 1965780
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "G65.7+1.2",
+            "breadth": 1269000000000.0,
+            "category": "cco",
+            "depth": 39.32,
+            "max-coherence-time": 1932067,
+            "obs-run": "O1",
+            "param-space": {
+                "freq-space-vals": {
+                    "nmax": 7.0,
+                    "nmin": 2.0,
+                    "tau": 20
+                },
+                "ranges": [
+                    {
+                        "fddot": [
+                            "nmin * fdot**2 / freq",
+                            "nmax * fdot**2 / freq"
+                        ],
+                        "fdot": [
+                            "-freq / ((nmin - 1) * tau * 1000 * yr)",
+                            "-freq / ((nmax - 1) * tau * 1000 * yr)"
+                        ],
+                        "freq": [
+                            53,
+                            794
+                        ]
+                    }
+                ]
+            },
+            "time-span": 1932067
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "G93.3+6.9",
+            "breadth": 1924000000000.0,
+            "category": "cco",
+            "depth": 32.53,
+            "max-coherence-time": 1051764,
+            "obs-run": "O1",
+            "param-space": {
+                "freq-space-vals": {
+                    "nmax": 7.0,
+                    "nmin": 2.0,
+                    "tau": 5
+                },
+                "ranges": [
+                    {
+                        "fddot": [
+                            "nmin * fdot**2 / freq",
+                            "nmax * fdot**2 / freq"
+                        ],
+                        "fdot": [
+                            "-freq / ((nmin - 1) * tau * 1000 * yr)",
+                            "-freq / ((nmax - 1) * tau * 1000 * yr)"
+                        ],
+                        "freq": [
+                            41,
+                            1215
+                        ]
+                    }
+                ]
+            },
+            "time-span": 1051764
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "G111.7-2.1",
+            "breadth": 34840000000000.0,
+            "category": "cco",
+            "depth": 30.15,
+            "max-coherence-time": 775855,
+            "obs-run": "O1",
+            "param-space": {
+                "freq-space-vals": {
+                    "nmax": 7.0,
+                    "nmin": 2.0,
+                    "tau": 0.3
+                },
+                "ranges": [
+                    {
+                        "fddot": [
+                            "nmin * fdot**2 / freq",
+                            "nmax * fdot**2 / freq"
+                        ],
+                        "fdot": [
+                            "-freq / ((nmin - 1) * tau * 1000 * yr)",
+                            "-freq / ((nmax - 1) * tau * 1000 * yr)"
+                        ],
+                        "freq": [
+                            31,
+                            1998
+                        ]
+                    }
+                ]
+            },
+            "time-span": 775855
         },
         {
             "algorithm-coherent": "F-statistic",
@@ -595,108 +697,6 @@
                 ]
             },
             "time-span": 790209
-        },
-        {
-            "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "none",
-            "astro-target": "G39.2-0.3",
-            "breadth": 1099000000000.0,
-            "category": "cco",
-            "depth": 38.29,
-            "max-coherence-time": 1965780,
-            "obs-run": "O1",
-            "param-space": {
-                "freq-space-vals": {
-                    "nmax": 7.0,
-                    "nmin": 2.0,
-                    "tau": 3
-                },
-                "ranges": [
-                    {
-                        "fddot": [
-                            "nmin * fdot**2 / freq",
-                            "nmax * fdot**2 / freq"
-                        ],
-                        "fdot": [
-                            "-freq / ((nmin - 1) * tau * 1000 * yr)",
-                            "-freq / ((nmax - 1) * tau * 1000 * yr)"
-                        ],
-                        "freq": [
-                            98,
-                            295
-                        ]
-                    }
-                ]
-            },
-            "time-span": 1965780
-        },
-        {
-            "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "none",
-            "astro-target": "G65.7+1.2",
-            "breadth": 1269000000000.0,
-            "category": "cco",
-            "depth": 39.32,
-            "max-coherence-time": 1932067,
-            "obs-run": "O1",
-            "param-space": {
-                "freq-space-vals": {
-                    "nmax": 7.0,
-                    "nmin": 2.0,
-                    "tau": 20
-                },
-                "ranges": [
-                    {
-                        "fddot": [
-                            "nmin * fdot**2 / freq",
-                            "nmax * fdot**2 / freq"
-                        ],
-                        "fdot": [
-                            "-freq / ((nmin - 1) * tau * 1000 * yr)",
-                            "-freq / ((nmax - 1) * tau * 1000 * yr)"
-                        ],
-                        "freq": [
-                            53,
-                            794
-                        ]
-                    }
-                ]
-            },
-            "time-span": 1932067
-        },
-        {
-            "algorithm-coherent": "F-statistic",
-            "algorithm-incoherent": "none",
-            "astro-target": "G93.3+6.9",
-            "breadth": 1924000000000.0,
-            "category": "cco",
-            "depth": 32.53,
-            "max-coherence-time": 1051764,
-            "obs-run": "O1",
-            "param-space": {
-                "freq-space-vals": {
-                    "nmax": 7.0,
-                    "nmin": 2.0,
-                    "tau": 5
-                },
-                "ranges": [
-                    {
-                        "fddot": [
-                            "nmin * fdot**2 / freq",
-                            "nmax * fdot**2 / freq"
-                        ],
-                        "fdot": [
-                            "-freq / ((nmin - 1) * tau * 1000 * yr)",
-                            "-freq / ((nmax - 1) * tau * 1000 * yr)"
-                        ],
-                        "freq": [
-                            41,
-                            1215
-                        ]
-                    }
-                ]
-            },
-            "time-span": 1051764
         }
     ]
 }

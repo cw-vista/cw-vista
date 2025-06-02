@@ -19,20 +19,6 @@
     },
     "searches": [
         {
-            "algorithm-coherent": "Bayesian",
-            "algorithm-incoherent": "none",
-            "astro-target": "Crab",
-            "breadth": 1.0,
-            "category": "pulsar targeted",
-            "depth": 774.1,
-            "max-coherence-time": 23668200.0,
-            "obs-run": "S5",
-            "param-space": {
-                "num-pulsars": 1
-            },
-            "time-span": 23668200.0
-        },
-        {
             "algorithm-coherent": "F-statistic",
             "algorithm-incoherent": "none",
             "astro-target": "Crab",
@@ -50,6 +36,20 @@
                         ]
                     }
                 ]
+            },
+            "time-span": 23668200.0
+        },
+        {
+            "algorithm-coherent": "Bayesian",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 774.1,
+            "max-coherence-time": 23668200.0,
+            "obs-run": "S5",
+            "param-space": {
+                "num-pulsars": 1
             },
             "time-span": 23668200.0
         }

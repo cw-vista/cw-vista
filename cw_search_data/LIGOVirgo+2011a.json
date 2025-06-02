@@ -20,6 +20,20 @@
     },
     "searches": [
         {
+            "algorithm-coherent": "5-vector",
+            "algorithm-incoherent": "none",
+            "astro-target": "Vela",
+            "breadth": 1.0,
+            "category": "pulsar targeted",
+            "depth": 642.8,
+            "max-coherence-time": 15984000.0,
+            "obs-run": "VSR23",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 15984000.0
+        },
+        {
             "algorithm-coherent": "Bayesian",
             "algorithm-incoherent": "none",
             "astro-target": "Vela",
@@ -40,20 +54,6 @@
             "breadth": 1.0,
             "category": "pulsar targeted",
             "depth": 589.3,
-            "max-coherence-time": 15984000.0,
-            "obs-run": "VSR23",
-            "param-space": {
-                "num-pulsars": 1
-            },
-            "time-span": 15984000.0
-        },
-        {
-            "algorithm-coherent": "5-vector",
-            "algorithm-incoherent": "none",
-            "astro-target": "Vela",
-            "breadth": 1.0,
-            "category": "pulsar targeted",
-            "depth": 642.8,
             "max-coherence-time": 15984000.0,
             "obs-run": "VSR23",
             "param-space": {

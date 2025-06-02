@@ -20,56 +20,6 @@
     },
     "searches": [
         {
-            "algorithm-coherent": "power",
-            "algorithm-incoherent": "FrequencyHough",
-            "breadth": 8.355e+30,
-            "category": "allsky isolated",
-            "depth": 55.61,
-            "max-coherence-time": 8192,
-            "obs-run": "O3",
-            "param-space": {
-                "ranges": [
-                    {
-                        "fdot": [
-                            -1e-08,
-                            1e-09
-                        ],
-                        "freq": [
-                            10,
-                            2048
-                        ]
-                    }
-                ],
-                "sky-fraction": 1
-            },
-            "time-span": 31190400.0
-        },
-        {
-            "algorithm-coherent": "power",
-            "algorithm-incoherent": "SkyHough",
-            "breadth": 3.786e+27,
-            "category": "allsky isolated",
-            "depth": 53.49,
-            "max-coherence-time": 7200,
-            "obs-run": "O3",
-            "param-space": {
-                "ranges": [
-                    {
-                        "fdot": [
-                            -1e-09,
-                            5e-12
-                        ],
-                        "freq": [
-                            65,
-                            350
-                        ]
-                    }
-                ],
-                "sky-fraction": 1
-            },
-            "time-span": 31190400.0
-        },
-        {
             "algorithm-coherent": "F-statistic",
             "algorithm-incoherent": "coincidence",
             "breadth": 3.866e+28,
@@ -96,6 +46,31 @@
         },
         {
             "algorithm-coherent": "power",
+            "algorithm-incoherent": "FrequencyHough",
+            "breadth": 8.355e+30,
+            "category": "allsky isolated",
+            "depth": 55.61,
+            "max-coherence-time": 8192,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1e-08,
+                            1e-09
+                        ],
+                        "freq": [
+                            10,
+                            2048
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "power",
             "algorithm-incoherent": "SOAP",
             "breadth": 1.371e+35,
             "category": "allsky isolated",
@@ -113,6 +88,31 @@
                         "freq": [
                             40,
                             2000
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 31190400.0
+        },
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "SkyHough",
+            "breadth": 3.786e+27,
+            "category": "allsky isolated",
+            "depth": 53.49,
+            "max-coherence-time": 7200,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1e-09,
+                            5e-12
+                        ],
+                        "freq": [
+                            65,
+                            350
                         ]
                     }
                 ],

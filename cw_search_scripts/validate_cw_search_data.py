@@ -7,6 +7,7 @@ import cw_search_breadth
 import cw_search_data_schema
 import cw_search_depth
 import jsonschema
+from natsort import natsorted
 
 """
 Validate CW search data files
@@ -39,6 +40,21 @@ for filename in sorted(filenames):
     with open(filename, encoding="utf-8") as f:
         data = json.load(f)
     jsonschema.validate(instance=data, schema=schema)
+
+    # sort searches
+    data["searches"] = natsorted(
+        data["searches"],
+        key=lambda v: (
+            v.get(k, "")
+            for k in (
+                "category",
+                "obs-run",
+                "algorithm-coherent",
+                "algorithm-incoherent",
+                "astro-target",
+            )
+        ),
+    )
 
     # compute sensitivity depths and parameter-space breadths
     for s in data["searches"]:
