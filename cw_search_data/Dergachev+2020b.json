@@ -17,7 +17,7 @@
         {
             "algorithm-coherent": "power",
             "algorithm-incoherent": "LooselyCoherent",
-            "breadth": 1.094e+28,
+            "breadth": 1.117e+28,
             "category": "allsky isolated",
             "depth": 61.5,
             "max-coherence-time": 43200,
@@ -26,12 +26,12 @@
                 "ranges": [
                     {
                         "fddot": [
-                            -2.83333e-20,
-                            2.83333e-20
+                            "-1.0 * (4e-20 if freq < 1000 else 2e-20)",
+                            "+1.0 * (4e-20 if freq < 1000 else 2e-20)"
                         ],
                         "fdot": [
-                            -2.70833e-12,
-                            2.70833e-12
+                            "-1.0 * (3e-12 if freq < 1000 else 2.5e-12)",
+                            "+1.0 * (3e-12 if freq < 1000 else 2.5e-12)"
                         ],
                         "freq": [
                             500,
