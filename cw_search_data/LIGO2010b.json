@@ -27,15 +27,20 @@
             "max-coherence-time": 1036800,
             "obs-run": "S5",
             "param-space": {
+                "freq-space-vals": {
+                    "nmax": 7.0,
+                    "nmin": 2.0,
+                    "tau": 300.0
+                },
                 "ranges": [
                     {
                         "fddot": [
-                            0.0,
-                            4.81234e-18
+                            "nmin * fdot**2 / freq",
+                            "nmax * fdot**2 / freq"
                         ],
                         "fdot": [
-                            -1.76045e-08,
-                            0.0
+                            "-freq / ((nmin - 1) * tau * yr)",
+                            "-freq / ((nmax - 1) * tau * yr)"
                         ],
                         "freq": [
                             100,
