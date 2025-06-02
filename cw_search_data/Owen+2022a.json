@@ -25,15 +25,20 @@
             "max-coherence-time": 1102464.0,
             "obs-run": "O2",
             "param-space": {
+                "freq-space-vals": {
+                    "nmax": 7.0,
+                    "nmin": 2.0,
+                    "tau": 30
+                },
                 "ranges": [
                     {
                         "fddot": [
-                            0.0,
-                            2.26735e-16
+                            "nmin * fdot**2 / freq",
+                            "nmax * fdot**2 / freq"
                         ],
                         "fdot": [
-                            -8.80225e-08,
-                            0.0
+                            "-freq / ((nmin - 1) * tau * yr)",
+                            "-freq / ((nmax - 1) * tau * yr)"
                         ],
                         "freq": [
                             75,
@@ -54,15 +59,20 @@
             "max-coherence-time": 754272.0,
             "obs-run": "O2",
             "param-space": {
+                "freq-space-vals": {
+                    "nmax": 7.0,
+                    "nmin": 2.0,
+                    "tau": 30
+                },
                 "ranges": [
                     {
                         "fddot": [
-                            0.0,
-                            4.65039e-16
+                            "nmin * fdot**2 / freq",
+                            "nmax * fdot**2 / freq"
                         ],
                         "fdot": [
-                            -1.76045e-07,
-                            0.0
+                            "-freq / ((nmin - 1) * tau * yr)",
+                            "-freq / ((nmax - 1) * tau * yr)"
                         ],
                         "freq": [
                             125,
