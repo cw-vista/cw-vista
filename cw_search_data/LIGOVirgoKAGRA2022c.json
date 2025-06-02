@@ -29,14 +29,17 @@
             "max-coherence-time": 432000,
             "obs-run": "O3",
             "param-space": {
+                "freq-space-vals": {
+                    "tau": 300
+                },
                 "ranges": [
                     {
                         "fddot": [
                             0.0,
-                            1.2104184426148527e-17
+                            "5 * fdot**2 / freq"
                         ],
                         "fdot": [
-                            -5.260222577128806e-08,
+                            "-freq / (tau * yr)",
                             0.0
                         ],
                         "freq": [
@@ -58,14 +61,17 @@
             "max-coherence-time": 648000.0,
             "obs-run": "O3",
             "param-space": {
+                "freq-space-vals": {
+                    "tau": 700
+                },
                 "ranges": [
                     {
                         "fddot": [
                             0.0,
-                            2.2232175476599342e-18
+                            "5 * fdot**2 / freq"
                         ],
                         "fdot": [
-                            -2.2543811044837735e-08,
+                            "-freq / (tau * yr)",
                             0.0
                         ],
                         "freq": [
