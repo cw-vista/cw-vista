@@ -28,20 +28,23 @@
             "algorithm-coherent": "F-statistic",
             "algorithm-incoherent": "GlobalCorrelationTransform",
             "astro-target": "Cas A",
-            "breadth": 6.098e+19,
+            "breadth": 8.025e+19,
             "category": "cco",
             "depth": 60.3,
             "max-coherence-time": 882000,
             "obs-run": "O1",
             "param-space": {
+                "freq-space-vals": {
+                    "tau": 330
+                },
                 "ranges": [
                     {
                         "fddot": [
                             0.0,
-                            3.50387e-17
+                            "5 * freq / (tau * yr)**2"
                         ],
                         "fdot": [
-                            -7.29786e-08,
+                            "-freq / (tau * yr)",
                             0.0
                         ],
                         "freq": [
@@ -56,21 +59,24 @@
         {
             "algorithm-coherent": "F-statistic",
             "algorithm-incoherent": "GlobalCorrelationTransform",
-            "astro-target": "G347.3",
-            "breadth": 5.35e+17,
+            "astro-target": "G347.3-0.5",
+            "breadth": 7.041e+17,
             "category": "cco",
             "depth": 82.9,
             "max-coherence-time": 1760400,
             "obs-run": "O1",
             "param-space": {
+                "freq-space-vals": {
+                    "tau": 1600
+                },
                 "ranges": [
                     {
                         "fddot": [
                             0.0,
-                            1.49051e-18
+                            "5 * freq / (tau * yr)**2"
                         ],
                         "fdot": [
-                            -1.50518e-08,
+                            "-freq / (tau * yr)",
                             0.0
                         ],
                         "freq": [
@@ -86,20 +92,23 @@
             "algorithm-coherent": "F-statistic",
             "algorithm-incoherent": "GlobalCorrelationTransform",
             "astro-target": "Vela Jr.",
-            "breadth": 6.389e+18,
+            "breadth": 8.408e+18,
             "category": "cco",
             "depth": 76.5,
             "max-coherence-time": 1328400,
             "obs-run": "O1",
             "param-space": {
+                "freq-space-vals": {
+                    "tau": 700
+                },
                 "ranges": [
                     {
                         "fddot": [
                             0.0,
-                            7.78717e-18
+                            "5 * freq / (tau * yr)**2"
                         ],
                         "fdot": [
-                            -3.44042e-08,
+                            "-freq / (tau * yr)",
                             0.0
                         ],
                         "freq": [
