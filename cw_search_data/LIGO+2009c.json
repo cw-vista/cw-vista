@@ -21,17 +21,22 @@
         {
             "algorithm-coherent": "F-statistic",
             "algorithm-incoherent": "coincidence",
-            "breadth": 2.235e+26,
+            "breadth": 2.731e+26,
             "category": "allsky isolated",
             "depth": 10.9,
             "max-coherence-time": 108000,
             "obs-run": "S5",
             "param-space": {
+                "freq-space-vals": {
+                    "freq_0": 400,
+                    "tau_hf": 8000,
+                    "tau_lf": 1000
+                },
                 "ranges": [
                     {
                         "fdot": [
-                            -4.11809e-09,
-                            0.0
+                            "-1.0 * freq / ((tau_lf if freq < freq_0 else tau_hf) * yr)",
+                            "+0.1 * freq / ((tau_lf if freq < freq_0 else tau_hf) * yr)"
                         ],
                         "freq": [
                             50,
