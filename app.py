@@ -2,7 +2,7 @@ import io
 import json
 import re
 from pathlib import Path
-from textwrap import dedent
+from textwrap import dedent, wrap
 from threading import RLock
 
 import matplotlib as mpl
@@ -12,6 +12,7 @@ import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 import matplotlib.text as mtext
 import numpy as np
+import papersize
 import streamlit as st
 from adjustText import adjust_text
 
@@ -35,6 +36,30 @@ if "display-img-first-time" not in st.session_state:
 
 
 @st.cache_data
+def get_figure_sizes():
+
+    sizes = {}
+
+    # add some custom sizes
+    for name, size_str, scale in (
+        ("beamer 4:3", "307pt x 244pt", 2),
+        ("beamer 16:9", "398pt x 227pt", 2),
+    ):
+        size = papersize.parse_couple(size_str, "in")
+        sizes[name] = tuple(float(n) * scale for n in size)
+
+    # add a selection of standard paper sizes
+    for name in ("A0", "A1", "A2", "A3", "A4", "Letter", "A5", "A6"):
+        size = papersize.parse_papersize(name, "in")
+        sizes[name] = tuple(float(n) for n in size)
+
+    return sizes
+
+
+figure_sizes = get_figure_sizes()
+
+
+@st.cache_data
 def get_data():
 
     # load CW search data
@@ -51,6 +76,14 @@ def get_data():
         refs[ref_key] = ref
         for search in data["searches"]:
             search["ref-key"] = search["citation"] = ref_key
+            search["full-citation"] = "\n".join(
+                wrap(
+                    "{key}, {title}, DOI:{doi}".format(
+                        key=ref_key, title=ref["title"], doi=ref["doi"]
+                    ),
+                    40,
+                )
+            )
             searches.append(search)
 
     # maximum year of cited papers
@@ -68,6 +101,7 @@ def get_data():
         "Algorithm (coherent)": "algorithm-coherent",
         "Algorithm (incoherent)": "algorithm-incoherent",
         "Citation": "citation",
+        "Full citation": "full-citation",
     }
     with open("label_map.json", encoding="utf-8") as f:
         label_map = json.load(f)
@@ -287,17 +321,38 @@ if select_searches:
         "Figure format", options=["png", "eps", "pdf", "svg"]
     )
 
-    width = st.sidebar.number_input(
-        "Figure width (inches)", min_value=1.0, max_value=11.7, value=8.3, step=0.1
-    )
-    height = st.sidebar.number_input(
-        "Figure height (inches)", min_value=1.0, max_value=8.3, value=3.5, step=0.1
+    figure_size = st.sidebar.selectbox(
+        "Figure size", options=["custom"] + list(figure_sizes.keys()), index=0
     )
 
-    font_size = st.sidebar.slider("Font size", min_value=6, max_value=24, value=14)
+    if figure_size == "custom":
+
+        default_custom_size = figure_sizes["beamer 16:9"]
+
+        width = st.sidebar.number_input(
+            "Figure width (inches)",
+            min_value=1.0,
+            max_value=2 * max(default_custom_size),
+            value=max(default_custom_size),
+            step=0.1,
+        )
+        height = st.sidebar.number_input(
+            "Figure height (inches)",
+            min_value=1.0,
+            max_value=2 * min(default_custom_size),
+            value=min(default_custom_size),
+            step=0.1,
+        )
+
+    else:
+
+        width = max(figure_sizes[figure_size])
+        height = min(figure_sizes[figure_size])
+
+    font_size = st.sidebar.slider("Font size", min_value=6, max_value=36, value=14)
 
     marker_size = st.sidebar.slider(
-        "Marker size", min_value=10, max_value=100, value=50
+        "Marker size", min_value=10, max_value=500, value=100
     )
 
     plot_lim = {}
@@ -363,6 +418,14 @@ if select_searches:
         "Label font size", min_value=6, max_value=24, value=8
     )
 
+    label_background_alpha = st.sidebar.slider(
+        "Label background opacity", min_value=0.0, max_value=1.0, value=0.5, step=0.1
+    )
+
+    label_background_pad = st.sidebar.slider(
+        "Label background padding", min_value=0, max_value=6, value=0
+    )
+
     legend_position = st.sidebar.selectbox(
         "Legend position",
         options=[
@@ -387,7 +450,7 @@ if select_searches:
     )
 
     legend_font_size = st.sidebar.slider(
-        "Legend font size", min_value=6, max_value=24, value=12
+        "Legend font size", min_value=6, max_value=36, value=12
     )
 
     with_image_credit = st.sidebar.checkbox("With image credit", value=True)
@@ -658,11 +721,12 @@ def vista_plot(toast=True, **kwargs):
                 va="center",
                 bbox={
                     "facecolor": "white",
-                    "alpha": 0.5,
+                    "alpha": label_background_alpha,
                     "edgecolor": "none",
-                    "pad": 0,
+                    "pad": label_background_pad,
                 },
                 zorder=-5,
+                usetex=True,
             )
 
         # fix layout
@@ -672,18 +736,17 @@ def vista_plot(toast=True, **kwargs):
         if labels:
             adjust_text([v["text"] for v in labels.values()])
             for v in labels.values():
-                if len(v["x"]) > 1:
-                    for i in range(len(v["x"])):
-                        ax.add_patch(
-                            mpatches.FancyArrowPatch(
-                                v["text"].get_position(),
-                                (v["x"][i], v["y"][i]),
-                                color="grey",
-                                linewidth=0.25,
-                                linestyle=":",
-                                zorder=-15,
-                            )
+                for i in range(len(v["x"])):
+                    ax.add_patch(
+                        mpatches.FancyArrowPatch(
+                            v["text"].get_position(),
+                            (v["x"][i], v["y"][i]),
+                            color="grey",
+                            linewidth=0.25,
+                            linestyle=":",
+                            zorder=-15,
                         )
+                    )
 
         # save figure to memory
         img = io.BytesIO()
