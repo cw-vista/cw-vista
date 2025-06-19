@@ -847,7 +847,8 @@ else:
             (2023)](https://doi.org/10.1016/j.astropartphys.2023.102880) for the
             definition of $\\mathcal{B}$ and the original vista plot. This
             webpage generates plots using [Matplotlib](https://matplotlib.org/),
-            [adjustText](https://adjusttext.readthedocs.io/), and
+            [adjustText](https://adjusttext.readthedocs.io/),
+            [papersize](https://papersize.readthedocs.io/en/latest/) and
             [NumPy](https://numpy.org/).
 
             """
