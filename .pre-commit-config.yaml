@@ -15,16 +15,10 @@ repos:
         files: ^\.gitignore$|^requirements.txt$
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.5.2
+    rev: v0.11.13
     hooks:
-      - id: ruff
-        args: [--exit-non-zero-on-fix, --show-fixes]
-
-  - repo: https://github.com/pycqa/isort
-    rev: 6.0.1
-    hooks:
-      - id: isort
-        args: ["--profile", "black"]
+      - id: ruff-check
+        args: ["--fix"]
 
   - repo: https://github.com/psf/black
     rev: 25.1.0
