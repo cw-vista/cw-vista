@@ -820,19 +820,6 @@ else:
         st.write(
             f"**Number of CW search publications represented in this plot:** {len(select_searches_bibtex)}"
         )
-        authors = set()
-        collaborations = set()
-        for s in select_searches:
-            ref = refs[s["ref-key"]]
-            if "collaboration" in ref:
-                collaborations.update(ref["collaboration"])
-            else:
-                authors.update(ref["author"])
-        authors.discard("others")
-        collaborations.discard("others")
-        st.write(
-            f"**Number of CW search publication authors:** {len(authors)} individuals, {len(collaborations)} collaborations"
-        )
 
         # acknowledgements
         st.write(
