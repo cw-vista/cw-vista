@@ -26,7 +26,7 @@
             "algorithm-coherent": "F-statistic",
             "algorithm-incoherent": "GlobalCorrelationTransform",
             "breadth": 3.126e+30,
-            "category": "allsky isolated",
+            "category": "allsky-isolated",
             "depth": 30.7,
             "max-coherence-time": 108000,
             "obs-run": "S5",

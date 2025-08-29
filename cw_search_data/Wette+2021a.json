@@ -20,7 +20,7 @@
             "algorithm-coherent": "F-statistic",
             "algorithm-incoherent": "Weave",
             "breadth": 7.215e+20,
-            "category": "allsky isolated",
+            "category": "allsky-isolated",
             "depth": 70.62,
             "max-coherence-time": 858194,
             "obs-run": "O2",

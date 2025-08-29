@@ -22,7 +22,7 @@
             "algorithm-coherent": "Bayesian",
             "algorithm-incoherent": "none",
             "breadth": 78.0,
-            "category": "pulsar targeted",
+            "category": "pulsar-targeted",
             "depth": 299.5,
             "max-coherence-time": 43977600.0,
             "obs-run": "S4",
@@ -36,7 +36,7 @@
             "algorithm-incoherent": "none",
             "astro-target": "Crab",
             "breadth": 1.0,
-            "category": "pulsar targeted",
+            "category": "pulsar-targeted",
             "depth": 289.8,
             "depth-Sh-obs-det": [
                 "S3-H1",

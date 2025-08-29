@@ -25,7 +25,7 @@
             "algorithm-coherent": "F-statistic",
             "algorithm-incoherent": "none",
             "breadth": 7.0,
-            "category": "pulsar targeted",
+            "category": "pulsar-targeted",
             "depth": 802.8,
             "max-coherence-time": 143251200.0,
             "obs-run": "O3",

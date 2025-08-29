@@ -25,7 +25,7 @@
             "algorithm-incoherent": "none",
             "astro-target": "J0537-6910",
             "breadth": 1.0,
-            "category": "pulsar targeted",
+            "category": "pulsar-targeted",
             "depth": 548.7,
             "max-coherence-time": 82339200,
             "obs-run": "O3",

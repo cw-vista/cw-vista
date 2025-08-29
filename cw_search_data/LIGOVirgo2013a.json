@@ -22,7 +22,7 @@
             "algorithm-coherent": "F-statistic",
             "algorithm-incoherent": "SkyHough",
             "breadth": 2.245e+30,
-            "category": "allsky isolated",
+            "category": "allsky-isolated",
             "depth": 30.0,
             "max-coherence-time": 90000,
             "obs-run": "S5",

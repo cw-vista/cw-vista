@@ -22,7 +22,7 @@
             "algorithm-coherent": "power",
             "algorithm-incoherent": "BinarySkyHough",
             "breadth": 1.218e+38,
-            "category": "allsky binary",
+            "category": "allsky-binary",
             "depth": 23.0,
             "max-coherence-time": 1024,
             "obs-run": "O3",

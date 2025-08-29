@@ -23,7 +23,7 @@
             "algorithm-coherent": "power",
             "algorithm-incoherent": "PowerFlux",
             "breadth": 4.427e+29,
-            "category": "allsky isolated",
+            "category": "allsky-isolated",
             "depth": 33.79,
             "max-coherence-time": 7200,
             "obs-run": "O3",

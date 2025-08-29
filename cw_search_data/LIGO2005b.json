@@ -21,7 +21,7 @@
             "algorithm-coherent": "power",
             "algorithm-incoherent": "SkyHough",
             "breadth": 5.112e+23,
-            "category": "allsky isolated",
+            "category": "allsky-isolated",
             "depth": 11.3,
             "max-coherence-time": 1800,
             "obs-run": "S2",

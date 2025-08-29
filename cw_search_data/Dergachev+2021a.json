@@ -18,7 +18,7 @@
             "algorithm-coherent": "power",
             "algorithm-incoherent": "LooselyCoherent",
             "breadth": 2.271e+24,
-            "category": "allsky isolated",
+            "category": "allsky-isolated",
             "depth": 76.53,
             "max-coherence-time": 172800,
             "obs-run": "O2",

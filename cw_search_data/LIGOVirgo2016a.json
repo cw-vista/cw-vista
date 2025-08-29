@@ -22,7 +22,7 @@
             "algorithm-coherent": "power",
             "algorithm-incoherent": "FrequencyHough",
             "breadth": 2.212e+26,
-            "category": "allsky isolated",
+            "category": "allsky-isolated",
             "depth": 35.5,
             "max-coherence-time": 8192,
             "obs-run": "VSR4",

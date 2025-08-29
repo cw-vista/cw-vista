@@ -27,7 +27,7 @@ for n, k in enumerate(category_keys):
 ui = int(input("Selection: "))
 category = category_keys[ui]
 
-if category == "pulsar targeted":
+if category == "pulsar-targeted":
     new_param_space = {"num-pulsars": "REQUIRED"}
 else:
     new_param_space = {

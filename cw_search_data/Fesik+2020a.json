@@ -19,7 +19,7 @@
             "algorithm-incoherent": "none",
             "astro-target": "PSR J0537-6910",
             "breadth": 5.639e+16,
-            "category": "pulsar narrowband",
+            "category": "pulsar-narrowband",
             "depth": 75.0,
             "max-coherence-time": 61603200.0,
             "obs-run": "O2",

@@ -24,7 +24,7 @@
             "algorithm-incoherent": "Viterbi",
             "astro-target": "HESS J1427-608",
             "breadth": 1.115e+18,
-            "category": "pulsar narrowband",
+            "category": "pulsar-narrowband",
             "depth": 53.48,
             "max-coherence-time": 27000.0,
             "obs-run": "O2",
