@@ -279,6 +279,8 @@ def breadth(search):
                 Tspan=Tspan, Tcoh=Tcoh, HMMjumps=ps["hmm-num-jumps"]
             )
 
+        fp["freq"] += 1  # for integration over frequency
+
         # check we have computed some breadths
         if not br:
             msg = "no breadths computed"
@@ -290,10 +292,14 @@ def breadth(search):
             f_power += fp[k]
 
         # compute factor from integrating over frequency
-        f_integration = p_to_q(r, ("freq", f_power + 1)) / (f_power + 1)
+        f_integration = p_to_q(r, ("freq", f_power)) / f_power
+
+        # scale component breadth by contribution to total breadth [Eq. (73) of Wette 2023]
+        for k in br:
+            br[k] *= f_integration ** (fp[k] / f_power)
 
         # integrate product of component breadths over frequency [Eq. (75) of Wette 2023]
-        br_range = f_integration
+        br_range = 1
         for k in br:
             br_range *= br[k]
 
