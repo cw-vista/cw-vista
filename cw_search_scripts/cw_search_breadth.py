@@ -202,18 +202,17 @@ def binary_unknown_tasc_freq_mod_depth_breadth(*, T, r):
     Binary orbit parameter-space breadth, in terms of frequency modulation depth,
     where time of ascension is unknown.
 
-    See Eq. (71) of Wette 2023.
+    See Eq. (71) of Wette 2023, as corrected by errata.
     """
 
     br = (
-        (1 / 2)
-        * (2 / 3) ** (3 / 2)
-        * np.pi**3
-        * p_to_q(r, ("bin-freq-mod-depth", 3), ("bin-period", 1))
+        (1 / 6) ** (3 / 2)
+        * np.pi**2
+        * p_to_q(r, ("bin-freq-mod-depth", 3), ("bin-period", 2))
         * T
     )
 
-    return br, 1
+    return br, 0
 
 
 def hidden_markov_model_breadth(*, Tspan, Tcoh, HMMjumps):
