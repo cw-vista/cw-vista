@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 import numpy as np
 import scipy as sp
 
@@ -237,73 +239,88 @@ def breadth(search):
     if "num-pulsars" in ps:
 
         # by definition, breadth of targeted search is number of pulsars
-        return ps["num-pulsars"]
+        return ps["num-pulsars"], {}
 
     fsp_vals = {"yr": 365.25 * 86400}
     if "freq-space-vals" in ps:
         fsp_vals.update(ps["freq-space-vals"])
 
-    br_total = 0
+    # breadths of each range
+    br = {}
 
-    for r in ps["ranges"]:
+    for i, r in enumerate(ps["ranges"]):
 
-        # breadths of each parameter space component
-        br = {}
+        # breadths of each parameter space component and range
+        br[i] = {}
 
         # powers of frequency contributed by each parameter space component
         fp = {}
 
-        br["freq"], fp["freq"] = freq_breadth_fac(T=Tspan)
+        br[i]["freq"], fp["freq"] = freq_breadth_fac(T=Tspan)
 
         if "sky-fraction" in ps:
-            br["sky"], fp["sky"] = sky_breadth(sky=ps["sky-fraction"], T=Tspan)
+            br[i]["sky"], fp["sky"] = sky_breadth(sky=ps["sky-fraction"], T=Tspan)
 
         if "fdot" in r:
-            br["fdot"], fp["fdot"] = fdot_breadth(T=Tspan, r=r, v=fsp_vals)
+            br[i]["fdot"], fp["fdot"] = fdot_breadth(T=Tspan, r=r, v=fsp_vals)
 
         if "fddot" in r:
-            br["fddot"], fp["fddot"] = fddot_breadth(T=Tspan, r=r, v=fsp_vals)
+            br[i]["fddot"], fp["fddot"] = fddot_breadth(T=Tspan, r=r, v=fsp_vals)
 
         if "bin-freq-mod-depth" in r:
-            br["bin"], fp["bin"] = binary_unknown_tasc_freq_mod_depth_breadth(
+            br[i]["bin"], fp["bin"] = binary_unknown_tasc_freq_mod_depth_breadth(
                 T=Tspan, r=r
             )
         elif "bin-a-sin-i" in r:
             if "bin-time-asc" in r:
-                br["bin"], fp["bin"] = binary_known_tasc_breadth(T=Tspan, r=r)
+                br[i]["bin"], fp["bin"] = binary_known_tasc_breadth(T=Tspan, r=r)
             else:
-                br["bin"], fp["bin"] = binary_unknown_tasc_breadth(T=Tspan, r=r)
+                br[i]["bin"], fp["bin"] = binary_unknown_tasc_breadth(T=Tspan, r=r)
 
         if "hmm-num-jumps" in ps:
-            br["HMM"], fp["HMM"] = hidden_markov_model_breadth(
+            br[i]["HMM"], fp["HMM"] = hidden_markov_model_breadth(
                 Tspan=Tspan, Tcoh=Tcoh, HMMjumps=ps["hmm-num-jumps"]
             )
 
         fp["freq"] += 1  # for integration over frequency
 
         # check we have computed some breadths
-        if not br:
+        if not br[i]:
             msg = "no breadths computed"
             raise ValueError(msg)
 
         # compute overall power in frequency
         f_power = 0
-        for k in br:
+        for k in br[i]:
             f_power += fp[k]
 
         # compute factor from integrating over frequency
         f_integration = p_to_q(r, ("freq", f_power)) / f_power
 
         # scale component breadth by contribution to total breadth [Eq. (73) of Wette 2023]
-        for k in br:
-            br[k] *= f_integration ** (fp[k] / f_power)
+        for k in br[i]:
+            br[i][k] *= f_integration ** (fp[k] / f_power)
 
-        # integrate product of component breadths over frequency [Eq. (75) of Wette 2023]
-        br_range = 1
-        for k in br:
-            br_range *= br[k]
+    # integrate product of component breadths over frequency [Eq. (75) of Wette 2023]
+    br_total = 0
+    for i in br:
+        br_total_i = 1
+        for k in br[i]:
+            br_total_i *= br[i][k]
+        br_total += br_total_i
 
-        # add to total breadth
-        br_total += br_range
+    # sum up component breadths over ranges
+    br_comp = defaultdict(float)
+    for i in br:
+        for k in br[i]:
+            br_comp[k] += br[i][k]
 
-    return br_total
+    # scale component breadth over ranges by contribution to total breadth
+    br_comp_total = 1
+    for k in br_comp:
+        br_comp_total *= br_comp[k]
+    br_comp_scale = (br_total / br_comp_total) ** (1.0 / len(br_comp))
+    for k in br_comp:
+        br_comp[k] *= br_comp_scale
+
+    return br_total, br_comp

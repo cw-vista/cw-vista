@@ -24,6 +24,12 @@
             "algorithm-incoherent": "Viterbi",
             "astro-target": "Sco X-1",
             "breadth": 3.638e+17,
+            "breadth-HMM": 36.1,
+            "breadth-bin": 503900.0,
+            "breadth-fddot": null,
+            "breadth-fdot": null,
+            "breadth-freq": 20000000000.0,
+            "breadth-sky": null,
             "category": "lmxb",
             "depth": 50.14,
             "depth-Sh-obs-det": [

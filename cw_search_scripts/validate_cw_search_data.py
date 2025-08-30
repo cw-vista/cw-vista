@@ -63,9 +63,16 @@ for filename in sorted(filenames):
         depth = cw_search_depth.depth(s)
         s["depth"] = float(f"{depth:0.4g}")
 
-        # compute breadth, rounded to a few significant figures
-        breadth = cw_search_breadth.breadth(s)
+        # compute breadth & components, rounded to a few significant figures
+        breadth, breadth_components = cw_search_breadth.breadth(s)
         s["breadth"] = float(f"{breadth:0.4g}")
+        for breadth_component in ("freq", "fdot", "fddot", "sky", "bin", "HMM"):
+            if breadth_component in breadth_components:
+                s["breadth-" + breadth_component] = float(
+                    "{:0.4g}".format(breadth_components[breadth_component])
+                )
+            else:
+                s["breadth-" + breadth_component] = None
 
     # create BibTeX key
     ref = data["reference"]

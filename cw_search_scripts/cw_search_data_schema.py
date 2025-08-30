@@ -222,6 +222,30 @@ def get():
                             "items": {"type": "string"},
                         },
                         "breadth": {"type": "number", "exclusiveMinimum": 0},
+                        "breadth-HMM": {
+                            "type": ["number", "null"],
+                            "exclusiveMinimum": 0,
+                        },
+                        "breadth-freq": {
+                            "type": ["number", "null"],
+                            "exclusiveMinimum": 0,
+                        },
+                        "breadth-fdot": {
+                            "type": ["number", "null"],
+                            "exclusiveMinimum": 0,
+                        },
+                        "breadth-fddot": {
+                            "type": ["number", "null"],
+                            "exclusiveMinimum": 0,
+                        },
+                        "breadth-sky": {
+                            "type": ["number", "null"],
+                            "exclusiveMinimum": 0,
+                        },
+                        "breadth-bin": {
+                            "type": ["number", "null"],
+                            "exclusiveMinimum": 0,
+                        },
                         "param-space": {
                             "type": "object",
                             "additionalProperties": False,
