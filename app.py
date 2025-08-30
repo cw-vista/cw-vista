@@ -15,6 +15,8 @@ import numpy as np
 import papersize
 import streamlit as st
 from adjustText import adjust_text
+from astropy.table import MaskedColumn, QTable
+from natsort import natsorted
 
 # to protect against non-reentrant matplotlib
 _lock = RLock()
@@ -149,6 +151,9 @@ def get_data():
     for s in searches:
         if "astro-target" not in s:
             s["astro-target"] = s["category-short"]
+            s["astro-target-only"] = None
+        else:
+            s["astro-target-only"] = s["astro-target"]
 
     # set observing run markers
     initial_era_markers = {
@@ -198,6 +203,117 @@ def get_data():
 
 
 refs, searches, props = get_data()
+
+
+@st.cache_data
+def get_mrt(refs, searches):
+
+    # output data from CW searches in a machine-readable format
+    mrtable = []
+
+    for s in searches:
+
+        # row of machine-readable table
+        mr = {
+            "category": s["category"],
+            "obs-run": s["obs-run"],
+            "astro-target": s["astro-target-only"],
+            "algorithm-coherent": s["algorithm-coherent-label"],
+            "algorithm-incoherent": s["algorithm-incoherent-label"],
+        }
+        mr["depth"] = "{:0.3g}".format(s["depth"])
+        if "depth-freq" in s:
+            mr["depth-freq"] = "{:0.1f}".format(s["depth-freq"])
+        else:
+            mr["depth-freq"] = None
+        mr["log10-breadth"] = float("{:0.3g}".format(np.log10(s["breadth"])))
+        for breadth_component in ("freq", "fdot", "fddot", "sky", "bin", "HMM"):
+            if s["breadth-" + breadth_component] is not None:
+                mr["log10-breadth-" + breadth_component] = float(
+                    "{:0.3e}".format(np.log10(s["breadth-" + breadth_component]))
+                )
+            else:
+                mr["log10-breadth-" + breadth_component] = None
+        mr["DOI"] = refs[s["ref-key"]]["doi"]
+
+        # append row to machine-readable table
+        mrtable.append(mr)
+
+    # sort machine-readable table rows
+    mrtable = natsorted(
+        mrtable,
+        key=lambda mr: (
+            mr["category"],
+            "SVO".index(mr["obs-run"][0]),
+            mr["obs-run"],
+            mr["depth"],
+            mr["log10-breadth"],
+        ),
+    )
+
+    # create machine-readable table
+    machine_readable_table_spec = [
+        ("category", str, "Continuous wave search category"),
+        ("obs-run", str, "Most recent observing run data used"),
+        ("astro-target", str, "Astrophysical object targeted, if relevant"),
+        ("algorithm-coherent", str, "Coherent analysis algorithm used"),
+        ("algorithm-incoherent", str, "Incoherent analysis algorithm used"),
+        (
+            "log10-breadth-freq",
+            float,
+            "Parameter-space breadth over gravitational wave frequency, if relevant",
+        ),
+        (
+            "log10-breadth-fdot",
+            float,
+            "Parameter-space breadth over first frequency derivative, if relevant",
+        ),
+        (
+            "log10-breadth-fddot",
+            float,
+            "Parameter-space breadth over second frequency derivative, if relevant",
+        ),
+        (
+            "log10-breadth-sky",
+            float,
+            "Parameter-space breadth over the sky, if relevant",
+        ),
+        (
+            "log10-breadth-bin",
+            float,
+            "Parameter-space breadth over binary system orbital parameters, if relevant",
+        ),
+        (
+            "log10-breadth-HMM",
+            float,
+            "Parameter-space breadth of Hidden Markov model, if relevant",
+        ),
+        ("log10-breadth", float, "Total parameter-space breadth"),
+        ("depth", float, "Sensitivity depth"),
+        (
+            "depth-freq",
+            float,
+            "Frequency in Hz at which sensitivity depth was evaluated",
+        ),
+        ("DOI", str, "Digital Object Identifier of reference"),
+    ]
+    machine_readable_table = QTable()
+    for key, dtype, desc in machine_readable_table_spec:
+        machine_readable_table[key] = MaskedColumn(
+            data=[mr[key] for mr in mrtable],
+            mask=[mr[key] is None for mr in mrtable],
+            name=key,
+            unit=None,
+            dtype=dtype,
+            description=desc,
+        )
+    mrtablestr = io.StringIO()
+    machine_readable_table.write(mrtablestr, format="ascii.ecsv", delimiter=",")
+
+    return mrtablestr.getvalue()
+
+
+machine_readable_table = get_mrt(refs, searches)
 
 
 @st.cache_data
@@ -819,6 +935,23 @@ else:
         )
         st.write(
             f"**Number of CW search publications represented in this plot:** {len(select_searches_bibtex)}"
+        )
+
+        # download data
+        st.write(
+            """
+
+            **Data** used to create the vista plots may be downloaded as an
+            ASCII Enhanced CSV table.
+
+            """
+        )
+        st.download_button(
+            label="Download ECSV",
+            data=machine_readable_table,
+            file_name="CW_searches_table.ecsv",
+            mime="text/csv",
+            on_click="ignore",
         )
 
         # acknowledgements
