@@ -29,12 +29,7 @@ for line in r.stdout.splitlines():
 
     missing_mailmap = True
     sys.stderr.write(
-        f"""
-Please add an entry to the `.mailmap` file of the form:
-
-    {name}'s last name, {name}'s initials <{mail}>
-
-"""
+        f"Please add an entry to the `.mailmap` file of the form:\n\n{name}'s last name, {name}'s initials <{mail}>\n\n"
     )
 
 if missing_mailmap:

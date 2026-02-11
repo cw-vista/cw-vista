@@ -331,8 +331,7 @@ contributors = get_contributors()
 contributors_str = ", ".join(f"{first} {last}" for last, first in contributors)
 
 st.title("The CW Vista: Depth vs Breadth")
-st.write(
-    f"""
+st.write(f"""
 
     **Contributors to this webpage:** {contributors_str}.
 
@@ -357,8 +356,7 @@ st.write(
     licensed under a [Creative Commons CC BY 4.0
     International](https://creativecommons.org/licenses/by/4.0/) license.
 
-    """
-)
+    """)
 
 ### create sidebar
 
@@ -507,16 +505,14 @@ if select_searches:
     with_horizon = st.sidebar.checkbox(
         "With horizon",
         value=True,
-        help=dedent(
-            """\
+        help=dedent("""\
             The **horizon** is the line which satisfies the following properties:
             1. A line parallel to the horizon which intersects the search
                of maximum depth will also intersect the search of maximum
                breadth (and vice versa).
             2. The Y-intercept of the horizon is the maximum Y-intercept of
                any line parallel to the horizon which intersects a search.
-            """
-        ),
+            """),
     )
 
     label_by = st.sidebar.selectbox(
@@ -680,12 +676,10 @@ def vista_plot(toast=True, **kwargs):
         depth_diff = max_depth["log-depth"] - max_breadth["log-depth"]
         breadth_diff = max_depth["log-breadth"] - max_breadth["log-breadth"]
         if depth_diff == 0 and toast:
-            st.toast(
-                """
+            st.toast("""
                 **Warning:** could not plot horizon, search of
                 max. depth is same as search of max. breadth
-                """
-            )
+                """)
         if with_horizon and depth_diff != 0:
             horizon_slope = -breadth_diff / depth_diff
             horizon_origin = max(
@@ -938,14 +932,12 @@ else:
         )
 
         # download data
-        st.write(
-            """
+        st.write("""
 
             **Data** used to create the vista plots may be downloaded as an
             ASCII Enhanced CSV table.
 
-            """
-        )
+            """)
         st.download_button(
             label="Download ECSV",
             data=machine_readable_table,
@@ -955,8 +947,7 @@ else:
         )
 
         # acknowledgements
-        st.write(
-            """
+        st.write("""
 
             **Acknowledgements:** This work builds upon: [Behnke et
             al. (2015)](http://doi.org/10.1103/PhysRevD.91.064007) for the
@@ -971,5 +962,4 @@ else:
             [papersize](https://papersize.readthedocs.io/en/latest/) and
             [NumPy](https://numpy.org/).
 
-            """
-        )
+            """)
