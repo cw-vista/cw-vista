@@ -595,6 +595,7 @@ bibtex = gen_bibentry(
         "pages": "102880",
         "year": 2023,
         "doi": "10.1016/j.astropartphys.2023.102880",
+        "note": "Corrigendum: Astropart. Phys. 179 (2026) 103229",
     },
 )
 bibtex += "\n"
