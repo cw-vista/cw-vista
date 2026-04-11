@@ -20,4 +20,8 @@ test:
   image: containers.ligo.org/cw/publications/cw-vista:latest
   script:
     - pre-commit install
-    - pre-commit run -a
+    - |
+      if ! pre-commit run -a; then
+        git diff
+        exit 1
+      fi

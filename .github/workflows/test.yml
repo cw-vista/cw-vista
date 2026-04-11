@@ -35,4 +35,7 @@ jobs:
       - name: Test with pre-commit
         run: |
           pre-commit install
-          pre-commit run -a
+          if ! pre-commit run -a; then
+            git diff
+            exit 1
+          fi
