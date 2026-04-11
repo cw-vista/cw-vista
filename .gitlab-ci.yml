@@ -2,6 +2,9 @@ stages:
   - Docker
   - Test
 
+variables:
+  GIT_DEPTH: 0
+
 docker:
   stage: Docker
   image: docker:latest
