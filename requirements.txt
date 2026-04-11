@@ -4,4 +4,4 @@ matplotlib==3.10.1
 natsort==8.4.0
 numpy==2.2.3
 papersize==1.6.0
-streamlit==1.43.0
+streamlit==1.54.0
