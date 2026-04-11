@@ -23,6 +23,9 @@ for line in r.stdout.splitlines():
     m = re.fullmatch(r"\s*(\d+)\s+([^<>]+)\s+<([^>]+)>\s*", line)
     n, name, mail = m.groups()
 
+    if mail.endswith(".noreply.github.com"):
+        continue
+
     if "," in name and "." in name.split(",")[1]:
         contributors.append(name)
         continue
