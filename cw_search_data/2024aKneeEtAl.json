@@ -1,0 +1,67 @@
+{
+    "reference": {
+        "author": [
+            "Knee, A. M.",
+            "Du, H.",
+            "Goetz, E.",
+            "McIver, J.",
+            "Carlin, J. B.",
+            "Sun, L.",
+            "Dunn, L.",
+            "Strang, L.",
+            "Middleton, H.",
+            "Melatos, A."
+        ],
+        "doi": "10.1103/PhysRevD.109.062008",
+        "journal": "Phys. Rev. D",
+        "key": "2024aKneeEtAl",
+        "key-suffix": "a",
+        "pages": "062008",
+        "title": "Search for continuous gravitational waves directed at subthreshold radiometer candidates in O3 LIGO data",
+        "volume": "109",
+        "year": 2024
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Viterbi",
+            "astro-target": "ASAF candidates",
+            "breadth": 1.942e+28,
+            "breadth-HMM": 17330.0,
+            "breadth-bin": null,
+            "breadth-fddot": null,
+            "breadth-fdot": 455800.0,
+            "breadth-freq": 1331000000.0,
+            "breadth-sky": 1848000000.0,
+            "category": "pulsar-narrowband",
+            "depth": 53.56,
+            "depth-Sh-obs-det": [
+                "O3a-H1",
+                "O3a-L1",
+                "O3b-H1",
+                "O3b-L1"
+            ],
+            "depth-freq": 222.6,
+            "depth-h0": 8.8e-26,
+            "max-coherence-time": 1800,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1e-09,
+                            1e-09
+                        ],
+                        "freq": [
+                            20,
+                            36.09375
+                        ]
+                    }
+                ],
+                "sky-fraction": 0.1622913797514172
+            },
+            "time-span": 31197600
+        }
+    ]
+}
