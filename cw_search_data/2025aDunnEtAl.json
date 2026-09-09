@@ -1,0 +1,188 @@
+{
+    "reference": {
+        "author": [
+            "Dunn, L.",
+            "Melatos, A.",
+            "Clearwater, P.",
+            "Suvorova, S.",
+            "Sun, L.",
+            "Moran, W.",
+            "Evans, R. J."
+        ],
+        "doi": "10.1103/PhysRevD.111.083012",
+        "journal": "Physical Review D",
+        "key": "2025aDunnEtAl",
+        "key-suffix": "a",
+        "pages": "083012",
+        "title": "Search for continuous gravitational waves from neutron stars in five globular clusters with a phase-tracking hidden Markov model in the third LIGO observing run",
+        "volume": "111",
+        "year": 2025
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "B-statistic",
+            "algorithm-incoherent": "Viterbi",
+            "astro-target": "NGC 6325",
+            "breadth": 1.241e+20,
+            "breadth-HMM": 72.22,
+            "breadth-bin": null,
+            "breadth-fddot": null,
+            "breadth-fdot": 114000.0,
+            "breadth-freq": 31370000000.0,
+            "breadth-sky": 480.7,
+            "category": "skypatch",
+            "depth": 119.3,
+            "max-coherence-time": 432000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "fdot": [
+                            -5e-10,
+                            0
+                        ],
+                        "freq": [
+                            100,
+                            800
+                        ]
+                    }
+                ],
+                "sky-fraction": 7.60026298487837e-11
+            },
+            "time-span": 31197600
+        },
+        {
+            "algorithm-coherent": "B-statistic",
+            "algorithm-incoherent": "Viterbi",
+            "astro-target": "NGC 6397",
+            "breadth": 3.361e+20,
+            "breadth-HMM": 72.22,
+            "breadth-bin": null,
+            "breadth-fddot": null,
+            "breadth-fdot": 114000.0,
+            "breadth-freq": 31370000000.0,
+            "breadth-sky": 1302.0,
+            "category": "skypatch",
+            "depth": 117.0,
+            "max-coherence-time": 432000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "fdot": [
+                            -5e-10,
+                            0
+                        ],
+                        "freq": [
+                            100,
+                            800
+                        ]
+                    }
+                ],
+                "sky-fraction": 2.058601134215501e-10
+            },
+            "time-span": 31197600
+        },
+        {
+            "algorithm-coherent": "B-statistic",
+            "algorithm-incoherent": "Viterbi",
+            "astro-target": "NGC 6540",
+            "breadth": 1.23e+20,
+            "breadth-HMM": 72.22,
+            "breadth-bin": null,
+            "breadth-fddot": null,
+            "breadth-fdot": 114000.0,
+            "breadth-freq": 31370000000.0,
+            "breadth-sky": 476.5,
+            "category": "skypatch",
+            "depth": 120.2,
+            "max-coherence-time": 432000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "fdot": [
+                            -5e-10,
+                            0
+                        ],
+                        "freq": [
+                            100,
+                            800
+                        ]
+                    }
+                ],
+                "sky-fraction": 7.532929868280527e-11
+            },
+            "time-span": 31197600
+        },
+        {
+            "algorithm-coherent": "B-statistic",
+            "algorithm-incoherent": "Viterbi",
+            "astro-target": "NGC 6544",
+            "breadth": 3.512e+20,
+            "breadth-HMM": 72.22,
+            "breadth-bin": null,
+            "breadth-fddot": null,
+            "breadth-fdot": 114000.0,
+            "breadth-freq": 31370000000.0,
+            "breadth-sky": 1361.0,
+            "category": "skypatch",
+            "depth": 125.9,
+            "max-coherence-time": 432000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "fdot": [
+                            -5e-10,
+                            0
+                        ],
+                        "freq": [
+                            100,
+                            800
+                        ]
+                    }
+                ],
+                "sky-fraction": 2.151111111111111e-10
+            },
+            "time-span": 31197600
+        },
+        {
+            "algorithm-coherent": "B-statistic",
+            "algorithm-incoherent": "Viterbi",
+            "astro-target": "Terzan 6",
+            "breadth": 3.461e+20,
+            "breadth-HMM": 72.22,
+            "breadth-bin": null,
+            "breadth-fddot": null,
+            "breadth-fdot": 114000.0,
+            "breadth-freq": 31370000000.0,
+            "breadth-sky": 1341.0,
+            "category": "skypatch",
+            "depth": 116.3,
+            "max-coherence-time": 432000,
+            "obs-run": "O3",
+            "param-space": {
+                "hmm-num-jumps": 3,
+                "ranges": [
+                    {
+                        "fdot": [
+                            -5e-10,
+                            0
+                        ],
+                        "freq": [
+                            100,
+                            800
+                        ]
+                    }
+                ],
+                "sky-fraction": 2.119593425605536e-10
+            },
+            "time-span": 31197600
+        }
+    ]
+}

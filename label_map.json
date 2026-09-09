@@ -1,6 +1,7 @@
 {
     "algorithm-coherent": [
         {"key": "5-vector", "symbol": "5v", "label": "5-vectors"},
+        {"key": "B-statistic", "symbol": "$\\mathcal{B}$", "label": "$\\mathcal{B}$-statistic"},
         {"key": "Bayesian", "symbol": "$\\mathcal{O}$", "label": "Bayesian"},
         {"key": "F-statistic", "symbol": "$\\mathcal{F}$", "label": "$\\mathcal{F}$-statistic"},
         {"key": "power", "symbol": "$P$", "label": "power"}
