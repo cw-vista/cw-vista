@@ -1,0 +1,76 @@
+{
+    "reference": {
+        "author": [
+            "Whelan, J. T.",
+            "Tenorio, R.",
+            "Wofford, J. K.",
+            "Clark, J. A.",
+            "Daw, E. J.",
+            "Goetz, E.",
+            "Keitel, D.",
+            "Neunzert, A.",
+            "Sintes, A. M.",
+            "Wagner, K. J.",
+            "Woan, G.",
+            "Killestein, T. L.",
+            "Steeghs, D."
+        ],
+        "doi": "10.3847/1538-4357/acc8d7",
+        "journal": "Astrophys. J.",
+        "key": "2023aWhelanEtAl",
+        "key-suffix": "a",
+        "pages": "117",
+        "title": "Search for Gravitational Waves from Scorpius X-1 in LIGO O3 Data with Corrected Orbital Ephemeris",
+        "volume": "949",
+        "year": 2023
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "CrossCorr",
+            "astro-target": "Sco X-1",
+            "breadth": 7.729e+18,
+            "breadth-HMM": null,
+            "breadth-bin": 120700000.0,
+            "breadth-fddot": null,
+            "breadth-fdot": null,
+            "breadth-freq": 64010000000.0,
+            "breadth-sky": null,
+            "category": "lmxb",
+            "depth": 38.91,
+            "depth-Sh-obs-det": [
+                "O3a-H1",
+                "O3a-L1",
+                "O3b-H1",
+                "O3b-L1"
+            ],
+            "depth-freq": 153.25,
+            "depth-h0": 1.23e-25,
+            "max-coherence-time": 18720,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            1.44,
+                            3.25
+                        ],
+                        "bin-period": [
+                            68023.8237,
+                            68023.89630000001
+                        ],
+                        "bin-time-asc": [
+                            1255014494,
+                            1255015604
+                        ],
+                        "freq": [
+                            25,
+                            1600
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31190400.0
+        }
+    ]
+}
