@@ -1,0 +1,61 @@
+{
+    "reference": {
+        "author": [
+            "McGloughlin, B.",
+            "Martins, J.",
+            "Steltner, B.",
+            "Papa, M. A.",
+            "Eggenstein, H.-B.",
+            "Machenschalk, B.",
+            "Prix, R.",
+            "Bensch, M."
+        ],
+        "doi": "10.3847/1538-4357/ae225a",
+        "journal": "Astrophys. J.",
+        "key": "2026aMcGloughlinEtAl",
+        "key-suffix": "a",
+        "pages": "149",
+        "title": "Einstein@Home All-sky ``Bucket'' Search for Continuous Gravitational Waves in LIGO O3a Public Data",
+        "volume": "997",
+        "year": 2026
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "GlobalCorrelationTransform",
+            "breadth": 2.406e+26,
+            "breadth-HMM": null,
+            "breadth-bin": null,
+            "breadth-fddot": null,
+            "breadth-fdot": 173500.0,
+            "breadth-freq": 5023000000.0,
+            "breadth-sky": 276100000000.0,
+            "category": "allsky-isolated",
+            "depth": 74.19,
+            "depth-Sh-obs-det": [
+                "O3a-H1",
+                "O3a-L1"
+            ],
+            "depth-freq": 173,
+            "depth-h0": 6.5e-26,
+            "max-coherence-time": 878400,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -2.7e-09,
+                            2e-10
+                        ],
+                        "freq": [
+                            30,
+                            250
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 15984000
+        }
+    ]
+}
