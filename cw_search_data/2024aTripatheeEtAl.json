@@ -1,0 +1,57 @@
+{
+    "reference": {
+        "author": [
+            "Tripathee, A.",
+            "Riles, K."
+        ],
+        "doi": "10.1103/PhysRevD.109.043049",
+        "journal": "Phys. Rev. D",
+        "key": "2024aTripatheeEtAl",
+        "key-suffix": "a",
+        "pages": "043049",
+        "title": "Probing more deeply in an all-sky search for continuous gravitational waves in the LIGO O3 data set",
+        "volume": "109",
+        "year": 2024
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "PowerFlux",
+            "breadth": 3.259e+27,
+            "breadth-HMM": null,
+            "breadth-bin": null,
+            "breadth-fddot": null,
+            "breadth-fdot": 2507000.0,
+            "breadth-freq": 5869000000.0,
+            "breadth-sky": 221500000000.0,
+            "category": "allsky-isolated",
+            "depth": 49.14,
+            "depth-Sh-obs-det": [
+                "O3a-H1",
+                "O3a-L1",
+                "O3b-H1",
+                "O3b-L1"
+            ],
+            "depth-freq": 144,
+            "depth-h0": 1e-25,
+            "max-coherence-time": 7200,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1e-08,
+                            1e-09
+                        ],
+                        "freq": [
+                            30,
+                            150
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 31197600
+        }
+    ]
+}
