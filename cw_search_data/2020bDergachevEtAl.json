@@ -1,0 +1,53 @@
+{
+    "reference": {
+        "author": [
+            "Dergachev, V.",
+            "Papa, M. A."
+        ],
+        "doi": "10.1103/PhysRevLett.125.171101",
+        "journal": "Phys. Rev. Lett.",
+        "key": "2020bDergachevEtAl",
+        "key-suffix": "b",
+        "pages": "171101",
+        "title": "Results from the First All-Sky Search for Continuous Gravitational Waves from Small-Ellipticity Sources",
+        "volume": "125",
+        "year": 2020
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "LooselyCoherent",
+            "breadth": 1.117e+28,
+            "breadth-HMM": null,
+            "breadth-bin": null,
+            "breadth-fddot": 14.25,
+            "breadth-fdot": 678.7,
+            "breadth-freq": 49080000000.0,
+            "breadth-sky": 23530000000000.0,
+            "category": "allsky-isolated",
+            "depth": 61.5,
+            "max-coherence-time": 43200,
+            "obs-run": "O2",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fddot": [
+                            "-1.0 * (4e-20 if freq < 1000 else 2e-20)",
+                            "+1.0 * (4e-20 if freq < 1000 else 2e-20)"
+                        ],
+                        "fdot": [
+                            "-1.0 * (3e-12 if freq < 1000 else 2.5e-12)",
+                            "+1.0 * (3e-12 if freq < 1000 else 2.5e-12)"
+                        ],
+                        "freq": [
+                            500,
+                            1700
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 23155200.0
+        }
+    ]
+}

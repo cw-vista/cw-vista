@@ -1,0 +1,49 @@
+{
+    "reference": {
+        "author": [
+            "Dergachev, V.",
+            "Papa, M. A."
+        ],
+        "doi": "10.1103/PhysRevD.101.022001",
+        "journal": "Phys. Rev. D",
+        "key": "2020aDergachevEtAl",
+        "key-suffix": "a",
+        "pages": "022001",
+        "title": "Results from an extended Falcon all-sky survey for continuous gravitational waves",
+        "volume": "101",
+        "year": 2020
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "LooselyCoherent",
+            "breadth": 1.771e+27,
+            "breadth-HMM": null,
+            "breadth-bin": null,
+            "breadth-fddot": null,
+            "breadth-fdot": 323200.0,
+            "breadth-freq": 8305000000.0,
+            "breadth-sky": 659900000000.0,
+            "category": "allsky-isolated",
+            "depth": 37.2,
+            "max-coherence-time": 14400,
+            "obs-run": "O1",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1e-08,
+                            1.11e-09
+                        ],
+                        "freq": [
+                            200,
+                            600
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 11145600.0
+        }
+    ]
+}

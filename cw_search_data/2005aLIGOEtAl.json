@@ -1,0 +1,68 @@
+{
+    "reference": {
+        "author": [
+            "Abbott, B.",
+            "others"
+        ],
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "others"
+        ],
+        "doi": "10.1103/PhysRevLett.94.181103",
+        "journal": "Phys. Rev. Lett.",
+        "key": "2005aLIGOEtAl",
+        "key-suffix": "a",
+        "pages": "181103",
+        "title": "Limits on Gravitational-Wave Emission from Selected Pulsars Using LIGO Data",
+        "volume": "94",
+        "year": 2005
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "Bayesian",
+            "algorithm-incoherent": "none",
+            "breadth": 28.0,
+            "breadth-HMM": null,
+            "breadth-bin": null,
+            "breadth-fddot": null,
+            "breadth-fdot": null,
+            "breadth-freq": null,
+            "breadth-sky": null,
+            "category": "pulsar-targeted",
+            "depth": 156.4,
+            "max-coherence-time": 5097600.0,
+            "obs-run": "S2",
+            "param-space": {
+                "num-pulsars": 28
+            },
+            "time-span": 5097600.0
+        },
+        {
+            "algorithm-coherent": "Bayesian",
+            "algorithm-incoherent": "none",
+            "astro-target": "Crab",
+            "breadth": 1.0,
+            "breadth-HMM": null,
+            "breadth-bin": null,
+            "breadth-fddot": null,
+            "breadth-fdot": null,
+            "breadth-freq": null,
+            "breadth-sky": null,
+            "category": "pulsar-targeted",
+            "depth": 310.7,
+            "depth-Sh-obs-det": [
+                "S2-H1",
+                "S2-H2",
+                "S2-L1"
+            ],
+            "depth-freq": 59.62,
+            "depth-h0": 4.1e-23,
+            "max-coherence-time": 5097600.0,
+            "obs-run": "S2",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 5097600.0
+        }
+    ]
+}

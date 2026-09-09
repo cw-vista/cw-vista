@@ -84,16 +84,16 @@ for filename in sorted(filenames):
         if "collaboration" in ref:
             for collab in ref["collaboration"]:
                 if collab == "others":
-                    others = "+"
+                    others = "EtAl"
                     break
                 else:
                     author += collab.split(" ")[0]
         else:
             author = ref["author"][0].split(",")[0].strip()
             if len(ref["author"]) > 1:
-                others = "+"
+                others = "EtAl"
         year = str(ref["year"])
-        key = author + others + year + ref["key-suffix"]
+        key = year + ref["key-suffix"] + author + others
         ref["key"] = key
 
         check_suffixes.add((author, year))
@@ -122,15 +122,15 @@ print("Checking for missing/duplicate suffixes")
 for author, year in sorted(check_suffixes):
     suffix_used = []
     for k in ascii_lowercase:
-        json_filename = Path("cw_search_data") / f"{author}{year}{k}.json"
-        json_plus_filename = Path("cw_search_data") / f"{author}+{year}{k}.json"
-        if json_filename.is_file() and json_plus_filename.is_file():
-            msg = f"Duplicate suffixes used by {json_filename} and {json_plus_filename}"
+        json_filename = Path("cw_search_data") / f"{year}{k}{author}.json"
+        json_etal_filename = Path("cw_search_data") / f"{year}{k}{author}EtAl.json"
+        if json_filename.is_file() and json_etal_filename.is_file():
+            msg = f"Duplicate suffixes used by {json_filename} and {json_etal_filename}"
             raise ValueError(msg)
         if json_filename.is_file():
             suffix_used.append((k, json_filename))
-        elif json_plus_filename.is_file():
-            suffix_used.append((k, json_plus_filename))
+        elif json_etal_filename.is_file():
+            suffix_used.append((k, json_etal_filename))
         else:
             suffix_used.append((k, None))
     while suffix_used[-1][1] is None:

@@ -1,0 +1,62 @@
+{
+    "reference": {
+        "author": [
+            "Sun, L.",
+            "Melatos, A.",
+            "Lasky, P. D.",
+            "Chung, C. T. Y.",
+            "Darman, N. S."
+        ],
+        "doi": "10.1103/PhysRevD.94.082004",
+        "journal": "Phys. Rev. D",
+        "key": "2016aSunEtAl",
+        "key-suffix": "a",
+        "pages": "082004",
+        "title": "Cross-correlation search for continuous gravitational waves from a compact object in SNR 1987A in LIGO Science run 5",
+        "volume": "94",
+        "year": 2016
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "CrossCorr",
+            "astro-target": "SN 1987A",
+            "breadth": 3.264e+18,
+            "breadth-HMM": null,
+            "breadth-bin": null,
+            "breadth-fddot": null,
+            "breadth-fdot": 209600000.0,
+            "breadth-freq": 15580000000.0,
+            "breadth-sky": null,
+            "category": "cco",
+            "depth": 64.34,
+            "max-coherence-time": 1800,
+            "obs-run": "S5",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            "-6.17e-19*freq**5 - 2.00e-16*freq**3",
+                            "-2.00e-22*freq**5 - 1.00e-21*freq**3"
+                        ],
+                        "freq": [
+                            75,
+                            350
+                        ]
+                    },
+                    {
+                        "fdot": [
+                            "-4.99e-20*freq**5 - 2.00e-16*freq**3",
+                            "-2.00e-22*freq**5 - 1.00e-21*freq**3"
+                        ],
+                        "freq": [
+                            350,
+                            450
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31557600.0
+        }
+    ]
+}

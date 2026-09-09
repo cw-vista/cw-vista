@@ -1,0 +1,136 @@
+{
+    "reference": {
+        "author": [
+            "Abbott, B. P.",
+            "others"
+        ],
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "Virgo Collaboration",
+            "others"
+        ],
+        "doi": "10.1103/PhysRevD.100.024004",
+        "journal": "Phys. Rev. D",
+        "key": "2019cLIGOVirgoEtAl",
+        "key-suffix": "c",
+        "pages": "024004",
+        "title": "All-sky search for continuous gravitational waves from isolated neutron stars using Advanced LIGO O2 data",
+        "volume": "100",
+        "year": 2019
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "coincidence",
+            "breadth": 1.339e+30,
+            "breadth-HMM": null,
+            "breadth-bin": null,
+            "breadth-fddot": null,
+            "breadth-fdot": 2783000.0,
+            "breadth-freq": 37030000000.0,
+            "breadth-sky": 12990000000000.0,
+            "category": "allsky-isolated",
+            "depth": 32.93,
+            "max-coherence-time": 2073600,
+            "obs-run": "O2",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1e-08,
+                            2e-09
+                        ],
+                        "freq": [
+                            20,
+                            100
+                        ]
+                    },
+                    {
+                        "fdot": [
+                            -1e-08,
+                            2e-09
+                        ],
+                        "freq": [
+                            100,
+                            434
+                        ]
+                    },
+                    {
+                        "fdot": [
+                            -1e-08,
+                            2e-09
+                        ],
+                        "freq": [
+                            1518,
+                            1922
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 23155200.0
+        },
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "FrequencyHough",
+            "breadth": 2.589e+29,
+            "breadth-HMM": null,
+            "breadth-bin": null,
+            "breadth-fddot": null,
+            "breadth-fdot": 999500.0,
+            "breadth-freq": 29820000000.0,
+            "breadth-sky": 8686000000000.0,
+            "category": "allsky-isolated",
+            "depth": 51.82,
+            "max-coherence-time": 8192,
+            "obs-run": "O2",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            "-1e-8 if freq < 512 else -2e-9",
+                            "+2e-9 if freq < 512 else +2e-9"
+                        ],
+                        "freq": [
+                            10,
+                            1024
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 23155200.0
+        },
+        {
+            "algorithm-coherent": "power",
+            "algorithm-incoherent": "SkyHough",
+            "breadth": 1.227e+30,
+            "breadth-HMM": null,
+            "breadth-bin": null,
+            "breadth-fddot": null,
+            "breadth-fdot": 1507000.0,
+            "breadth-freq": 43680000000.0,
+            "breadth-sky": 18640000000000.0,
+            "category": "allsky-isolated",
+            "depth": 31.66,
+            "max-coherence-time": 3600,
+            "obs-run": "O2",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -1e-08,
+                            2e-09
+                        ],
+                        "freq": [
+                            50,
+                            1500
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 23155200.0
+        }
+    ]
+}

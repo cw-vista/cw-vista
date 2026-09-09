@@ -1,0 +1,44 @@
+{
+    "reference": {
+        "author": [
+            "Abbott, R.",
+            "others"
+        ],
+        "collaboration": [
+            "LIGO Scientific Collaboration",
+            "Virgo Collaboration",
+            "KAGRA Collaboration",
+            "others"
+        ],
+        "doi": "10.3847/2041-8213/abffcd",
+        "journal": "Astrophys. J. Lett.",
+        "key": "2021aLIGOVirgoKAGRAEtAl",
+        "key-suffix": "a",
+        "pages": "L27",
+        "title": "Diving below the Spin-down Limit: Constraints on Gravitational Waves from the Energetic Young Pulsar PSR J0537-6910",
+        "volume": "913",
+        "year": 2021
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "Bayesian",
+            "algorithm-incoherent": "none",
+            "astro-target": "J0537-6910",
+            "breadth": 1.0,
+            "breadth-HMM": null,
+            "breadth-bin": null,
+            "breadth-fddot": null,
+            "breadth-fdot": null,
+            "breadth-freq": null,
+            "breadth-sky": null,
+            "category": "pulsar-targeted",
+            "depth": 548.7,
+            "max-coherence-time": 82339200,
+            "obs-run": "O3",
+            "param-space": {
+                "num-pulsars": 1
+            },
+            "time-span": 82339200
+        }
+    ]
+}

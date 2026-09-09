@@ -1,0 +1,99 @@
+{
+    "reference": {
+        "author": [
+            "Owen, B. J.",
+            "Lindblom, L.",
+            "Pinheiro, L. S."
+        ],
+        "doi": "10.3847/2041-8213/ac84dc",
+        "journal": "Astrophys. J. Lett.",
+        "key": "2022aOwenEtAl",
+        "key-suffix": "a",
+        "pages": "L7",
+        "title": "First Constraining Upper Limits on Gravitational-wave Emission from NS 1987A in SNR 1987A",
+        "volume": "935",
+        "year": 2022
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "SN 1987A",
+            "breadth": 15060000000000.0,
+            "breadth-HMM": null,
+            "breadth-bin": null,
+            "breadth-fddot": 6.013,
+            "breadth-fdot": 25050.0,
+            "breadth-freq": 99980000.0,
+            "breadth-sky": null,
+            "category": "cco",
+            "depth": 36.0,
+            "max-coherence-time": 1102464.0,
+            "obs-run": "O2",
+            "param-space": {
+                "freq-space-vals": {
+                    "nmax": 7.0,
+                    "nmin": 2.0,
+                    "tau": 30
+                },
+                "ranges": [
+                    {
+                        "fddot": [
+                            "nmin * fdot**2 / freq",
+                            "nmax * fdot**2 / freq"
+                        ],
+                        "fdot": [
+                            "-freq / ((nmin - 1) * tau * yr)",
+                            "-freq / ((nmax - 1) * tau * yr)"
+                        ],
+                        "freq": [
+                            75,
+                            125
+                        ]
+                    }
+                ]
+            },
+            "time-span": 1102464.0
+        },
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "SN 1987A",
+            "breadth": 19010000000000.0,
+            "breadth-HMM": null,
+            "breadth-bin": null,
+            "breadth-fddot": 3.949,
+            "breadth-fdot": 23450.0,
+            "breadth-freq": 205200000.0,
+            "breadth-sky": null,
+            "category": "cco",
+            "depth": 29.0,
+            "max-coherence-time": 754272.0,
+            "obs-run": "O2",
+            "param-space": {
+                "freq-space-vals": {
+                    "nmax": 7.0,
+                    "nmin": 2.0,
+                    "tau": 30
+                },
+                "ranges": [
+                    {
+                        "fddot": [
+                            "nmin * fdot**2 / freq",
+                            "nmax * fdot**2 / freq"
+                        ],
+                        "fdot": [
+                            "-freq / ((nmin - 1) * tau * yr)",
+                            "-freq / ((nmax - 1) * tau * yr)"
+                        ],
+                        "freq": [
+                            125,
+                            275
+                        ]
+                    }
+                ]
+            },
+            "time-span": 754272.0
+        }
+    ]
+}
