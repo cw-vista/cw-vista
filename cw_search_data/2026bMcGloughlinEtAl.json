@@ -1,0 +1,62 @@
+{
+    "reference": {
+        "author": [
+            "McGloughlin, B.",
+            "Steltner, B.",
+            "Martins, J.",
+            "Papa, M. A.",
+            "Eggenstein, H.-B.",
+            "Ming, J.",
+            "Machenschalk, B.",
+            "Prix, R.",
+            "Bensch, M."
+        ],
+        "doi": "10.3847/1538-4357/ae2ed8",
+        "journal": "Astrophysical Journal",
+        "key": "2026bMcGloughlinEtAl",
+        "key-suffix": "b",
+        "pages": "205",
+        "title": "High-frequency Continuous Gravitational Wave Search in LIGO O3 Public Data with Einstein@Home",
+        "volume": "998",
+        "year": 2026
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "GlobalCorrelationTransform",
+            "breadth": 6.603e+28,
+            "breadth-HMM": null,
+            "breadth-bin": null,
+            "breadth-fddot": null,
+            "breadth-fdot": 173500.0,
+            "breadth-freq": 32640000000.0,
+            "breadth-sky": 11660000000000.0,
+            "category": "allsky-isolated",
+            "depth": 58.01,
+            "depth-Sh-obs-det": [
+                "O3a-H1",
+                "O3a-L1"
+            ],
+            "depth-freq": 800,
+            "depth-h0": 1.32e-25,
+            "max-coherence-time": 216000,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "fdot": [
+                            -2.7e-09,
+                            2e-10
+                        ],
+                        "freq": [
+                            800,
+                            1686
+                        ]
+                    }
+                ],
+                "sky-fraction": 1
+            },
+            "time-span": 15984000
+        }
+    ]
+}
