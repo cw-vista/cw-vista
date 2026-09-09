@@ -837,7 +837,6 @@ def vista_plot(toast=True, **kwargs):
                     "pad": label_background_pad,
                 },
                 zorder=-5,
-                usetex=True,
             )
 
         # fix layout
