@@ -330,33 +330,11 @@ contributors = get_contributors()
 
 contributors_str = ", ".join(f"{first} {last}" for last, first in contributors)
 
-st.title("The CW Vista: Depth vs Breadth")
-st.write(f"""
+title_cntr, working_cntr, replot_cntr = st.columns(
+    [6, 1, 1], vertical_alignment="bottom"
+)
 
-    **Contributors to this webpage:** {contributors_str}.
-
-    This webpage generate *vista plots* of the sensitivity depth versus the
-    parameter-space breadth of searches for continuous gravitational waves
-    (CWs). They are designed to give a richer comparison between different
-    searches, and the different trade-offs made between sensitivity and
-    parameter space coverage. They also serve as a big-picture overview of
-    efforts towards a first detection of continuous gravitational waves which
-    began in the early 2000s. See [Wette
-    (2023)](https://doi.org/10.1016/j.astropartphys.2023.102880) for further
-    information.
-
-    **Please contribute!** If you have published a search for continuous
-    gravitational waves, please contribute your results and keep the CW vista
-    up-to-date. See [this link for
-    instructions](https://github.com/cw-vista/cw-vista/blob/main/README.md).
-
-    If you use a vista plot in an academic publication, please download the
-    BibTeX and cite `cwv:Wette2023`, `cwv:webapp`, and (as appropriate)
-    publications for the CW searches that appear in the plot. Figures are
-    licensed under a [Creative Commons CC BY 4.0
-    International](https://creativecommons.org/licenses/by/4.0/) license.
-
-    """)
+title_cntr.title("The CW Vista: Depth vs Breadth")
 
 ### create sidebar
 
@@ -878,15 +856,13 @@ else:
 
     download_img = None
 
-    replot_cntr = st.empty()
-
-    download_img_cntr, download_refs_cntr = st.columns((1, 1))
-
     vista_plot_cntr = st.container()
 
-    if st.session_state["display-img-first-time"] or replot_cntr.button("Replot"):
+    if st.session_state["display-img-first-time"] or replot_cntr.button(
+        "Replot Figure"
+    ):
 
-        with replot_cntr:
+        with working_cntr:
             with st.spinner("Working ..."):
 
                 # store vista plot in session state, so can be displayed while changing options
@@ -906,48 +882,74 @@ else:
         # show vista plot
         vista_plot_cntr.image(st.session_state["display-img"], width="stretch")
 
+        # show statistics
+        st.write(f"""
+
+            **Number of CW searches that appear in this plot:** {len(select_searches)}
+
+            """)
+        st.write(f"""
+
+            **Number of CW search publications represented in this plot:** {len(select_searches_bibtex)}
+
+            """)
+
         # show download buttons
         if download_img is not None:
-            download_img_cntr.download_button(
-                label="Download Figure",
+            cols = st.columns([0.5, 1, 1, 1, 4.5], vertical_alignment="center")
+            cols[0].write("**Download:**")
+            cols[1].download_button(
+                label=f"Figure (.{figure_fmt})",
+                width="stretch",
                 data=download_img,
                 file_name="cw-vista." + figure_fmt,
                 mime="image/" + figure_fmt,
                 on_click="ignore",
             )
-            download_refs_cntr.download_button(
-                label="Download BibTeX",
+            cols[2].download_button(
+                label="References (.bib)",
+                width="stretch",
                 data=bibtex,
                 file_name="cw-vista.bib",
                 mime="application/x-bibtex",
                 on_click="ignore",
             )
+            cols[3].download_button(
+                label="Search Data (.ecsv)",
+                width="stretch",
+                data=machine_readable_table,
+                file_name="cw-search-data.ecsv",
+                mime="text/csv",
+                on_click="ignore",
+            )
 
-        # show statistics
-        st.write(
-            f"**Number of CW searches that appear in this plot:** {len(select_searches)}"
-        )
-        st.write(
-            f"**Number of CW search publications represented in this plot:** {len(select_searches_bibtex)}"
-        )
+        st.divider()
 
-        # download data
+        # about and acknowledgements
         st.write("""
 
-            **Data** used to create the vista plots may be downloaded as an
-            ASCII Enhanced CSV table.
+            **About:** This webpage generate *vista plots* of the sensitivity
+            depth versus the parameter-space breadth of searches for continuous
+            gravitational waves (CWs). They are designed to give a richer
+            comparison between different searches, and the different trade-offs
+            made between sensitivity and parameter space coverage. They also
+            serve as a big-picture overview of efforts towards a first detection
+            of continuous gravitational waves which began in the early
+            2000s. See [Wette
+            (2023)](https://doi.org/10.1016/j.astropartphys.2023.102880) for
+            further information.
 
-            """)
-        st.download_button(
-            label="Download ECSV",
-            data=machine_readable_table,
-            file_name="CW_searches_table.ecsv",
-            mime="text/csv",
-            on_click="ignore",
-        )
+            **Please contribute!** If you have published a search for continuous
+            gravitational waves, please contribute your results and keep the CW
+            vista up-to-date. See [this link for
+            instructions](https://github.com/cw-vista/cw-vista/blob/main/README.md).
 
-        # acknowledgements
-        st.write("""
+            **Citing:** If you use a vista plot in an academic publication,
+            please download the BibTeX and cite `cwv:Wette2023`, `cwv:webapp`,
+            and (as appropriate) publications for the CW searches that appear in
+            the plot. Figures are licensed under a [Creative Commons CC BY 4.0
+            International](https://creativecommons.org/licenses/by/4.0/)
+            license.
 
             **Acknowledgements:** This work builds upon: [Behnke et
             al. (2015)](http://doi.org/10.1103/PhysRevD.91.064007) for the
@@ -963,3 +965,10 @@ else:
             [NumPy](https://numpy.org/).
 
             """)
+
+        # show contributors
+        st.write(f"""
+
+        **Contributors to this webpage:** {contributors_str}.
+
+        """)
