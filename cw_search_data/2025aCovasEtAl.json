@@ -1,0 +1,58 @@
+{
+    "reference": {
+        "author": [
+            "Covas, P. B.",
+            "Papa, M. A.",
+            "Prix, R."
+        ],
+        "doi": "10.3847/1538-4357/adcc2b",
+        "journal": "Astrophys. J.",
+        "key": "2025aCovasEtAl",
+        "key-suffix": "a",
+        "pages": "192",
+        "title": "Search for Continuous Gravitational Waves from Unknown Neutron Stars in Binary Systems with Long Orbital Periods in O3 Data",
+        "volume": "985",
+        "year": 2025
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "BinarySkyHough",
+            "breadth": 6.572e+40,
+            "breadth-HMM": null,
+            "breadth-bin": 1.183e+16,
+            "breadth-fddot": null,
+            "breadth-fdot": 3464.0,
+            "breadth-freq": 6295000000.0,
+            "breadth-sky": 254800000000.0,
+            "category": "allsky-binary",
+            "depth": 38.6,
+            "max-coherence-time": 4500,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            40,
+                            200
+                        ],
+                        "bin-period": [
+                            8640000,
+                            86400000
+                        ],
+                        "fdot": [
+                            -7.6e-12,
+                            7.6e-12
+                        ],
+                        "freq": [
+                            50,
+                            150
+                        ]
+                    }
+                ],
+                "sky-fraction": 1.0
+            },
+            "time-span": 31197600
+        }
+    ]
+}
