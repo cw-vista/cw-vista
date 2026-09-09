@@ -1,0 +1,58 @@
+{
+    "reference": {
+        "author": [
+            "Wang, J.",
+            "Riles, K."
+        ],
+        "doi": "10.1103/PhysRevD.110.042006",
+        "journal": "Phys. Rev. D",
+        "key": "2024aWangEtAl",
+        "key-suffix": "a",
+        "pages": "042006",
+        "title": "Deep search of the full O3 LIGO data for continuous gravitational waves from the Cassiopeia A central compact object",
+        "volume": "110",
+        "year": 2024
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "Weave",
+            "astro-target": "Cas A",
+            "breadth": 4.036e+19,
+            "breadth-HMM": null,
+            "breadth-bin": null,
+            "breadth-fddot": 1796.0,
+            "breadth-fdot": 2207000.0,
+            "breadth-freq": 10190000000.0,
+            "breadth-sky": null,
+            "category": "cco",
+            "depth": 110.0,
+            "max-coherence-time": 2592000,
+            "obs-run": "O3",
+            "param-space": {
+                "freq-space-vals": {
+                    "nmax": 7.0,
+                    "nmin": 2.0,
+                    "tau": 300
+                },
+                "ranges": [
+                    {
+                        "fddot": [
+                            "nmin * fdot**2 / freq",
+                            "nmax * fdot**2 / freq"
+                        ],
+                        "fdot": [
+                            "-freq / ((nmin - 1) * tau * yr)",
+                            "-freq / ((nmax - 1) * tau * yr)"
+                        ],
+                        "freq": [
+                            20,
+                            200
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31197600
+        }
+    ]
+}
