@@ -1,0 +1,88 @@
+{
+    "reference": {
+        "author": [
+            "Owen, B. J.",
+            "Lindblom, L.",
+            "Soares Pinheiro, L.",
+            "Rajbhandari, B."
+        ],
+        "doi": "10.3847/2041-8213/ad2263",
+        "journal": "Astrophys. J. Lett.",
+        "key": "2024aOwenEtAl",
+        "key-suffix": "a",
+        "pages": "L23",
+        "title": "Improved Upper Limits on Gravitational-wave Emission from NS 1987A in SNR 1987A",
+        "volume": "962",
+        "year": 2024
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "F-statistic",
+            "algorithm-incoherent": "none",
+            "astro-target": "SN 1987A",
+            "breadth": 2056000000000000.0,
+            "breadth-HMM": null,
+            "breadth-bin": null,
+            "breadth-fddot": 14.6,
+            "breadth-fdot": 90660.0,
+            "breadth-freq": 1553000000.0,
+            "breadth-sky": null,
+            "category": "cco",
+            "depth": 29.0,
+            "max-coherence-time": 1283040,
+            "obs-run": "O3",
+            "param-space": {
+                "freq-space-vals": {
+                    "nmax": 7.0,
+                    "nmin": 3.0,
+                    "tau": 33.0
+                },
+                "ranges": [
+                    {
+                        "fddot": [
+                            "nmin * fdot**2 / freq",
+                            "nmax * fdot**2 / freq"
+                        ],
+                        "fdot": [
+                            "-freq / ((nmin - 1) * tau * yr)",
+                            "-freq / ((nmax - 1) * tau * yr)"
+                        ],
+                        "freq": [
+                            35,
+                            125
+                        ]
+                    },
+                    {
+                        "fddot": [
+                            "nmin * fdot**2 / freq",
+                            "nmax * fdot**2 / freq"
+                        ],
+                        "fdot": [
+                            "-freq / ((nmin - 1) * tau * yr)",
+                            "-freq / ((nmax - 1) * tau * yr)"
+                        ],
+                        "freq": [
+                            125,
+                            450
+                        ]
+                    },
+                    {
+                        "fddot": [
+                            "nmin * fdot**2 / freq",
+                            "nmax * fdot**2 / freq"
+                        ],
+                        "fdot": [
+                            "-freq / ((nmin - 1) * tau * yr)",
+                            "-freq / ((nmax - 1) * tau * yr)"
+                        ],
+                        "freq": [
+                            450,
+                            1050
+                        ]
+                    }
+                ]
+            },
+            "time-span": 1283040
+        }
+    ]
+}
