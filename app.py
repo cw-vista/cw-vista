@@ -905,7 +905,7 @@ else:
     if "display-img" in st.session_state:
 
         # show vista plot
-        vista_plot_cntr.image(st.session_state["display-img"], use_container_width=True)
+        vista_plot_cntr.image(st.session_state["display-img"], width="stretch")
 
         # show download buttons
         if download_img is not None:
