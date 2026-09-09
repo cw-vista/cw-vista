@@ -1,0 +1,66 @@
+{
+    "reference": {
+        "author": [
+            "Amicucci, F.",
+            "Leaci, P.",
+            "Astone, P.",
+            "D'Antonio, S.",
+            "Dal Pra, S.",
+            "Di Giovanni, M.",
+            "D'Onofrio, L.",
+            "Muciaccia, F.",
+            "Palomba, C.",
+            "Pierini, L.",
+            "Singhal, A."
+        ],
+        "doi": "10.1088/1361-6382/adecd7",
+        "journal": "Class. Quantum Grav.",
+        "key": "2025aAmicucciEtAl",
+        "key-suffix": "a",
+        "pages": "145008",
+        "title": "A directed continuous-wave search from Scorpius X-1 with the five-vector resampling technique",
+        "volume": "42",
+        "year": 2025
+    },
+    "searches": [
+        {
+            "algorithm-coherent": "5-vector",
+            "algorithm-incoherent": "none",
+            "astro-target": "Sco X-1",
+            "breadth": 1220000000000.0,
+            "breadth-HMM": null,
+            "breadth-bin": 30.5,
+            "breadth-fddot": null,
+            "breadth-fdot": null,
+            "breadth-freq": 40010000000.0,
+            "breadth-sky": null,
+            "category": "lmxb",
+            "depth": 82.2,
+            "max-coherence-time": 31197600,
+            "obs-run": "O3",
+            "param-space": {
+                "ranges": [
+                    {
+                        "bin-a-sin-i": [
+                            1.786,
+                            1.814
+                        ],
+                        "bin-period": [
+                            68023.896,
+                            68023.944
+                        ],
+                        "bin-time-asc": [
+                            1078161997.7,
+                            1078161997.9
+                        ],
+                        "freq": [
+                            10,
+                            1000
+                        ]
+                    }
+                ]
+            },
+            "time-span": 31197600
+        }
+    ]
+}
