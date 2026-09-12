@@ -896,7 +896,7 @@ else:
 
         # show download buttons
         if download_img is not None:
-            cols = st.columns([0.5, 1, 1, 1, 4.5], vertical_alignment="center")
+            cols = st.columns([0.5, 1, 1, 1, 1, 3], vertical_alignment="center")
             cols[0].write("**Download:**")
             cols[1].download_button(
                 label=f"Figure (.{figure_fmt})",
@@ -921,6 +921,10 @@ else:
                 file_name="cw-search-data.ecsv",
                 mime="text/csv",
                 on_click="ignore",
+            )
+            cols[4].link_button(
+                "Noise Curves (.txt.gz)",
+                "https://github.com/cw-vista/cw-vista/tree/main/noise_curves",
             )
 
         st.divider()
