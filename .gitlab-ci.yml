@@ -11,11 +11,7 @@ test:
           - "3.13"
           - "3.14"
           - "3.15"
-  image: python:${PYTHON_VERSION}-slim
-  before_script:
-    - apt-get -q update
-    - apt-get -y -q install git
-    - git --version
+  image: python:${PYTHON_VERSION}
   script:
     - python -m pip install --upgrade pip
     - python -m pip install -r requirements.txt
