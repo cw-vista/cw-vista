@@ -283,11 +283,11 @@ You can run the webapp locally as follows:
 
 1. Clone the [`cw-vista` repository][repo], or your fork thereof.
 
-2. Create a virtual environment with Python 3.10 and install requirements:
+2. Create a virtual environment with Python 3 and install requirements:
 
    ```bash
    $ cd cw-vista/
-   $ python3.10 -m venv venv/
+   $ python3 -m venv venv/
    $ source venv/bin/activate
    $ pip install -r requirements.txt
    ```
