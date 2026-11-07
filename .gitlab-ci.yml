@@ -1,27 +1,21 @@
 stages:
-  - Docker
-  - Test
-
-variables:
-  GIT_DEPTH: 0
-
-docker:
-  stage: Docker
-  image: docker:latest
-  variables:
-    IMAGE_TAG: latest
-  before_script:
-    - docker login -u gitlab-ci-token -p ${CI_JOB_TOKEN} ${CI_REGISTRY}
-  script:
-    - docker build --pull -t ${CI_REGISTRY_IMAGE}:${IMAGE_TAG} .
-    - docker push ${CI_REGISTRY_IMAGE}:${IMAGE_TAG}
-  rules:
-    - if: '$CI_PROJECT_PATH == "CW/publications/cw-vista" && $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH'
+  - test
 
 test:
-  stage: Test
-  image: containers.ligo.org/cw/publications/cw-vista:latest
+  stage: test
+  parallel:
+    matrix:
+      - PYTHON_VERSION:
+          - "3.11"
+          - "3.12"
+          - "3.13"
+          - "3.14"
+          - "3.15"
+  image: python:${PYTHON_VERSION}-slim
   script:
+    - python -m pip install --upgrade pip
+    - python -m pip install -r requirements.txt
+    - python -m pip install pre-commit
     - pre-commit install
     - |
       if ! pre-commit run -a; then
