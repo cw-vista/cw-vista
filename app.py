@@ -767,8 +767,8 @@ def vista_plot(toast=True, **kwargs):
             )
 
         # set axis labels
-        ax.set_xlabel(r"Breadth $\log_{10} \mathcal{B}$")
-        ax.set_ylabel(r"Depth $\log_{10} \mathcal{D}$")
+        ax.set_xlabel(r"$\text{Breadth } \log_{10} \mathcal{B}$")
+        ax.set_ylabel(r"$\text{Depth } \log_{10} \mathcal{D}$")
 
         # set font size
         for item in (
